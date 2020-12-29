@@ -5,17 +5,19 @@ var reload = browserSync.reload;
 
 
 /* Task to compile less */
-gulp.task('compile-less', function() {
+gulp.task('compile-less', function(done) {
     gulp.src('./css/*.less')
         .pipe(less())
         .pipe(gulp.dest('./css/'));
+    done()
 });
 /* Task to watch less changes */
-gulp.task('watch-less', function() {
-    gulp.watch('./css/**/*.less', gulp.series(['compile-less']));
+gulp.task('watch-less', function(done) {
+    gulp.watch('./css/*.less', gulp.series('compile-less'));
+    done()
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', function(done) {
 
     // Serve files from the root of this project
     browserSync.init({
@@ -23,9 +25,10 @@ gulp.task('serve', function() {
             baseDir: "./"
         }
     });
-    gulp.watch("./css/*.less").on("change", reload);
-    gulp.watch("./distro/*.html").on("change", reload);
+    gulp.watch("./css/*.css").on("change", reload);
+    gulp.watch("./*.html").on("change", reload);
+    done()
 });
 
 /* Task when running `gulp` from terminal */
-gulp.task('default', gulp.parallel(['watch-less', 'serve']));
+gulp.task('default', gulp.parallel('serve', 'watch-less'));
