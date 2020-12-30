@@ -80,6 +80,12 @@ button.purple {
 .mb-40 {
   margin-bottom: 40px;
 }
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
 .lh-1 {
   line-height: 125%;
 }
@@ -254,13 +260,30 @@ header a.c-3 {
   background-image: url('../images/img/nav-item-h-5.svg');
 }
 .product-preview {
+  padding: 16px 16px 13px;
   display: block;
   width: 257px;
   height: 472px;
-  background-color: #5497c4;
+  background-color: white;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   position: relative;
+  transition-duration: 0.2s;
+  transition-property: box-shadow, border-radius;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  transform-origin: center;
+}
+.product-preview:hover {
+  box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
+  border-radius: 8px;
+}
+.product-preview:hover .wish {
+  opacity: 1;
+}
+.product-preview:hover button {
+  color: white;
+  background-color: #6839CF;
 }
 .product-preview .sale {
   background-color: #E8DDFF;
@@ -277,16 +300,22 @@ header a.c-3 {
   top: 0;
   left: 0;
 }
-.product-preview .wish {
-  background-color: #FFFFFF;
+.product-preview input.wish {
+  opacity: 0;
   width: 32px;
   height: 32px;
   border: 1px solid #B4B4BB;
   box-sizing: border-box;
   border-radius: 4px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url('../images/icons/wish.svg');
 }
 .product-preview .img {
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 .product-preview .name {
   font-weight: bold;
@@ -294,12 +323,14 @@ header a.c-3 {
   line-height: 150%;
   letter-spacing: 0.0275em;
   color: #19191D;
+  margin-bottom: 5px;
 }
 .product-preview .text {
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.0275em;
   color: #787885;
+  margin-bottom: 16px;
 }
 .product-preview del {
   font-size: 14px;
@@ -312,6 +343,15 @@ header a.c-3 {
   font-weight: bold;
   font-size: 22px;
   line-height: 150%;
+}
+.product-preview button {
+  font-size: 14px;
+  padding: 7px 19px;
+  transition-duration: 0.2s;
+  transition-property: color, background-color;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  transform-origin: center;
 }
 .advantages .col-lg-3 {
   margin-bottom: 20px;

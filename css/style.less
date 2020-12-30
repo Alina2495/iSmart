@@ -86,6 +86,12 @@ button {
     &-40 {
         margin-bottom: 40px;
     }
+    &-80 {
+        margin-bottom: 80px;
+    }
+    &-100 {
+        margin-bottom: 100px;
+    }
 }
 .lh-1 {
     line-height: 125%;
@@ -138,9 +144,6 @@ button {
     }
 }
 
-// section {
-//     margin-bottom: 100px;
-// }
 
 .container {
     max-width: 1200px;
@@ -280,13 +283,31 @@ header {
     }
 }
 .product-preview {
+    padding: 16px 16px 13px;
     display: block;
     width: 257px;
     height: 472px;
-    background-color: #5497c4;
+    background-color: white;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     position: relative;
+    transition-duration: 0.2s;
+    transition-property: box-shadow, border-radius;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    transform-origin: center;
+
+    &:hover {
+        box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
+        border-radius: 8px;
+        .wish {
+            opacity: 1;
+        }
+        button {
+            color: white;
+            background-color: #6839CF;
+        }
+    }
     .sale {
         background-color: #E8DDFF;
         border-radius: 4px;
@@ -302,16 +323,23 @@ header {
         top: 0;
         left: 0;
     }
-    .wish {
-        background-color: #FFFFFF;
+    input.wish {
+        opacity: 0;
         width: 32px;
         height: 32px;
         border: 1px solid #B4B4BB;
         box-sizing: border-box;
         border-radius: 4px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 0;
+        background-color: transparent;
+        background-image: url('../images/icons/wish.svg');
+
     }
     .img {
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
     .name {
         font-weight: bold;
@@ -319,12 +347,14 @@ header {
         line-height: 150%;
         letter-spacing: 0.0275em;
         color: #19191D;
+        margin-bottom: 5px;
     }
     .text {
         font-size: 14px;
         line-height: 150%;
         letter-spacing: 0.0275em;
         color: #787885;
+        margin-bottom: 16px;
     }
     del {
         font-size: 14px;
@@ -337,6 +367,15 @@ header {
         font-weight: bold;
         font-size: 22px;
         line-height: 150%;
+    }
+    button {
+        font-size: 14px;
+        padding: 7px 19px;
+        transition-duration: 0.2s;
+        transition-property: color, background-color;
+        transition-delay: 0s;
+        transition-timing-function: linear;
+        transform-origin: center;
     }
     
 }
