@@ -1,6 +1,10 @@
 * {
   background-repeat: no-repeat;
   object-fit: cover;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  transform-origin: center;
 }
 html {
   scroll-behavior: smooth;
@@ -70,9 +74,13 @@ button {
   background-color: white;
 }
 button.purple {
+  display: block;
   background-color: #6839CF;
   border-radius: 4px;
   color: white;
+}
+button.purple:hover {
+  background-color: #824df5;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -141,6 +149,7 @@ ul {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  flex-wrap: wrap;
 }
 header .container-big {
   padding-top: 20px;
@@ -149,6 +158,7 @@ header .container-big {
 header .container-big .row {
   display: flex;
   align-items: end;
+  flex-wrap: wrap;
 }
 header p {
   font-weight: 500;
@@ -190,12 +200,17 @@ header a.c-3 {
   justify-content: center;
   flex-direction: column;
 }
+.banner .container {
+  z-index: 2;
+}
 .banner-group {
   display: flex;
+  flex-wrap: wrap;
 }
 .banner-links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .banner-links .purple {
   margin-right: 20px;
@@ -206,6 +221,7 @@ header a.c-3 {
   transform: translateY(-50%);
   height: 80%;
   right: 0;
+  z-index: 0;
 }
 .banner-2 {
   width: 854px;
@@ -268,11 +284,7 @@ header a.c-3 {
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   position: relative;
-  transition-duration: 0.2s;
   transition-property: box-shadow, border-radius;
-  transition-delay: 0s;
-  transition-timing-function: linear;
-  transform-origin: center;
 }
 .product-preview:hover {
   box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
@@ -436,4 +448,7 @@ a[href='#top'] {
   border-radius: 4px;
   background-image: url('../images/icons/arrow-t.svg');
   background-position: center;
+}
+a[href='#top']:hover {
+  background-color: #f8faff;
 }

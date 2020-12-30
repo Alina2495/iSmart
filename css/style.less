@@ -1,6 +1,10 @@
 * {
     background-repeat: no-repeat;
     object-fit: cover;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    transform-origin: center;
 }
 html {
     scroll-behavior: smooth;
@@ -74,9 +78,13 @@ button {
     color: #6839CF;
     background-color: white;
     &.purple {
+        display: block;
         background-color: #6839CF;
         border-radius: 4px;
         color: white;
+        &:hover {
+            background-color: #824df5;
+        }
     }
 }
 .mb {
@@ -157,6 +165,7 @@ ul {
     display: flex;
     justify-content: space-between;
     margin: 0;
+    flex-wrap: wrap;
 }
 // header
 header {
@@ -166,6 +175,7 @@ header {
         .row {
             display: flex;
             align-items: end;
+            flex-wrap: wrap;
         }
     }
     p {
@@ -185,10 +195,10 @@ header {
         background-image: url('../images/icons/account.svg');
     }
     .tel {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 158%;
-    letter-spacing: 0.0075em;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 158%;
+        letter-spacing: 0.0075em;
     }
     a.c-3 {
         background-image: none;
@@ -211,12 +221,17 @@ header {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    .container {
+        z-index: 2;
+    }
     &-group {
         display: flex;
+        flex-wrap: wrap;
     }
     &-links {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         .purple {
             margin-right: 20px;
         }
@@ -227,6 +242,7 @@ header {
         transform: translateY(-50%);
         height: 80%;
         right: 0;
+        z-index: 0;
     }
     &-2 {
         width: 854px;
@@ -291,11 +307,8 @@ header {
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     position: relative;
-    transition-duration: 0.2s;
     transition-property: box-shadow, border-radius;
-    transition-delay: 0s;
-    transition-timing-function: linear;
-    transform-origin: center;
+    
 
     &:hover {
         box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
@@ -478,4 +491,13 @@ a[href='#top'] {
     border-radius: 4px;
     background-image: url('../images/icons/arrow-t.svg');
     background-position: center;
+    &:hover {
+        background-color: #f8faff;
+    }
 }
+// .banner {
+//     width: 0;
+// }
+// h1, h1.banner-h1 {
+//     font-size: 13px;
+// }

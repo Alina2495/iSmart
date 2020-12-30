@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iSmart</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- bootstrap 5 css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -47,7 +51,7 @@
                     <div class="search">Поиск</div>
                     <div class="account">Войти</div>
                     <div class="text-end">
-                        <a class="tel" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
+                        <a class="tel d-block" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
                         <a href="" class="c-3">заказать звонок</a>
                     </div>
                 </div>
@@ -63,7 +67,7 @@
 
             <p class="banner-p">уже в наличии</p>
             <div class="banner-links">
-                <button class="purple">Купить</button>
+                <button class="purple" type="button">Купить</button>
                 <a class="c-5" href="">Подробнее</a>
             </div>
             <img src="images/img/banner-img-1.png" alt="">
@@ -74,7 +78,7 @@
     <!-- menu -->
     <section class="nav-2 c-6 mb-100">
         <div class="container container-big">
-            <ul>
+            <ul class="d-flex flex-wrap">
                 <li>
                     <a href="" class="a-iphone">Iphone 12 pro</a>
                 </li>
@@ -137,6 +141,7 @@
                     <input type="checkbox">В корзину
                 </div>
             </a>
+            <button class="purple mx-auto" type="button">Показать еще</button>
         </div>
     </section>
     <!-- cataloge -->
@@ -147,7 +152,7 @@
             <h1 class="banner-h1">MacBook Air</h1>
             <p class="banner-p">от 84 990 ₽</p>
             <div class="banner-links">
-                <button class="purple">Купить</button>
+                <button class="purple" type="button">Купить</button>
                 <a class="c-5" href="">Подробнее</a>
             </div>
             <img src="images/img/banner-img-2.png" alt="">
@@ -156,7 +161,7 @@
             <h1 class="banner-h1">AirPods Pro</h1>
             <p class="banner-p">от 18 490 ₽</p>
             <div class="banner-links">
-                <button class="purple">Купить</button>
+                <button class="purple" type="button">Купить</button>
                 <a class="c-3" href="">Подробнее</a>
             </div>
             <img src="images/img/banner-img-3.png" alt="">
@@ -173,7 +178,7 @@
                     <p class="mb-40">
                         Фирменный магазин оригинальной техники Apple в Казани. У нас вы можете купить технику Apple по низким ценам и с официальной гарантией. Более 200 товаров представлено на любой вкус и кошелёк! А так же выгодные программы: Trade-IN с выгодой до 50 000 рублей,
                         рассрочка без процентов и переплат, подарки к каждой покупке и многое другое!</p>
-                    <button class="purple">Узнать больше</button>
+                    <a class="purple" href="about.html">Узнать больше</a>
                 </div>
                 <div class="col-lg-7">
                     <img class="img" src="images/img/about.jpg" alt="Фото магазина iSmart">
@@ -321,12 +326,12 @@
                     <p>Ежедневно с&#160;10:00 до&#160;22:00</p>
                 </div>
                 <div class="col-lg-3 text-end">
-                    <button>Задать вопрос</button>
+                    <button type="button">Задать вопрос</button>
                 </div>
             </div>
         </div>
         <div class="contacts-map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a7a69baf7436024a5ea0412887444dcb3077afbb02432c346088a81a75e590e&amp;source=constructor" width="100%" height="580" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a7a69baf7436024a5ea0412887444dcb3077afbb02432c346088a81a75e590e&amp;source=constructor" width="100%" height="200" frameborder="0"></iframe>
             <!-- map height 580 -->
         </div>
     </section>
