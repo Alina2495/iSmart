@@ -15,7 +15,7 @@ h1 {
   color: #0C2146;
   margin-bottom: 40px;
 }
-h1.h1-banner {
+h1.banner-h1 {
   font-weight: bold;
   font-size: 64px;
   line-height: 140%;
@@ -31,7 +31,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
-a.c-3 {
+a.c-3,
+a.c-5 {
   padding-right: 40px;
   background-color: transparent;
   background-position: right center;
@@ -40,10 +41,18 @@ a.c-3 {
 a.all-see {
   background-image: url('../images/icons/arrow-r.svg');
 }
+a.c-5 {
+  background-image: url('../images/icons/arrow-r-w.svg');
+}
 p {
   font-size: 16px;
   line-height: 125%;
   margin: 0;
+}
+p.banner-p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 298%;
 }
 button {
   padding: 10px 30px;
@@ -117,8 +126,42 @@ section {
 .container {
   max-width: 1200px;
 }
+.container-big {
+  max-width: 1645px;
+}
+header .container-big {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .about .img {
   width: 100%;
+}
+.banner {
+  width: 1100px;
+  height: 600px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-group {
+  display: flex;
+}
+.banner-links {
+  display: flex;
+  align-items: center;
+}
+.banner img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
+  right: 0;
+}
+.banner-2 {
+  width: 854px;
 }
 .advantages .col-lg-3 {
   margin-bottom: 20px;
