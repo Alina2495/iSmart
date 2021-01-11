@@ -1,10 +1,10 @@
 * {
     background-repeat: no-repeat;
     object-fit: cover;
-    transition-duration: 0.2s;
-    transition-delay: 0s;
-    transition-timing-function: linear;
-    transform-origin: center;
+    // transition-duration: 0.2s;
+    // transition-delay: 0s;
+    // transition-timing-function: linear;
+    // transform-origin: center;
 }
 html {
     scroll-behavior: smooth;
@@ -230,6 +230,7 @@ section {
         .all-see {
             padding-right: 30px;
             white-space: nowrap;
+            font-size: 14px;
         }
     }
 }
@@ -392,6 +393,8 @@ header {
         flex-direction: column;
     }
     &-text {
+        display: flex;
+        flex-direction: column;
         z-index: 4;
     }
     &-group {
@@ -814,7 +817,7 @@ a[href='#top'] {
         font-size: 0;
     }
     .banner {
-        padding: 50px 0;
+        padding: 100px 0;
         height: auto;
         width: 100%;
         .container {
@@ -822,6 +825,8 @@ a[href='#top'] {
         }
         &-text {
             text-align: center;
+            align-items: center;
+            margin: 0 auto;
         }
         h1.banner-h1 {
             font-size: 42px;
@@ -834,7 +839,7 @@ a[href='#top'] {
         &-group {
             flex-wrap: wrap;
             .banner {
-                padding: 15px;
+                padding: 50px 0;
                 height: auto;
             }
         }
@@ -859,10 +864,26 @@ a[href='#top'] {
     .cataloge-cat-list {
         flex-wrap: nowrap;
         overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     .cataloge-cat-list li a { 
         font-size: 18px;
-        padding: 20px 10px;
+        padding: 8px 10px 20px 10px;
+    }
+    .product-group {
+        justify-content: start;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        .product-preview:hover {
+            box-shadow: none;
+        }
+    }
+    .news-group, .comments-group {
+        justify-content: start;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
     .mb-100 {
         margin-bottom: 70px;
@@ -954,4 +975,8 @@ img {
 }
 .img {
     z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+    
 }

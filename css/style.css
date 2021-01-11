@@ -1,10 +1,6 @@
 * {
   background-repeat: no-repeat;
   object-fit: cover;
-  transition-duration: 0.2s;
-  transition-delay: 0s;
-  transition-timing-function: linear;
-  transform-origin: center;
 }
 html {
   scroll-behavior: smooth;
@@ -201,6 +197,7 @@ section .section-title h1 {
 section .section-title .all-see {
   padding-right: 30px;
   white-space: nowrap;
+  font-size: 14px;
 }
 .container {
   max-width: 1200px;
@@ -358,6 +355,8 @@ header a.c-3 {
   flex-direction: column;
 }
 .banner-text {
+  display: flex;
+  flex-direction: column;
   z-index: 4;
 }
 .banner-group {
@@ -756,7 +755,7 @@ a[href='#top']:hover {
     font-size: 0;
   }
   .banner {
-    padding: 50px 0;
+    padding: 100px 0;
     height: auto;
     width: 100%;
   }
@@ -765,6 +764,8 @@ a[href='#top']:hover {
   }
   .banner-text {
     text-align: center;
+    align-items: center;
+    margin: 0 auto;
   }
   .banner h1.banner-h1 {
     font-size: 42px;
@@ -778,7 +779,7 @@ a[href='#top']:hover {
     flex-wrap: wrap;
   }
   .banner-group .banner {
-    padding: 15px;
+    padding: 50px 0;
     height: auto;
   }
   .nav-2 {
@@ -801,10 +802,27 @@ a[href='#top']:hover {
   .cataloge-cat-list {
     flex-wrap: nowrap;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   .cataloge-cat-list li a {
     font-size: 18px;
-    padding: 20px 10px;
+    padding: 8px 10px 20px 10px;
+  }
+  .product-group {
+    justify-content: start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .product-group .product-preview:hover {
+    box-shadow: none;
+  }
+  .news-group,
+  .comments-group {
+    justify-content: start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
   }
   .mb-100 {
     margin-bottom: 70px;
