@@ -53,7 +53,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="info-buyer.html">Покупателю</a>
+                            <a class="nav-link" aria-current="page" href="info-buyer.html">Покупателю</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">Новости</a>
@@ -106,7 +106,7 @@
                 <span class="badge">12</span>
             </button>
             <button class="compare" title="Сравнение">
-                <span class="badge">0</span>
+                <span class="badge">4</span>
             </button>
         </div>
     </section>
@@ -160,141 +160,398 @@
     <!-- cataloge -->
     <section class="cataloge mb-100">
         <div class="container">
+
             <div class="section-title">
                 <h1>Каталог</h1>
                 <a href="news.html" class="c-3 all-see">Смотреть все</a>
             </div>
 
-            <div class="product-group">
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product.png">
-                        <div class="sale">- 100 % </div>
-                        <input type="checkbox" class="wish">
-                        <div class="name">Apple iPhone 11 64GB</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                        <div class="product-footer">
-                            <div>
-                                <del>65 000 ₽</del>
-                                <div class="price">53 000 ₽</div>
-                            </div>
-                            <button class="purple">В корзину</button>
+            <ul class="nav cataloge-cat-list mb-40" id="myTab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="smartphones-tab" data-toggle="tab" href="#smartphones" role="tab" aria-controls="smartphones" aria-selected="true">Смартфоны</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tablets-tab" data-toggle="tab" href="#tablets" role="tab" aria-controls="tablets" aria-selected="false">Планшеты</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="computers-tab" data-toggle="tab" href="#computers" role="tab" aria-controls="computers" aria-selected="false">Компьютеры</a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="accessories-tab" data-toggle="tab" href="#accessories" role="tab" aria-controls="accessories" aria-selected="false">Аксессуары</a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="smartphones" role="tabpanel" aria-labelledby="smartphones-tab">
+                    <!-- smartphones  -->
+                    <div class="product-group smartphones">
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product.png">
+                                <div class="sale">- 100 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>65 000 ₽</del>
+                                        <div class="price">53 000 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product-2.png">
-                        <!-- <div class="sale">- 10 % </div> -->
-                        <input type="checkbox" class="wish">
-                        <div class="name">Apple iPhone 11 Pro 64GB</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                        <div class="product-footer">
-                            <div>
-                                <!-- <del>65 000 ₽</del> -->
-                                <div class="price">88 990 ₽</div>
-                            </div>
-                            <button>В корзину</button>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product-2.png">
+                                <!-- <div class="sale">- 10 % </div> -->
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <!-- <del>65 000 ₽</del> -->
+                                        <div class="price">88 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product.png">
-                        <div class="sale">- 25 % </div>
-                        <input type="checkbox" class="wish">
-                        <div class="name">Apple iPhone 11 Pro 64GB</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
-                        <div class="product-footer">
-                            <div>
-                                <del>75 000 ₽</del>
-                                <div class="price">44 990 ₽</div>
-                            </div>
-                            <button>В корзину</button>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product.png">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product-2.png">
-                        <div class="sale">- 25 % </div>
-                        <input type="checkbox" class="wish">
-                        <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                        <div class="product-footer">
-                            <div>
-                                <del>75 000 ₽</del>
-                                <div class="price">44 990 ₽</div>
-                            </div>
-                            <button>В корзину</button>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product-2.png">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product-2.png">
-                        <!-- <div class="sale">- 10 % </div> -->
-                        <input type="checkbox" class="wish">
-                        <div class="name">Apple iPhone 11 Pro 64GB</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                        <div class="product-footer">
-                            <div>
-                                <!-- <del>65 000 ₽</del> -->
-                                <div class="price">88 990 ₽</div>
-                            </div>
-                            <button>В корзину</button>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product-2.png">
+                                <!-- <div class="sale">- 10 % </div> -->
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <!-- <del>65 000 ₽</del> -->
+                                        <div class="price">88 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product.png">
-                        <div class="sale">- 25 % </div>
-                        <input type="checkbox" class="wish">
-                        <div class="name">Apple iPhone 11 Pro 64GB</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
-                        <div class="product-footer">
-                            <div>
-                                <del>75 000 ₽</del>
-                                <div class="price">44 990 ₽</div>
-                            </div>
-                            <button>В корзину</button>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product.png">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product-2.png">
-                        <div class="sale">- 25 % </div>
-                        <input type="checkbox" class="wish">
-                        <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                        <div class="product-footer">
-                            <div>
-                                <del>75 000 ₽</del>
-                                <div class="price">44 990 ₽</div>
-                            </div>
-                            <button>В корзину</button>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product-2.png">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3">
-                    <a class="product-preview">
-                        <img class="img" src="images/img/product.png">
-                        <div class="sale">- 100 % </div>
-                        <button class="wish" title="Добавить в избранное"></button>
-                        <div class="name">Apple iPhone 11 64GB</div>
-                        <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                        <div class="product-footer">
-                            <div>
-                                <del>65 000 ₽</del>
-                                <div class="price">53 000 ₽</div>
-                            </div>
-                            <button>В корзину</button>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/product.png">
+                                <div class="sale">- 100 % </div>
+                                <button class="wish" title="Добавить в избранное"></button>
+                                <div class="name">Apple iPhone 11 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>65 000 ₽</del>
+                                        <div class="price">53 000 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
+                    <!-- smartphones -->
                 </div>
+
+                <div class="tab-pane fade" id="tablets" role="tabpanel" aria-labelledby="tablets-tab">
+                    <!-- tablets  -->
+                    <div class="product-group tablets">
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/tablet.jpg">
+                                <div class="sale">- 100 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>65 000 ₽</del>
+                                        <div class="price">53 000 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/tablet-2.jpg">
+                                <!-- <div class="sale">- 10 % </div> -->
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <!-- <del>65 000 ₽</del> -->
+                                        <div class="price">88 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/tablet.jpg">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/tablet-2.jpg">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- tablets -->
+                </div>
+
+                <div class="tab-pane fade" id="computers" role="tabpanel" aria-labelledby="computers-tab">
+                    <!-- computers  -->
+                    <div class="product-group computers">
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/computer.jpg">
+                                <div class="sale">- 100 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>65 000 ₽</del>
+                                        <div class="price">53 000 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/computer-2.jpg">
+                                <!-- <div class="sale">- 10 % </div> -->
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <!-- <del>65 000 ₽</del> -->
+                                        <div class="price">88 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/computer.jpg">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/computer-2.jpg">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- computers -->
+                </div>
+
+                <div class="tab-pane fade" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
+                    <!-- accessories  -->
+                    <div class="product-group accessories">
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/accs.jpg">
+                                <div class="sale">- 100 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>65 000 ₽</del>
+                                        <div class="price">53 000 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/accs-2.jpg">
+                                <!-- <div class="sale">- 10 % </div> -->
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <!-- <del>65 000 ₽</del> -->
+                                        <div class="price">88 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/accs.jpg">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="product-preview">
+                                <img class="img" src="images/img/accs-2.jpg">
+                                <div class="sale">- 25 % </div>
+                                <input type="checkbox" class="wish">
+                                <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
+                                <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                <div class="product-footer">
+                                    <div>
+                                        <del>75 000 ₽</del>
+                                        <div class="price">44 990 ₽</div>
+                                    </div>
+                                    <button class="purple-border">В корзину</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- accessories -->
+                </div>
+
             </div>
+
+            <!-- <div class="setting-bar mb-40">
+                <ul class="cataloge-cat-list" id="myTab" role="tablist">
+                    <li class="active">Смартфоны</li>
+                    <li>Планшеты</li>
+                    <li>Компьютеры</li>
+                    <li>Аксессуары</li>
+                </ul>
+            </div> -->
+
+
+
+
+
+
             <!-- product group -->
             <button class="purple mx-auto d-block" type="button">Показать еще</button>
         </div>

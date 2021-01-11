@@ -270,10 +270,18 @@ header {
     .dropdown-toggle::after {
         display: none;
     }
+    .navbar-expand-lg {
+        align-items: flex-start;
+    }
     .navbar-expand-lg .navbar-nav .nav-link {
         padding: 0;
         margin-right: 50px;
-}
+    }
+    .navbar-expand-lg .navbar-nav
+    .nav-link.dropdown-toggle {
+        padding-left: 35px;
+        background-image: url('../images/icons/menu.svg');
+    }
     .navbar-nav .nav-link.active {
         color: #6839CF;
     }
@@ -285,7 +293,7 @@ header {
         font-style: normal;
         font-weight: 500;
         font-size: 28px;
-        line-height: 36px;
+        line-height: 25px;
         color: #0C2146;
         margin-right: 33px;
     }
@@ -521,6 +529,20 @@ header {
         
     }
 }
+
+.cataloge-cat-list {
+    display: flex;
+    justify-content: flex-start;
+    li a {
+        border-bottom: 2px solid #9696A0;
+        padding: 8px 35px 35px 35px;
+        font-size: 18px;
+    }
+    li a.active {
+        border-bottom: 4px solid #6839CF;
+    }
+}
+
 .product-group {
     display: flex;
     flex-wrap: wrap;
@@ -589,6 +611,11 @@ header {
     .img {
         text-align: center;
         margin: 0 auto 20px auto;
+        width: 190px;
+        height: 260px;
+        object-fit: scale-down;
+        object-position: center;
+        overflow: hidden;
     }
     .name {
         font-weight: bold;
@@ -634,7 +661,19 @@ header {
         transition-timing-function: linear;
         transform-origin: center;
     }
-    
+}
+.product-group {
+    &.tablets, &.computers {
+        img {
+            width: 240px;
+            height: 240px;
+        }
+    }
+    &.accessories {
+        img {
+            width: 150px;
+        }
+    }
 }
 
 // advantages block
@@ -804,6 +843,7 @@ a[href='#top'] {
         margin-bottom: 70px;
     }
 
+    // news block
     .news {
         &-group &-preview {
             margin-bottom: 45px;
@@ -816,6 +856,7 @@ a[href='#top'] {
         }
     }
 
+    // about block
     .about {
         text-align: center;
         .row {
@@ -829,10 +870,15 @@ a[href='#top'] {
         }
     }
 
+    // advantages block
     .advantages .col-lg-3 {
         margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
+    // contacts block
     .contacts {
         &-info {
             text-align: center;
@@ -844,6 +890,8 @@ a[href='#top'] {
             height: 220px;
         }
     }
+
+    // footer
     footer {
         text-align: center;
     }
