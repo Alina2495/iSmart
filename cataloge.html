@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" id="top">
+<html lang="ru" id="top" class="position-relative">
 
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,18 @@
 
 <body class="bg-3">
     <!-- header -->
+    <!-- widget -->
+    <div class="widgets bg-7">
+        <button class="basket" title="Корзина">
+            <span class="badge">20</span>
+        </button>
+        <button class="fav" title="Фавориты">
+            <span class="badge">12</span>
+        </button>
+        <button class="compare" title="Сравнение">
+            <span class="badge">18</span>
+        </button>
+    </div>
     <header class="c-1">
         <div class="container container-big">
             <nav class="navbar navbar-expand-lg">
@@ -81,7 +93,7 @@
     <!-- header -->
 
     <!-- menu -->
-    <section class="nav-2 c-6 mb-40">
+    <section class="nav-2 c-6 mb-40 fs-14">
         <div class="container container-big">
             <ul class="d-flex flex-wrap">
                 <li>
@@ -125,7 +137,7 @@
     </section>
     <!-- menu -->
 
-    <section>
+    <section class="mb-30 c-6 fs-14">
         <div class="container container-big">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -137,32 +149,183 @@
     </section>
 
 
-    <section class="mb-100">
+    <section class="mb-70">
         <div class="container">
-            <h1>Каталог</h1>
+            <h1 class="mb-30">Каталог</h1>
             <div class="row">
-                <div class="accordion col-lg-3">
+                <div class="col-lg-3">
+
+                    <!-- iphone 1 -->
+                    <div class="list-block">
+                        <a data-toggle="collapse" href="#iPhoneList" role="button" aria-expanded="true" aria-controls="iPhoneList" class="active list-block-title fs-18 fw-5" title="Раскрыть список">
+                            <span class="cat-title-icon iphone"></span>
+                            <span class="cat-title-name">iPhone</span>
+                        </a>
+                        <ul class="cat-list collapse fs-16 c-9" id="iPhoneList">
+                            <li class="cat-item">
+                                <a href="#">iPhone 12</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Аккумуляторы</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для телефонов</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для планшетов</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ipad 2 -->
+                    <div class="list-block">
+                        <a data-toggle="collapse" href="#iPadList" role="button" aria-expanded="true" aria-controls="iPadList" class="list-block-title fs-18 fw-5" title="Раскрыть список">
+                            <span class="cat-title-icon ipad"></span>
+                            <span class="cat-title-name">iPad</span>
+                        </a>
+                        <ul class="cat-list collapse" id="iPadList">
+                            <li class="cat-item">
+                                <a href="#">Зарядные устройства</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Аккумуляторы</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для телефонов</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для планшетов</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- macbook 3 -->
+                    <div class="list-block">
+                        <a data-toggle="collapse" href="#macbookList" role="button" aria-expanded="true" aria-controls="macbookList" class="list-block-title fs-18 fw-5" title="Раскрыть список">
+                            <span class="cat-title-icon mac"></span>
+                            <span class="cat-title-name">Macbook</span>
+                        </a>
+                        <ul class="cat-list collapse" id="macbookList">
+                            <li class="cat-item">
+                                <a href="#">Ноутбук Macbook</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Аккумуляторы</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для телефонов</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для планшетов</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- airpods 4 -->
+                    <div class="list-block">
+                        <a data-toggle="collapse" href="#airPodsList" role="button" aria-expanded="true" aria-controls="airPodsList" class="list-block-title fs-18 fw-5" title="Раскрыть список">
+                            <span class="cat-title-icon airpods"></span>
+                            <span class="cat-title-name">AirPods</span>
+                        </a>
+                        <ul class="cat-list collapse" id="airPodsList">
+                            <li class="cat-item">
+                                <a href="#">Зарядные устройства</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Аккумуляторы</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для телефонов</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для планшетов</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- apple watch 5 -->
+                    <div class="list-block">
+                        <a data-toggle="collapse" href="#appleWatchList" role="button" aria-expanded="true" aria-controls="appleWatchList" class="list-block-title fs-18 fw-5" title="Раскрыть список">
+                            <span class="cat-title-icon watch"></span>
+                            <span class="cat-title-name">Apple Watch</span>
+                        </a>
+                        <ul class="cat-list collapse" id="appleWatchList">
+                            <li class="cat-item">
+                                <a href="#">Watch Series 6</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Watch SE</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для телефонов</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для планшетов</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- accessories 6 -->
+                    <div class="list-block">
+                        <a data-toggle="collapse" href="#accessoriesList" role="button" aria-expanded="true" aria-controls="accessoriesList" class="list-block-title fs-18 fw-5" title="Раскрыть список">
+                            <span class="cat-title-icon accse"></span>
+                            <span class="cat-title-name">Аксессуары</span>
+                        </a>
+                        <ul class="cat-list collapse" id="accessoriesList">
+                            <li class="cat-item">
+                                <a href="#">Зарядные устройства</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Аккумуляторы</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для телефонов</a>
+                            </li>
+                            <li class="cat-item">
+                                <a href="#">Чехлы для планшетов</a>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
-                <div class="col-lg-9">
-                    <ul>
-                        <li class="col-lg-6">
-                            <a href="">iPhone</a>
+
+                <!-- правая секция с мини карточками -->
+                <div class="col-lg-9 categ-mini-cards">
+                    <ul class="row fs-18 fw-5">
+                        <li class="col-lg-4">
+                            <a href="">
+                                <img src="images/img/iphone-cat.jpg" alt="">
+                                <span class="cat-title">iPhone</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="">iPad</a>
+                        <li class="col-lg-4">
+                            <a href="">
+                                <img src="images/img/ipad-cat.jpg" alt="">
+                                <span class="cat-title">iPad</span>
+                            </a>
+
                         </li>
-                        <li>
-                            <a href="">Macbook</a>
+                        <li class="col-lg-4">
+                            <a href="">
+                                <img src="images/img/macbook-cat.jpg" alt="">
+                                <span class="cat-title">Macbook</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="">AirPods</a>
+                        <li class="col-lg-4">
+                            <a href="">
+                                <img src="images/img/airpods-cat.jpg" alt="">
+                                <span class="cat-title">AirPods</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="">Apple Watch</a>
+                        <li class="col-lg-4">
+                            <a href=""><img src="images/img/apple-watch-cat.jpg" alt="">
+                                <span class="cat-title">Apple Watch</span>
+                            </a>
                         </li>
-                        <li>
-                            <a href="">Аксессуары</a>
+                        <li class="col-lg-4">
+                            <a href=""><img src="images/img/accse-cat.jpg" alt="">
+                                <span class="cat-title">Аксессуары</span>
+                            </a>
                         </li>
                     </ul>
                 </div>

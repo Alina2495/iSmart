@@ -1,10 +1,10 @@
 * {
     background-repeat: no-repeat;
     object-fit: cover;
-    // transition-duration: 0.2s;
-    // transition-delay: 0s;
-    // transition-timing-function: linear;
-    // transform-origin: center;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    transform-origin: center;
 }
 html {
     scroll-behavior: smooth;
@@ -118,11 +118,17 @@ p {
     &-20 {
         margin-bottom: 20px;
     }
+    &-30 {
+        margin-bottom: 30px;
+    }
     &-40 {
         margin-bottom: 40px;
     }
     &-65 {
         margin-bottom: 65px;
+    }
+    &-70 {
+        margin-bottom: 70px;
     }
     &-80 {
         margin-bottom: 80px;
@@ -192,6 +198,9 @@ p {
 }
 // font sizes 
 .fs {
+    &-14 {
+        font-size: 14px;
+    }
     &-18 {
         font-size: 18px;
     }
@@ -268,7 +277,6 @@ header {
     background-color: white;
     .container-big {
         padding-top: 20px;
-        padding-bottom: 5px;
         .row {
             display: flex;
             align-items: end;
@@ -452,47 +460,50 @@ header {
             transform: translateY(0);
         }
     }
-    .widgets {
-        z-index: 5;
-        border-radius: 6px 0 0 6px;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        button {
-            position: relative;
-            background-color: transparent;
-            display: block;
-            width: 62px;
-            height: 62px;
-            border: none;
-            border-top: 1px solid #595959;
-            background-position: 15px center;
-            &:first-child {
-                border-top: none;
-            }
-            &.basket {
-                background-image: url('../images/icons/basket-w.svg');
-            }
-            &.fav {
-                background-image: url('../images/icons/favorite-w.svg');
-            }
-            &.compare {
-                background-image: url('../images/icons/compare-w.svg');
-            }
-            .badge {
-                position: absolute;
-                font-size: 12px;
-                background-color: #6839CF;
-                border-radius: 50%;
-                padding: 5px;
-                min-width: 18px;
-                top: 10px;
-                right: 10px;
-            }
+    
+}
+
+.widgets {
+    z-index: 5;
+    border-radius: 6px 0 0 6px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    button {
+        position: relative;
+        background-color: transparent;
+        display: block;
+        width: 62px;
+        height: 62px;
+        border: none;
+        border-top: 1px solid #595959;
+        background-position: 15px center;
+        &:first-child {
+            border-top: none;
+        }
+        &.basket {
+            background-image: url('../images/icons/basket-w.svg');
+        }
+        &.fav {
+            background-image: url('../images/icons/favorite-w.svg');
+        }
+        &.compare {
+            background-image: url('../images/icons/compare-w.svg');
+        }
+        .badge {
+            position: absolute;
+            font-size: 12px;
+            background-color: #6839CF;
+            border-radius: 50%;
+            padding: 5px;
+            min-width: 18px;
+            top: 10px;
+            right: 10px;
         }
     }
 }
+
 .nav-2 {
     background-color: #FFFFFF;
     box-shadow: inset 0px -1px 0px #E5E5E5, inset -1px 1px 0px #E5E5E5;
@@ -503,7 +514,6 @@ header {
     }
     a {
         display: block;
-        font-size: 14px;
         padding-top: 50px;
         background-image: url('../images/img/nav-item.svg');
         background-position: top center;
@@ -832,11 +842,32 @@ a[href='#top'] {
                 padding: 15px 5px;
                 margin-bottom: 0;
                 a {
+                    padding-top: 60px;
                     background-size: auto 55px;
                 }
             }
         }
     }
+
+    .widgets {
+        border-radius: 6px 6px 0 0;
+        position: fixed;
+        width: 100%;
+        top: unset;
+        bottom: 0 !important;
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            border: none;
+            border-left: 1px solid #595959;
+            &:last-child {
+                border-right: 1px solid #595959;
+            }
+        }
+    }
+
     .cataloge-cat-list {
         flex-wrap: nowrap;
         overflow-x: scroll;
@@ -963,7 +994,7 @@ img {
         -webkit-overflow-scrolling: touch;
     }
 
-        // about block
+    // about block
     .about {
         text-align: center;
         .row {
@@ -977,9 +1008,10 @@ img {
         }
     }
 
-    // footer
+    // подвал
     footer {
         text-align: center;
+        margin-bottom: 60px;
     }
     a[href="#top"] {
         right: 15px;
@@ -987,11 +1019,108 @@ img {
     }
 }
 
+// хлебные крошки
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    &-item.active {
+        color: #9696A0;
+    }
+    &-item+.breadcrumb-item {
+        padding-left: 7px;
+        &::before {
+            padding-right: 7px;
+            color: #9696A0;
+            content: "-";
+        }
+    }
+}
+
+// каталог раскывающийся список слева
+.list-block {
+    border: 1px solid #EFEFEF;
+    margin-bottom: -1px;
+    width: 95%;
+    &-title {
+        display: flex;
+        align-items: flex-end;
+        padding: 16px 20px 17px 24px;
+        background-position: right center;
+        background-origin: content-box;
+        background-image: url('../images/icons/expand_more.svg');
+        &.active {
+            background-image: url('../images/icons/expand_more2.svg');
+        }
+        .cat-title-icon {
+            width: 30px;
+            height: 25px;
+            display: block;
+            margin-right: 20px;
+            background-size: contain;
+            background-position: center;
+            &.iphone {
+                background-image: url('../images/icons/iphone-icon.svg');
+            }
+            &.ipad {
+                background-image: url('../images/icons/ipad-icon.svg');
+            }
+            &.mac {
+                background-image: url('../images/icons/mac-icon.svg');
+            }
+            &.airpods {
+                background-image: url('../images/icons/airpods-icon.svg');
+            }
+            &.watch {
+                background-image: url('../images/icons/apple-watch-icon.svg');
+            }
+            &.accse {
+                background-image: url('../images/icons/accse-icon.svg');
+            }
+        }
+    }
+    .cat-list {
+        padding-bottom: 15px;
+        li {
+            width: 100%;
+        }
+        a {
+            display: block;
+            padding: 8px 25px;
+            &:hover {
+                background-color: #f8f8f8;
+            }
+        }
+    }
+}
+
+// каталог мини карточки категорий
+.categ-mini-cards {
+    li {
+        margin-bottom: 30px;
+        a {
+            display: block;
+            background-color: white;
+            border: 1px solid #EFEFEF;
+            text-align: center;
+            img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+            }
+            span {
+                display: block;
+                padding: 16px 0;
+            }
+        }
+    }
+}
+
+// список преимуществ
 .advantages-list {
     flex-direction: column;
     li {
         font-size: 18px;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
         padding-left: 30px;
         position: relative;
         &::before {

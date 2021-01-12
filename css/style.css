@@ -1,6 +1,10 @@
 * {
   background-repeat: no-repeat;
   object-fit: cover;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  transform-origin: center;
 }
 html {
   scroll-behavior: smooth;
@@ -105,11 +109,17 @@ p.banner-p {
 .mb-20 {
   margin-bottom: 20px;
 }
+.mb-30 {
+  margin-bottom: 30px;
+}
 .mb-40 {
   margin-bottom: 40px;
 }
 .mb-65 {
   margin-bottom: 65px;
+}
+.mb-70 {
+  margin-bottom: 70px;
 }
 .mb-80 {
   margin-bottom: 80px;
@@ -164,6 +174,9 @@ p.banner-p {
 }
 .fw-5 {
   font-weight: 500;
+}
+.fs-14 {
+  font-size: 14px;
 }
 .fs-18 {
   font-size: 18px;
@@ -233,7 +246,6 @@ header {
 }
 header .container-big {
   padding-top: 20px;
-  padding-bottom: 5px;
 }
 header .container-big .row {
   display: flex;
@@ -414,7 +426,7 @@ header a.c-3 {
   top: unset;
   transform: translateY(0);
 }
-.banner .widgets {
+.widgets {
   z-index: 5;
   border-radius: 6px 0 0 6px;
   position: absolute;
@@ -422,7 +434,7 @@ header a.c-3 {
   top: 50%;
   transform: translateY(-50%);
 }
-.banner .widgets button {
+.widgets button {
   position: relative;
   background-color: transparent;
   display: block;
@@ -432,19 +444,19 @@ header a.c-3 {
   border-top: 1px solid #595959;
   background-position: 15px center;
 }
-.banner .widgets button:first-child {
+.widgets button:first-child {
   border-top: none;
 }
-.banner .widgets button.basket {
+.widgets button.basket {
   background-image: url('../images/icons/basket-w.svg');
 }
-.banner .widgets button.fav {
+.widgets button.fav {
   background-image: url('../images/icons/favorite-w.svg');
 }
-.banner .widgets button.compare {
+.widgets button.compare {
   background-image: url('../images/icons/compare-w.svg');
 }
-.banner .widgets button .badge {
+.widgets button .badge {
   position: absolute;
   font-size: 12px;
   background-color: #6839CF;
@@ -465,7 +477,6 @@ header a.c-3 {
 }
 .nav-2 a {
   display: block;
-  font-size: 14px;
   padding-top: 50px;
   background-image: url('../images/img/nav-item.svg');
   background-position: top center;
@@ -773,7 +784,26 @@ a[href='#top']:hover {
     margin-bottom: 0;
   }
   .nav-2 ul li a {
+    padding-top: 60px;
     background-size: auto 55px;
+  }
+  .widgets {
+    border-radius: 6px 6px 0 0;
+    position: fixed;
+    width: 100%;
+    top: unset;
+    bottom: 0 !important;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .widgets button {
+    border: none;
+    border-left: 1px solid #595959;
+  }
+  .widgets button:last-child {
+    border-right: 1px solid #595959;
   }
   .cataloge-cat-list {
     flex-wrap: nowrap;
@@ -900,18 +930,107 @@ img {
   }
   footer {
     text-align: center;
+    margin-bottom: 60px;
   }
   a[href="#top"] {
     right: 15px;
     bottom: 15px;
   }
 }
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+}
+.breadcrumb-item.active {
+  color: #9696A0;
+}
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 7px;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 7px;
+  color: #9696A0;
+  content: "-";
+}
+.list-block {
+  border: 1px solid #EFEFEF;
+  margin-bottom: -1px;
+  width: 95%;
+}
+.list-block-title {
+  display: flex;
+  align-items: flex-end;
+  padding: 16px 20px 17px 24px;
+  background-position: right center;
+  background-origin: content-box;
+  background-image: url('../images/icons/expand_more.svg');
+}
+.list-block-title.active {
+  background-image: url('../images/icons/expand_more2.svg');
+}
+.list-block-title .cat-title-icon {
+  width: 30px;
+  height: 25px;
+  display: block;
+  margin-right: 20px;
+  background-size: contain;
+  background-position: center;
+}
+.list-block-title .cat-title-icon.iphone {
+  background-image: url('../images/icons/iphone-icon.svg');
+}
+.list-block-title .cat-title-icon.ipad {
+  background-image: url('../images/icons/ipad-icon.svg');
+}
+.list-block-title .cat-title-icon.mac {
+  background-image: url('../images/icons/mac-icon.svg');
+}
+.list-block-title .cat-title-icon.airpods {
+  background-image: url('../images/icons/airpods-icon.svg');
+}
+.list-block-title .cat-title-icon.watch {
+  background-image: url('../images/icons/apple-watch-icon.svg');
+}
+.list-block-title .cat-title-icon.accse {
+  background-image: url('../images/icons/accse-icon.svg');
+}
+.list-block .cat-list {
+  padding-bottom: 15px;
+}
+.list-block .cat-list li {
+  width: 100%;
+}
+.list-block .cat-list a {
+  display: block;
+  padding: 8px 25px;
+}
+.list-block .cat-list a:hover {
+  background-color: #f8f8f8;
+}
+.categ-mini-cards li {
+  margin-bottom: 30px;
+}
+.categ-mini-cards li a {
+  display: block;
+  background-color: white;
+  border: 1px solid #EFEFEF;
+  text-align: center;
+}
+.categ-mini-cards li a img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.categ-mini-cards li a span {
+  display: block;
+  padding: 16px 0;
+}
 .advantages-list {
   flex-direction: column;
 }
 .advantages-list li {
   font-size: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   padding-left: 30px;
   position: relative;
 }
