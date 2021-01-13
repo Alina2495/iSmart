@@ -27,8 +27,9 @@
 
                 <a class="navbar-brand p-0" title="На главную страницу">iSmart</a>
                 <a class="search ml-auto d-lg-none">Поиск</a>
+                <a class="account mx-3 fw-5">Войти</a>
 
-                <a class="basket mx-3 d-lg-none">Корзина</a>
+                <!-- <a class="basket d-lg-none">Корзина</a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -81,11 +82,11 @@
     <!-- header -->
 
     <!-- one banner -->
-    <section class="banner banner-big bg-1 c-5  mt-80">
-        <div class="container container-big position-relative">
+    <section class=" bg-1 c-5 mt-80 d-none">
+        <div class="banner-big banner container container-big position-relative">
             <!-- banner text -->
             <div class="banner-text">
-                <h1 class="banner-h1 mb-16">iPhone 12 Pro</h1>
+                <h1 class="banner-h1 mb-16">Монитор Pro Display XDR</h1>
                 <p class="banner-p mb-65">уже в наличии</p>
                 <div class="banner-links">
                     <button class="purple" type="button">Купить</button>
@@ -111,6 +112,33 @@
         </div>
     </section>
     <!-- one banner -->
+
+    <!-- two banners -->
+    <section class="banner-group mb-100 d-none">
+        <section class="banner bg-1 c-5">
+            <div class="banner-text">
+                <h1 class="banner-h1">MacBook Air</h1>
+                <p class="banner-p mb-40">от 84 990 ₽</p>
+                <div class="banner-links">
+                    <button class="purple" type="button">Купить</button>
+                    <a class="c-5" href="">Подробнее</a>
+                </div>
+            </div>
+            <img class="banner-img" src="images/img/banner-img-2.png" alt="">
+        </section>
+        <section class="banner banner-2 bg-2 c-1">
+            <div class="banner-text">
+                <h1 class="banner-h1">AirPods Pro</h1>
+                <p class="banner-p mb-40">от 18 490 ₽</p>
+                <div class="banner-links">
+                    <button class="purple" type="button">Купить</button>
+                    <a class="c-3" href="">Подробнее</a>
+                </div>
+            </div>
+            <img src="images/img/banner-img-3.jpg" alt="">
+        </section>
+    </section>
+    <!-- two banners -->
 
     <!-- menu -->
     <section class="nav-2 c-6 mb-100 fs-14">
@@ -163,7 +191,7 @@
 
             <div class="section-title">
                 <h1>Каталог</h1>
-                <a href="news.html" class="c-3 all-see">Смотреть все</a>
+                <a href="cataloge.html" class="c-3 see-all">Смотреть все</a>
             </div>
 
             <ul class="nav cataloge-cat-list mb-40 c-8" id="myTab" role="tablist">
@@ -500,38 +528,13 @@
     </section>
     <!-- cataloge -->
 
-    <!-- two banners -->
-    <section class="banner-group mb-100">
-        <section class="banner bg-1 c-5">
-            <div class="banner-text">
-                <h1 class="banner-h1">MacBook Air</h1>
-                <p class="banner-p mb-40">от 84 990 ₽</p>
-                <div class="banner-links">
-                    <button class="purple" type="button">Купить</button>
-                    <a class="c-5" href="">Подробнее</a>
-                </div>
-            </div>
-            <img class="banner-img" src="images/img/banner-img-2.png" alt="">
-        </section>
-        <section class="banner banner-2 bg-2 c-1">
-            <div class="banner-text">
-                <h1 class="banner-h1">AirPods Pro</h1>
-                <p class="banner-p mb-40">от 18 490 ₽</p>
-                <div class="banner-links">
-                    <button class="purple" type="button">Купить</button>
-                    <a class="c-3" href="">Подробнее</a>
-                </div>
-            </div>
-            <img src="images/img/banner-img-3.jpg" alt="">
-        </section>
-    </section>
-    <!-- two banners -->
+
 
     <!-- about -->
     <section class="about mb-80">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 mb-20">
                     <h1>О компании</h1>
                     <p class="mb-40 fs-18 lh-2 c-2">
                         Фирменный магазин оригинальной техники Apple в Казани. У нас вы можете купить технику Apple по низким ценам и с официальной гарантией. Более 200 товаров представлено на любой вкус и кошелёк! А так же выгодные программы: Trade-IN с выгодой до 50 000 рублей,
@@ -550,19 +553,19 @@
     <section class="advantages mb-80 c-13">
         <div class="container">
             <div class="row advantages-group">
-                <div class="col-lg-3 advantage">
+                <div class="col-md-6 col-lg-3 advantage">
                     <h3>Быстрая доставка</h3>
                     <p>Бережно доставляем технику Apple по России 24/7</p>
                 </div>
-                <div class="col-lg-3 advantage-2">
+                <div class="col-md-6 col-lg-3 advantage-2">
                     <h3>Клиентский сервис</h3>
                     <p>Ответим на любой ваш вопрос немедленно и поможем сделать правильный выбор</p>
                 </div>
-                <div class="col-lg-3 advantage-3">
+                <div class="col-md-6 col-lg-3 advantage-3">
                     <h3>Бонусы за покупки</h3>
                     <p>Дарим кучу подарков к каждой покупке и скидки до 70% на всю технику Apple</p>
                 </div>
-                <div class="col-lg-3 advantage-4">
+                <div class="col-md-6 col-lg-3 advantage-4">
                     <h3>Гарантия качества</h3>
                     <p>Даём официальную гарантию на все товары до 2-х лет</p>
                 </div>
@@ -657,7 +660,9 @@
             <div class="row news-group c-2">
                 <!-- new -->
                 <div class="col-sm-6 col-lg-3 news-preview">
-                    <img class="img" src="images/img/news.jpg" alt="Новость №1">
+                    <div>
+                        <img class="img" src="images/img/news.jpg" alt="Новость №1">
+                    </div>
                     <p class="text ">В наличии iPhone по самым выгодным ценам! Только оригинальная продукция Apple!</p>
                     <a class="c-3" href="news.html">Читать</a>
                 </div>
@@ -712,7 +717,7 @@
             </div>
         </div>
         <!-- contacts map -->
-        <div class="contacts-map bg-4">
+        <div class="contacts-map bg-4 d-none">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A04b056c176ce5831871967245206d3f4c037722ab7cb63a5e820c3414fa11028&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
             <!-- map height 580 -->
         </div>
@@ -723,11 +728,13 @@
     <footer class="bg-1 c-5">
         <div class="container">
             <div class="row justify-content-lg-between">
-                <div class="col-lg-3">
+
+                <div class="col-lg-4 col-xl-3 mb-3">
                     <address class="mb-14">2020&#160;&#64;iSmart</address>
                     <a href="#">Политика конфиденциальности</a>
                 </div>
-                <div class="col-lg-3 text-center text-lg-left">
+
+                <div class="col-lg-4 col-xl-3 text-lg-left">
                     <a class="mb-16 d-block" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
                     <p>Казань, ул. Рихарда&#160;Зорге 66, ТЦ&#160;Олимп&#160;3&#160;этаж</p>
                 </div>
