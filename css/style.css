@@ -270,6 +270,8 @@ section .section-title .all-see {
 ul {
   padding: 0;
   list-style: none;
+  margin: 0;
+  flex-wrap: wrap;
 }
 header {
   background-color: white;
@@ -335,6 +337,8 @@ header .navbar-light .navbar-toggler-icon {
 header .mobile-cat-list {
   padding: 15px 0;
   justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
 }
 header .mobile-cat-list li {
   margin: 10px 8px;
@@ -829,7 +833,7 @@ a[href='#top']:hover {
     font-size: 0;
   }
   .widgets {
-    border-radius: 6px 6px 0 0;
+    border-radius: 12px 12px 0 0;
     position: fixed;
     width: 100%;
     top: unset;
