@@ -842,6 +842,7 @@ img,
   margin-bottom: 30px;
 }
 .categ-mini-cards li a {
+  overflow: hidden;
   display: block;
   background-color: white;
   border: 1px solid #EFEFEF;
@@ -853,8 +854,14 @@ img,
   object-fit: cover;
 }
 .categ-mini-cards li a span {
+  border-top: 1px solid #EFEFEF;
   display: block;
   padding: 16px 0;
+}
+.categ-mini-cards li:hover img {
+  will-change: transform;
+  transform: perspective(1000px) translate3d(0, 0, 21px);
+  -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
 }
 .advantages-list {
   flex-direction: column;
@@ -900,6 +907,11 @@ img,
   .account,
   .search {
     font-size: 0;
+  }
+  .cataloge-menu {
+    border-radius: 0 0 6px 6px;
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.102));
+    padding: 50px 85px;
   }
   .widgets {
     border-radius: 12px 12px 0 0;
