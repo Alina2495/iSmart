@@ -21,6 +21,33 @@ body {
     font-size: 16px;
     font-weight: 300;
 }
+
+.purple, .purple-border {
+    white-space: nowrap;
+    background-color: #6839CF;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 35px;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.0075em;
+    &:hover {
+        background-color: #824df5;
+        color: white;
+    }
+}
+.purple-border {
+    background-color: transparent;
+    border: 1px solid #6839CF;
+    color: #6839CF;
+}
+img, .img {
+    z-index: 0;
+}
+
 .poppins {
     font-family: 'Poppins, sans-serif';
 }
@@ -191,6 +218,9 @@ p {
     }
     &-13 {
         color: black;
+    }
+    &-14 {
+        color: #3A3C3C;
     }
 }
 
@@ -770,35 +800,85 @@ header {
 // }
 
 /* comments block */
+.comments-group {
+    .col-sm-6 {
+        padding: 0 12.5px;
+    }
+}
 .comment {
     background-color: white;
     border: 1px solid #E2E4E8;
     border-radius: 10px;
-    padding: 30px;
-    &-top {
+    padding: 30px 30px 30px 27px;
+    &-header {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        .right {
+            display: flex;
+            flex-grow: 1;
+            align-items: flex-start;
+            .df {
+                max-width: 130px;
+            }
+        }
     }
     .img {
-        margin-right: 20px;
+        margin-right: 15px;
     }
     .name {
+        display: inline-block;
         font-size: 18px;
+        white-space: nowrap;
         line-height: 24px;
         margin-bottom: 3px;
         font-style: normal;
+        font-weight: bold;
+        max-width: 130px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .tel {
-        font-size: 14px;
+    .time {
+        font-size: 16px;
+        display: block;
+    }
+    .rating {
+        display: flex;
+        flex-wrap: nowrap;
+        align-self: flex-start;
+        margin-left: auto;
+
+        .star {
+            margin: 0 2px;
+            width: 18px;
+            height: 18px;
+            background-image: url('../images/icons/star.svg');
+            &-fill {
+                background-image: url('../images/icons/star-fill.svg');
+            }
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
     }
     .text {
         margin: 0;
+        color: #1D293F;
     }
-    @media screen and (max-width: 568px) {
+    @media screen and (max-width: 998px) {
         padding: 15px;
-        .img {
-            margin-right: 15px;
+        &-header {
+            margin-bottom: 15px;
+            .right {
+                flex-direction: column;
+                .rating {
+                    margin-top: 3px;
+                    margin-left: 0;
+                }
+            }
         }
     }
 }
@@ -834,14 +914,18 @@ header {
         .img-wr {
             border-radius: 4px 4px 0px 0px;
             overflow: hidden;
+            background-color: #F6F6FF;
+
+            height: 255px;
         }
         .img {
             will-change: transform;
             width: 100%;
-            height: 255px;
+            height: 100%;
         }
         .text {
             margin: 32px 0;
+            font-size: 20px;
         }
         
     }
@@ -871,6 +955,36 @@ header {
 footer {
     padding: 45px 0;
     position: relative;
+    .footer-form {
+        align-items: center;
+    }
+    .footer-bottom {
+        padding-top: 10px;
+        border-top: 1px solid #493B56;
+    }
+    .footernav {
+        margin-top: 35px;
+        margin-bottom: 55px;
+
+        &-heading {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 100%;
+            color: #9487A1;
+            margin-bottom: 25px;
+        }
+        &-item {
+            margin-bottom: 4px;
+        }
+    }
+    address {
+        text-transform: uppercase;
+        font-size: 15px;
+        margin: 0;
+        span {
+            margin-right: 17px;
+        }
+    }
     a[href='#top'] {
         display: block;
         position: absolute;
@@ -890,32 +1004,6 @@ footer {
 }
 /* footer */
 
-
-.purple, .purple-border {
-    white-space: nowrap;
-    background-color: #6839CF;
-    border-radius: 4px;
-    border: none;
-    padding: 10px 35px;
-    color: white;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: 0.0075em;
-    &:hover {
-        background-color: #824df5;
-        color: white;
-    }
-}
-.purple-border {
-    background-color: transparent;
-    border: 1px solid #6839CF;
-    color: #6839CF;
-}
-img, .img {
-    z-index: 0;
-}
 
 
 // хлебные крошки
@@ -1444,4 +1532,38 @@ ul {
     list-style: none;
     margin: 0;
     flex-wrap: wrap;
+}
+.df {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.fc {
+    flex-direction: column;
+}
+.ac {
+    align-items: center;
+}
+.aie {
+    align-items: flex-end;
+}
+.fw {
+    flex-wrap: wrap;
+}
+.jsb {
+    justify-content: space-between;
+}
+.br-4 {
+    border-radius: 4px;
+}
+input {
+    background-color: white;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 13px 24px;
+    color: #303030;
+    border: none;
+    width: 390px;
 }
