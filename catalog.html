@@ -38,28 +38,49 @@
     <header class="c-1">
         <div class="container container-big">
             <nav class="navbar navbar-expand-lg">
-
-                <a class="navbar-brand p-0" title="На главную страницу" href="index.html">iSmart</a>
-                <a class="search ml-auto d-lg-none">Поиск</a>
-                <a class="account mx-3 fw-5 d-lg-none">Войти</a>
-
-                <!-- <a class="basket d-lg-none">Корзина</a> -->
+                <!-- logo -->
+                <a class="navbar-brand p-0" title="На главную страницу" href="index.html">
+                    <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
 
-                    <ul class="mobile-cat-list fw-4 d-lg-none">
+                    <ul class="mobile-cat-list df fw-4 d-lg-none">
                         <li><a href="">iPhone</a></li>
                         <li><a href="">iPad</a></li>
                         <li><a href="">Macbook</a></li>
                         <li><a href="">AirPods</a></li>
                         <li><a href="">Аксессуары</a></li>
                     </ul>
-                    <ul class="navbar-nav fw-5">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="cataloge.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Каталог
+                    <ul class="navbar-nav fw-5 lh-2 aic">
+                        <li class="nav-item dropdown br-4 df aic catalog">
+                            <a class="nav-link dropdown-toggle fs-16 fw-5" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
+                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="white"/>
+                                </svg>
+                                <span>Каталог товаров</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="catalogenav-menu bg-3">
+                                    <ul class="catalognav-list">
+                                        <li class="catalognav-heading">iPhone</li>
+                                        <li><a href="">Iphone 12 pro</a></li>
+                                        <li><a href="">Iphone 12 pro max</a></li>
+                                        <li><a href="">Iphone 11 pro</a></li>
+                                        <li><a href="">Iphone 11 pro max</a></li>
+                                        <li><a href="">Iphone 11</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown br-4 df aic buyer">
+                            <a class="nav-link dropdown-toggle icon fs-16 fw-4" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню покупателя">
+                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="#303030"/>
+                                </svg>
+                                <span>Покупателю</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -68,28 +89,33 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="info-buyer.html">Покупателю</a>
+                            <a class="nav-link fs-16 fw-4" href="news.html">Новости</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="news.html">Новости</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacts.html">Контакты</a>
+                            <a class="nav-link fs-16 fw-4" href="contacts.html">Контакты</a>
                         </li>
                     </ul>
 
-                    <div class="fav d-none">Избранное</div>
+                    <!-- search -->
+                    <form action="#" method="GET" class="search-form df aic mx-3 col-xxl-4">
+                        <input type="search" name="search" id="search" placeholder="Поиск по товарам" class="fs-16 lh-158 w-100">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 10.9999H11.71L11.43 10.7299C12.63 9.32989 13.25 7.41989 12.91 5.38989C12.44 2.60989 10.12 0.389893 7.32001 0.0498932C3.09001 -0.470107 -0.469985 3.08989 0.0500152 7.31989C0.390015 10.1199 2.61002 12.4399 5.39002 12.9099C7.42002 13.2499 9.33002 12.6299 10.73 11.4299L11 11.7099V12.4999L15.25 16.7499C15.66 17.1599 16.33 17.1599 16.74 16.7499C17.15 16.3399 17.15 15.6699 16.74 15.2599L12.5 10.9999ZM6.50002 10.9999C4.01002 10.9999 2.00002 8.98989 2.00002 6.49989C2.00002 4.00989 4.01002 1.99989 6.50002 1.99989C8.99002 1.99989 11 4.00989 11 6.49989C11 8.98989 8.99002 10.9999 6.50002 10.9999Z" fill="#323232"/>
+                        </svg>
+                    </form>
                     <div class="d-flex justify-content-between align-items-start nav-right">
-                        <div class="search fw-5 mr-40 d-none d-lg-block">Поиск</div>
-                        <div class="account fw-5 mr-40 d-none d-lg-block">Войти</div>
-
-                        <div class="d-flex flex-column align-items-lg-end">
-                            <a class="tel d-block" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
-                            <a href="" class="c-3 fs-14">заказать звонок</a>
+                        <div class="account fw-4 mr-30 d-none d-lg-flex aic">
+                            <svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="#323232"/>
+                            </svg>
+                            <span>Войти</span>
+                        </div>
+                        <div class="d-flex flex-column align-items-end right">
+                            <a class="tel d-block fs-18" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
+                            <a href="" class="c-3 fs-14 lh-2">заказать звонок</a>
                         </div>
                     </div>
                 </div>
-
             </nav>
         </div>
     </header>
@@ -97,9 +123,9 @@
 
 
     <!-- menu -->
-    <nav class="secondnav-block c-6 mb-30 fs-14 mt-80">
+    <nav class="secondnav-block c-6 mt-80 mb-30 fs-14">
         <div class="container container-big">
-            <ul class="secondnav-list">
+            <ul class="secondnav-list df">
                 <li class="secondnav-item">
                     <a href="" class="secondnav-link a-iphone">Iphone 12 pro
                     </a>
@@ -154,12 +180,12 @@
         </div>
     </section>
 
-    <!-- cataloge section -->
+    <!-- catalog section -->
     <section class="mb-70">
         <div class="container">
             <h1 class="mb-30">Каталог</h1>
             <div class="row">
-                <!-- left cataloge categories list -->
+                <!-- left catalog categories list -->
                 <div class="col-md-4 col-lg-3 mb-30">
 
                     <!-- iphone 1 -->
@@ -299,7 +325,7 @@
 
                 </div>
 
-                <!-- right cataloge categories links -->
+                <!-- right catalog categories links -->
                 <div class="col-md-8 col-lg-9 categ-mini-cards">
                     <ul class="row fs-18 fw-5">
                         <li class="col-sm-6 col-lg-4">
@@ -371,23 +397,181 @@
 
     <!-- footer -->
     <footer class="bg-1 c-5">
-        <div class="container">
-            <div class="row justify-content-md-between">
-
-                <div class="col-md-5 col-lg-4 col-xl-3 mb-3">
-                    <address class="mb-14 lh-125">2020&#160;&#64;iSmart</address>
-                    <a href="#" class="lh-125">Политика конфиденциальности
-                    </a>
-                </div>
-
-                <div class="col-md-5 col-lg-4 col-xl-3 text-lg-left">
-                    <a class="mb-16 d-block lh-125" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
-                    <p class="lh-125">Казань, ул. Рихарда&#160;Зорге 66,<br> ТЦ&#160;Олимп&#160;3&#160;этаж</p>
+        <div class="container container-big">
+            <div class="row">
+                <!-- newsletter form -->
+                <form class="footer-form df fw mb-40" action="#" method="POST">
+                    <div class="col-12 col-lg-6 col-xl-5 col-xxl-4 text-center text-md-left">
+                        <h2 class="c-5 mb-14">Подпишитесь на&#160;рассылку</h2>
+                        <p class="mb-16">Узнавайте первыми о&#160;наших новинках и&#160;акциях</p>
+                    </div>
+                    <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
+                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-10 mr-10">
+                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 mb-10">Подписаться</button>
+                    </div>
+                </form>
+                <!-- footer nav -->
+                <nav class="footernav df jsb row align-items-start">
+                    <!-- info list -->
+                    <ul class="footernav-list col-sm-5 col-lg-2 mb-30">
+                        <li class="footernav-heading mb-25">Информация</li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Как заказать</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Условия доставки</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Условия оплаты</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Гарантия на товар</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="comments.html" class="footernav-link">Отзывы</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="news.html" class="footernav-link">Новости</a>
+                        </li>
+                    </ul>
+                    <!-- products links list -->
+                    <ul class="footernav-list col-sm-7 col-lg-4 df aie jsb mb-30">
+                        <li class="col-lg-6">
+                            <ul>
+                                <li class="footernav-heading mb-25">Продукция</li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 12 pro</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 12 pro max</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 11 pro</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 11 pro max</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 11</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 10</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-lg-6">
+                            <ul>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 10R</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 10S</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 8</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Watch</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Air pods</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Macbook</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- contacts list -->
+                    <ul class="footernav-list col-lg-3 mb-30">
+                        <li class="footernav-heading mb-25">Контакты</li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Адрес:</dt>
+                                <dd>Казань, ул. Рихарда Зорге 66, ТЦ Олимп 3&#160;этаж
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Телефон:</dt>
+                                <dd>
+                                    <a href="tel:+79520343634">
+                                        +7&#160;(952)&#160;034-36-34
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Режим работы:</dt>
+                                <dd>Пн–Вс:&#160;9:00–22:00
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Email:</dt>
+                                <dd>
+                                    <a href="mailto:ismart@mail.com">ismart@mail.com
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!-- payment types and social links -->
+                    <div class="df fw col-lg-3 col-xxl-2">
+                        <!-- payment types -->
+                        <ul class="col-sm-6 col-md-12 footernav-list mb-30">
+                            <li class="footernav-heading mb-10">Мы принимаем<br> к&#160;оплате</li>
+                            <li>
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="PayPal">
+                                        <img src="images/img/paypal.svg" alt="PayPal">
+                                    </li>
+                                    <li class="payment-icon" title="Visa">
+                                        <img src="images/img/visa.svg" alt="Visa">
+                                    </li>
+                                    <li class="payment-icon" title="Maestro">
+                                        <img src="images/img/maestro.svg" alt="Maestro">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- social links -->
+                        <ul class="col-sm-6 col-md-12 footernav-list">
+                            <li class="footernav-heading mb-10">Наши социальные<br> сети</li>
+                            <li>
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="iSmart в Facebook">
+                                        <a href="">
+                                            <img src="images/icons/facebook.svg" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="payment-icon" title="iSmart в Instagram">
+                                        <a href="">
+                                            <img src="images/icons/insta.svg" alt="instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- copyright -->
+                <div class="footer-bottom df fw aic jsb">
+                    <p class="copyright mb-16">Все права защищены <time datetime="2020">2020</time>&#160;@ismart</p>
+                    <address class="df aic mb-16">
+                        <span>Создание и&#160;продвижение сайтов</span>
+                        <a href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
+                            <img src="images/img/asm-promo.png" alt="Веб-студия AsmPromo">
+                        </a>
+                    </address>
                 </div>
             </div>
         </div>
-        <!-- the entire document -->
-        <a href="#top"></a>
+        <!-- anchor to top of page -->
+        <a href="#top" class="d-none" title="В начало страницы"></a>
     </footer>
     <!-- footer -->
 
