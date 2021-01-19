@@ -36,17 +36,21 @@
 
     <!-- header -->
     <header class="c-1">
+        <!-- container -->
         <div class="container container-big">
+            <!-- navigation -->
             <nav class="navbar navbar-expand-lg">
-                <!-- logo -->
+                <!-- logotype -->
                 <a class="navbar-brand p-0">
                     <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
                 </a>
+                <!-- menu button on mobile -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- collapse nav -->
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-
+                    <!-- mobile menu with products -->
                     <ul class="mobile-cat-list df fw-4 d-lg-none">
                         <li><a href="">iPhone</a></li>
                         <li><a href="">iPad</a></li>
@@ -54,27 +58,43 @@
                         <li><a href="">AirPods</a></li>
                         <li><a href="">Аксессуары</a></li>
                     </ul>
-                    <ul class="navbar-nav fw-5 lh-2 aic">
-                        <li class="nav-item dropdown br-4 df aic catalog">
+
+                    <!-- header nav links -->
+                    <ul class="navbar-nav fnw fw-5 lh-2 aic">
+                        <!-- catalog link -->
+                        <li class="nav-item dropdown br-4 df aic catalog position-static">
                             <a class="nav-link dropdown-toggle fs-16 fw-5" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
                                 <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="white"/>
                                 </svg>
                                 <span>Каталог товаров</span>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <div class="catalognav-menu bg-3">
-                                    <ul class="catalognav-list">
-                                        <li class="catalognav-heading">iPhone</li>
+                            <ul class="dropdown-menu col-7" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="catalognav-menu bg-3 row flex-lg-row fnw">
+                                    <ul class="catalognav-list col-lg-4">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">iPhone</li>
                                         <li><a href="">Iphone 12 pro</a></li>
                                         <li><a href="">Iphone 12 pro max</a></li>
                                         <li><a href="">Iphone 11 pro</a></li>
                                         <li><a href="">Iphone 11 pro max</a></li>
                                         <li><a href="">Iphone 11</a></li>
+                                        <li class="col-lg-2">
+                                            <ul>
+                                                Iphone 10 Iphone 10 R Iphone 10 S
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="catalognav-list col-lg-3">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">iPad</li>
+                                        <li><a href="">iPad Pro</a></li>
+                                        <li><a href="">iPad</a></li>
+                                        <li><a href="">iPad mini</a></li>
+                                        <li><a href="">iPad Air</a></li>
                                     </ul>
                                 </div>
                             </ul>
                         </li>
+                        <!-- client link -->
                         <li class="nav-item dropdown br-4 df aic buyer">
                             <a class="nav-link dropdown-toggle icon fs-16 fw-4" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню покупателя">
                                 <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,21 +102,24 @@
                                 </svg>
                                 <span>Покупателю</span>
                             </a>
+                            <!-- for client dropdown menu -->
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <!-- news link -->
                         <li class="nav-item">
                             <a class="nav-link fs-16 fw-4" href="news.html">Новости</a>
                         </li>
+                        <!-- contacts link -->
                         <li class="nav-item">
                             <a class="nav-link fs-16 fw-4" href="contacts.html">Контакты</a>
                         </li>
                     </ul>
 
-                    <!-- search -->
+                    <!-- search form -->
                     <form action="#" method="GET" class="search-form df aic mx-3 col-xxl-4">
                         <input required type="search" name="search" id="search" placeholder="Поиск по товарам" class="fs-16 lh-158 w-100">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,12 +127,14 @@
                         </svg>
                     </form>
                     <div class="d-flex justify-content-between align-items-start nav-right">
-                        <div class="account fw-4 mr-30 d-none d-lg-flex aic">
+                        <!-- account login link -->
+                        <a class="account fw-4 mr-30 d-none d-lg-flex aic">
                             <svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="#323232"/>
                             </svg>
                             <span>Войти</span>
-                        </div>
+                        </a>
+                        <!-- phone and call order -->
                         <div class="d-flex flex-column align-items-end right">
                             <a class="tel d-block fs-18" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
                             <a href="" class="c-3 fs-14 lh-2">заказать звонок</a>
@@ -117,7 +142,9 @@
                     </div>
                 </div>
             </nav>
+            <!-- navigation -->
         </div>
+        <!-- container -->
     </header>
     <!-- header -->
 
@@ -332,8 +359,9 @@
                     <!-- create comment modal button -->
                     <button type="button" class="purple df aic fs-16 fw-6 mb-30 mx-auto ml-lg-auto mr-lg-0 px-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" title="Оставить свой отзыв">
                         <svg class="mr-10" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.6114 2.27986C20.6114 1.22386 19.7306 0.359863 18.6421 0.359863H2.80876C1.72021 0.359863 0.82959 1.22386 0.82959 2.27986V13.7999C0.82959 14.8559 1.72021 15.7199 2.80876 15.7199H15.8561C16.3735 15.7199 16.8706 15.9214 17.2421 16.2817V16.2817C18.5049 17.5067 20.6196 16.6112 20.6186 14.8518L20.6114 2.27986ZM16.6629 10.9199C16.6629 11.4501 16.2331 11.8799 15.7029 11.8799H5.74792C5.21773 11.8799 4.78792 11.4501 4.78792 10.9199V10.9199C4.78792 10.3897 5.21773 9.95986 5.74792 9.95986H10.7254H15.7029C16.2331 9.95986 16.6629 10.3897 16.6629 10.9199V10.9199ZM16.6629 8.03986C16.6629 8.57006 16.2331 8.99986 15.7029 8.99986H5.74792C5.21773 8.99986 4.78792 8.57006 4.78792 8.03986V8.03986C4.78792 7.50967 5.21773 7.07986 5.74792 7.07986H15.7029C16.2331 7.07986 16.6629 7.50967 16.6629 8.03986V8.03986ZM16.6629 5.15986C16.6629 5.69006 16.2331 6.11986 15.7029 6.11986H5.74792C5.21773 6.11986 4.78792 5.69006 4.78792 5.15986V5.15986C4.78792 4.62967 5.21773 4.19986 5.74792 4.19986H15.7029C16.2331 4.19986 16.6629 4.62967 16.6629 5.15986V5.15986Z" fill="white"/>
-                        </svg>
+                            <path d="M20.6114 2.27986C20.6114 1.22386 19.7306 0.359863 18.6421 0.359863H2.80876C1.72021 0.359863 0.82959 1.22386 0.82959 2.27986V13.7999C0.82959 14.8559 1.72021 15.7199 2.80876 15.7199H9.73584H15.8779C16.3903 15.7199 16.8918 15.8679 17.3221 16.1462L17.7568 16.4274C18.3028 16.7806 18.9979 16.8085 19.5705 16.5003V16.5003C20.1437 16.1918 20.5033 15.5954 20.5086 14.9445L20.6114 2.27986ZM16.6629 10.9199C16.6629 11.4501 16.2331 11.8799 15.7029 11.8799H5.74792C5.21773 11.8799 4.78792 11.4501 4.78792 10.9199V10.9199C4.78792 10.3897 5.21773 9.95986 5.74792 9.95986H10.7254H15.7029C16.2331 9.95986 16.6629 10.3897 16.6629 10.9199V10.9199ZM16.6629 8.03986C16.6629 8.57006 16.2331 8.99986 15.7029 8.99986H5.74792C5.21773 8.99986 4.78792 8.57006 4.78792 8.03986V8.03986C4.78792 7.50967 5.21773 7.07986 5.74792 7.07986H15.7029C16.2331 7.07986 16.6629 7.50967 16.6629 8.03986V8.03986ZM16.6629 5.15986C16.6629 5.69006 16.2331 6.11986 15.7029 6.11986H5.74792C5.21773 6.11986 4.78792 5.69006 4.78792 5.15986V5.15986C4.78792 4.62967 5.21773 4.19986 5.74792 4.19986H15.7029C16.2331 4.19986 16.6629 4.62967 16.6629 5.15986V5.15986Z" fill="white"/>
+                            </svg>
+                            
                         <span>Оставить отзыв</span>
                     </button>
 
@@ -459,7 +487,8 @@
 
                     <p class="fw-7 fs-18 mb-14">Выгодные цены</p>
                     <p>
-                        Возможность купить товар в рассрочку/кредит не выходя из дома</p>
+                        Возможность купить товар в рассрочку/кредит не выходя из дома
+                    </p>
                 </div>
                 <div class="col-md-4 mb-40">
                     <svg class="mb-25" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -660,38 +689,37 @@
 
     <!-- Modal Create Comment-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered bg-3">
-            <div class="modal-content col-xxl-11 mx-auto">
-                <div class="modal-header">
-                    <h1 class="modal-title fw-7 c-14 fs-36" id="staticBackdropLabel">Оставить отзыв</h1>
-                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+        <div class="modal-dialog modal-dialog-centered bg-3 pr">
+            <form method="POST" action="" class="modal-content c-14 fw-5 ps">
+                <div class="mx-auto col-11 col-sm-10 col-lg-9 col-xl-8 col-xxl-8">
+                    <div class="modal-header">
+                        <h1 class="modal-title fw-7 c-14 fs-36" id="staticBackdropLabel">Оставить отзыв</h1>
+                        <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
                             </svg>
-                            
                     </button>
-                </div>
-                <div class="modal-body">
-                    <!--  -->
-                    <fieldset>
-                        <legend>Ваша оценка</legend>
+                    </div>
+                    <div class="modal-body">
+                        <!--  -->
+                        <fieldset class="mb-40">
+                            <legend class="fs-18 fw-5">Ваша оценка</legend>
+                        </fieldset>
+                        <!-- reviewier  -->
+                        <input required type="text" minlength="3" maxlength="15" placeholder="Ваше имя" class="col-12 mb-30" name="comment-name" id="comment-name">
 
+                        <input required type="tel" minlength="10" maxlength="10" name="comment-tel" id="comment-tel" placeholder="+7 (999) 999-99-99" class="col-12 mb-30">
 
-                    </fieldset>
-                    <!-- reviewier  -->
-                    <input required type="text" placeholder="Ваше имя" class="col-12 mb-30" name="comment-name" id="comment-name">
-
-                    <input required type="tel" name="comment-tel" id="comment-tel" placeholder="+7 (999) 999-99-99" class="col-12 mb-30">
-
-                    <textarea required name="comment-textarea" id="comment-textarea" cols="30" rows="1" placeholder="Ваш отзыв" class="col-12"></textarea>
-                </div>
-                <div class="modal-footer">
-                    <label for="" class="mb-30 fw-5 c-10 d-block">
-                        <input type="checkbox" name="" id="" class="mr-10 pr"><span>Я согласен на </span><a href="" class="c-1"><u>обработку персональных данных</u></a>
+                        <textarea required minlength="10" maxlength="200" name="comment-textarea" id="comment-textarea" cols="30" rows="1" placeholder="Ваш отзыв" class="col-12"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <label for="comment-checkbox" class="mb-30 fw-5 c-10 d-block">
+                        <input checked required type="checkbox" name="comment-checkbox" id="comment-checkbox" class="mr-10 pr"><span>Я согласен на </span><a href="" class="c-1"><u>обработку персональных данных</u></a>
                     </label>
-                    <button type="button" class="purple fw-7 fs-20 col-12 lh-100" data-bs-dismiss="modal">Отправить</button>
+                        <button type="submit" value="Отправить" class="purple fw-7 fs-20 col-12 lh-100">Отправить</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 

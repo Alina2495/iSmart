@@ -365,7 +365,6 @@ header .navbar-expand-lg .navbar-nav .nav-item.catalog {
   line-height: 16px;
 }
 header .navbar-expand-lg .navbar-nav .nav-item.catalog .dropdown-menu {
-  width: auto;
   margin: 0;
   padding: 40px 85px 100px 85px;
   top: 55px;
@@ -602,12 +601,20 @@ header .navbar-toggler-icon {
   background-color: #F6F6FF;
   width: fit-content;
 }
-.filters .filter {
-  padding: 6px 7px;
+.filters .filter span {
+  display: inline-block;
+  padding: 11px 7px;
   border-radius: 4px;
   text-align: center;
 }
-.filters .filter.active {
+.filters .filter input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.filters .filter input:checked + span {
   color: #6839CF;
   font-weight: 500;
   background-color: white;
@@ -623,7 +630,6 @@ header .navbar-toggler-icon {
 .product-group .col-lg-3 {
   margin-bottom: 40px;
   height: unset;
-  background-color: #c47474;
 }
 .product-preview {
   cursor: pointer;
@@ -636,7 +642,6 @@ header .navbar-toggler-icon {
   border-radius: 4px;
   position: relative;
   transition-property: box-shadow, border-radius;
-  background-color: #8bacad;
 }
 .product-preview:hover {
   box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
@@ -645,6 +650,19 @@ header .navbar-toggler-icon {
 .product-preview:hover button {
   color: white;
   background-color: #6839CF;
+}
+.product-preview:hover .compare-checkbox:checked + svg path {
+  fill: #6839CF;
+  stroke: #6839CF;
+}
+.product-preview .compare-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #B4B4BB;
+  position: absolute;
+  top: 45px;
+  right: 5px;
+  cursor: pointer;
 }
 .product-preview .sale {
   display: flex;
@@ -664,23 +682,31 @@ header .navbar-toggler-icon {
   top: 0;
   left: 0;
 }
-.product-preview .wish {
+.product-preview .compare-checkbox {
   width: 32px;
   height: 32px;
   border: 1px solid #B4B4BB;
   box-sizing: border-box;
   border-radius: 4px;
+  visibility: hidden;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   padding: 0;
   background-color: transparent;
-  background-image: url('../images/icons/wish.svg');
+}
+.product-preview .compare-checkbox:checked + svg path {
+  fill: #A488E2;
+}
+.product-preview .wish-button {
+  top: 5px;
 }
 .product-preview .img {
   text-align: center;
   margin: 0 auto 20px auto;
-  width: 190px;
+  width: 100%;
   height: 260px;
   object-fit: scale-down;
   object-position: center;
@@ -732,11 +758,10 @@ header .navbar-toggler-icon {
 }
 .product-group.tablets img,
 .product-group.computers img {
-  width: 240px;
   height: 240px;
 }
 .product-group.accessories img {
-  width: 150px;
+  height: 160px;
 }
 .advantages .col-lg-3 {
   margin-bottom: 40px;
@@ -994,7 +1019,7 @@ footer a[href='#top']:hover {
 }
 .list-block-title {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 16px 20px 17px 24px;
   background-position: right center;
   background-origin: content-box;
@@ -1255,12 +1280,17 @@ ul {
   flex-direction: column;
 }
 .aic {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .aie {
   align-items: flex-end;
 }
 .fw {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .fnw {
@@ -1268,6 +1298,9 @@ ul {
 }
 .jsb {
   justify-content: space-between;
+}
+.jsc {
+  justify-content: center;
 }
 .br-4 {
   border-radius: 4px;
@@ -1454,6 +1487,7 @@ input,
 textarea {
   border: none;
   border-bottom: 2px solid #E1E1E1;
+  border-radius: 0;
   padding: 10px 15px 10px 0;
   line-height: 100%;
 }
@@ -1492,6 +1526,9 @@ textarea:focus {
 .info-buyer .nav-link:hover {
   background-color: #FAFBFF;
 }
+.tab-content .purple {
+  padding: 16px;
+}
 .modal-title {
   line-height: 100%;
 }
@@ -1500,7 +1537,6 @@ textarea:focus {
 }
 .modal-content {
   border: none;
-  width: unset;
 }
 .modal-header,
 .modal-body,
@@ -1512,13 +1548,29 @@ textarea:focus {
 }
 .modal .btn-close {
   opacity: 1;
-  right: 30px;
-  top: 30px;
+  right: 20px;
+  top: 20px;
   background: none;
   margin: 0;
 }
 .modal .purple {
   padding: 16px;
+}
+.modal label {
+  user-select: none;
+}
+.modal label input {
+  top: 4px;
+  margin-bottom: 10px;
+}
+.modal input,
+.modal textarea {
+  padding-bottom: 20px;
+}
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: #3A3C3C;
+  font-weight: 500;
 }
 @media screen and (max-width: 568px) {
   .modal-title {
@@ -1540,56 +1592,52 @@ textarea:focus {
 .pa {
   position: absolute;
 }
-input[type="checkbox"] {
-  border: 1px solid #9D9E9E;
-  border-radius: 1px;
+.ps {
+  position: static;
+}
+.modal input[type="checkbox"] {
   visibility: hidden;
   width: 20px;
   height: 20px;
 }
-input[type="checkbox"]::before {
-  visibility: visible;
+.modal input[type="checkbox"]::before {
   content: '';
+  visibility: visible;
   position: absolute;
   border: 1px solid #9D9E9E;
   border-radius: 1px;
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px 11px;
+  top: 0;
+  left: 0;
 }
-input[type="checkbox"]:checked::before {
+.modal input[type="checkbox"]:checked::before {
   background-image: url('../images/icons/checked.svg');
 }
-.stars {
-  cursor: pointer;
-  display: flex;
+.catalognav-menu.row {
+  flex-wrap: nowrap !important;
+  flex-direction: row;
 }
-.stars:hover .star polygon {
-  fill: #ffd055 !important;
+.catalognav-menu li {
+  margin-bottom: 16px;
 }
-.stars .star polygon {
-  fill: #d8d8d8;
+.catalognav-menu .catalognav-heading {
+  margin-bottom: 22px;
 }
-.stars .star:hover ~ .star polygon {
-  fill: #d8d8d8 !important;
+svg {
+  vertical-align: inherit;
 }
-.stars[data-stars] .star polygon {
-  fill: #ffd055;
+button {
+  vertical-align: middle;
 }
-.stars[data-stars="1"] .star:nth-child(1) ~ .star polygon {
-  fill: #d8d8d8;
+button span {
+  vertical-align: middle;
+  line-height: 100%;
 }
-.stars[data-stars="2"] .star:nth-child(2) ~ .star polygon {
-  fill: #d8d8d8;
-}
-.stars[data-stars="3"] .star:nth-child(3) ~ .star polygon {
-  fill: #d8d8d8;
-}
-.stars[data-stars="4"] .star:nth-child(4) ~ .star polygon {
-  fill: #d8d8d8;
-}
-.stars[data-stars="5"] .star:nth-child(5) ~ .star polygon {
-  fill: #d8d8d8;
+textarea {
+  white-space: nowrap;
+  resize: none;
 }
