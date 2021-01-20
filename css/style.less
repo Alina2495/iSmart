@@ -1,10 +1,10 @@
 * {
     background-repeat: no-repeat;
     object-fit: cover;
-    transition-duration: 0.2s;
-    transition-delay: 0s;
-    transition-timing-function: linear;
-    transform-origin: center;
+    // transition-duration: 0.2s;
+    // transition-delay: 0s;
+    // transition-timing-function: linear;
+    // transform-origin: center;
 }
 *::-webkit-scrollbar {
     visibility: hidden;
@@ -401,13 +401,18 @@ header {
     .nav-item.catalog {
         color: white;
         background-color: #6839CF;
-        padding: 17px 20px;
         line-height: 16px;
+        &:hover {
+            background-color: #824df5;
+        }
+        .nav-link {
+            padding: 17px 20px;
+        }
         .dropdown-menu {
             // width: max-content;
             margin: 0;
             padding: 40px 85px 100px 85px;
-            top: 55px;
+            top: 65px;
         }
     }
     img, svg {
@@ -561,7 +566,7 @@ header {
             li {
                 border: 1px solid white;
                 background-color: #F6F6FF;
-                width: 40%;
+                width: 120px;
                 flex-shrink: 0;
                 padding: 15px 5px;
                 margin-bottom: 0;
@@ -657,6 +662,7 @@ header {
     }
     li a.active {
         border-bottom: 4px solid #6839CF;
+        background-color: #fbfbff;
     }
 }
 
@@ -665,6 +671,7 @@ header {
     background-color: #F6F6FF;
     width: fit-content;
     .filter {
+        cursor: pointer;
         span {
             display: inline-block;
             padding: 11px 7px;
@@ -693,7 +700,7 @@ header {
     align-items: stretch;
     align-content: flex-start;
     justify-content: center;
-    .col-lg-3 {
+    > div {
         margin-bottom: 40px;
         height: unset;
         // background-color: rgb(196, 116, 116);
@@ -739,8 +746,7 @@ header {
         justify-content: center;
         background-color: #E8DDFF;
         border-radius: 4px;
-        width: 70px;
-        height: 24px;
+        padding: 4px 16px;
         font-weight: 600;
         font-size: 12px;
         line-height: 133%;
@@ -767,6 +773,7 @@ header {
         background-color: transparent;
         &:checked + svg path {
             fill: #A488E2;
+            stroke: #A488E2;
         }
     }
     .wish-button {
@@ -841,7 +848,7 @@ header {
 
 // advantages block
 .advantages {
-    .col-lg-3 {
+    .row > div {
         margin-bottom: 40px;
         padding-top: 80px;
         background-image: url('../images/icons/advantage.svg');
@@ -965,38 +972,43 @@ header {
 /* news block */
 .news {
     &-preview {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         overflow: hidden;
-
         width: 300px;
-        &:hover {
-            .img {
-            transform: perspective(1000px) translate3d(0, 0, 21px);
-            -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
-            }
-            a.c-3 {
-                color: #6839CF;
-            }
-        }
+        cursor: pointer;
         .img-wr {
             border-radius: 4px 4px 0px 0px;
             overflow: hidden;
             background-color: #F6F6FF;
-
             height: 255px;
         }
         .img {
             will-change: transform;
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
         .text {
             margin: 32px 0;
             font-size: 20px;
+            line-height: 25px;
         }
-        
+        &:hover {
+            .img {
+                -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
+                transform: perspective(1000px) translate3d(0, 0, 21px);
+                -webkit-filter: opacity(85%);
+                -moz-filter: opacity(85%);
+                filter: opacity(85%);
+            }
+            a.c-3 {
+                color: #6839CF;
+            }
+        }
     }
 }
 /* news block */
@@ -1005,7 +1017,7 @@ header {
 /* contacts block */
 .contacts {
     &-info {
-        .col-lg-3 {
+        .row div {
             margin-bottom: 25px;
             button {
                 padding: 10px 30px;
@@ -1312,7 +1324,7 @@ footer {
     
 
     // advantages block
-    .advantages .col-lg-3 {
+    .advantages .row div {
         margin-bottom: 50px;
         &:last-child {
             margin-bottom: 0;
@@ -1828,4 +1840,30 @@ button {
 textarea {
     white-space: nowrap;
     resize: none;
+}
+
+.gamburger {
+    rect {
+        transition: 0.2s linear;
+        // transform-box: view-box;
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+    }
+    &:hover {
+        rect {
+            width: 20px;
+            &:first-child {
+                -webkit-transform: translateY(0px) rotate(40deg);
+                -ms-transform: translateY(0px) rotate(40deg);
+                -o-transform: translateY(0px) rotate(40deg);
+                transform: translateY(0px) rotate(40deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform-origin: left;
+                transform: rotate(-45deg);
+            }
+        }
+    }
 }
