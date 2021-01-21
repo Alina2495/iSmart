@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" id="top">
+<html lang="ru" id="top" class="position-relative">
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новость — iSmart</title>
+    <title>Вход — iSmart</title>
     <!-- fonts Inter -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -28,6 +21,18 @@
 
 <body class="bg-3">
 
+    <!-- widget -->
+    <div class="widgets bg-7">
+        <button class="basket" title="Корзина">
+            <span class="badge">20</span>
+        </button>
+        <button class="fav" title="Фавориты">
+            <span class="badge">12</span>
+        </button>
+        <button class="compare" title="Сравнение">
+            <span class="badge">18</span>
+        </button>
+    </div>
 
     <!-- header -->
     <header class="c-1">
@@ -143,203 +148,95 @@
     </header>
     <!-- header -->
 
-    <main>
 
-        <!-- second menu -->
-        <nav class="secondnav-block c-6 mt-80 mb-30 fs-14">
-            <div class="container container-big">
-                <ul class="secondnav-list df">
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-iphone">Iphone 12 pro
-                        </a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-iphone">Iphone 12 pro max</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 11 pro</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 11 pro max</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 11</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10R</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10S</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-watch">Watch</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-pods">Air pods</a>
-                    </li>
-                    <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-macbook">Macbook</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- menu -->
-
-        <!-- breadcrumbs -->
-        <section class="mb-40 c-6 fs-14">
-            <div class="container container-big">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="news.html">Новости</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">iOS 14. Хорошо знакомая. И такая новая.</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-
-        <section class="mb-100 c-14 fw-5">
-            <div class="container">
-                <div class="mb-40">
-                    <time datetime="2020-09-23" class="mb-16 d-block">
-                        23.09.2020
-                    </time>
-                    <h1 class="fs-32 fw-7 m-0">
-                        iOS 14. Хорошо знакомая. И такая новая.
-                    </h1>
-                </div>
-                <p class="mb-20 col-lg-10">
-                    iOS 14 предлагает по-новому взглянуть на многие привычные вещи, делая их ещё более удобными. Новые функции работают быстро и эффективно. А знакомые приложения становятся более интеллектуальными, индивидуальными и конфиденциальными.
-                </p>
-
-                <ol class="ol-styled mb-30" type="1">
-                    <li>iOS 14 включает:</li>
-                    <li>
-                        1) App Store;
-                    </li>
-                    <li>
-                        2) Apple Arcade
-                    </li>
-                </ol>
-                <div class="row row-cols-sm-2 mb-40 align-items-start">
-                    <img src="images/img/new-1.jpg" alt="Изображение iOS 14 на фоне оранжевого градиента" class="mb-20" style="max-height: 497px;">
-                    <img src="images/img/new-1.jpg" alt="Изображение iOS 14 на фоне оранжевого градиента" class="mb-20" style="max-height: 497px;">
-                </div>
-                <div class="mb-60">
-                    <h6 class="fs-20 fw-7 mb-20">Дизайн</h6>
-                    <p class="col-lg-10">
-                        Теперь iPhone умеет ещё больше. В iOS 14 его основные функции существенно переосмыслены, что позволило расширить возможности персональных настроек и сделать устройство более удобным.
-                    </p>
-                </div>
-                <div class="row row-cols-lg-2 mb-60">
-                    <div class="mb-20">
-                        <h6 class="fs-18 fw-7 mb-20">Виджеты на главном экране</h6>
-                        <p class="mb-20">
-                            Это абсолютно новые виджеты — они покажут ещё больше полезного. Их можно добавлять на главный экран и самостоятельно выбирать их размер и положение в интерфейсе.
-                        </p>
-                        <p>
-                            Функция «Смарт-стопка» автоматически собирает виджеты из приложений, которыми вы пользуетесь чаще всего, и показывает их на экране в зависимости от времени дня.
-                        </p>
-                    </div>
-                    <img src="images/img/new-2.jpg" alt="Экран телефона с виджетами вблизи" style="max-height: 340px;">
-                </div>
-                <div class="row row-cols-lg-2 mb-40">
-                    <img src="images/img/new-3.jpg" alt="3 иконки с превью приложений" class="mb-20" style="max-height: 340px;">
-                    <div>
-                        <h6 class="fs-18 fw-7 mb-20">Библиотека приложений</h6>
-                        <p>
-                            Новая Библиотека приложений систематизирует все приложения на вашем устройстве, упрощая навигацию по ним. Приложения сортируются по категориям, и самые нужные всегда можно быстро найти.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <h6 class="fs-20 fw-7 mb-20">iOS 14 работает на этих устройствах:</h6>
-                    <ul class="ul-styled">
-                        <li>iPhone 12</li>
-                        <li>iPhone 12 Pro</li>
-                        <li>iPhone 11</li>
-                        <li>iPhone 11 Pro</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- widget -->
-        <div class="widgets bg-7">
-            <button class="basket" title="Корзина">
-            <span class="badge">20</span>
-                                </button>
-            <button class="fav" title="Фавориты">
-            <span class="badge">12</span>
-        </button>
-            <button class="compare" title="Сравнение">
-            <span class="badge">18</span>
-        </button>
+    <!-- menu -->
+    <nav class="secondnav-block c-6 mt-80 mb-30 fs-14">
+        <div class="container container-big">
+            <ul class="secondnav-list df">
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-iphone">Iphone 12 pro
+                    </a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-iphone">Iphone 12 pro max</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 11 pro</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 11 pro max</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 11</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10R</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10S</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-watch">Watch</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-pods">Air pods</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-macbook">Macbook</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <!-- menu -->
 
+    <!-- breadcrumbs -->
+    <section class="mb-40 c-6 fs-14">
+        <div class="container container-big">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Покупателю</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
-        <!-- news section -->
-        <section class="news mb-100">
-            <!-- container -->
-            <div class="container">
-                <!-- title -->
-                <div class="section-title df fnw jsb">
-                    <h2>Читайте также</h2>
+    <section class="mb-100 container">
+        <form action="#" method="POST" class="needs-validation col-lg-6 col-xl-5">
+            <h1 class="mb-40">Вход в личный кабинет</h1>
+
+            <fieldset class="mb-16">
+                <label for="userEmail" class="form-label mb-10 c-13 fs-14 fw-6 required">
+                    Электронная почта
+                </label>
+                <input type="email" id="userEmail" class="form-control fs-14" placeholder="Электронная почта" required>
+                <div class="invalid-feedback">
+                    Это поле ввода обязательно к заполнению
                 </div>
-                <!-- news group -->
-                <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 news-group c-2">
-                    <!-- new 1 -->
-                    <div class="news-preview pr">
-                        <div class="img-wr">
-                            <img class="img" src="images/img/news.jpg" alt="Новость №1">
-                        </div>
-                        <p class="text">В наличии iPhone по самым выгодным ценам! Только оригинальная продукция Apple!</p>
-                        <a class="c-3 stretched-link" href="new.html">Читать</a>
-                    </div>
-                    <!-- new 2 -->
-                    <div class="news-preview">
-                        <div class="img-wr">
-                            <img class="img" src="images/img/about.jpg" alt="Новость №2">
-                        </div>
-                        <p class="text">Весенняя новинка Apple наделала столько шуму</p>
-                        <a class="c-3 stretched-link" href="new.html">Читать</a>
-                    </div>
-                    <!-- new 3 -->
-                    <div class="news-preview">
-                        <div class="img-wr">
-                            <img class="img" src="images/img/news.jpg" alt="Новость №3">
-                        </div>
-                        <p class="text">5 причин купить iPhone 11 Pro или почему это лучший смартфон</p>
-                        <a class="c-3 stretched-link" href="new.html">Читать</a>
-                    </div>
-                    <!-- new 4 -->
-                    <div class="news-preview">
-                        <div class="img-wr">
-                            <img class="img" src="images/img/news-2.jpg" alt="Новость №4">
-                        </div>
-                        <p class="text">5 причин купить iPhone 11 Pro или почему это лучший смартфон</p>
-                        <a class="c-3 stretched-link" href="new.html">Читать</a>
-                    </div>
+            </fieldset>
+            <fieldset class="mb-20">
+                <label for="userPassword" class="form-label mb-10 c-13 fs-14 fw-6 required">
+                    Пароль
+                </label>
+                <input type="email" id="userPassword" class="form-control fs-14" placeholder="Пароль" required>
+                <div class="invalid-feedback">
+                    Это поле ввода обязательно к заполнению
                 </div>
-                <!-- news group -->
-            </div>
-            <!-- container -->
-        </section>
-        <!-- news section -->
+            </fieldset>
 
+            <p class="mb-30 c-10">Забыли пароль? <a href="password.html" class="underline"> Получить новый</a></p>
 
-    </main>
+            <button type="submit" value="Войти" class="purple mb-20 fs-16">Войти</button>
+            <p>У вас еще нет аккаунта? <a href="register.html" class="underline c-3">Регистрация</a></p>
+        </form>
+    </section>
+
 
     <!-- footer -->
     <footer class="bg-1 c-5">
@@ -352,8 +249,8 @@
                         <p class="mb-16">Узнавайте первыми о&#160;наших новинках и&#160;акциях</p>
                     </div>
                     <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
-                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10">
-                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 mb-16">Подписаться</button>
+                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-10 mr-10">
+                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 mb-10">Подписаться</button>
                     </div>
                 </form>
                 <!-- footer nav -->
@@ -362,7 +259,7 @@
                     <ul class="footernav-list col-sm-5 col-lg-2 mb-30">
                         <li class="footernav-heading mb-25">Информация</li>
                         <li class="footernav-item">
-                            <a href="info-buyer.html" class="footernav-link">Как заказать</a>
+                            <a href="" class="footernav-link">Как заказать</a>
                         </li>
                         <li class="footernav-item">
                             <a href="" class="footernav-link">Условия доставки</a>
@@ -510,7 +407,7 @@
                     <address class="df aic mb-16">
                         <span>Создание и&#160;продвижение сайтов</span>
                         <a href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
-                            <img src="images/img/asm-promo.png" width="69" height="47" alt="Веб-студия AsmPromo">
+                            <img src="images/img/asm-promo.png" alt="Веб-студия AsmPromo">
                         </a>
                     </address>
                 </div>
@@ -521,9 +418,12 @@
     </footer>
     <!-- footer -->
 
+
     <!-- bootstrap 5 js -->
     <!-- JavaScript Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <!-- bootstrap 5 js -->
     <script src="js/script.js"></script>
 </body>

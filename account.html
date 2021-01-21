@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru" id="top" class="position-relative">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — iSmart</title>
+    <!-- fonts Inter -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <!-- fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- bootstrap 5 css -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-3">
+
+    <!-- widget -->
+    <div class="widgets bg-7">
+        <button class="basket" title="Корзина">
+            <span class="badge">20</span>
+        </button>
+        <button class="fav" title="Фавориты">
+            <span class="badge">12</span>
+        </button>
+        <button class="compare" title="Сравнение">
+            <span class="badge">18</span>
+        </button>
+    </div>
+
+    <!-- header -->
+    <header class="c-1">
+        <!-- container -->
+        <div class="container container-big">
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-lg">
+                <!-- logotype -->
+                <a class="navbar-brand p-0" href="index.html">
+                    <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
+                </a>
+                <!-- menu button on mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- collapse nav -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <!-- mobile menu with products -->
+                    <ul class="mobile-cat-list df fw-4 d-lg-none">
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">Macbook</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">Аксессуары</a></li>
+                    </ul>
+
+                    <!-- header nav links -->
+                    <ul class="navbar-nav fnw fw-5 lh-2 aic">
+                        <!-- catalog link -->
+                        <li class="nav-item dropdown br-4 df aic catalog position-static">
+                            <a class="nav-link dropdown-toggle fs-16 fw-5" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
+                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="white"/>
+                                </svg>
+                                <span>Каталог товаров</span>
+                            </a>
+                            <ul class="dropdown-menu col-7" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="catalognav-menu bg-3 row flex-lg-row fnw">
+                                    <ul class="catalognav-list col-lg-4">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">iPhone</li>
+                                        <li><a href="">Iphone 12 pro</a></li>
+                                        <li><a href="">Iphone 12 pro max</a></li>
+                                        <li><a href="">Iphone 11 pro</a></li>
+                                        <li><a href="">Iphone 11 pro max</a></li>
+                                        <li><a href="">Iphone 11</a></li>
+                                        <li class="col-lg-2">
+                                            <ul>
+                                                Iphone 10 Iphone 10 R Iphone 10 S
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="catalognav-list col-lg-3">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">iPad</li>
+                                        <li><a href="">iPad Pro</a></li>
+                                        <li><a href="">iPad</a></li>
+                                        <li><a href="">iPad mini</a></li>
+                                        <li><a href="">iPad Air</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <!-- client link -->
+                        <li class="nav-item dropdown br-4 df aic buyer">
+                            <a class="nav-link dropdown-toggle icon fs-16 fw-4" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню покупателя">
+                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="#303030"/>
+                                </svg>
+                                <span>Покупателю</span>
+                            </a>
+                            <!-- for client dropdown menu -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- news link -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-16 fw-4" href="news.html">Новости</a>
+                        </li>
+                        <!-- contacts link -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-16 fw-4" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <!-- search form -->
+                    <form action="#" method="GET" class="search-form df aic mx-3 col-xxl-4">
+                        <input required type="search" name="search" id="search" placeholder="Поиск по товарам" class="fs-16 lh-158 w-100">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 10.9999H11.71L11.43 10.7299C12.63 9.32989 13.25 7.41989 12.91 5.38989C12.44 2.60989 10.12 0.389893 7.32001 0.0498932C3.09001 -0.470107 -0.469985 3.08989 0.0500152 7.31989C0.390015 10.1199 2.61002 12.4399 5.39002 12.9099C7.42002 13.2499 9.33002 12.6299 10.73 11.4299L11 11.7099V12.4999L15.25 16.7499C15.66 17.1599 16.33 17.1599 16.74 16.7499C17.15 16.3399 17.15 15.6699 16.74 15.2599L12.5 10.9999ZM6.50002 10.9999C4.01002 10.9999 2.00002 8.98989 2.00002 6.49989C2.00002 4.00989 4.01002 1.99989 6.50002 1.99989C8.99002 1.99989 11 4.00989 11 6.49989C11 8.98989 8.99002 10.9999 6.50002 10.9999Z" fill="#323232"/>
+                        </svg>
+                    </form>
+                    <div class="d-flex justify-content-between align-items-start nav-right">
+                        <!-- account login link -->
+                        <a class="account fw-4 mr-30 d-none d-lg-flex aic" href="login.html">
+                            <svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="#323232"/>
+                            </svg>
+                            <span>Войти</span>
+                        </a>
+                        <!-- phone and call order -->
+                        <div class="d-flex flex-column align-items-end right">
+                            <a class="tel d-block fs-18" href="tel:+79520343634">+7&#160;(952)&#160;034-36-34</a>
+                            <a href="" class="c-3 fs-14 lh-2">заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navigation -->
+        </div>
+        <!-- container -->
+    </header>
+    <!-- header -->
+
+
+    <!-- menu -->
+    <nav class="secondnav-block c-6 mt-80 mb-30 fs-14">
+        <div class="container container-big">
+            <ul class="secondnav-list df">
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-iphone">Iphone 12 pro
+                    </a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-iphone">Iphone 12 pro max</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 11 pro</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 11 pro max</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 11</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10R</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10S</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link">Iphone 10</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-watch">Watch</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-pods">Air pods</a>
+                </li>
+                <li class="secondnav-item">
+                    <a href="" class="secondnav-link a-macbook">Macbook</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- menu -->
+
+    <!-- breadcrumbs -->
+    <section class="mb-40 c-6 fs-14">
+        <div class="container container-big">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Покупателю</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="mb-100 container">
+        <div class="d-flex align-items-start row">
+            <h1 class="col-12">Личный кабинет</h1>
+
+            <div class="nav flex-column nav-pills c-13 fs-18 col-lg-3 mb-30" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background-color: #FBFCFF;">
+
+                <!-- how to order -->
+                <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Личная информация</a>
+
+                <!-- delivery terms -->
+                <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Адреса доставки</a>
+
+                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">История заказов</a>
+                <hr>
+                <a class="nav-link" href="login.html">Выйти</a>
+
+            </div>
+
+            <!-- tabs content -->
+            <div class="tab-content col-lg-9" id="v-pills-tabContent">
+                <!-- how to order -->
+                <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="mb-60">
+                        <h4>Личная информация</h4>
+                        <hr>
+                        <p>
+                            Посетите салон компании и закажите указав все желаемые требования к изделию
+                        </p>
+                    </div>
+                </div>
+
+                <!-- delivery terms -->
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="mb-60">
+                        <h4>Курьерская доставка</h4>
+                        <p class="mb-16">
+                            Вы можете заказать доставку товара с помощью курьера, который прибудет по указанному адресу в будние дни и субботу с 9.00 до 19.00. Курьерская служба, после поступления товара на склад, свяжется с вами и предложит выбрать удобное время доставки. Уточнит
+                            адрес.
+                        </p>
+                        <p class="mb-16">
+                            Вы вскрываете упаковку при курьере, осматриваете на целостность и соответствие указанной комплектации. Если речь идёт об одежде, допустима примерка. Время осмотра и примерки ограничено 15 минутами. После вы можете отказаться частично или полностью от покупки.
+                        </p>
+                        <p>
+                            Доставка бесплатна при заказе от 3000 рублей.
+                        </p>
+                    </div>
+                    <div class="mb-60">
+                        <h4>Самовывоз из магазина</h4>
+                        <p>
+                            Вы можете забрать товар в одном из магазинов, сотрудничающих с нами. Список торговых точек, которые принимают заказы от нашей компании появится у вас в корзине. Когда заказ поступит в ваш город, вам придёт уведомление. Вы просто идёте в этот магазин,
+                            обращаетесь к сотруднику в кассовой зоне и называете номер заказа. Забрать покупку может ваш друг или родственник, который знает номер и имя, на кого он оформлен.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Почтовая доставка</h4>
+                        <p class="mb-16">
+                            Если в вашем городе не действует курьерская служба и постаматы, то вы можете заказать доставку через почту России. Сразу по прибытии товара, на ваш адрес придёт извещение о посылке.
+                        </p>
+                        <p class="mb-16">
+                            Перед оплатой вы можете оценить состояние коробки (не вскрывая): вес, целостность. Если вам кажется, что заказ не соответствует параметрам или коробка повреждена, попросите сотрудника почты составить акт о вскрытии. Вскрывать коробку самостоятельно вы можете
+                            только после того, как оплатили заказ.
+                        </p>
+                        <p>
+                            Один заказ может содержать не больше 10 позиций и его стоимость не должна превышать 100 тысяч рублей.
+                        </p>
+                    </div>
+                </div>
+
+                <!--  payment terms -->
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="mb-60">
+                        <h4>Оплата наличными</h4>
+                        <p class="mb-16">
+                            При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера и передаёте ему сумму за товар в рублях. Курьер предоставляет товар, который можно осмотреть на предмет повреждений, соответствие указанным условиям. Покупатель подписывает товаросопроводительные
+                            документы, вносит денежные средства и получает чек.
+                        </p>
+                        <p>
+                            Также оплата наличными доступна при самовывозе из магазина, оплаты по почте или использовании постамата.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Безналичный расчёт</h4>
+                        <p class="mb-16">
+                            При оформлении заказа в корзине вы можете выбрать вариант безналичной оплаты. Мы принимаем карты Visa и Mastercard. Чтобы оплатить покупку, вас перенаправит на сервер системы ASSIST, где вы должны ввести номер карты, срок действия, имя держателя.
+                        </p>
+                        <p>
+                            Безналичным расчётом можно воспользоваться при курьерской доставке, использовании постамата или самовывоза из магазина.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- orders history -->
+                <div class="tab-pane fade show active" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <p class="mb-60">
+                        Гарантийный период — это срок, во время которого клиент, обнаружив недостаток товара имеет право потребовать от продавца или изготовителя принять меры по устранению дефекта. Продавец должен устранить недостатки, если не будет доказано, что они возникли
+                        в следствии нарушений покупателем правил эксплуатации.
+                    </p>
+                    <div class="mb-60">
+                        <h4>Правила обмена и возврата товара:</h4>
+                        <div class="mb-30">
+                            <h5>Обмен и возврат продукции ненадлежащего качества
+                            </h5>
+                            <p class="mb-16">
+                                Если покупатель обнаружил недостатки товара после его приобретения, то он может потребовать замену у продавца. Замена должна быть произведена в течение 7 дней со дня предъявления требования. В случае, если будет назначена экспертиза на соответствие товара
+                                указанным нормам, то обмен должен быть произведён в течение 20 дней.
+                            </p>
+                            <p>
+                                Технически сложные товары ненадлежащего качества заменяются товарами той же марки или на аналогичный товар другой марки с перерасчётом стоимости. Возврат производится путём аннулирования договора купли-продажи и возврата суммы в размере стоимости товара.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h5>Обмен и возврат продукции надлежащего качества
+                            </h5>
+                            <p class="mb-16">
+                                Продавец гарантирует, что покупатель в течение 7 дней с момента приобретения товара может отказаться от товара надлежащего качества, если:
+                            </p>
+                            <p>
+                                — товар не поступал в эксплуатацию и имеет товарный вид, находится в упаковке со всеми ярлыками, а также есть документы на приобретение товара; — товар не входит в перечень продуктов надлежащего качества, не подлежащих возврату и обмену. Покупатель имеет
+                                право обменять товар надлежащего качество на другое торговое предложение этого товара или другой товар, идентичный по стоимости или на иной товар с доплатой или возвратом разницы в цене.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4>Возврат денежных средств</h4>
+                        <p class="mb-16">
+                            Срок возврата денежных средств зависит от вида оплаты, который изначально выбрал покупатель.
+                        </p>
+                        <p class="mb-16">
+                            При наличном расчёте возврат денежных средств осуществляется на кассе не позднее через через 10 дней после предъявления покупателем требования о возврате.
+                        </p>
+                        <p class="mb-16">
+                            Зачисление стоимости товара на карту клиента, если был использован безналичный расчёт, происходит сразу после получения требования от покупателя.
+                        </p>
+                        <p>
+                            При использовании электронных платёжных систем, возврат осуществляется на электронный счёт в течение 10 календарных дней.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- advantages -->
+    <div class="bg-8 c-13 fs-14" style="padding-top: 45px;">
+        <div class="container">
+            <div class="row text-center row-cols-md-3">
+                <div class="mb-40">
+                    <svg class="mb-25" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32.5" cy="32.5" r="32.5" fill="#6839CF"/>
+                    <path d="M32.9114 20.3921C26.1061 20.3921 20.5696 25.9286 20.5696 32.7339V37.8471C20.5696 39.1109 21.6766 40.1389 23.0379 40.1389H24.2721C24.5994 40.1389 24.9134 40.0089 25.1448 39.7774C25.3763 39.546 25.5063 39.2321 25.5063 38.9048V32.5574C25.5063 32.2301 25.3763 31.9161 25.1448 31.6847C24.9134 31.4532 24.5994 31.3232 24.2721 31.3232H23.1515C23.8377 26.5469 27.9475 22.8604 32.9114 22.8604C37.8752 22.8604 41.985 26.5469 42.6712 31.3232H41.5506C41.2233 31.3232 40.9094 31.4532 40.6779 31.6847C40.4464 31.9161 40.3164 32.2301 40.3164 32.5574V40.1389C40.3164 41.5002 39.2094 42.6073 37.8481 42.6073H35.3797V41.3731H30.443V45.0756H37.8481C40.5707 45.0756 42.7848 42.8615 42.7848 40.1389C44.1461 40.1389 45.2531 39.1109 45.2531 37.8471V32.7339C45.2531 25.9286 39.7166 20.3921 32.9114 20.3921Z" fill="white"/>
+                </svg>
+                    <p class="fw-7 fs-18 mb-14">Работа магазина 24/7</p>
+                    <p>
+                        Заказы на сайте оформляются круглосуточно без связи с менеджером
+                    </p>
+                </div>
+                <div class="mb-40">
+                    <svg class="mb-25" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32.5" cy="32.5" r="32.5" fill="#6839CF"/>
+                    <path d="M45.2045 20.5266C45.129 20.3388 44.9841 20.1873 44.7998 20.1036C44.6155 20.0199 44.406 20.0105 44.215 20.0773C44.0239 20.1441 43.866 20.282 43.774 20.4623C43.682 20.6426 43.6631 20.8514 43.7212 21.0453C44.9289 24.5163 42.5317 27.1085 40.7039 28.4969L39.9655 27.4387C39.7172 27.0838 39.1621 26.7887 38.7305 26.7835L34.5861 26.8017C34.0798 26.817 33.5871 26.9689 33.16 27.2411L20.9478 35.8042C20.6637 36.0041 20.4704 36.3084 20.4102 36.6505C20.3501 36.9926 20.4279 37.3446 20.6267 37.6294L26.1764 45.5698C26.5924 46.1613 27.2567 46.0898 27.8495 45.6764L40.0617 37.112C40.4127 36.8637 40.8183 36.3281 40.9613 35.9186L42.2587 31.8301C42.4017 31.4219 42.3146 30.7992 42.0663 30.4443L41.6165 29.7995C44.0709 27.9184 46.6189 24.5943 45.2045 20.5266ZM39.5222 32.692C39.2972 32.8495 39.0434 32.9611 38.7753 33.0205C38.5071 33.0799 38.2299 33.0858 37.9595 33.038C37.6891 32.9902 37.4307 32.8896 37.1992 32.7419C36.9677 32.5942 36.7675 32.4023 36.6102 32.1772C36.2916 31.7218 36.1667 31.1585 36.263 30.6111C36.3593 30.0637 36.6688 29.5769 37.1237 29.2574C37.4803 29.0076 37.906 28.8754 38.3414 28.8794C38.7768 28.8834 39.2001 29.0233 39.5521 29.2795C39.1985 29.4927 38.9554 29.6175 38.9099 29.637C38.7487 29.7139 38.6184 29.8432 38.5404 30.0037C38.4623 30.1643 38.4411 30.3466 38.4803 30.5208C38.5194 30.695 38.6165 30.8507 38.7558 30.9625C38.895 31.0743 39.068 31.1354 39.2466 31.1359C39.3584 31.1359 39.4728 31.1099 39.5807 31.0592C39.8329 30.9396 40.1033 30.7979 40.3854 30.6302C40.4503 31.0203 40.4037 31.4208 40.2509 31.7856C40.0982 32.1503 39.8456 32.4645 39.5222 32.692Z" fill="white"/>
+                    </svg>
+
+                    <p class="fw-7 fs-18 mb-14">Выгодные цены</p>
+                    <p>
+                        Возможность купить товар в рассрочку/кредит не выходя из дома
+                    </p>
+                </div>
+                <div class="mb-40">
+                    <svg class="mb-25" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32.5" cy="32.5" r="32.5" fill="#6839CF"/>
+                    <path d="M41.0733 27.0118C40.84 26.3235 40.1867 25.8335 39.4167 25.8335H26.5833C25.8133 25.8335 25.1717 26.3235 24.9267 27.0118L22.5 34.0002V43.3335C22.5 43.9752 23.025 44.5002 23.6667 44.5002H24.8333C25.475 44.5002 26 43.9752 26 43.3335V42.1668H40V43.3335C40 43.9752 40.525 44.5002 41.1667 44.5002H42.3333C42.975 44.5002 43.5 43.9752 43.5 43.3335V34.0002L41.0733 27.0118ZM26.5833 38.6668C25.615 38.6668 24.8333 37.8852 24.8333 36.9168C24.8333 35.9485 25.615 35.1668 26.5833 35.1668C27.5517 35.1668 28.3333 35.9485 28.3333 36.9168C28.3333 37.8852 27.5517 38.6668 26.5833 38.6668ZM39.4167 38.6668C38.4483 38.6668 37.6667 37.8852 37.6667 36.9168C37.6667 35.9485 38.4483 35.1668 39.4167 35.1668C40.385 35.1668 41.1667 35.9485 41.1667 36.9168C41.1667 37.8852 40.385 38.6668 39.4167 38.6668ZM24.8333 32.8335L26.5833 27.5835H39.4167L41.1667 32.8335H24.8333Z" fill="white"/>
+                </svg>
+                    <p class="fw-7 fs-18 mb-14">Доставка до дома</p>
+                    <p>
+                        В пределах города доставка курьером до двери бесплатно на заказ от 3000 рублей
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- advantages -->
+
+
+    <!-- footer -->
+    <footer class="bg-1 c-5">
+        <div class="container container-big">
+            <div class="row">
+                <!-- newsletter form -->
+                <form class="footer-form df fw mb-40" action="#" method="POST">
+                    <div class="col-12 col-lg-6 col-xl-5 col-xxl-4 text-center text-md-left">
+                        <h2 class="c-5 mb-14">Подпишитесь на&#160;рассылку</h2>
+                        <p class="mb-16">Узнавайте первыми о&#160;наших новинках и&#160;акциях</p>
+                    </div>
+                    <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
+                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-10 mr-10">
+                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 mb-10">Подписаться</button>
+                    </div>
+                </form>
+                <!-- footer nav -->
+                <nav class="footernav df jsb row align-items-start">
+                    <!-- info list -->
+                    <ul class="footernav-list col-sm-5 col-lg-2 mb-30">
+                        <li class="footernav-heading mb-25">Информация</li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Как заказать</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Условия доставки</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Условия оплаты</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="" class="footernav-link">Гарантия на товар</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="comments.html" class="footernav-link">Отзывы</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="news.html" class="footernav-link">Новости</a>
+                        </li>
+                    </ul>
+                    <!-- products links list -->
+                    <ul class="footernav-list col-sm-7 col-lg-4 df aie jsb mb-30">
+                        <li class="col-lg-6">
+                            <ul>
+                                <li class="footernav-heading mb-25">Продукция</li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 12 pro</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 12 pro max</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 11 pro</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 11 pro max</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 11</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 10</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-lg-6">
+                            <ul>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 10R</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 10S</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Iphone 8</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Watch</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Air pods</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="" class="footernav-link">Macbook</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- contacts list -->
+                    <ul class="footernav-list col-lg-3 mb-30">
+                        <li class="footernav-heading mb-25">Контакты</li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Адрес:</dt>
+                                <dd>Казань, ул. Рихарда Зорге 66, ТЦ Олимп 3&#160;этаж
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Телефон:</dt>
+                                <dd>
+                                    <a href="tel:+79520343634">
+                                        +7&#160;(952)&#160;034-36-34
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Режим работы:</dt>
+                                <dd>Пн–Вс:&#160;9:00–22:00
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Email:</dt>
+                                <dd>
+                                    <a href="mailto:ismart@mail.com">ismart@mail.com
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!-- payment types and social links -->
+                    <div class="df fw col-lg-3 col-xxl-2">
+                        <!-- payment types -->
+                        <ul class="col-sm-6 col-md-12 footernav-list mb-30">
+                            <li class="footernav-heading mb-10">Мы принимаем<br> к&#160;оплате</li>
+                            <li>
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="PayPal">
+                                        <img src="images/img/paypal.svg" alt="PayPal">
+                                    </li>
+                                    <li class="payment-icon" title="Visa">
+                                        <img src="images/img/visa.svg" alt="Visa">
+                                    </li>
+                                    <li class="payment-icon" title="Maestro">
+                                        <img src="images/img/maestro.svg" alt="Maestro">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- social links -->
+                        <ul class="col-sm-6 col-md-12 footernav-list">
+                            <li class="footernav-heading mb-10">Наши социальные<br> сети</li>
+                            <li>
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="iSmart в Facebook">
+                                        <a href="">
+                                            <img src="images/icons/facebook.svg" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="payment-icon" title="iSmart в Instagram">
+                                        <a href="">
+                                            <img src="images/icons/insta.svg" alt="instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- copyright -->
+                <div class="footer-bottom df fw aic jsb">
+                    <p class="copyright mb-16">Все права защищены <time datetime="2020">2020</time>&#160;@ismart</p>
+                    <address class="df aic mb-16">
+                        <span>Создание и&#160;продвижение сайтов</span>
+                        <a href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
+                            <img src="images/img/asm-promo.png" alt="Веб-студия AsmPromo">
+                        </a>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <!-- anchor to top of page -->
+        <a href="#top" class="d-none" title="В начало страницы"></a>
+    </footer>
+    <!-- footer -->
+
+
+
+    <!-- Modal Create Comment-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered bg-3 pr">
+            <form method="POST" action="" class="modal-content c-14 fw-5 ps">
+                <div class="mx-auto col-11 col-sm-10 col-lg-9 col-xl-8 col-xxl-8">
+                    <div class="modal-header">
+                        <h1 class="modal-title fw-7 c-14 fs-36" id="staticBackdropLabel">Оставить отзыв</h1>
+                        <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
+                            </svg>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <!--  -->
+                        <fieldset class="mb-40">
+                            <legend class="fs-18 fw-5">Ваша оценка</legend>
+                        </fieldset>
+                        <!-- reviewier  -->
+                        <input required type="text" minlength="3" maxlength="15" placeholder="Ваше имя" class="col-12 mb-30" name="comment-name" id="comment-name">
+
+                        <input required type="tel" minlength="10" maxlength="10" name="comment-tel" id="comment-tel" placeholder="+7 (999) 999-99-99" class="col-12 mb-30">
+
+                        <textarea required minlength="10" maxlength="200" name="comment-textarea" id="comment-textarea" cols="30" rows="1" placeholder="Ваш отзыв" class="col-12"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <label for="comment-checkbox" class="mb-30 fw-5 c-10 d-block">
+                        <input checked required type="checkbox" name="comment-checkbox" id="comment-checkbox" class="mr-10 pr"><span>Я согласен на </span><a href="" class="c-1"><u>обработку персональных данных</u></a>
+                    </label>
+                        <button type="submit" value="Отправить" class="purple fw-7 fs-20 col-12 lh-100">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- bootstrap 5 js -->
+    <!-- JavaScript Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!-- bootstrap 5 js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
