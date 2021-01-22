@@ -18,7 +18,7 @@ body {
   line-height: normal;
   color: #303030;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 200;
 }
 .purple,
 .purple-border {
@@ -124,6 +124,9 @@ p {
 .mr-10 {
   margin-right: 10px;
 }
+.mr-20 {
+  margin-right: 20px;
+}
 .mr-30 {
   margin-right: 30px;
 }
@@ -223,6 +226,9 @@ p {
 .c-14 {
   color: #3A3C3C;
 }
+.c-15 {
+  color: #0156FF;
+}
 .fw-3 {
   font-weight: 300;
 }
@@ -295,6 +301,9 @@ p {
 }
 .bg-8 {
   background-color: #F5F7FF;
+}
+.bg-9 {
+  background-color: #9696A0;
 }
 section .section-title {
   display: flex;
@@ -1560,9 +1569,6 @@ textarea:focus {
 .info-buyer .nav-link:hover {
   background-color: #FAFBFF;
 }
-.tab-content .purple {
-  padding: 16px;
-}
 .modal-title {
   line-height: 100%;
 }
@@ -1581,14 +1587,18 @@ textarea:focus {
   justify-content: flex-start;
 }
 .modal .btn-close {
+  padding: 8px;
   opacity: 1;
   right: 20px;
   top: 20px;
   background: none;
   margin: 0;
 }
-.modal .purple {
-  padding: 16px;
+.modal .btn-close:hover svg {
+  transform: rotate(180deg);
+}
+.modal .btn-close:hover svg path {
+  fill: #824DF5;
 }
 .modal label {
   user-select: none;
@@ -1596,10 +1606,6 @@ textarea:focus {
 .modal label input {
   top: 4px;
   margin-bottom: 10px;
-}
-.modal input,
-.modal textarea {
-  padding-bottom: 20px;
 }
 .modal input::placeholder,
 .modal textarea::placeholder {
@@ -1777,17 +1783,64 @@ button {
   border: 1px solid #C4C4C4;
   font-size: 14px;
   line-height: 20px;
-  color: #8D8D8D;
+  color: #303030;
   padding: 14px 20px;
 }
 .input:focus {
-  color: #495057;
   background-color: #fff;
   border-color: #824df5;
   outline: 0;
   box-shadow: 0px 0px 5px #824DF5;
 }
+.input:placeholder-shown {
+  color: #8D8D8D;
+  font-weight: 300;
+}
 form a.c-3 {
   background: none;
   padding: 0;
+}
+.account-block .nav {
+  padding: 10px 0;
+}
+.account-block .nav hr {
+  margin: 15px 0;
+}
+.account-block .nav-link {
+  padding: 0 20px;
+  margin: 10px 0;
+}
+.account-block .nav-link.active {
+  color: #303030;
+  font-weight: 500;
+  border-left: 3px solid #6839CF;
+}
+.account-block dl {
+  margin-bottom: 15px;
+}
+.account-block dt {
+  font-weight: 300;
+  color: #666666;
+}
+.account-block dd {
+  font-weight: 500;
+  color: black;
+  margin: 0;
+}
+button.underline {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+.bttn {
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: white;
+  border: 0;
+}
+.bttn:hover,
+.bttn:focus {
+  opacity: 0.9;
 }
