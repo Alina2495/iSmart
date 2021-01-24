@@ -504,7 +504,7 @@ header {
         letter-spacing: 0.0075em;
         white-space: nowrap;
     }
-    a.c-3 {
+    button.c-3 {
         background-image: none;
         padding-right: 0;
         text-decoration: underline;
@@ -662,6 +662,7 @@ header {
         padding: 25px 40px;
         font-size: 18px;
         margin-bottom: -2px;
+        border-radius: 4px 4px 0 0;
         &:hover {
             border-bottom: 4px solid #8772b4;
             background-color: #fbfbff;
@@ -1067,8 +1068,11 @@ footer {
             color: #9487A1;
         }
         &-item {
-            margin-bottom: 6px;
-            line-height: 125%;
+            margin-bottom: 7px;
+            line-height: 120%;
+            &:hover {
+                text-decoration: underline;
+            }
             dl, dt, dd {
                 margin: 0;
                 font-weight: normal;
@@ -1944,7 +1948,8 @@ a, button {
         background-color: #fff;
         border-color: #824df5;
         outline: 0;
-        box-shadow: 0px 0px 5px #824DF5;
+        // box-shadow: 0px 0px 5px #824DF5;
+        box-shadow: none;
     }
     &:placeholder-shown {
         color: #8D8D8D;
@@ -2003,4 +2008,111 @@ button.underline {
     &:hover, &:focus {
         opacity: 0.9;
     }
+}
+
+.visuallyhidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+.table {
+    border: 1px solid #CCCCCC;
+}
+.table .table {
+    border: none;
+}
+.caption-top > thead tr th {
+    color: #666666;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #CCCCCC;
+}
+.table .table th {
+    color: #212121;
+    font-weight: 600;
+}
+.table .table th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.table > td {
+    padding: 0;
+}
+.table {
+    tr {
+        display: flex;
+        .df {
+            width: 30%;
+        }
+    }
+    & th, & td {
+        width: 50%;
+        flex-grow: 1;
+    }
+    th:last-of-type {
+        width: 25%;
+    }
+}
+
+.orders {
+    
+    .order {
+        border: 1px solid #CCCCCC;
+        margin-bottom: 20px;
+        justify-content: stretch;
+        &-column {
+            flex-grow: 1;
+        }
+        &-number, &-address {
+            flex-basis: 40%;
+        }
+        &-price {
+            flex-basis: 20%;
+        }
+        &-title {
+            border-top: 1px solid #CCCCCC;
+            border-bottom: 1px solid #CCCCCC;
+            color: #666666;
+            font-weight: 200;
+            margin-top: -1px;
+            padding: 20px;
+        }
+        &-info {
+            padding: 20px;
+            color: #212121;
+            font-weight: 400;
+            &-title {
+                color: #212121;
+                font-weight: 600;
+            }
+            &-text {
+                padding-top: 20px;
+                color: black;
+                a {
+                    display: block;
+                    color: #2E90E5;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            time {
+                color: #606060;
+            }
+        }
+    }
+}
+svg {
+    user-select: none;
 }

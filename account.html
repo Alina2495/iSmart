@@ -267,13 +267,13 @@
                 <div class="nav flex-column c-13 fs-18 mb-30" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background-color: #FBFCFF;">
 
                     <!-- personal info -->
-                    <a class="nav-link active" id="personal-info-tab" data-bs-toggle="pill" href="#personal-info" role="tab" aria-controls="personal-info" aria-selected="true">Личная информация</a>
+                    <a class="nav-link" id="personal-info-tab" data-bs-toggle="pill" href="#personal-info" role="tab" aria-controls="personal-info" aria-selected="true">Личная информация</a>
 
                     <!-- delivery addreses -->
                     <a class="nav-link" id="delivery-addresses-tab" data-bs-toggle="pill" href="#delivery-addresses" role="tab" aria-controls="delivery-addresses" aria-selected="false">Адреса доставки</a>
 
                     <!-- orders history -->
-                    <a class="nav-link" id="orders-history-tab" data-bs-toggle="pill" href="#orders-history" role="tab" aria-controls="orders-history" aria-selected="false">История заказов</a>
+                    <a class="nav-link active" id="orders-history-tab" data-bs-toggle="pill" href="#orders-history" role="tab" aria-controls="orders-history" aria-selected="false">История заказов</a>
                     <hr>
                     <!-- logout -->
                     <a class="nav-link" href="login.html">Выйти</a>
@@ -284,7 +284,7 @@
             <!-- tabs content -->
             <div class="tab-content col-lg-9" id="v-pills-tabContent">
                 <!-- personal info -->
-                <div class="tab-pane fade show active" id="personal-info" role="tabpanel" aria-labelledby="personal-info-tab">
+                <div class="tab-pane fade" id="personal-info" role="tabpanel" aria-labelledby="personal-info-tab">
                     <div>
                         <h4>Личная информация</h4>
                         <hr>
@@ -312,18 +312,18 @@
                         </div>
                         <div>
                             <button type="button" class="underline c-15 fw-3 fs-14 mr-30" data-bs-toggle="modal" data-bs-target="#editProfileModal" title="Редактировать профиль">
-                            Редактировать
-                          </button>
+                                Редактировать
+                            </button>
                             <button type="button" class="underline c-15 fw-3 fs-14" data-bs-toggle="modal" data-bs-target="#changePassModal" title="Изменить пароль">
-                            Изменить пароль
-                          </button>
+                                Изменить пароль
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- delivery addreses -->
                 <div class="tab-pane fade" id="delivery-addresses" role="tabpanel" aria-labelledby="delivery-addresses-tab">
-                    <div class="df mb-30">
+                    <div class="df mb-20">
                         <h4 class="mb-0 mr-30">Адреса доставки</h4>
                         <button type="button" class="underline c-15 fw-3 fs-14" data-bs-toggle="modal" data-bs-target="#addAddressModal" title="Добавить новый адрес">
                             Добавить адрес
@@ -346,10 +346,189 @@
                 </div>
 
                 <!-- orders history -->
-                <div class="tab-pane fade" id="orders-history" role="tabpanel" aria-labelledby="orders-history-tab">
+                <div class="tab-pane fade show active" id="orders-history" role="tabpanel" aria-labelledby="orders-history-tab">
+
                     <h4>Ваши заказы</h4>
-                    <hr>
-                    <p>Вы пока ничего не заказывали.</p>
+                    <!-- <hr>
+                    <p>Вы пока ничего не заказывали.</p> -->
+                    <!-- <table class="table table-responsive caption-top">
+                        <caption>Ваши заказы</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="1">Номер заказа</th>
+                                <th>Адрес заказа:</th>
+                                <th>Стоимость:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <table class="table table-borderless table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>№ 12345 <time> ( 14.01.2020)</time></th>
+                                                <th>Доставка СДЭК</th>
+                                                <th>356 360 ₽ </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="df fc">
+                                                    <a href="" class="c-15">Смартфон Apple iPhone 11 Pro 256GB</a>
+                                                    <a href="" class="c-15">Смартфон Apple iPhone 11 256GB</a>
+                                                </td>
+                                                <td colspan="2">Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>№ 12345 (<time>14.01.2020</time>)</th>
+                                                <th>Доставка СДЭК</th>
+                                                <th>356 360 ₽ </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="df fc">
+                                                    <a href="" class="c-15">Смартфон Apple iPhone 11 Pro 256GB</a>
+                                                </td>
+                                                <td colspan="2">Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="mt-80 table table-bordered table-responsive caption-top">
+                        <caption>Ваши заказы</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="1">Номер заказа</th>
+                                <th>Адрес заказа:</th>
+                                <th>Стоимость:</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table table-borderless">
+                            <tr>
+                                <th>№ 12345 <time> ( 14.01.2020)</time></th>
+                                <th>Доставка СДЭК</th>
+                                <th>356 360 ₽ </th>
+                            </tr>
+                            <tr>
+                                <td class="df fc">
+                                    <a href="" class="c-15">Смартфон Apple iPhone 11 Pro 256GB</a>
+                                    <a href="" class="c-15">Смартфон Apple iPhone 11 256GB</a>
+                                </td>
+                                <td colspan="2">Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</td>
+                            </tr>
+                            <tr>
+                                <th>№ 12345 (<time>14.01.2020</time>)</th>
+                                <th>Доставка СДЭК</th>
+                                <th>356 360 ₽ </th>
+                            </tr>
+                            <tr>
+                                <td class="df fc">
+                                    <a href="" class="c-15">Смартфон Apple iPhone 11 Pro 256GB</a>
+                                </td>
+                                <td colspan="2">Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2</td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+
+
+                    <div class="orders">
+                        <div class="order df fw">
+                            <div class="order-column order-number">
+                                <div class="order-title">
+                                    Номер заказа:
+                                </div>
+                                <div class="order-info">
+                                    <div class="order-info-title">
+                                        № 12345 <time> ( 14.01.2020)</time>
+                                    </div>
+                                    <div class="order-info-text">
+                                        <a href="">
+                                        Смартфон Apple iPhone 11 256GB
+                                        </a>
+                                        <a href="">Смартфон Apple iPhone 11 256GB</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-column order-address">
+                                <div class="order-title">
+                                    Адрес заказа:
+                                </div>
+                                <div class="order-info df fc">
+                                    <div class="order-info-title">
+                                        Самовывоз
+                                    </div>
+                                    <div class="order-info-text">
+                                        Казань, ул. Рихарда Зорге 66
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-column order-price">
+                                <div class="order-title">
+                                    Стоимость:
+                                </div>
+                                <div class="order-info">
+                                    <div class="order-info-title">
+                                        88 990 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="order df fw">
+                            <div class="order-column order-number">
+                                <div class="order-title">
+                                    Номер заказа:
+                                </div>
+                                <div class="order-info">
+                                    <div class="order-info-title">
+                                        № 12345 <time> ( 14.01.2020)</time>
+                                    </div>
+                                    <div class="order-info-text">
+                                        <a href="">
+                                        Смартфон Apple iPhone 11 256GB
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-column order-address">
+                                <div class="order-title">
+                                    Адрес заказа:
+                                </div>
+                                <div class="order-info df fc">
+                                    <div class="order-info-title">
+                                        Самовывоз
+                                    </div>
+                                    <div class="order-info-text">
+                                        Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-column order-price">
+                                <div class="order-title">
+                                    Стоимость:
+                                </div>
+                                <div class="order-info">
+                                    <div class="order-info-title">
+                                        356 360 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
