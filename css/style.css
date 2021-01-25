@@ -19,6 +19,7 @@ body {
   color: #303030;
   font-size: 16px;
   font-weight: 200;
+  background-color: #0156FF;
 }
 .purple,
 .purple-border {
@@ -788,6 +789,7 @@ header .navbar-toggler-icon {
 }
 .product-group.accessories img {
   height: 160px;
+  margin-bottom: 30px;
 }
 .advantages .row > div {
   margin-bottom: 40px;
@@ -952,7 +954,7 @@ header .navbar-toggler-icon {
   padding: 10px 30px;
 }
 .contacts-map {
-  height: 50px;
+  height: 500px;
 }
 /* contacts block */
 /* footer */
@@ -1271,6 +1273,7 @@ footer a[href='#top']:hover {
   }
   .about img {
     height: 250px;
+    object-fit: cover;
   }
   footer {
     margin-bottom: 55px;
