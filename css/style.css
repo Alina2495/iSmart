@@ -230,6 +230,9 @@ p {
 .c-15 {
   color: #0156FF;
 }
+.c-16 {
+  color: #8C8C8C;
+}
 .fw-3 {
   font-weight: 300;
 }
@@ -305,6 +308,9 @@ p {
 }
 .bg-9 {
   background-color: #9696A0;
+}
+.bg-10 {
+  background-color: #160823;
 }
 section .section-title {
   display: flex;
@@ -954,7 +960,7 @@ header .navbar-toggler-icon {
   padding: 10px 30px;
 }
 .contacts-map {
-  height: 500px;
+  height: 250px;
 }
 /* contacts block */
 /* footer */
@@ -1957,4 +1963,7 @@ button.underline {
 }
 svg {
   user-select: none;
+}
+.tnw {
+  white-space: nowrap;
 }

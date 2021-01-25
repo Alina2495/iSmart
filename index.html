@@ -21,7 +21,7 @@
     <meta name="og:type" content="website">
     <!-- fonts Inter -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap;" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap;" rel="stylesheet">
     <!-- fonts -->
     <!-- fonts Poppins -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,40 +35,50 @@
 
 <body class="bg-3 c-1">
     <h1 class="visuallyhidden">iSmart</h1>
-    <!-- header -->
-    <header class="c-1">
-        <!-- container -->
-        <div class="container container-big">
-            <!-- navigation -->
-            <nav class="navbar navbar-expand-lg">
-                <!-- logotype -->
-                <a class="navbar-brand p-0">
-                    <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
-                </a>
-                <!-- menu button on mobile -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- collapse nav -->
-                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-                    <!-- mobile menu with products -->
-                    <ul class="mobile-cat-list df fw-4 d-lg-none">
-                        <li><a href="">iPhone</a></li>
-                        <li><a href="">iPad</a></li>
-                        <li><a href="">Macbook</a></li>
-                        <li><a href="">AirPods</a></li>
-                        <li><a href="">Аксессуары</a></li>
-                    </ul>
 
-                    <!-- header nav links -->
-                    <ul class="navbar-nav fnw fw-5 lh-2 aic">
-                        <!-- catalog link -->
+
+    <!-- header desktop -->
+    <header>
+        <!-- header top -->
+        <div class="header-top bg-10 c-5 fs-12 fw-6">
+            <div class="container container-big">
+                <div class="df fw jsb aic">
+                    <div>
+                        <span class="mr-1">Казань, ул. Рихарда Зорге 66, ТЦ Олимп 3 этаж: </span><span class="c-16 tnw">9:00 - 22:00</span>
+                    </div>
+                    <div class="df aic">
+                        <span class="mr-10">
+                            <a href="tel:+7 (952) 034-36-34" title="Позвонить нам" class="tnw">
+                                +7&#160;(952)&#160;034-36-34
+                            </a>
+                        </span>
+                        <a href="" title="iSmart в Facebook" class="mr-10">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.1053 0.276611H0.894475C0.552719 0.276611 0.276611 0.552719 0.276611 0.894475V15.1053C0.276611 15.4471 0.552719 15.7232 0.894475 15.7232H15.1053C15.4471 15.7232 15.7232 15.4471 15.7232 15.1053V0.894475C15.7232 0.552719 15.4471 0.276611 15.1053 0.276611ZM13.3213 4.78508H12.0875C11.1201 4.78508 10.9328 5.24462 10.9328 5.92041V7.40907H13.2421L12.9409 9.73957H10.9328V15.7232H8.52509V9.74151H6.51124V7.40907H8.52509V5.69064C8.52509 3.6961 9.74344 2.60905 11.5237 2.60905C12.3771 2.60905 13.1089 2.67276 13.3232 2.70173V4.78508H13.3213Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/ismart116" title="iSmart в Facebook">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99997 5.39658C6.56638 5.39658 5.39646 6.5665 5.39646 8.00009C5.39646 9.43368 6.56638 10.6036 7.99997 10.6036C9.43357 10.6036 10.6035 9.43368 10.6035 8.00009C10.6035 6.5665 9.43357 5.39658 7.99997 5.39658ZM15.8086 8.00009C15.8086 6.92197 15.8183 5.85361 15.7578 4.77744C15.6972 3.52744 15.4121 2.41806 14.498 1.504C13.582 0.587983 12.4746 0.30478 11.2246 0.244233C10.1465 0.183686 9.0781 0.193452 8.00192 0.193452C6.9238 0.193452 5.85544 0.183686 4.77927 0.244233C3.52927 0.30478 2.41989 0.589936 1.50583 1.504C0.589814 2.42001 0.306611 3.52744 0.246064 4.77744C0.185517 5.85556 0.195283 6.92392 0.195283 8.00009C0.195283 9.07626 0.185517 10.1466 0.246064 11.2227C0.306611 12.4727 0.591768 13.5821 1.50583 14.4962C2.42185 15.4122 3.52927 15.6954 4.77927 15.7559C5.85739 15.8165 6.92575 15.8067 8.00192 15.8067C9.08005 15.8067 10.1484 15.8165 11.2246 15.7559C12.4746 15.6954 13.584 15.4102 14.498 14.4962C15.414 13.5802 15.6972 12.4727 15.7578 11.2227C15.8203 10.1466 15.8086 9.07822 15.8086 8.00009ZM7.99997 12.0059C5.78317 12.0059 3.99411 10.2169 3.99411 8.00009C3.99411 5.78329 5.78317 3.99423 7.99997 3.99423C10.2168 3.99423 12.0058 5.78329 12.0058 8.00009C12.0058 10.2169 10.2168 12.0059 7.99997 12.0059ZM12.1699 4.76572C11.6523 4.76572 11.2343 4.34775 11.2343 3.83017C11.2343 3.31259 11.6523 2.89462 12.1699 2.89462C12.6875 2.89462 13.1054 3.31259 13.1054 3.83017C13.1056 3.95307 13.0815 4.0748 13.0345 4.18837C12.9876 4.30195 12.9187 4.40514 12.8318 4.49205C12.7449 4.57895 12.6417 4.64786 12.5281 4.69482C12.4145 4.74178 12.2928 4.76587 12.1699 4.76572Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom c-13 fs-16 pr">
+            <div class="container container-big">
+                <div class="df jsb aic">
+                    <a class="navbar-brand p-0" href="index.html">
+                        <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
+                    </a>
+                    <ul class="fw-6 df jsb aic col-5">
                         <li class="nav-item dropdown br-4 df aic catalog position-static">
                             <a class="nav-link dropdown-toggle fs-16 fw-5" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
-                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="white"/>
-                                </svg>
-                                <span>Каталог товаров</span>
+                                <svg class="mr-1" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="#303030"/>
+                                </svg> Каталог товаров
+
                             </a>
                             <ul class="dropdown-menu col-10 pr" aria-labelledby="navbarDropdownMenuLink">
                                 <svg class="pa" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,93 +125,65 @@
                                         </li>
                                     </ul>
                                     <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">iPad</li>
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">iPad</li>
                                         <li><a href="">iPad Pro</a></li>
                                         <li><a href="">iPad</a></li>
                                         <li><a href="">iPad mini</a></li>
                                         <li><a href="">iPad Air</a></li>
                                     </ul>
                                     <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">Macbook</li>
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Macbook</li>
                                         <li><a href="">Macbook Air</a></li>
                                         <li><a href="">Macbook Pro 13</a></li>
                                         <li><a href="">Macbook Pro 16</a></li>
                                         <li><a href="">iMac</a></li>
                                     </ul>
                                     <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">AirPods</li>
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">AirPods</li>
                                         <li><a href="">AirPods</a></li>
                                         <li><a href="">AirPods Pro</a></li>
                                         <li><a href="">AirPods Max</a></li>
                                         <li><a href="">iPod touch</a></li>
                                     </ul>
                                     <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 ">Аксессуары</li>
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Аксессуары</li>
                                         <li><a href="">Зарядные<br>устройства</a></li>
                                         <li><a href="">Аккумуляторы</a></li>
                                         <li><a href="">Чехлы</a></li>
                                     </ul>
                                 </div>
                             </ul>
+
                         </li>
-                        <!-- client link -->
-                        <li class="nav-item dropdown br-4 df aic buyer">
-                            <a class="nav-link dropdown-toggle icon fs-16 fw-4" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню покупателя">
-                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="#303030"/>
-                                </svg>
-                                <span>Покупателю</span>
-                            </a>
-                            <!-- for client dropdown menu -->
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li>
+                            <a href="">Покупателю</a>
                         </li>
-                        <!-- news link -->
-                        <li class="nav-item">
-                            <a class="nav-link fs-16 fw-4" href="news.html">Новости</a>
+                        <li>
+                            <a href="">Оптовикам</a>
                         </li>
-                        <!-- contacts link -->
-                        <li class="nav-item">
-                            <a class="nav-link fs-16 fw-4" href="contacts.html">Контакты</a>
+                        <li>
+                            <a href="">Скидки</a>
                         </li>
                     </ul>
-
-                    <!-- search form -->
-                    <form action="#" method="GET" class="search-form df aic mx-3 col-xxl-4">
-                        <input required type="search" name="search" id="search" placeholder="Поиск по товарам" class="fs-16 lh-158 w-100">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5 10.9999H11.71L11.43 10.7299C12.63 9.32989 13.25 7.41989 12.91 5.38989C12.44 2.60989 10.12 0.389893 7.32001 0.0498932C3.09001 -0.470107 -0.469985 3.08989 0.0500152 7.31989C0.390015 10.1199 2.61002 12.4399 5.39002 12.9099C7.42002 13.2499 9.33002 12.6299 10.73 11.4299L11 11.7099V12.4999L15.25 16.7499C15.66 17.1599 16.33 17.1599 16.74 16.7499C17.15 16.3399 17.15 15.6699 16.74 15.2599L12.5 10.9999ZM6.50002 10.9999C4.01002 10.9999 2.00002 8.98989 2.00002 6.49989C2.00002 4.00989 4.01002 1.99989 6.50002 1.99989C8.99002 1.99989 11 4.00989 11 6.49989C11 8.98989 8.99002 10.9999 6.50002 10.9999Z" fill="#323232"/>
+                    <button class="ml-auto">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.7062 16.0087L16.7062 16.0087C16.7891 16.0915 16.8874 16.1572 16.9957 16.2021C17.1039 16.2469 17.2199 16.27 17.3371 16.27C17.4542 16.27 17.5702 16.2469 17.6785 16.2021C17.7867 16.1572 17.885 16.0915 17.9679 16.0087C18.0507 15.9258 18.1164 15.8275 18.1613 15.7192C18.2061 15.611 18.2292 15.495 18.2292 15.3779C18.2292 15.2607 18.2061 15.1447 18.1613 15.0365C18.1164 14.9282 18.0507 14.8299 17.9679 14.747L17.9679 14.747L14.6361 11.4161C15.6014 10.1351 16.0541 8.53858 15.9032 6.93955C15.7494 5.31066 14.9809 3.80151 13.754 2.71913C12.5271 1.63674 10.9338 1.06244 9.2985 1.11304C7.66315 1.16365 6.10851 1.83536 4.95084 2.99153C3.79216 4.1485 3.11825 5.70376 3.06643 7.34035C3.01462 8.97695 3.5888 10.5717 4.67198 11.7997C5.75515 13.0276 7.26579 13.7963 8.89606 13.9492C10.4966 14.0992 12.0942 13.6446 13.375 12.6767L16.7062 16.0087ZM12.7889 4.25378C13.2264 4.68428 13.5744 5.19715 13.8128 5.76281C14.0512 6.32848 14.1752 6.93574 14.1777 7.54956C14.1802 8.16339 14.0611 8.77164 13.8274 9.33923C13.5936 9.90681 13.2498 10.4225 12.8158 10.8565C12.3817 11.2906 11.866 11.6344 11.2984 11.8682C10.7308 12.1019 10.1226 12.221 9.50877 12.2185C8.89494 12.216 8.28768 12.092 7.72202 11.8536C7.15636 11.6152 6.64349 11.2672 6.21299 10.8297C5.35268 9.95522 4.87275 8.77625 4.87774 7.54956C4.88274 6.32288 5.37225 5.14786 6.23966 4.28045C7.10706 3.41304 8.28208 2.92353 9.50877 2.91854C10.7355 2.91354 11.9144 3.39347 12.7889 4.25378Z" fill="black" stroke="black" stroke-width="0.2"/>
                         </svg>
-                    </form>
-                    <div class="d-flex justify-content-between align-items-start nav-right">
-
-                        <!-- LOGIN LINK -->
-                        <a class="account fw-5 mr-30 d-none d-lg-flex aic" href="login.html">
-                            <!-- login icon -->
-                            <svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="#323232"/>
-                            </svg>
-                            <!--
-                            --><span>Войти</span>
-                        </a>
-                        <!-- phone and call order -->
-                        <div class="d-flex flex-column align-items-end right">
-                            <a class="tel d-block fs-18" href="tel:+7 (952) 034-36-34" title="Позвонить нам">+7&#160;(952)&#160;034-36-34</a>
-                            <button type="button" class="c-3 fs-14 lh-2 underline" data-bs-toggle="modal" data-bs-target="#callBackModal">
-                                заказать звонок
-                            </button>
-                        </div>
-                    </div>
+                    </button>
+                    <!-- LOGIN LINK -->
+                    <a class="fw-5 df aic" href="login.html">
+                        <!-- login icon -->
+                        <svg class="mr-10" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z" fill="black"/>
+                    </svg><span>Войти</span>
+                    </a>
                 </div>
-            </nav>
-            <!-- navigation -->
+
+            </div>
         </div>
-        <!-- container -->
     </header>
-    <!-- header -->
+
+
 
     <main>
         <!-- first banner -->
@@ -756,9 +738,9 @@
                         <!-- accessories  -->
                         <div class="product-group accessories row-cols-auto row-cols-lg-4">
                             <div>
-                                <div class="product-preview ">
-                                    <img class="img " src="images/img/accs.jpg " alt="Apple iPhone 11 64GB ">
-                                    <div class="sale ">- 100 % </div>
+                                <div class="product-preview">
+                                    <img class="img" src="images/img/accs.jpg" alt="Apple iPhone 11 64GB">
+                                    <div class="sale">- 100 % </div>
                                     <!-- wish checkbox -->
                                     <label for="wish-checkbox-1" title="Добавить в избранное" class="compare-button br-4 df aic jsc bg-3 wish-button">  
                                         <input type="checkbox" class="compare-checkbox" id="wish-checkbox-1">
@@ -774,21 +756,21 @@
                                             <path d="M19.6667 4.33329H17.6667V6.33329H17V4.33329H15V3.66663H17V1.66663H17.6667V3.66663H19.6667V4.33329Z" fill="#9696A0"/>
                                             </svg>
                                     </label>
-                                    <div class="name ">Apple iPhone 11 64GB</div>
-                                    <div class="text ">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                                    <div class="product-footer ">
+                                    <div class="name">Apple iPhone 11 64GB</div>
+                                    <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                    <div class="product-footer">
                                         <div>
                                             <del>65 000 ₽</del>
-                                            <div class="price ">53 000 ₽</div>
+                                            <div class="price">53 000 ₽</div>
                                         </div>
-                                        <button class="purple-border ">В корзину</button>
+                                        <button class="purple-border">В корзину</button>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <div class="product-preview ">
-                                    <img class="img " src="images/img/accs-2.jpg " alt="Apple iPhone 11 64GB ">
-                                    <!-- <div class="sale ">- 10 % </div> -->
+                                <div class="product-preview">
+                                    <img class="img" src="images/img/accs-2.jpg" alt="Apple iPhone 11 64GB">
+                                    <!-- <div class="sale">- 10 % </div> -->
                                     <!-- wish checkbox -->
                                     <label for="wish-checkbox-1" title="Добавить в избранное" class="compare-button br-4 df aic jsc bg-3 wish-button">  
                                         <input type="checkbox" class="compare-checkbox" id="wish-checkbox-1">
@@ -804,21 +786,21 @@
                                             <path d="M19.6667 4.33329H17.6667V6.33329H17V4.33329H15V3.66663H17V1.66663H17.6667V3.66663H19.6667V4.33329Z" fill="#9696A0"/>
                                             </svg>
                                     </label>
-                                    <div class="name ">Apple iPhone 11 Pro 64GB</div>
-                                    <div class="text ">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                                    <div class="product-footer ">
+                                    <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                    <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                    <div class="product-footer">
                                         <div>
                                             <!-- <del>65 000 ₽</del> -->
-                                            <div class="price ">88 990 ₽</div>
+                                            <div class="price">88 990 ₽</div>
                                         </div>
-                                        <button class="purple-border ">В корзину</button>
+                                        <button class="purple-border">В корзину</button>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <div class="product-preview ">
-                                    <img class="img " src="images/img/accs.jpg " alt="Apple iPhone 11 64GB ">
-                                    <div class="sale ">- 25 % </div>
+                                <div class="product-preview">
+                                    <img class="img" src="images/img/accs.jpg" alt="Apple iPhone 11 64GB">
+                                    <div class="sale">- 25 % </div>
                                     <!-- wish checkbox -->
                                     <label for="wish-checkbox-1" title="Добавить в избранное" class="compare-button br-4 df aic jsc bg-3 wish-button">  
                                         <input type="checkbox" class="compare-checkbox" id="wish-checkbox-1">
@@ -834,46 +816,46 @@
                                             <path d="M19.6667 4.33329H17.6667V6.33329H17V4.33329H15V3.66663H17V1.66663H17.6667V3.66663H19.6667V4.33329Z" fill="#9696A0"/>
                                             </svg>
                                     </label>
-                                    <div class="name ">Apple iPhone 11 Pro 64GB</div>
-                                    <div class="text ">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
-                                    <div class="product-footer ">
+                                    <div class="name">Apple iPhone 11 Pro 64GB</div>
+                                    <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM)</div>
+                                    <div class="product-footer">
                                         <div>
                                             <del>75 000 ₽</del>
-                                            <div class="price ">44 990 ₽</div>
+                                            <div class="price">44 990 ₽</div>
                                         </div>
-                                        <button class="purple-border ">В корзину</button>
+                                        <button class="purple-border">В корзину</button>
                                     </div>
                                 </div>
                             </div>
-                            <div ">
-                                <div class="product-preview ">
-                                    <img class="img " src="images/img/accs-2.jpg " alt="Apple iPhone 11 64GB ">
-                                    <div class="sale ">- 25 % </div>
+                            <div>
+                                <div class="product-preview">
+                                    <img class="img" src="images/img/accs-2.jpg" alt="Apple iPhone 11 64GB">
+                                    <div class="sale">- 25 % </div>
                                     <!-- wish checkbox -->
-                                    <label for="wish-checkbox-1 " title="Добавить в избранное " class="compare-button br-4 df aic jsc bg-3 wish-button ">  
-                                        <input type="checkbox " class="compare-checkbox " id="wish-checkbox-1 ">
-                                        <svg width="20 " height="19 " viewBox="0 0 20 19 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                    <label for="wish-checkbox-1" title="Добавить в избранное" class="compare-button br-4 df aic jsc bg-3 wish-button">  
+                                        <input type="checkbox" class="compare-checkbox" id="wish-checkbox-1">
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M9.22318 16.2905L9.22174 16.2892C6.62662 13.936 4.55384 12.0538 3.1178 10.2981C1.69324 8.55647 1 7.06152 1 5.5C1 2.97228 2.97228 1 5.5 1C6.93721 1 8.33224 1.67394 9.23865 2.73834L10 3.6324L10.7614
                                 2.73834C11.6678 1.67394 13.0628 1 14.5 1C17.0277 1 19 2.97228 19 5.5C19 7.06153 18.3068 8.55653 16.882 10.2996C15.4459 12.0566 13.3734 13.9409 10.7786 16.2989C10.7782 16.2993 10.7778 16.2996 10.7775 16.2999L10.0026 17L9.22318
-                                16.2905Z " fill="white " stroke="#9696A0 " stroke-width="2 "/>
+                                16.2905Z" fill="white" stroke="#9696A0" stroke-width="2"/>
                                             </svg>
                                     </label>
                                     <!-- compare checkbox -->
-                                    <label for="compare-checkbox-1 " title="Добавить в сравнение " class="compare-button br-4 df aic jsc bg-3 ">  
-                                        <input type="checkbox " class="compare-checkbox " id="compare-checkbox-1 ">
-                                        <svg width="24 " height="24 " viewBox="0 0 24 24 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                                            <path d="M18 21L18 15L16 15L16 21L18 21ZM6 21L8 21L8 3L6 3L6 21ZM13 21L13 9L11 9L11 21L13 21Z " fill="#9696A0 "/>
-                                            <path d="M19.6667 4.33329H17.6667V6.33329H17V4.33329H15V3.66663H17V1.66663H17.6667V3.66663H19.6667V4.33329Z " fill="#9696A0 "/>
+                                    <label for="compare-checkbox-1" title="Добавить в сравнение" class="compare-button br-4 df aic jsc bg-3">  
+                                        <input type="checkbox" class="compare-checkbox" id="compare-checkbox-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 21L18 15L16 15L16 21L18 21ZM6 21L8 21L8 3L6 3L6 21ZM13 21L13 9L11 9L11 21L13 21Z" fill="#9696A0"/>
+                                            <path d="M19.6667 4.33329H17.6667V6.33329H17V4.33329H15V3.66663H17V1.66663H17.6667V3.66663H19.6667V4.33329Z" fill="#9696A0"/>
                                             </svg>
                                     </label>
-                                    <div class="name ">Apple iPhone 12 mini, 128 ГБ, синий</div>
-                                    <div class="text ">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
-                                    <div class="product-footer ">
+                                    <div class="name">Apple iPhone 12 mini, 128 ГБ, синий</div>
+                                    <div class="text">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                    <div class="product-footer">
                                         <div>
                                             <del>75 000 ₽</del>
-                                            <div class="price ">44 990 ₽</div>
+                                            <div class="price">44 990 ₽</div>
                                         </div>
-                                        <button class="purple-border ">В корзину</button>
+                                        <button class="purple-border">В корзину</button>
                                     </div>
                                 </div>
                             </div>
@@ -882,7 +864,7 @@
                     </div>
                 </div>
                 <!-- show more products -->
-                <button class="purple mx-auto d-block " type="button ">Показать ещё</button>
+                <button class="purple mx-auto d-block" type="button">Показать ещё</button>
             </div>
         </section>
         <!-- catalog -->
@@ -890,19 +872,19 @@
 
 
         <!-- about -->
-        <section class="about mb-80 ">
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-lg-5 mb-20 ">
+        <section class="about mb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mb-20">
                         <h2>О компании</h2>
-                        <p class="mb-40 fs-18 lh-2 c-2 ">
+                        <p class="mb-40 fs-18 lh-2 c-2">
                             Фирменный магазин оригинальной техники Apple в Казани. У нас вы можете купить технику Apple по низким ценам и с официальной гарантией. Более 200 товаров представлено на любой вкус и кошелёк! А так же выгодные программы: Trade-IN с выгодой до 50 000 рублей,
                             рассрочка без процентов и переплат, подарки к каждой покупке и многое другое!
                         </p>
-                        <a class="purple " href="about.html ">Узнать больше</a>
+                        <a class="purple" href="about.html">Узнать больше</a>
                     </div>
-                    <div class="col-lg-7 ">
-                        <img class="img " src="images/img/about.jpg " alt="Магазин iSmart снаружи с прозрачными витринами ">
+                    <div class="col-lg-7">
+                        <img class="img" src="images/img/about.jpg" alt="Магазин iSmart снаружи с прозрачными витринами">
                     </div>
                 </div>
             </div>
@@ -910,22 +892,22 @@
         <!-- about -->
 
         <!-- advantages section -->
-        <section class="advantages mb-80 c-13 ">
-            <div class="container ">
-                <div class="row row-cols-md-2 row-cols-lg-4 advantages-group ">
-                    <div class="advantage ">
+        <section class="advantages mb-80 c-13">
+            <div class="container">
+                <div class="row row-cols-md-2 row-cols-lg-4 advantages-group">
+                    <div class="advantage">
                         <h3>Быстрая доставка</h3>
                         <p>Бережно доставляем технику Apple по России 24/7</p>
                     </div>
-                    <div class="advantage-2 ">
+                    <div class="advantage-2">
                         <h3>Клиентский сервис</h3>
                         <p>Ответим на любой ваш вопрос немедленно и поможем сделать правильный выбор</p>
                     </div>
-                    <div class="advantage-3 ">
+                    <div class="advantage-3">
                         <h3>Бонусы за покупки</h3>
                         <p>Дарим кучу подарков к каждой покупке и скидки до 70% на всю технику Apple</p>
                     </div>
-                    <div class="advantage-4 ">
+                    <div class="advantage-4">
                         <h3>Гарантия качества</h3>
                         <p>Даём официальную гарантию на все товары до 2-х лет</p>
                     </div>
@@ -936,103 +918,103 @@
 
 
         <!-- comments section -->
-        <section class="comments mb-100 ">
+        <section class="comments mb-100">
             <!-- container -->
-            <div class="container ">
+            <div class="container">
                 <!-- title -->
-                <div class="section-title ">
+                <div class="section-title">
                     <h2>Отзывы</h2>
-                    <a href="info-buyer.html " class="c-3 see-all ">Смотреть все</a>
+                    <a href="info-buyer.html" class="c-3 see-all">Смотреть все</a>
                 </div>
                 <!-- comments group -->
-                <div class="row row-cols-sm-2 row-cols-lg-3 comments-group c-14 ">
+                <div class="row row-cols-sm-2 row-cols-lg-3 comments-group c-14">
                     <!-- comment 1 -->
                     <div>
-                        <div class="comment ">
-                            <div class="comment-header ">
-                                <img class="img " src="images/icons/user.svg " alt="Олег ">
-                                <div class="right ">
-                                    <div class="df fc ">
-                                        <cite class="name ">Олег</cite>
-                                        <time class="time " datetime="2019-10-14 ">14.10.2019</time>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="img" src="images/icons/user.svg" alt="Олег">
+                                <div class="right">
+                                    <div class="df fc">
+                                        <cite class="name">Олег</cite>
+                                        <time class="time" datetime="2019-10-14">14.10.2019</time>
                                     </div>
-                                    <div class="rating ">
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star "></div>
+                                    <div class="rating">
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star"></div>
                                     </div>
                                 </div>
                             </div>
-                            <blockquote class="text ">Простая процедура заказа, быстрая доставка, не вскрытый товар, всё понятно по наличию в магазинах
+                            <blockquote class="text">Простая процедура заказа, быстрая доставка, не вскрытый товар, всё понятно по наличию в магазинах
                             </blockquote>
                         </div>
                     </div>
                     <!-- comment 2 -->
                     <div>
-                        <div class="comment ">
-                            <div class="comment-header ">
-                                <img class="img " src="images/icons/user.svg " alt="Анатолий Венгржановский ">
-                                <div class="right ">
-                                    <div class="df fc ">
-                                        <cite class="name ">Анатолий Венгржановский</cite>
-                                        <time class="time " datetime="2019-10-14 ">14.10.2019</time>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="img" src="images/icons/user.svg" alt="Анатолий Венгржановский">
+                                <div class="right">
+                                    <div class="df fc">
+                                        <cite class="name">Анатолий Венгржановский</cite>
+                                        <time class="time" datetime="2019-10-14">14.10.2019</time>
                                     </div>
-                                    <div class="rating ">
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
+                                    <div class="rating">
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
                                     </div>
                                 </div>
                             </div>
-                            <blockquote class="text ">Подобрали мне наушники, доволен как слон</blockquote>
+                            <blockquote class="text">Подобрали мне наушники, доволен как слон</blockquote>
                         </div>
                     </div>
                     <!-- comment 3 -->
                     <div>
-                        <div class="comment ">
-                            <div class="comment-header ">
-                                <img class="img " src="images/icons/user.svg " alt="Геннадий Викторович ">
-                                <div class="right ">
-                                    <div class="df fc ">
-                                        <cite class="name ">Геннадий Викторович</cite>
-                                        <time class="time " datetime="2019-10-14 ">14.10.2019</time>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="img" src="images/icons/user.svg" alt="Геннадий Викторович">
+                                <div class="right">
+                                    <div class="df fc">
+                                        <cite class="name">Геннадий Викторович</cite>
+                                        <time class="time" datetime="2019-10-14">14.10.2019</time>
                                     </div>
-                                    <div class="rating ">
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star "></div>
+                                    <div class="rating">
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star"></div>
                                     </div>
                                 </div>
                             </div>
-                            <blockquote class="text ">четкая и быстрая обработка заказа. По доставке так же все ок.</blockquote>
+                            <blockquote class="text">четкая и быстрая обработка заказа. По доставке так же все ок.</blockquote>
                         </div>
                     </div>
                     <!-- comment 4 -->
                     <div>
-                        <div class="comment ">
-                            <div class="comment-header ">
-                                <img class="img " src="images/icons/user.svg " alt="Викуля ">
-                                <div class="right ">
-                                    <div class="df fc ">
-                                        <cite class="name ">Викуля</cite>
-                                        <time class="time " datetime="2019-10-14 ">14.10.2019</time>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <img class="img" src="images/icons/user.svg" alt="Викуля">
+                                <div class="right">
+                                    <div class="df fc">
+                                        <cite class="name">Викуля</cite>
+                                        <time class="time" datetime="2019-10-14">14.10.2019</time>
                                     </div>
-                                    <div class="rating ">
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star star-fill "></div>
-                                        <div class="star "></div>
+                                    <div class="rating">
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star star-fill"></div>
+                                        <div class="star"></div>
                                     </div>
                                 </div>
                             </div>
-                            <blockquote class="text ">быстрая доставка в новый год, оплата картой, бонусы</blockquote>
+                            <blockquote class="text">быстрая доставка в новый год, оплата картой, бонусы</blockquote>
                         </div>
                     </div>
                 </div>
@@ -1044,47 +1026,47 @@
 
 
         <!-- news section -->
-        <section class="news mb-100 ">
+        <section class="news mb-100">
             <!-- container -->
-            <div class="container ">
+            <div class="container">
                 <!-- title -->
-                <div class="section-title df fnw jsb ">
+                <div class="section-title df fnw jsb">
                     <h2>Новости</h2>
-                    <a href="news.html " class="c-3 see-all ">Смотреть все</a>
+                    <a href="news.html" class="c-3 see-all">Смотреть все</a>
                 </div>
                 <!-- news group -->
-                <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 news-group c-2 ">
+                <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 news-group c-2">
                     <!-- new 1 -->
-                    <div class="news-preview pr ">
-                        <div class="img-wr ">
-                            <img class="img " src="images/img/news.jpg " alt="Новость №1 ">
+                    <div class="news-preview pr">
+                        <div class="img-wr">
+                            <img class="img" src="images/img/news.jpg" alt="Новость №1">
                         </div>
-                        <p class="text ">В наличии iPhone по самым выгодным ценам! Только оригинальная продукция Apple!</p>
-                        <a class="c-3 stretched-link " href="new.html ">Читать</a>
+                        <p class="text">В наличии iPhone по самым выгодным ценам! Только оригинальная продукция Apple!</p>
+                        <a class="c-3 stretched-link" href="new.html">Читать</a>
                     </div>
                     <!-- new 2 -->
-                    <div class="news-preview ">
-                        <div class="img-wr ">
-                            <img class="img " src="images/img/about.jpg " alt="Новость №2 ">
+                    <div class="news-preview">
+                        <div class="img-wr">
+                            <img class="img" src="images/img/about.jpg" alt="Новость №2">
                         </div>
-                        <p class="text ">Весенняя новинка Apple наделала столько шуму</p>
-                        <a class="c-3 stretched-link " href="new.html ">Читать</a>
+                        <p class="text">Весенняя новинка Apple наделала столько шуму</p>
+                        <a class="c-3 stretched-link" href="new.html">Читать</a>
                     </div>
                     <!-- new 3 -->
-                    <div class="news-preview ">
-                        <div class="img-wr ">
-                            <img class="img " src="images/img/news.jpg " alt="Новость №3 ">
+                    <div class="news-preview">
+                        <div class="img-wr">
+                            <img class="img" src="images/img/news.jpg" alt="Новость №3">
                         </div>
-                        <p class="text ">5 причин купить iPhone 11 Pro или почему это лучший смартфон</p>
-                        <a class="c-3 stretched-link " href="new.html ">Читать</a>
+                        <p class="text">5 причин купить iPhone 11 Pro или почему это лучший смартфон</p>
+                        <a class="c-3 stretched-link" href="new.html">Читать</a>
                     </div>
                     <!-- new 4 -->
-                    <div class="news-preview ">
-                        <div class="img-wr ">
-                            <img class="img " src="images/img/news-2.jpg " alt="Новость №4 ">
+                    <div class="news-preview">
+                        <div class="img-wr">
+                            <img class="img" src="images/img/news-2.jpg" alt="Новость №4">
                         </div>
-                        <p class="text ">5 причин купить iPhone 11 Pro или почему это лучший смартфон</p>
-                        <a class="c-3 stretched-link " href="new.html ">Читать</a>
+                        <p class="text">5 причин купить iPhone 11 Pro или почему это лучший смартфон</p>
+                        <a class="c-3 stretched-link" href="new.html">Читать</a>
                     </div>
                 </div>
                 <!-- news group -->
@@ -1095,11 +1077,11 @@
 
 
         <!-- contacts section -->
-        <section class="contacts ">
+        <section class="contacts">
             <!-- contacts text -->
-            <div class="container contacts-info mb-70 ">
+            <div class="container contacts-info mb-70">
                 <h2>Контакты</h2>
-                <div class="row row-cols-lg-4 align-items-start c-13 ">
+                <div class="row row-cols-lg-4 align-items-start c-13">
                     <div>
                         <h3>Адрес</h3>
                         <p>Казань, ул.&#160;Рихарда Зорге&#160;66,<br> ТЦ&#160;Олимп&#160;3&#160;этаж</p>
@@ -1113,16 +1095,16 @@
                         <p>Ежедневно с&#160;10:00 до&#160;22:00</p>
                     </div>
                     <!-- contacts button -->
-                    <div class="text-center text-lg-right ">
-                        <button type="button " class="purple-border " data-bs-toggle="modal " data-bs-target="#askQuestionModal ">
+                    <div class="text-center text-lg-right">
+                        <button type="button" class="purple-border" data-bs-toggle="modal" data-bs-target="#askQuestionModal">
                             Задать вопрос
                         </button>
                     </div>
                 </div>
             </div>
             <!-- contacts map -->
-            <div class="contacts-map bg-4 ">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A04b056c176ce5831871967245206d3f4c037722ab7cb63a5e820c3414fa11028&amp;source=constructor "></iframe>
+            <div class="contacts-map bg-4">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A04b056c176ce5831871967245206d3f4c037722ab7cb63a5e820c3414fa11028&amp;source=constructor"></iframe>
                 <!-- map height 580 -->
             </div>
         </section>
@@ -1131,164 +1113,164 @@
     </main>
 
     <!-- footer -->
-    <footer class="bg-1 c-5 ">
-        <div class="container container-big ">
-            <div class="row ">
+    <footer class="bg-1 c-5">
+        <div class="container container-big">
+            <div class="row">
                 <!-- newsletter form -->
-                <form class="footer-form df fw mb-40 " action="# " method="POST ">
-                    <div class="col-12 col-lg-6 col-xl-5 col-xxl-4 text-center text-md-left ">
-                        <h2 class="c-5 mb-14 ">Подпишитесь на&#160;рассылку</h2>
-                        <p class="mb-16 ">Узнавайте первыми о&#160;наших новинках и&#160;акциях</p>
+                <form class="footer-form df fw mb-40" action="#" method="POST">
+                    <div class="col-12 col-lg-6 col-xl-5 col-xxl-4 text-center text-md-left">
+                        <h2 class="c-5 mb-14">Подпишитесь на&#160;рассылку</h2>
+                        <p class="mb-16">Узнавайте первыми о&#160;наших новинках и&#160;акциях</p>
                     </div>
-                    <div class="col-12 col-lg-6 df fw flex-sm-nowrap ">
-                        <input required type="email " name="newsletter-input " id="newsletter-input " placeholder="Ваш email " class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10 ">
-                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16 ">Подписаться</button>
+                    <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
+                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10">
+                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16">Подписаться</button>
                     </div>
                 </form>
                 <!-- footer nav -->
-                <nav class="footernav df jsb row align-items-start ">
+                <nav class="footernav df jsb row align-items-start">
                     <!-- info list -->
-                    <ul class="footernav-list col-sm-5 col-lg-2 mb-30 ">
-                        <li class="footernav-heading mb-25 ">Информация</li>
-                        <li class="footernav-item ">
-                            <a href="info-buyer.html " class="footernav-link ">Как заказать</a>
+                    <ul class="footernav-list col-sm-5 col-lg-2 mb-30">
+                        <li class="footernav-heading mb-25">Информация</li>
+                        <li class="footernav-item">
+                            <a href="info-buyer.html" class="footernav-link">Как заказать</a>
                         </li>
-                        <li class="footernav-item ">
-                            <a href="info-buyer.html " class="footernav-link ">Условия доставки</a>
+                        <li class="footernav-item">
+                            <a href="info-buyer.html" class="footernav-link">Условия доставки</a>
                         </li>
-                        <li class="footernav-item ">
-                            <a href="info-buyer.html " class="footernav-link ">Условия оплаты</a>
+                        <li class="footernav-item">
+                            <a href="info-buyer.html" class="footernav-link">Условия оплаты</a>
                         </li>
-                        <li class="footernav-item ">
-                            <a href="info-buyer.html " class="footernav-link ">Гарантия на товар</a>
+                        <li class="footernav-item">
+                            <a href="info-buyer.html" class="footernav-link">Гарантия на товар</a>
                         </li>
-                        <li class="footernav-item ">
-                            <a href="info-buyer.html " class="footernav-link ">Отзывы</a>
+                        <li class="footernav-item">
+                            <a href="info-buyer.html" class="footernav-link">Отзывы</a>
                         </li>
-                        <li class="footernav-item ">
-                            <a href="news.html " class="footernav-link ">Новости</a>
+                        <li class="footernav-item">
+                            <a href="news.html" class="footernav-link">Новости</a>
                         </li>
                     </ul>
                     <!-- products links list -->
-                    <ul class="footernav-list col-sm-7 col-lg-4 df aie jsb mb-30 ">
-                        <li class="col-lg-6 ">
+                    <ul class="footernav-list col-sm-7 col-lg-4 df aie jsb mb-30">
+                        <li class="col-lg-6">
                             <ul>
-                                <li class="footernav-heading mb-25 ">Продукция</li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 12 pro</a>
+                                <li class="footernav-heading mb-25">Продукция</li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 12 pro</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 12 pro max</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 12 pro max</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 11 pro</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 11 pro</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 11 pro max</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 11 pro max</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 11</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 11</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 10</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 10</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="col-lg-6 ">
+                        <li class="col-lg-6">
                             <ul>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 10R</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 10R</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 10S</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 10S</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Iphone 8</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 8</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Watch</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Watch</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Air pods</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Air pods</a>
                                 </li>
-                                <li class="footernav-item ">
-                                    <a href="catalog.html " class="footernav-link ">Macbook</a>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Macbook</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                     <!-- contacts list -->
-                    <ul class="footernav-list col-lg-3 mb-30 ">
-                        <li class="footernav-heading mb-25 ">Контакты</li>
-                        <li class="footernav-item ">
+                    <ul class="footernav-list col-lg-3 mb-30">
+                        <li class="footernav-heading mb-25">Контакты</li>
+                        <li class="footernav-item">
                             <dl>
                                 <dt>Адрес:</dt>
                                 <dd>Казань, ул. Рихарда Зорге 66, ТЦ Олимп 3&#160;этаж
                                 </dd>
                             </dl>
                         </li>
-                        <li class="footernav-item ">
+                        <li class="footernav-item">
                             <dl>
                                 <dt>Телефон:</dt>
                                 <dd>
-                                    <a href="tel:+7 (952) 034-36-34 " title="Позвонить нам ">
+                                    <a href="tel:+7 (952) 034-36-34" title="Позвонить нам">
                                         +7&#160;(952)&#160;034-36-34
                                     </a>
                                 </dd>
                             </dl>
                         </li>
-                        <li class="footernav-item ">
+                        <li class="footernav-item">
                             <dl>
                                 <dt>Режим работы:</dt>
                                 <dd>Пн–Вс:&#160;9:00–22:00
                                 </dd>
                             </dl>
                         </li>
-                        <li class="footernav-item ">
+                        <li class="footernav-item">
                             <dl>
                                 <dt>Email:</dt>
-                                <dd title="Написать нам ">
-                                    <a href="mailto:ismart@mail.com ">ismart@mail.com
+                                <dd title="Написать нам">
+                                    <a href="mailto:ismart@mail.com">ismart@mail.com
                                     </a>
                                 </dd>
                             </dl>
                         </li>
                     </ul>
                     <!-- payment types and social links -->
-                    <div class="df fw col-lg-3 col-xxl-2 ">
+                    <div class="df fw col-lg-3 col-xxl-2">
                         <!-- payment types -->
-                        <ul class="col-sm-6 col-md-12 footernav-list mb-30 ">
-                            <li class="footernav-heading mb-10 ">Мы принимаем<br> к&#160;оплате</li>
+                        <ul class="col-sm-6 col-md-12 footernav-list mb-30">
+                            <li class="footernav-heading mb-10">Мы принимаем<br> к&#160;оплате</li>
                             <li>
-                                <ul class="payment-icons df ">
-                                    <li class="payment-icon " title="PayPal ">
-                                        <img src="images/img/paypal.svg " alt="PayPal ">
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="PayPal">
+                                        <img src="images/img/paypal.svg" alt="PayPal">
                                     </li>
-                                    <li class="payment-icon " title="Visa ">
-                                        <img src="images/img/visa.svg " alt="Visa ">
+                                    <li class="payment-icon" title="Visa">
+                                        <img src="images/img/visa.svg" alt="Visa">
                                     </li>
-                                    <li class="payment-icon " title="Maestro ">
-                                        <img src="images/img/maestro.svg " alt="Maestro ">
+                                    <li class="payment-icon" title="Maestro">
+                                        <img src="images/img/maestro.svg" alt="Maestro">
                                     </li>
-                                    <li class="payment-icon " title="Мир ">
-                                        <img src="images/img/mir.svg " alt="Мир ">
+                                    <li class="payment-icon" title="Мир">
+                                        <img src="images/img/mir.svg" alt="Мир">
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                         <!-- social links -->
-                        <ul class="col-sm-6 col-md-12 footernav-list ">
-                            <li class="footernav-heading mb-10 ">Наши социальные<br> сети</li>
+                        <ul class="col-sm-6 col-md-12 footernav-list">
+                            <li class="footernav-heading mb-10">Наши социальные<br> сети</li>
                             <li>
-                                <ul class="payment-icons df ">
-                                    <li class="payment-icon " title="iSmart в Facebook ">
-                                        <a href="https://www.instagram.com/ismart116 ">
-                                            <img src="images/icons/facebook.svg " alt="facebook ">
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="iSmart в Facebook">
+                                        <a href="https://www.instagram.com/ismart116">
+                                            <img src="images/icons/facebook.svg" alt="facebook">
                                         </a>
                                     </li>
-                                    <li class="payment-icon " title="iSmart в Instagram ">
-                                        <a href=" ">
-                                            <img src="images/icons/insta.svg " alt="instagram ">
+                                    <li class="payment-icon" title="iSmart в Instagram">
+                                        <a href="">
+                                            <img src="images/icons/insta.svg" alt="instagram">
                                         </a>
                                     </li>
                                 </ul>
@@ -1297,123 +1279,294 @@
                     </div>
                 </nav>
                 <!-- copyright -->
-                <div class="footer-bottom df fw aic jsb ">
-                    <p class="copyright mb-16 ">Все права защищены <time datetime="2020 ">2020</time>&#160;@ismart</p>
-                    <address class="df aic mb-16 ">
+                <div class="footer-bottom df fw aic jsb">
+                    <p class="copyright mb-16">Все права защищены <time datetime="2020">2020</time>&#160;@ismart</p>
+                    <address class="df aic mb-16">
                         <span>Создание и&#160;продвижение сайтов</span>
-                        <a href="https://asmpromo.ru/ " title="Создание сайтов от AsmPromo ">
-                            <img src="images/img/asm-promo.png " width="69 " height="47 " alt="Веб-студия AsmPromo ">
+                        <a href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
+                            <img src="images/img/asm-promo.png" width="69" height="47" alt="Веб-студия AsmPromo">
                         </a>
                     </address>
                 </div>
             </div>
         </div>
         <!-- anchor to top of page -->
-        <a href="#top " class=" " title="В начало страницы "></a>
+        <a href="#top" class="" title="В начало страницы"></a>
     </footer>
     <!-- footer -->
 
-
-    <!-- Modal Call Back -->
-    <div class="modal fade " id="callBackModal " data-bs-backdrop="static " data-bs-keyboard="false " tabindex="-1 " aria-labelledby="callBackModalLabel " aria-hidden="true ">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content mx-auto ">
-                <div class="modal-header ">
-                    <h5 class="modal-title " id="callBackModalLabel ">Заказать звонок</h5>
-                    <button type="button " class="btn-close pa " data-bs-dismiss="modal " aria-label="Close ">
-                        <svg width="18 " height="18 " viewBox="0 0 18 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z " fill="#C4C4C4 "/>
+    <!-- DONE -->
+    <!-- Call Back Modal -->
+    <div class="modal fade" id="callBackModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="callBackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content mx-auto">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="callBackModalLabel">Заказать звонок</h5>
+                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
                         </svg>
                     </button>
                 </div>
-                <div class="modal-body ">
+                <div class="modal-body">
                     <!-- phone number -->
-                    <fieldset class="mb-20 ">
-                        <label for="userPhoneCallBack " class="form-label mb-10 c-13 fs-14 fw-6 required label ">
+                    <fieldset class="mb-20">
+                        <label for="userPhoneCallBack" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Номер телефона
                         </label>
-                        <input type="tel " id="userPhoneCallBack " class="form-control fs-14 input " placeholder="Телефон " required>
-                        <div class="invalid-feedback ">
+                        <input type="tel" id="userPhoneCallBack" class="form-control fs-14 input" placeholder="Телефон" required>
+                        <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                     <!-- user name -->
-                    <fieldset class="mb-16 ">
-                        <label for="userNameCallBack " class="form-label mb-10 c-13 fs-14 fw-6 required label ">
+                    <fieldset>
+                        <label for="userNameCallBack" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Имя
                         </label>
-                        <input type="text " id="userNameCallBack " class="form-control fs-14 input " placeholder="Имя " required>
-                        <div class="invalid-feedback ">
+                        <input type="text" id="userNameCallBack" class="form-control fs-14 input" placeholder="Имя" required>
+                        <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                 </div>
-                <div class="modal-footer ">
-                    <button type="button " class="purple bttn ">Отправить</button>
+                <div class="modal-footer row-cols-1 row-cols-sm-auto">
+                    <button type="button" class="purple bttn">Отправить</button>
+                    <button type="button" class="bg-9 br-4 bttn" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Ask Question -->
-    <div class="modal fade " id="askQuestionModal " data-bs-backdrop="static " data-bs-keyboard="false " tabindex="-1 " aria-labelledby="askQuestionModalLabel " aria-hidden="true ">
-        <div class="modal-dialog modal-dialog-centered bg-3 ">
-            <div class="modal-content mx-auto ">
-                <div class="modal-header ">
-                    <h5 class="modal-title " id="askQuestionModalLabel ">Задать вопрос</h5>
-                    <button type="button " class="btn-close pa " data-bs-dismiss="modal " aria-label="Close ">
-                        <svg width="18 " height="18 " viewBox="0 0 18 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z " fill="#C4C4C4 "/>
+    <!-- DONE -->
+    <!-- Ask Question Modal -->
+    <div class="modal fade" id="askQuestionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="askQuestionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered bg-3">
+            <div class="modal-content mx-auto">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="askQuestionModalLabel">Задать вопрос</h5>
+                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
                         </svg>
                     </button>
                 </div>
-                <div class="modal-body ">
+                <div class="modal-body">
                     <!-- phone number -->
-                    <fieldset class="mb-20 ">
-                        <label for="userPhone " class="form-label mb-10 c-13 fs-14 fw-6 required label ">
+                    <fieldset class="mb-20">
+                        <label for="questionUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Номер телефона
                         </label>
-                        <input type="tel " id="userPhone " class="form-control fs-14 input " placeholder="Телефон " required>
-                        <div class="invalid-feedback ">
+                        <input type="tel" id="questionUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                        <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                     <!-- user name -->
-                    <fieldset class="mb-16 ">
-                        <label for="userName " class="form-label mb-10 c-13 fs-14 fw-6 required label ">
+                    <fieldset class="mb-16">
+                        <label for="questionUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Имя
                         </label>
-                        <input type="text " id="userName " class="form-control fs-14 input " placeholder="Имя " required value="Имя ">
-                        <div class="invalid-feedback ">
+                        <input type="text" id="questionUserName" class="form-control fs-14 input" placeholder="Имя" required value="Имя">
+                        <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
-                    <!-- question -->
-                    <fieldset class="mb-20 ">
-                        <label for="userPass2 " class="form-label mb-10 c-13 fs-14 fw-6 required label ">
+                    <!-- question textarea -->
+                    <fieldset>
+                        <label for="questionText" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Ваш вопрос
                         </label>
-                        <textarea id="userPass2 " class="form-control fs-14 input " placeholder="Ваш вопрос " required></textarea>
-                        <div class="invalid-feedback ">
+                        <textarea required minlength="10" maxlength="300" name="questionText" id="questionText" cols="30" rows="4" placeholder="Ваш вопрос" class="col-12 input"></textarea>
+                        <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                 </div>
-                <div class="modal-footer ">
-                    <button type="button " class="purple bttn ">Отправить</button>
+                <div class="modal-footer row-cols-1 row-cols-sm-auto">
+                    <button type="button" class="purple bttn">Отправить</button>
+                    <button type="button" class="bg-9 br-4 bttn" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- header -->
+    <header class="c-1 d-none">
+        <!-- container -->
+        <div class="container container-big">
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-lg">
+                <!-- logotype -->
+                <a class="navbar-brand p-0">
+                    <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
+                </a>
+                <!-- menu button on mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- collapse nav -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <!-- mobile menu with products -->
+                    <ul class="mobile-cat-list df fw-4 d-lg-none">
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">Macbook</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">Аксессуары</a></li>
+                    </ul>
+
+                    <!-- header nav links -->
+                    <ul class="navbar-nav fnw fw-5 lh-2 aic">
+                        <!-- catalog link -->
+                        <li class="nav-item dropdown br-4 df aic catalog position-static">
+                            <a class="nav-link dropdown-toggle fs-16 fw-5" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
+                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="white"/>
+                                </svg>
+                                <span>Каталог товаров</span>
+                            </a>
+                            <ul class="dropdown-menu col-10 pr" aria-labelledby="navbarDropdownMenuLink">
+                                <svg class="pa" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.1007 0L20.2014 10H0L10.1007 0Z" fill="#E5E5E5"/>
+                                    </svg>
+
+                                <div class="catalognav-menu bg-3 row flex-lg-row fnw">
+                                    <ul class="catalognav-list col-lg-4 row">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 col-12">
+                                            iPhone
+                                        </li>
+                                        <li class="col-lg-6">
+                                            <ul>
+                                                <li>
+                                                    <a href="">Iphone 12 pro</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Iphone 12 pro max</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Iphone 11 pro</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Iphone 11 pro max</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Iphone 11</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="col-lg-6">
+                                            <ul>
+                                                <li>
+                                                    <a href="">Iphone 10</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Iphone 10 R</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Iphone 10 S</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="catalognav-list col-lg-2">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">iPad</li>
+                                        <li><a href="">iPad Pro</a></li>
+                                        <li><a href="">iPad</a></li>
+                                        <li><a href="">iPad mini</a></li>
+                                        <li><a href="">iPad Air</a></li>
+                                    </ul>
+                                    <ul class="catalognav-list col-lg-2">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Macbook</li>
+                                        <li><a href="">Macbook Air</a></li>
+                                        <li><a href="">Macbook Pro 13</a></li>
+                                        <li><a href="">Macbook Pro 16</a></li>
+                                        <li><a href="">iMac</a></li>
+                                    </ul>
+                                    <ul class="catalognav-list col-lg-2">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">AirPods</li>
+                                        <li><a href="">AirPods</a></li>
+                                        <li><a href="">AirPods Pro</a></li>
+                                        <li><a href="">AirPods Max</a></li>
+                                        <li><a href="">iPod touch</a></li>
+                                    </ul>
+                                    <ul class="catalognav-list col-lg-2">
+                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Аксессуары</li>
+                                        <li><a href="">Зарядные<br>устройства</a></li>
+                                        <li><a href="">Аккумуляторы</a></li>
+                                        <li><a href="">Чехлы</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <!-- client link -->
+                        <li class="nav-item dropdown br-4 df aic buyer">
+                            <a class="nav-link dropdown-toggle icon fs-16 fw-4" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню покупателя">
+                                <svg class="mr-10" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="#303030"/>
+                                </svg>
+                                <span>Покупателю</span>
+                            </a>
+                            <!-- for client dropdown menu -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- news link -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-16 fw-4" href="news.html">Новости</a>
+                        </li>
+                        <!-- contacts link -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-16 fw-4" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <!-- search form -->
+                    <form action="#" method="GET" class="search-form df aic mx-3 col-xxl-4">
+                        <input required type="search" name="search" id="search" placeholder="Поиск по товарам" class="fs-16 lh-158 w-100">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 10.9999H11.71L11.43 10.7299C12.63 9.32989 13.25 7.41989 12.91 5.38989C12.44 2.60989 10.12 0.389893 7.32001 0.0498932C3.09001 -0.470107 -0.469985 3.08989 0.0500152 7.31989C0.390015 10.1199 2.61002 12.4399 5.39002 12.9099C7.42002 13.2499 9.33002 12.6299 10.73 11.4299L11 11.7099V12.4999L15.25 16.7499C15.66 17.1599 16.33 17.1599 16.74 16.7499C17.15 16.3399 17.15 15.6699 16.74 15.2599L12.5 10.9999ZM6.50002 10.9999C4.01002 10.9999 2.00002 8.98989 2.00002 6.49989C2.00002 4.00989 4.01002 1.99989 6.50002 1.99989C8.99002 1.99989 11 4.00989 11 6.49989C11 8.98989 8.99002 10.9999 6.50002 10.9999Z" fill="#323232"/>
+                        </svg>
+                    </form>
+                    <div class="d-flex justify-content-between align-items-start nav-right">
+
+                        <!-- LOGIN LINK -->
+                        <a class="account fw-5 mr-30 d-none d-lg-flex aic" href="login.html">
+                            <!-- login icon -->
+                            <svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="#323232"/>
+                            </svg>
+                            <!--
+                            --><span>Войти</span>
+                        </a>
+                        <!-- phone and call order -->
+                        <div class="d-flex flex-column align-items-end right">
+                            <a class="tel d-block fs-18" href="tel:+7 (952) 034-36-34" title="Позвонить нам">+7&#160;(952)&#160;034-36-34</a>
+                            <button type="button" class="c-3 fs-14 lh-2 underline" data-bs-toggle="modal" data-bs-target="#callBackModal">
+                                заказать звонок
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navigation -->
+        </div>
+        <!-- container -->
+    </header>
+    <!-- header -->
+
     <!-- bootstrap 5 js -->
     <!-- JavaScript Bundle with Popper.js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js " integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js " integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js " integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <!-- bootstrap 5 js -->
-    <script src="js/script.js "></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

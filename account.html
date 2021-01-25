@@ -323,9 +323,9 @@
 
                 <!-- delivery addreses -->
                 <div class="tab-pane fade" id="delivery-addresses" role="tabpanel" aria-labelledby="delivery-addresses-tab">
-                    <div class="df mb-20">
-                        <h4 class="mb-0 mr-30">Адреса доставки</h4>
-                        <button type="button" class="underline c-15 fw-3 fs-14" data-bs-toggle="modal" data-bs-target="#addAddressModal" title="Добавить новый адрес">
+                    <div class="df fw mb-20">
+                        <h4 class="mr-30 mb-16">Адреса доставки</h4>
+                        <button type="button" class="underline c-15 fw-3 fs-14 mb-16" data-bs-toggle="modal" data-bs-target="#addAddressModal" title="Добавить новый адрес">
                             Добавить адрес
                       </button>
                     </div>
@@ -758,13 +758,13 @@
     </footer>
     <!-- footer -->
 
-
-    <!-- Modal Edit Profile Info-->
+    <!-- DONE -->
+    <!-- Edit Profile Info Modal -->
     <div class="modal fade" id="editProfileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-fullscreen-sm-down modal-dialog-centered modal-dialog-scrollable bg-3">
             <div class="modal-content mx-auto">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Редактировать данные</h5>
+                    <h5 class="modal-title" id="editProfileModalLabel">Редактировать данные</h5>
                     <!-- close -->
                     <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -775,70 +775,70 @@
                 <div class="modal-body">
                     <!-- name -->
                     <fieldset class="mb-20">
-                        <label for="userName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                        <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Имя
                             </label>
-                        <input type="text" id="userName" class="form-control fs-14 input" placeholder="Имя" required>
+                        <input type="text" id="editUserName" class="form-control fs-14 input" placeholder="Имя" required maxlength="10">
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                     <!-- surname -->
                     <fieldset class="mb-20">
-                        <label for="userSurname" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                        <label for="editUserSurname" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Фамилия
                             </label>
-                        <input type="text" id="userSurname" class="form-control fs-14 input" placeholder="Фамилия" required>
+                        <input type="text" id="editUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required maxlength="15">
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                     <!-- tel -->
                     <fieldset class="mb-20">
-                        <label for="userPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                        <label for="editUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Номер телефона
                             </label>
-                        <input type="tel" id="userPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                        <input type="tel" id="editUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                     <!-- email -->
                     <fieldset class="mb-20">
-                        <label for="userEmail" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                        <label for="editUserEmail" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Электронная почта
                             </label>
-                        <input type="email" id="userEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
+                        <input type="email" id="editUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                     <!-- city -->
-                    <fieldset class="mb-20">
-                        <label for="userCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
-                                Город
-                            </label>
-                        <input type="email" id="userCity" class="form-control fs-14 input" placeholder="Город" required>
+                    <fieldset>
+                        <label for="editUserCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Город
+                        </label>
+                        <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="purple bttn col-12 col-md-auto">Сохранить</button>
-                    <button type="button" class="bg-9 br-4 bttn col-12 col-md-auto" data-bs-dismiss="modal">Отменить</button>
+                <div class="modal-footer row-cols-1 row-cols-sm-auto">
+                    <button type="button" class="purple bttn">Сохранить</button>
+                    <button type="button" class="bg-9 br-4 bttn" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <!-- Modal Change Password -->
+    <!-- DONE -->
+    <!-- Change Password Modal -->
     <div class="modal fade" id="changePassModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="changePassModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered bg-3">
             <div class="modal-content mx-auto">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Изменить пароль</h5>
+                    <h5 class="modal-title" id="changePassModalLabel">Изменить пароль</h5>
                     <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
@@ -846,38 +846,204 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <!-- password -->
+                    <!-- current password -->
                     <fieldset class="mb-20">
-                        <label for="userPassword" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                        <label for="currentPass" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Текущий пароль
                         </label>
-                        <input type="email" id="userPassword" class="form-control fs-14 input" placeholder="Текущий пароль" required>
+                        <input type="password" id="currentPass" class="form-control fs-14 input" placeholder="Текущий пароль" required>
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
-                    <!-- password -->
+                    <!-- new password -->
                     <fieldset class="mb-20">
-                        <label for="userPassword" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                        <label for="createNewPass" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Новый пароль
                         </label>
-                        <input type="email" id="userPassword" class="form-control fs-14 input" placeholder="Новый пароль" required>
+                        <input type="password" id="createNewPass" class="form-control fs-14 input" placeholder="Новый пароль" required>
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
-                    <!-- confirm password -->
-                    <fieldset class="mb-20">
-                        <label for="userPass2" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                    <!-- confirm new password -->
+                    <fieldset>
+                        <label for="confirmNewPass" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Повторите пароль
                         </label>
-                        <input type="email" id="userPass2" class="form-control fs-14 input" placeholder="Повторите пароль" required>
+                        <input type="password" id="confirmNewPass" class="form-control fs-14 input" placeholder="Повторите пароль" required>
                         <div class="invalid-feedback">
                             Это поле ввода обязательно к заполнению
                         </div>
                     </fieldset>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer row-cols-1 row-cols-sm-auto">
+                    <button type="button" class="purple bttn">Сохранить</button>
+                    <button type="button" class="bg-9 br-4 bttn" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DONE -->
+    <!-- Add Delivery Address Modal -->
+    <div class="modal fade" id="addAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered bg-3">
+            <div class="modal-content mx-auto">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addAddressModalLabel">Добавить адрес</h5>
+                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- add address city -->
+                    <fieldset class="mb-20">
+                        <label for="addAddressCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Ваш город
+                        </label>
+                        <input type="text" id="addAddressCity" class="form-control fs-14 input" placeholder="Ваш город" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- add address street -->
+                    <fieldset class="mb-20">
+                        <label for="addAddressStreet" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Улица
+                        </label>
+                        <input type="text" id="addAddressStreet" class="form-control fs-14 input" placeholder="Улица" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- add home -->
+                    <fieldset class="mb-20">
+                        <label for="addAddressHome" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Дом
+                        </label>
+                        <input type="text" id="addAddressHome" class="form-control fs-14 input" placeholder="Дом" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- add apartment -->
+                    <fieldset class="mb-20">
+                        <label for="addAddressApartment" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Квартира
+                        </label>
+                        <input type="number" id="addAddressApartment" class="form-control fs-14 input" placeholder="Квартира" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- add front door -->
+                    <fieldset class="mb-20">
+                        <label for="addAddressFrontDoor" class="form-label mb-10 c-13 fs-14 fw-6 label">
+                            Подъезд
+                        </label>
+                        <input type="number" id="addAddressFrontDoor" class="form-control fs-14 input" placeholder="Подъезд" maxlength="2">
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- add floor -->
+                    <fieldset>
+                        <label for="addAddressFloor" class="form-label mb-10 c-13 fs-14 fw-6 label">
+                            Этаж
+                        </label>
+                        <input type="number" id="addAddressFloor" class="form-control fs-14 input" placeholder="Этаж" maxlength="3">
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer row-cols-1 row-cols-sm-auto">
+                    <button type="button" class="purple bttn">Сохранить</button>
+                    <button type="button" class="bg-9 br-4 bttn" data-bs-dismiss="modal">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DONE -->
+    <!-- Edit Delivery Address Modal -->
+    <div class="modal fade" id="editAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editAddressModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered bg-3">
+            <div class="modal-content mx-auto">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editAddressModalLabel">Редактировать адрес</h5>
+                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- edit address city -->
+                    <fieldset class="mb-20">
+                        <label for="editAddressCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Ваш город
+                        </label>
+                        <input type="text" id="editAddressCity" class="form-control fs-14 input" placeholder="Ваш город" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- edit address Street -->
+                    <fieldset class="mb-20">
+                        <label for="editAddressStreet" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Улица
+                        </label>
+                        <input type="text" id="editAddressStreet" class="form-control fs-14 input" placeholder="Улица" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- edit home -->
+                    <fieldset class="mb-20">
+                        <label for="editAddressHome" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Дом
+                        </label>
+                        <input type="text" id="editAddressHome" class="form-control fs-14 input" placeholder="Дом" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- edit apartment -->
+                    <fieldset class="mb-20">
+                        <label for="editAddressApartment" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Квартира
+                        </label>
+                        <input type="number" id="editAddressApartment" class="form-control fs-14 input" placeholder="Квартира" required>
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- edit front door -->
+                    <fieldset class="mb-20">
+                        <label for="editAddressFrontDoor" class="form-label mb-10 c-13 fs-14 fw-6 label">
+                            Подъезд
+                        </label>
+                        <input type="number" id="editAddressFrontDoor" class="form-control fs-14 input" placeholder="Подъезд">
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                    <!-- edit floor -->
+                    <fieldset>
+                        <label for="editAddressFloor" class="form-label mb-10 c-13 fs-14 fw-6 label">
+                            Этаж
+                        </label>
+                        <input type="number" id="editAddressFloor" class="form-control fs-14 input" placeholder="Этаж">
+                        <div class="invalid-feedback">
+                            Это поле ввода обязательно к заполнению
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer row-cols-1 row-cols-sm-auto">
                     <button type="button" class="purple bttn">Сохранить</button>
                     <button type="button" class="bg-9 br-4 bttn" data-bs-dismiss="modal">Отменить</button>
                 </div>
