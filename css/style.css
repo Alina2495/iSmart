@@ -539,6 +539,9 @@ header .navbar-toggler-icon {
 .header-bottom a:hover path {
   fill: #A039FF;
 }
+.header-bottom {
+  height: 80px;
+}
 .vam {
   vertical-align: middle;
 }
@@ -1977,7 +1980,6 @@ svg {
 }
 .btn-trans:hover svg path {
   fill: #0156FF;
-  stroke: #0156FF;
 }
 .login:hover {
   color: #6839CF;
@@ -1991,4 +1993,22 @@ svg {
 .mobile-menu li a {
   display: block;
   padding: 15px 24px;
+}
+.hidden {
+  display: none;
+}
+.header-search {
+  background-color: #EBEBEB;
+  border-radius: 30px;
+  height: 60px;
+  flex-grow: 1;
+}
+.header-search-input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  padding-left: 30px;
+}
+button.btn-added-item {
+  background-color: #6839CF;
 }

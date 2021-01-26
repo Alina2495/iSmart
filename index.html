@@ -50,7 +50,7 @@
                         </svg>
                     </a>
                     <!-- gamburger -->
-                    <button class="bg-transparent border-0" aria-label="Раскрыть навигацию">
+                    <button class="bg-transparent border-0 " aria-label="Раскрыть навигацию">
                         <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.00049 12H17.0005C17.5505 12 18.0005 11.55 18.0005 11C18.0005 10.45 17.5505 10 17.0005 10H1.00049C0.450488 10 0.000488281 10.45 0.000488281 11C0.000488281 11.55 0.450488 12 1.00049 12ZM1.00049 7H17.0005C17.5505 7 18.0005 6.55 18.0005 6C18.0005 5.45 17.5505 5 17.0005 5H1.00049C0.450488 5 0.000488281 5.45 0.000488281 6C0.000488281 6.55 0.450488 7 1.00049 7ZM0.000488281 1C0.000488281 1.55 0.450488 2 1.00049 2H17.0005C17.5505 2 18.0005 1.55 18.0005 1C18.0005 0.45 17.5505 0 17.0005 0H1.00049C0.450488 0 0.000488281 0.45 0.000488281 1Z" fill="white"/>
                         </svg>
@@ -140,7 +140,7 @@
                                 +7&#160;(952)&#160;034-36-34
                             </a>
                         </span>
-                        <!-- social -->
+                        <!-- social links -->
                         <div class="df aic">
                             <!-- facebook -->
                             <a href="" title="iSmart в Facebook" class="mr-10">
@@ -161,14 +161,14 @@
         </div>
         <!-- header bottom -->
         <div class="header-bottom c-13 fs-16 pr">
-            <div class="container container-big">
-                <div class="df jsb aic">
+            <div class="container container-big h-100">
+                <div class="df jsb aic h-100">
                     <!-- logo -->
-                    <a class="navbar-brand p-0" href="">
+                    <a class="col-1 navbar-brand p-0" href="">
                         <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
                     </a>
                     <!-- navigation -->
-                    <ul class="fw-6 df jsb aic col-5 fnw">
+                    <ul class="col-5 fw-6 df jsb aic col-5 fnw header-menu">
                         <li class="nav-item dropdown br-4 df aic catalog position-static">
                             <a class="nav-link dropdown-toggle fs-16" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
                                 <svg class="mr-1" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -176,7 +176,7 @@
                                 </svg> Каталог товаров
 
                             </a>
-                            <ul class="dropdown-menu col-10 pr" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu col-10 pr catalog-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <svg class="pa" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.1007 0L20.2014 10H0L10.1007 0Z" fill="#E5E5E5"/>
                                     </svg>
@@ -261,14 +261,22 @@
                             <a href="">Скидки</a>
                         </li>
                     </ul>
+                    <button class="show-search ml-auto btn-trans"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0001 10C18.0001 14.4183 14.4184 18 10.0001 18C5.58184 18 2.00012 14.4183 2.00012 10C2.00012 5.58172 5.58184 2 10.0001 2C14.4184 2 18.0001 5.58172 18.0001 10ZM16.3288 17.743C14.6049 19.1537 12.4014 20 10.0001 20C4.47727 20 0.00012207 15.5228 0.00012207 10C0.00012207 4.47715 4.47727 0 10.0001 0C15.523 0 20.0001 4.47715 20.0001 10C20.0001 12.4013 19.1537 14.6049 17.743 16.3288L21.364 19.9497C21.7545 20.3402 21.7545 20.9734 21.364 21.3639C20.9734 21.7545 20.3403 21.7545 19.9498 21.3639L16.3288 17.743Z" fill="black"/>
+                        </svg></button>
+                    <div class="search hidden header-search">
+                        <input type="search" class="header-search-input" placeholder="Искать на сайте" />
+                        <button class="hide-search">close</button>
+                    </div>
                     <!-- Search -->
-                    <button class="ml-auto btn-trans" aria-label="Поиск по сайту" title="Поиск по сайту">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.7297 20.9407L17.803 16.0133C19.2319 14.1334 19.903 11.7837 19.681 9.4303C19.4561 7.04679 18.332 4.83849 16.5374 3.25466C14.7428 1.67084 12.4124 0.83046 10.0203 0.904509C7.62831 0.978558 5.35433 1.96147 3.66101 3.65327C1.96622 5.34625 0.980504 7.622 0.904717 10.0168C0.828929 12.4115 1.66878 14.7451 3.25313 16.542C4.83748 18.3388 7.04709 19.4636 9.43169 19.6873C11.7864 19.9081 14.1367 19.2338 16.0157 17.8005L20.9415 22.7295L21.0044 22.6667L20.9415 22.7295C21.0589 22.847 21.1983 22.9401 21.3517 23.0037C21.5051 23.0673 21.6695 23.1 21.8356 23.1C22.0016 23.1 22.1661 23.0673 22.3195 23.0037C22.4729 22.9401 22.6123 22.847 22.7297 22.7295C22.8471 22.6121 22.9402 22.4726 23.0038 22.3192C23.0673 22.1657 23.1 22.0012 23.1 21.8351C23.1 21.669 23.0673 21.5046 23.0038 21.3511C22.9402 21.1976 22.8471 21.0582 22.7297 20.9408L22.659 21.0115L22.7297 20.9407ZM15.1827 5.44265C15.8303 6.08009 16.3454 6.8395 16.6982 7.67708C17.051 8.51467 17.2346 9.41385 17.2383 10.3228C17.242 11.2317 17.0658 12.1323 16.7198 12.9727C16.3738 13.8132 15.8649 14.5767 15.2225 15.2194C14.58 15.8621 13.8168 16.3712 12.9767 16.7173C12.1366 17.0634 11.2363 17.2397 10.3278 17.236C9.41927 17.2323 8.52047 17.0487 7.68323 16.6958C6.84599 16.3428 6.08688 15.8275 5.4497 15.1796C4.17633 13.8848 3.46598 12.1391 3.47337 10.3228C3.48076 8.50638 4.20531 6.76651 5.48917 5.48214C6.77303 4.19777 8.51218 3.47295 10.3278 3.46555C12.1434 3.45815 13.8884 4.16878 15.1827 5.44265Z" fill="black" stroke="black" stroke-width="0.2"/>
-                        </svg>
-                    </button>
+                    <!-- <button class="ml-auto btn-trans" aria-label="Поиск по сайту" title="Поиск по сайту">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0001 10C18.0001 14.4183 14.4184 18 10.0001 18C5.58184 18 2.00012 14.4183 2.00012 10C2.00012 5.58172 5.58184 2 10.0001 2C14.4184 2 18.0001 5.58172 18.0001 10ZM16.3288 17.743C14.6049 19.1537 12.4014 20 10.0001 20C4.47727 20 0.00012207 15.5228 0.00012207 10C0.00012207 4.47715 4.47727 0 10.0001 0C15.523 0 20.0001 4.47715 20.0001 10C20.0001 12.4013 19.1537 14.6049 17.743 16.3288L21.364 19.9497C21.7545 20.3402 21.7545 20.9734 21.364 21.3639C20.9734 21.7545 20.3403 21.7545 19.9498 21.3639L16.3288 17.743Z" fill="black"/>
+                            </svg>
+                            
+                    </button> -->
                     <!-- LOGIN LINK -->
-                    <a class="fw-5 df aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
+                    <a class="col-1 fw-5 df aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
                         <!-- login icon -->
                         <svg class="mr-10" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z" fill="black"/>
@@ -474,7 +482,7 @@
                                             <del>65 000 ₽</del>
                                             <div class="price">53 000 ₽</div>
                                         </div>
-                                        <button class="purple-border">В корзину</button>
+                                        <button class="purple-border btn-add-item">В корзину</button>
                                     </div>
                                 </div>
                             </div>
@@ -1219,7 +1227,7 @@
                     </div>
                     <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
                         <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10">
-                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16">Подписаться</button>
+                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16" type="button">Подписаться</button>
                     </div>
                 </form>
                 <!-- footer nav -->
@@ -1648,6 +1656,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <!-- bootstrap 5 js -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 
