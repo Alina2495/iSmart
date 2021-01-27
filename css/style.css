@@ -1703,6 +1703,9 @@ svg {
 }
 button {
   vertical-align: middle;
+  background-color: transparent;
+  border: none;
+  font-weight: inherit;
 }
 button span {
   vertical-align: middle;
@@ -1787,6 +1790,7 @@ button {
   line-height: 20px;
   color: #303030;
   padding: 14px 20px;
+  user-select: all;
 }
 .input:focus {
   background-color: #fff;
@@ -1856,47 +1860,6 @@ button.underline {
   width: 1px;
   padding: 0;
   border: 0;
-}
-.table {
-  border: 1px solid #CCCCCC;
-}
-.table .table {
-  border: none;
-}
-.caption-top > thead tr th {
-  color: #666666;
-  font-weight: 200;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #CCCCCC;
-}
-.table > :not(:last-child) > :last-child > * {
-  border-bottom-color: #CCCCCC;
-}
-.table .table th {
-  color: #212121;
-  font-weight: 600;
-}
-.table .table th {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.table > td {
-  padding: 0;
-}
-.table tr {
-  display: flex;
-}
-.table tr .df {
-  width: 30%;
-}
-.table th,
-.table td {
-  width: 50%;
-  flex-grow: 1;
-}
-.table th:last-of-type {
-  width: 25%;
 }
 .orders .order {
   border: 1px solid #CCCCCC;

@@ -1842,6 +1842,9 @@ svg {
 }
 button {
     vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    font-weight: inherit;
     span {
         vertical-align: middle;
         line-height: 100%;
@@ -1932,6 +1935,7 @@ a, button {
     line-height: 20px;
     color: #303030;
     padding: 14px 20px;
+    user-select: all;
     &:focus {
         background-color: #fff;
         border-color: #824df5;
@@ -2009,48 +2013,6 @@ button.underline {
     padding: 0;
     border: 0;
 }
-.table {
-    border: 1px solid #CCCCCC;
-}
-.table .table {
-    border: none;
-}
-.caption-top > thead tr th {
-    color: #666666;
-    font-weight: 200;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #CCCCCC;
-}
-.table>:not(:last-child)>:last-child>* {
-    border-bottom-color: #CCCCCC;
-}
-.table .table th {
-    color: #212121;
-    font-weight: 600;
-}
-.table .table th {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.table > td {
-    padding: 0;
-}
-.table {
-    tr {
-        display: flex;
-        .df {
-            width: 30%;
-        }
-    }
-    & th, & td {
-        width: 50%;
-        flex-grow: 1;
-    }
-    th:last-of-type {
-        width: 25%;
-    }
-}
 
 .orders {
     
@@ -2111,10 +2073,6 @@ svg {
     padding: 0;
     background-color: transparent;
     border: none;
-    // &:hover svg path {
-    //     fill: #0156FF;
-        // stroke: #0156FF;
-    // }
 }
 .login {
     &:hover {
@@ -2206,17 +2164,12 @@ svg {
         border: none;
         height: 100%;
         width: 90%;
-        // background-color: #0156FF;
         &:placeholder-shown {
             color: #8C8C8C;
         }
     }
-    // .go-search {
-        // background-color: aquamarine;
-    // }
     .hide-search {
         max-width: 20%;
-        // background-color: #C94D3F;
     }
 }
 
