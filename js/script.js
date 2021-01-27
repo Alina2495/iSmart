@@ -13,22 +13,26 @@ $('.hide-search').on('click', () => {
     $('.search').addClass('hidden');
 })
 
+// show mobile menu on show btn
 $('.gamburger').on('click', () => {
     $('.gamburger').addClass('hidden');
     $('.gamburger-close').removeClass('hidden');
     $('.mobile-menu').removeClass('hidden');
 })
 
+// hide mobile menu on close btn
 $('.gamburger-close').on('click', () => {
     $('.gamburger-close').addClass('hidden');
     $('.gamburger').removeClass('hidden');
     $('.mobile-menu-common').addClass('hidden');
 })
 
+// show catalog menu on mobile
 $('.catalog-btn').on('click', () => {
     $('.mobile-menu-catalog').removeClass('hidden');
 })
 
+// back to main menu on mobile
 $('.btn-catalog-back').on('click', () => {
     $('.mobile-menu-catalog').addClass('hidden');
 })
@@ -44,11 +48,13 @@ $('.mobile-search-close').on('click', () => {
     $('.mobile-search-wr').addClass('hidden');
 })
 
-$('.catalog').on('hover', () => {
-    $('.catalog-menu').removeClass('hidden');
-});
 
 
+// disabled newsletter form on footer
+$('#newsletter-btn').on('click', () => {
+    $("#newsletter-btn").attr("disabled", true);
+    $("#newsletter-input").attr("disabled", true);
+})
 
 // const btnsAll = document.querySelectorAll('.list-block-title')
 
@@ -61,24 +67,3 @@ $('.catalog').on('hover', () => {
 //         event.currentTarget.classList.add('active')
 //     })
 // })
-
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-// (function() {
-//     'use strict'
-
-//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//     var forms = document.querySelectorAll('.needs-validation')
-
-//     // Loop over them and prevent submission
-//     Array.prototype.slice.call(forms)
-//         .forEach(function(form) {
-//             form.addEventListener('submit', function(event) {
-//                 if (!form.checkValidity()) {
-//                     event.preventDefault()
-//                     event.stopPropagation()
-//                 }
-
-//                 form.classList.add('was-validated')
-//             }, false)
-//         })
-// })()
