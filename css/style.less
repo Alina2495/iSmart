@@ -20,7 +20,7 @@ body {
     line-height: normal;
     color: #303030;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
     background-color: #0156FF;
 }
 .purple, .purple-border {
@@ -381,7 +381,7 @@ section {
 // header
 header {
     background-color: white;
-    position: fixed;
+    // position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
@@ -389,11 +389,7 @@ header {
     .container-big {
         padding-top: 15px;
         padding-bottom: 15px;
-        .row {
-            display: flex;
-            align-items: end;
-            flex-wrap: wrap;
-        }
+        
     }
     a.c-3 {
         background: none;
@@ -607,11 +603,10 @@ header {
         background-image: url('../images/img/nav-item.svg');
         background-position: top center;
 
-        &:hover, &:active {
+        &:hover, &:active, &:focus {
             color: #6839CF;
             background-image: url('../images/img/nav-item-h.svg');
         }
-
         &.a-iphone {
             background-image: url('../images/img/nav-item-2.svg');
 
@@ -1460,23 +1455,6 @@ ul {
     -ms-flex-align: center;
     align-items: center;
 }
-.aie {
-    align-items: flex-end;
-}
-.fw {
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-.fnw {
-    flex-wrap: nowrap;
-}
-.jsb {
-    justify-content: space-between;
-}
-.jsc {
-    justify-content: center;
-}
 .br-4 {
     border-radius: 4px;
 }
@@ -2133,10 +2111,10 @@ svg {
     padding: 0 10px;
     background-color: transparent;
     border: none;
-    &:hover svg path {
-        fill: #0156FF;
+    // &:hover svg path {
+    //     fill: #0156FF;
         // stroke: #0156FF;
-    }
+    // }
 }
 .login {
     &:hover {
@@ -2147,30 +2125,127 @@ svg {
     }
 }
 
-.mobile-menu {
+.mobile-menu-common {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    z-index: 100;
+    top: 44px;
     li {
         border-bottom: 1px solid #EFEFEF;
         a {
             display: block;
+            width: 100%;
             padding: 15px 24px;
         }
     }
+    li.c-3 {
+        display: block;
+        width: 100%;
+        padding: 15px 24px;
+    }
+    .catalog-btn, .btn-catalog-back {
+        display: block;
+        width: 100%;
+        padding: 15px 24px;
+        border-bottom: 1px solid #EFEFEF;
+    }
+}
+.mobile-menu-catalog {
+    z-index: 101;
+}
+.mobile-search {
+    &-wr {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 24px;
+    }
+    &-input {
+        border: 0;
+    }
+    &-close {
+        background-color: transparent;
+        border: none;
+    }
+    &-bg {
+        height: 100%;
+        background-color: rgba(48, 48, 48, 0.5);
+
+    }
 }
 
-.hidden { display: none; }
-
+// main search on header
 .header-search {
-    background-color: #EBEBEB;
-    border-radius:  30px;
+    flex-wrap: nowrap;
     height: 60px;
     flex-grow: 1;
+    display: flex;
+    &-bg {
+        background-color: #EBEBEB;
+        border-radius:  30px;
+        display: inline-flex;
+        height: 100%;
+        width: 95%;
+        padding: 0 25px 0 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
     &-input {
         background-color: transparent;
         border: none;
         height: 100%;
-        padding-left: 30px;
+        width: 90%;
+        // background-color: #0156FF;
+        &:placeholder-shown {
+            color: #8C8C8C;
+        }
+    }
+    // .go-search {
+        // background-color: aquamarine;
+    // }
+    .hide-search {
+        max-width: 20%;
+        // background-color: #C94D3F;
     }
 }
+
+
+
 button.btn-added-item {
     background-color: #6839CF;
+}
+
+.hidden { display: none; }
+
+
+
+.aie {
+    align-items: flex-end;
+}
+.fw {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.fnw {
+    flex-wrap: nowrap;
+}
+.jsb {
+    justify-content: space-between;
+}
+.jsc {
+    justify-content: center;
+}
+.jse {
+    justify-content: flex-end;
 }

@@ -38,9 +38,26 @@
 
     <!-- header mobile -->
     <header class="d-block d-md-none">
+
+        <!-- MOBILE SEARCH -->
+        <div class="mobile-search-wr hidden">
+            <!-- search body -->
+            <form class="mobile-search-body bg-3">
+                <input required type="text" class="mobile-search-input fs-14" placeholder="Искать на сайте">
+                <button class="mobile-search-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                    </svg>    
+                </button>
+            </form>
+            <!-- search dark bg -->
+            <div class="mobile-search-bg"></div>
+
+        </div>
+
         <!-- header top -->
-        <div class="bg-10">
-            <div class="container p-3">
+        <div class="bg-10" style="min-height: 44px;">
+            <div class="container" style="padding: 10px 15px;">
                 <div class="df fnw jsb aic">
                     <!-- logo -->
                     <a class="logo" href="">
@@ -49,54 +66,38 @@
                             <circle cx="2.50049" cy="3.5" r="1.5" fill="#6839CF"/>
                         </svg>
                     </a>
-                    <!-- gamburger -->
-                    <button class="bg-transparent border-0 " aria-label="Раскрыть навигацию">
-                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.00049 12H17.0005C17.5505 12 18.0005 11.55 18.0005 11C18.0005 10.45 17.5505 10 17.0005 10H1.00049C0.450488 10 0.000488281 10.45 0.000488281 11C0.000488281 11.55 0.450488 12 1.00049 12ZM1.00049 7H17.0005C17.5505 7 18.0005 6.55 18.0005 6C18.0005 5.45 17.5505 5 17.0005 5H1.00049C0.450488 5 0.000488281 5.45 0.000488281 6C0.000488281 6.55 0.450488 7 1.00049 7ZM0.000488281 1C0.000488281 1.55 0.450488 2 1.00049 2H17.0005C17.5505 2 18.0005 1.55 18.0005 1C18.0005 0.45 17.5505 0 17.0005 0H1.00049C0.450488 0 0.000488281 0.45 0.000488281 1Z" fill="white"/>
+                    <!-- menu show button -->
+                    <button class="gamburger bg-transparent border-0 " aria-label="Раскрыть навигацию">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z" fill="white"/>
+                        </svg>
+                    </button>
+                    <!-- menu hide button -->
+                    <button class="gamburger-close bg-transparent border-0 hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.0005 6.41L17.5905 5L12.0005 10.59L6.41049 5L5.00049 6.41L10.5905 12L5.00049 17.59L6.41049 19L12.0005 13.41L17.5905 19L19.0005 17.59L13.4105 12L19.0005 6.41Z" fill="white"/>
                         </svg>
                     </button>
                 </div>
             </div>
-        </div>
-        <!-- header bottom -->
-        <div class="bg-3">
-            <div class="container p-3">
-                <div class="df fnw jsb aic">
-                    <!-- LOGIN LINK -->
-                    <a class="fw-5 df aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
-                        <!-- login icon -->
-                        <svg class="mr-10" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <!-- phone -->
-                    <a href="tel:+7(952)034-36-34" title="Позвонить нам" class="tnw c-3 f-14 fw-5">
-                        +7&#160;(952)&#160;034-36-34
-                    </a>
-                    <!-- Search -->
-                    <button class="btn-trans" aria-label="Поиск по сайту">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3393 10.2163C12.3265 8.94357 12.7917 7.34257 12.6404 5.73899C12.4891 4.13541 11.7325 2.64972 10.5246 1.58416C9.31676 0.518596 7.74832 -0.0467848 6.13838 0.00303334C4.52845 0.0528514 2.99797 0.714127 1.85829 1.85233C0.717621 2.99132 0.0541833 4.5224 0.0031747 6.13355C-0.0478339 7.74471 0.517425 9.31469 1.58376 10.5236C2.6501 11.7324 4.13726 12.4892 5.74218 12.6397C7.34711 12.7901 8.94901 12.3229 10.2215 11.3333L10.2555 11.369L13.6137 14.728C13.6873 14.8016 13.7746 14.8599 13.8707 14.8997C13.9668 14.9395 14.0698 14.96 14.1739 14.96C14.2779 14.96 14.3809 14.9395 14.477 14.8997C14.5731 14.8599 14.6604 14.8016 14.734 14.728C14.8075 14.6544 14.8659 14.5671 14.9057 14.471C14.9455 14.3749 14.966 14.2719 14.966 14.1679C14.966 14.0639 14.9455 13.9609 14.9057 13.8648C14.8659 13.7687 14.8075 13.6813 14.734 13.6078L11.3749 10.2495C11.3633 10.2381 11.3515 10.227 11.3393 10.2163ZM9.69579 2.97254C10.1428 3.41229 10.4983 3.93619 10.7417 4.51402C10.9852 5.09185 11.1119 5.71217 11.1145 6.3392C11.117 6.96622 10.9954 7.58755 10.7566 8.16735C10.5178 8.74714 10.1666 9.27391 9.72325 9.71729C9.27987 10.1607 8.75309 10.5119 8.1733 10.7507C7.59351 10.9894 6.97218 11.1111 6.34515 11.1085C5.71813 11.1059 5.09781 10.9793 4.51998 10.7358C3.94215 10.4923 3.41825 10.1368 2.9785 9.68983C2.09968 8.79658 1.60943 7.59226 1.61454 6.3392C1.61964 5.08613 2.11968 3.88584 3.00574 2.99978C3.8918 2.11372 5.09209 1.61368 6.34515 1.60858C7.59822 1.60347 8.80254 2.09372 9.69579 2.97254Z" fill="black"/>
+            <div class="fs-14 fw-5 c-13 bg-3 mobile-menu-common mobile-menu hidden">
+                <ul class="mb-20">
+                    <button class="d-flex jsb aic btn-trans catalog-btn">
+                        <span>Каталог товаров</span>
+                        <!-- button icon -->
+                        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.754043 1.31133L3.66404 4.22133L0.754043 7.13133C0.461543 7.42383 0.461543 7.89633 0.754043 8.18883C1.04654 8.48133 1.51904 8.48133 1.81154 8.18883L5.25404 4.74633C5.54654 4.45383 5.54654 3.98133 5.25404 3.68883L1.81154 0.246328C1.51904 -0.0461712 1.04654 -0.0461712 0.754043 0.246328C0.469043 0.538828 0.461543 1.01883 0.754043 1.31133Z" fill="black"/>
                         </svg>
                     </button>
-                </div>
-            </div>
-            <div class="fs-14 fw-5 c-13">
-                <ul class="mobile-menu mb-20">
-                    <li>
-                        <a href="" class="d-flex jsb aic">
-                            <span>Каталог товаров</span>
-                            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.754043 1.31133L3.66404 4.22133L0.754043 7.13133C0.461543 7.42383 0.461543 7.89633 0.754043 8.18883C1.04654 8.48133 1.51904 8.48133 1.81154 8.18883L5.25404 4.74633C5.54654 4.45383 5.54654 3.98133 5.25404 3.68883L1.81154 0.246328C1.51904 -0.0461712 1.04654 -0.0461712 0.754043 0.246328C0.469043 0.538828 0.461543 1.01883 0.754043 1.31133Z" fill="black"/>
-                            </svg>
-                        </a>
-                    </li>
+                    <!-- buyers info page -->
                     <li>
                         <a href="info-buyer.html">Покупателю</a>
                     </li>
+                    <!-- wholesalers page link -->
                     <li>
                         <a href="">Оптовикам</a>
                     </li>
+                    <!-- discounts page link -->
                     <li>
                         <a href="">Скидки</a>
                     </li>
@@ -114,11 +115,71 @@
                         <a href="tel:+7(952)034-36-34" title="Позвонить нам" class="tnw">+7&#160;(952)&#160;034-36-34</a>
                     </li>
                 </ul>
-                <div class="px-3 mb-10">
+                <div class="px-3 pb-3">
                     <p class="mb-10">Контактная информация:</p>
                     <p class="fs-12 c-8">Адрес: Казань, ул. Рихарда Зорге 66,<br> ТЦ Олимп 3 этаж<br> Режим работы: Пн-Вс: 9:00 - 22:00<br> E-mail: ismart@mail.com</p>
                 </div>
             </div>
+            <div class="fs-14 fw-5 c-13 bg-3 mobile-menu-common mobile-menu-catalog hidden">
+                <ul class="mb-20">
+                    <button class="d-flex aic btn-trans btn-catalog-back">
+                        <!-- button icon -->
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.254 6.31133L8.34401 9.22133L11.254 12.1313C11.5465 12.4238 11.5465 12.8963 11.254 13.1888C10.9615 13.4813 10.489 13.4813 10.1965 13.1888L6.75401 9.74633C6.46151 9.45383 6.46151 8.98133 6.75401 8.68883L10.1965 5.24633C10.489 4.95383 10.9615 4.95383 11.254 5.24633C11.539 5.53883 11.5465 6.01883 11.254 6.31133Z" fill="black"/>
+                        </svg>
+                        <span>Назад</span>
+                    </button>
+
+                    <li class="c-3 fw-6">
+                        Каталог товаров
+                    </li>
+                    <li>
+                        <a href="">iPhone</a>
+                    </li>
+                    <li>
+                        <a href="">iPad</a>
+                    </li>
+                    <li>
+                        <a href="">Macbook</a>
+                    </li>
+                    <li>
+                        <a href="">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="">Apple Watch</a>
+                    </li>
+                    <li>
+                        <a href="">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- header bottom -->
+        <div class="bg-3">
+            <div class="container p-3">
+                <div class="df fnw jsb aic">
+                    <!-- LOGIN LINK -->
+                    <a class="fw-5 df aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
+                        <!-- login icon -->
+                        <svg class="mr-10" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <!-- phone -->
+                    <a href="tel:+7(952)034-36-34" title="Позвонить нам" class="tnw c-3 f-14 fw-5">
+                        +7&#160;(952)&#160;034-36-34
+                    </a>
+                    <!-- Search -->
+                    <button class="btn-trans show-mobile-search" aria-label="Поиск по сайту">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3393 10.2163C12.3265 8.94357 12.7917 7.34257 12.6404 5.73899C12.4891 4.13541 11.7325 2.64972 10.5246 1.58416C9.31676 0.518596 7.74832 -0.0467848 6.13838 0.00303334C4.52845 0.0528514 2.99797 0.714127 1.85829 1.85233C0.717621 2.99132 0.0541833 4.5224 0.0031747 6.13355C-0.0478339 7.74471 0.517425 9.31469 1.58376 10.5236C2.6501 11.7324 4.13726 12.4892 5.74218 12.6397C7.34711 12.7901 8.94901 12.3229 10.2215 11.3333L10.2555 11.369L13.6137 14.728C13.6873 14.8016 13.7746 14.8599 13.8707 14.8997C13.9668 14.9395 14.0698 14.96 14.1739 14.96C14.2779 14.96 14.3809 14.9395 14.477 14.8997C14.5731 14.8599 14.6604 14.8016 14.734 14.728C14.8075 14.6544 14.8659 14.5671 14.9057 14.471C14.9455 14.3749 14.966 14.2719 14.966 14.1679C14.966 14.0639 14.9455 13.9609 14.9057 13.8648C14.8659 13.7687 14.8075 13.6813 14.734 13.6078L11.3749 10.2495C11.3633 10.2381 11.3515 10.227 11.3393 10.2163ZM9.69579 2.97254C10.1428 3.41229 10.4983 3.93619 10.7417 4.51402C10.9852 5.09185 11.1119 5.71217 11.1145 6.3392C11.117 6.96622 10.9954 7.58755 10.7566 8.16735C10.5178 8.74714 10.1666 9.27391 9.72325 9.71729C9.27987 10.1607 8.75309 10.5119 8.1733 10.7507C7.59351 10.9894 6.97218 11.1111 6.34515 11.1085C5.71813 11.1059 5.09781 10.9793 4.51998 10.7358C3.94215 10.4923 3.41825 10.1368 2.9785 9.68983C2.09968 8.79658 1.60943 7.59226 1.61454 6.3392C1.61964 5.08613 2.11968 3.88584 3.00574 2.99978C3.8918 2.11372 5.09209 1.61368 6.34515 1.60858C7.59822 1.60347 8.80254 2.09372 9.69579 2.97254Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -159,136 +220,168 @@
                 </div>
             </div>
         </div>
+
         <!-- header bottom -->
         <div class="header-bottom c-13 fs-16 pr">
-            <div class="container container-big h-100">
-                <div class="df jsb aic h-100">
-                    <!-- logo -->
-                    <a class="col-1 navbar-brand p-0" href="">
-                        <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
-                    </a>
-                    <!-- navigation -->
-                    <ul class="col-5 fw-6 df jsb aic col-5 fnw header-menu">
-                        <li class="nav-item dropdown br-4 df aic catalog position-static">
-                            <a class="nav-link dropdown-toggle fs-16" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
-                                <svg class="mr-1" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="container container-big h-100 fnw df jsb aic">
+                <!-- logo -->
+                <a class="col-1 navbar-brand p-0" href="">
+                    <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
+                </a>
+                <!-- navigation -->
+                <ul class="col-5 fw-6 df jsb aic col-5 fnw header-menu">
+                    <li class="nav-item dropdown br-4 df aic catalog position-static">
+                        <a class="p-0 nav-link dropdown-toggle fs-16" href="catalog.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false" title="Показать меню товаров">
+                            <svg class="mr-1" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 12H17C17.55 12 18 11.55 18 11C18 10.45 17.55 10 17 10H1C0.45 10 0 10.45 0 11C0 11.55 0.45 12 1 12ZM1 7H17C17.55 7 18 6.55 18 6C18 5.45 17.55 5 17 5H1C0.45 5 0 5.45 0 6C0 6.55 0.45 7 1 7ZM0 1C0 1.55 0.45 2 1 2H17C17.55 2 18 1.55 18 1C18 0.45 17.55 0 17 0H1C0.45 0 0 0.45 0 1Z" fill="#303030"/>
                                 </svg> Каталог товаров
-
-                            </a>
-                            <ul class="dropdown-menu col-10 pr catalog-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <svg class="pa" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </a>
+                        <ul class="dropdown-menu col-10 pr catalog-menu hidden" aria-labelledby="navbarDropdownMenuLink">
+                            <svg class="pa" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.1007 0L20.2014 10H0L10.1007 0Z" fill="#E5E5E5"/>
                                     </svg>
 
-                                <div class="catalognav-menu bg-3 row flex-lg-row fnw">
-                                    <ul class="catalognav-list col-lg-4 row">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 col-12">
-                                            iPhone
-                                        </li>
-                                        <li class="col-lg-6">
-                                            <ul>
-                                                <li>
-                                                    <a href="">Iphone 12 pro</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Iphone 12 pro max</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Iphone 11 pro</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Iphone 11 pro max</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Iphone 11</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                            <div class="catalognav-menu bg-3 row flex-lg-row fnw">
+                                <ul class="catalognav-list col-lg-4 row">
+                                    <li class="catalognav-heading c-12 fw-5 fs-22 mb-20 col-12">
+                                        iPhone
+                                    </li>
+                                    <li class="col-lg-6">
+                                        <ul>
+                                            <li>
+                                                <a href="">Iphone 12 pro</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Iphone 12 pro max</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Iphone 11 pro</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Iphone 11 pro max</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Iphone 11</a>
+                                            </li>
+                                        </ul>
+                                    </li>
 
-                                        <li class="col-lg-6">
-                                            <ul>
-                                                <li>
-                                                    <a href="">Iphone 10</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Iphone 10 R</a>
-                                                </li>
-                                                <li>
-                                                    <a href="">Iphone 10 S</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">iPad</li>
-                                        <li><a href="">iPad Pro</a></li>
-                                        <li><a href="">iPad</a></li>
-                                        <li><a href="">iPad mini</a></li>
-                                        <li><a href="">iPad Air</a></li>
-                                    </ul>
-                                    <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Macbook</li>
-                                        <li><a href="">Macbook Air</a></li>
-                                        <li><a href="">Macbook Pro 13</a></li>
-                                        <li><a href="">Macbook Pro 16</a></li>
-                                        <li><a href="">iMac</a></li>
-                                    </ul>
-                                    <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">AirPods</li>
-                                        <li><a href="">AirPods</a></li>
-                                        <li><a href="">AirPods Pro</a></li>
-                                        <li><a href="">AirPods Max</a></li>
-                                        <li><a href="">iPod touch</a></li>
-                                    </ul>
-                                    <ul class="catalognav-list col-lg-2">
-                                        <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Аксессуары</li>
-                                        <li><a href="">Зарядные<br>устройства</a></li>
-                                        <li><a href="">Аккумуляторы</a></li>
-                                        <li><a href="">Чехлы</a></li>
-                                    </ul>
-                                </div>
-                            </ul>
+                                    <li class="col-lg-6">
+                                        <ul>
+                                            <li>
+                                                <a href="">Iphone 10</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Iphone 10 R</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Iphone 10 S</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="catalognav-list col-lg-2">
+                                    <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">iPad</li>
+                                    <li><a href="">iPad Pro</a></li>
+                                    <li><a href="">iPad</a></li>
+                                    <li><a href="">iPad mini</a></li>
+                                    <li><a href="">iPad Air</a></li>
+                                </ul>
+                                <ul class="catalognav-list col-lg-2">
+                                    <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Macbook</li>
+                                    <li><a href="">Macbook Air</a></li>
+                                    <li><a href="">Macbook Pro 13</a></li>
+                                    <li><a href="">Macbook Pro 16</a></li>
+                                    <li><a href="">iMac</a></li>
+                                </ul>
+                                <ul class="catalognav-list col-lg-2">
+                                    <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">AirPods</li>
+                                    <li><a href="">AirPods</a></li>
+                                    <li><a href="">AirPods Pro</a></li>
+                                    <li><a href="">AirPods Max</a></li>
+                                    <li><a href="">iPod touch</a></li>
+                                </ul>
+                                <ul class="catalognav-list col-lg-2">
+                                    <li class="catalognav-heading c-12 fw-5 fs-22 mb-20">Аксессуары</li>
+                                    <li><a href="">Зарядные<br>устройства</a></li>
+                                    <li><a href="">Аккумуляторы</a></li>
+                                    <li><a href="">Чехлы</a></li>
+                                </ul>
+                            </div>
+                        </ul>
 
-                        </li>
-                        <li>
-                            <a href="">Покупателю</a>
-                        </li>
-                        <li>
-                            <a href="">Оптовикам</a>
-                        </li>
-                        <li>
-                            <a href="">Скидки</a>
-                        </li>
-                    </ul>
-                    <button class="show-search ml-auto btn-trans"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0001 10C18.0001 14.4183 14.4184 18 10.0001 18C5.58184 18 2.00012 14.4183 2.00012 10C2.00012 5.58172 5.58184 2 10.0001 2C14.4184 2 18.0001 5.58172 18.0001 10ZM16.3288 17.743C14.6049 19.1537 12.4014 20 10.0001 20C4.47727 20 0.00012207 15.5228 0.00012207 10C0.00012207 4.47715 4.47727 0 10.0001 0C15.523 0 20.0001 4.47715 20.0001 10C20.0001 12.4013 19.1537 14.6049 17.743 16.3288L21.364 19.9497C21.7545 20.3402 21.7545 20.9734 21.364 21.3639C20.9734 21.7545 20.3403 21.7545 19.9498 21.3639L16.3288 17.743Z" fill="black"/>
-                        </svg></button>
-                    <div class="search hidden header-search">
-                        <input type="search" class="header-search-input" placeholder="Искать на сайте" />
-                        <button class="hide-search">close</button>
-                    </div>
-                    <!-- Search -->
-                    <!-- <button class="ml-auto btn-trans" aria-label="Поиск по сайту" title="Поиск по сайту">
+                    </li>
+                    <li>
+                        <a href="">Покупателю</a>
+                    </li>
+                    <li>
+                        <a href="">Оптовикам</a>
+                    </li>
+                    <li>
+                        <a href="">Скидки</a>
+                    </li>
+                </ul>
+
+                <!-- show search form button -->
+                <button class="col-1 jse show-search ml-auto btn-trans">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0001 10C18.0001 14.4183 14.4184 18 10.0001 18C5.58184 18 2.00012 14.4183 2.00012 10C2.00012 5.58172 5.58184 2 10.0001 2C14.4184 2 18.0001 5.58172 18.0001 10ZM16.3288 17.743C14.6049 19.1537 12.4014 20 10.0001 20C4.47727 20 0.00012207 15.5228 0.00012207 10C0.00012207 4.47715 4.47727 0 10.0001 0C15.523 0 20.0001 4.47715 20.0001 10C20.0001 12.4013 19.1537 14.6049 17.743 16.3288L21.364 19.9497C21.7545 20.3402 21.7545 20.9734 21.364 21.3639C20.9734 21.7545 20.3403 21.7545 19.9498 21.3639L16.3288 17.743Z" fill="black"/>
+                        </svg>
+                    </button>
+
+                <!-- search form -->
+                <form class="col-9 search hidden header-search">
+                    <div class="header-search-bg">
+                        <!-- search input -->
+                        <input required maxlength="25" type="search" class="header-search-input" placeholder="Искать на сайте" />
+                        <!-- search button -->
+                        <button class="go-search btn-trans">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.95084 2.99153C3.79216 4.1485 3.11825 5.70376 3.06643 7.34035C3.01462 8.97695 3.5888 10.5717 4.67198 11.7997C5.75515 13.0276 7.26579 13.7963 8.89606 13.9492C10.4966 14.0992 12.0942 13.6446 13.375 12.6767L16.7062 16.0087L16.7062 16.0087C16.7891 16.0915 16.8874 16.1572 16.9957 16.2021C17.1039 16.2469 17.2199 16.27 17.3371 16.27C17.4542 16.27 17.5702 16.2469 17.6785 16.2021C17.7867 16.1572 17.885 16.0915 17.9679 16.0087C18.0507 15.9258 18.1164 15.8275 18.1613 15.7192C18.2061 15.611 18.2292 15.495 18.2292 15.3779C18.2292 15.2607 18.2061 15.1447 18.1613 15.0365C18.1164 14.9282 18.0507 14.8299 17.9679 14.747L17.9679 14.747L14.6361 11.4161C15.6014 10.1351 16.0541 8.53858 15.9032 6.93955C15.7494 5.31066 14.9809 3.80151 13.754 2.71913C12.5271 1.63674 10.9338 1.06244 9.2985 1.11304C7.66315 1.16365 6.10851 1.83536 4.95084 2.99153ZM4.95084 2.99153L5.0215 3.06229L4.95084 2.99153ZM12.7889 4.25378C13.2264 4.68428 13.5744 5.19715 13.8128 5.76281C14.0512 6.32848 14.1752 6.93574 14.1777 7.54956C14.1802 8.16339 14.0611 8.77164 13.8274 9.33923C13.5936 9.90681 13.2498 10.4225 12.8158 10.8565C12.3817 11.2906 11.866 11.6344 11.2984 11.8682C10.7308 12.1019 10.1226 12.221 9.50877 12.2185C8.89494 12.216 8.28768 12.092 7.72202 11.8536C7.15636 11.6152 6.64349 11.2672 6.21299 10.8297C5.35268 9.95522 4.87275 8.77625 4.87774 7.54956C4.88274 6.32288 5.37225 5.14786 6.23966 4.28045C7.10706 3.41304 8.28208 2.92353 9.50877 2.91854C10.7355 2.91354 11.9144 3.39347 12.7889 4.25378Z" fill="#0156FF" stroke="#0156FF" stroke-width="0.2"/>
+                                </svg>
+                            </button>
+                    </div>
+                    <!-- hide search button -->
+                    <button class="hide-search btn-trans">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.84607 3.84619L15.1538 15.154" stroke="black" stroke-width="2.4" stroke-linecap="round"/>
+                                <path d="M15.1539 3.84619L3.84617 15.154" stroke="black" stroke-width="2.4" stroke-linecap="round"/>
                             </svg>
-                            
-                    </button> -->
-                    <!-- LOGIN LINK -->
-                    <a class="col-1 fw-5 df aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
-                        <!-- login icon -->
-                        <svg class="mr-10" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </button>
+                </form>
+
+
+                <!-- LOGIN LINK -->
+                <a class="col-1 jse fw-5 df aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
+                    <!-- login icon -->
+                    <svg class="mr-10" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z" fill="black"/>
                         </svg>
-                        <span>Войти</span>
-                    </a>
-                </div>
+                    <span>Войти</span>
+                </a>
             </div>
         </div>
+
     </header>
 
+    <!-- widget -->
+    <div class="widgets bg-7">
+        <button class="basket" title="Корзина">
+            <span class="badge">20</span>
+            <span class="visually-hidden">товаров в корзине</span>
+        </button>
+        <button class="fav" title="Избранное">
+            <span class="badge">12</span>
+            <span class="visually-hidden">товаров в избранном</span>
+        </button>
+        <button class="compare" title="Сравнение">
+            <span class="badge">18</span>
+            <span class="visually-hidden">товаров в сравнении</span>
+        </button>
+    </div>
+
     <main>
+
         <!-- first banner -->
         <section class="bg-1 c-5 mt-80">
             <div class="banner-big banner banner-1 container container-big position-relative">
@@ -307,41 +400,13 @@
         </section>
         <!-- first banner -->
 
-        <!-- two banners -->
-        <section class="banner-group df fw mb-100 row-cols-lg-2">
-            <div class="banner banner-2 bg-1 c-5">
-                <div class="banner-text">
-                    <h2 class="banner-h1 fw-7 c-5">MacBook Air</h2>
-                    <p class="banner-p mb-40 fw-5">от 84 990 ₽</p>
-                    <div class="banner-links">
-                        <button class="purple lh-100" type="button">Купить</button>
-                        <a class="c-5" href="">Подробнее</a>
-                    </div>
-                </div>
-                <img class="banner-img" src="images/img/banner-img-2.png" alt="MacBook Air">
-            </div>
-            <div class="banner banner-3 bg-2 c-1">
-                <div class="banner-text">
-                    <h2 class="banner-h1 fw-7">AirPods Pro</h2>
-                    <p class="banner-p mb-40 fw-5">от 18 490 ₽</p>
-                    <div class="banner-links">
-                        <button class="purple lh-100" type="button">Купить</button>
-                        <a class="c-3" href="">Подробнее</a>
-                    </div>
-                </div>
-                <img src="images/img/banner-img-3.jpg" alt="AirPods Pro">
-            </div>
-        </section>
-        <!-- two banners -->
-
         <!-- menu -->
         <nav class="secondnav-block c-6 mb-100 fs-14">
             <div class="container container-big">
                 <h1 class="visuallyhidden">Популярные товары</h1>
                 <ul class="secondnav-list df">
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-iphone">Iphone 12 pro
-                        </a>
+                        <a href="" class="secondnav-link a-iphone">Iphone 12 pro</a>
                     </li>
                     <li class="secondnav-item">
                         <a href="" class="secondnav-link a-iphone">Iphone 12 pro max</a>
@@ -381,21 +446,11 @@
         </nav>
         <!-- menu -->
 
-        <!-- widget -->
-        <div class="widgets bg-7">
-            <button class="basket" title="Корзина">
-                <span class="badge">20</span>
-                <span class="visually-hidden">товаров в корзине</span>
-            </button>
-            <button class="fav" title="Избранное">
-                <span class="badge">12</span>
-                <span class="visually-hidden">товаров в избранном</span>
-            </button>
-            <button class="compare" title="Сравнение">
-                <span class="badge">18</span>
-                <span class="visually-hidden">товаров в сравнении</span>
-            </button>
-        </div>
+
+
+
+
+
 
 
 
@@ -972,7 +1027,32 @@
         </section>
         <!-- catalog -->
 
-
+        <!-- two banners -->
+        <section class="banner-group df fw mb-100 row-cols-lg-2">
+            <div class="banner banner-2 bg-1 c-5">
+                <div class="banner-text">
+                    <h2 class="banner-h1 fw-7 c-5">MacBook Air</h2>
+                    <p class="banner-p mb-40 fw-5">от 84 990 ₽</p>
+                    <div class="banner-links">
+                        <button class="purple lh-100" type="button">Купить</button>
+                        <a class="c-5" href="">Подробнее</a>
+                    </div>
+                </div>
+                <img class="banner-img" src="images/img/banner-img-2.png" alt="MacBook Air">
+            </div>
+            <div class="banner banner-3 bg-2 c-1">
+                <div class="banner-text">
+                    <h2 class="banner-h1 fw-7">AirPods Pro</h2>
+                    <p class="banner-p mb-40 fw-5">от 18 490 ₽</p>
+                    <div class="banner-links">
+                        <button class="purple lh-100" type="button">Купить</button>
+                        <a class="c-3" href="">Подробнее</a>
+                    </div>
+                </div>
+                <img src="images/img/banner-img-3.jpg" alt="AirPods Pro">
+            </div>
+        </section>
+        <!-- two banners -->
 
         <!-- about -->
         <section class="about mb-80">
@@ -1227,7 +1307,7 @@
                     </div>
                     <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
                         <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10">
-                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16" type="button">Подписаться</button>
+                        <button class="purple fs-14 fw-6 col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16" type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal">Подписаться</button>
                     </div>
                 </form>
                 <!-- footer nav -->
@@ -1494,6 +1574,30 @@
         </div>
     </div>
 
+    <!-- DONE -->
+    <!-- Ask Question Modal -->
+    <div class="modal fade" id="newsletterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content mx-auto text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="newsletterModalLabel">Спасибо за подписку!</h5>
+                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Свежая рассылка новостей уже выслана.</p>
+                </div>
+                <div class="modal-footer row-cols-1 row-cols-sm-auto jsc">
+                    <button type="button" class="purple bttn" data-bs-dismiss="modal">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- header -->
     <header class="c-1 d-none">
         <!-- container -->
@@ -1648,6 +1752,13 @@
         <!-- container -->
     </header>
     <!-- header -->
+    <!-- Search -->
+    <!-- <button class="ml-auto btn-trans" aria-label="Поиск по сайту" title="Поиск по сайту">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0001 10C18.0001 14.4183 14.4184 18 10.0001 18C5.58184 18 2.00012 14.4183 2.00012 10C2.00012 5.58172 5.58184 2 10.0001 2C14.4184 2 18.0001 5.58172 18.0001 10ZM16.3288 17.743C14.6049 19.1537 12.4014 20 10.0001 20C4.47727 20 0.00012207 15.5228 0.00012207 10C0.00012207 4.47715 4.47727 0 10.0001 0C15.523 0 20.0001 4.47715 20.0001 10C20.0001 12.4013 19.1537 14.6049 17.743 16.3288L21.364 19.9497C21.7545 20.3402 21.7545 20.9734 21.364 21.3639C20.9734 21.7545 20.3403 21.7545 19.9498 21.3639L16.3288 17.743Z" fill="black"/>
+                            </svg>
+                            
+                    </button> -->
 
     <!-- bootstrap 5 js -->
     <!-- JavaScript Bundle with Popper.js -->
