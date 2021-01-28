@@ -29,12 +29,14 @@ $('.gamburger-close').on('click', () => {
 
 // show catalog menu on mobile
 $('.catalog-btn').on('click', () => {
+    $('.mobile-menu').addClass('hidden');
     $('.mobile-menu-catalog').removeClass('hidden');
 })
 
 // back to main menu on mobile
 $('.btn-catalog-back').on('click', () => {
     $('.mobile-menu-catalog').addClass('hidden');
+    $('.mobile-menu').removeClass('hidden');
 })
 
 // show search on mobile
