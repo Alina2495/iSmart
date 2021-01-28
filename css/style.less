@@ -472,7 +472,7 @@ header {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    button {
+    a {
         position: relative;
         background-color: transparent;
         display: block;
@@ -1244,7 +1244,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        button {
+        a {
             background-position: 10px;
             width: 54px;
             height: 55px;
@@ -1986,26 +1986,19 @@ svg {
     position: absolute;
     z-index: 100;
     top: 44px;
-    li {
+    a, button {
+        display: block;
+        width: 100%;
+        padding: 15px 24px;
         border-bottom: 1px solid #EFEFEF;
-        a {
-            display: block;
-            width: 100%;
-            padding: 15px 24px;
-        }
     }
-    li.c-3 {
+    .c-3 {
         display: block;
         width: 100%;
         padding: 15px 24px;
     }
-    .catalog-btn, .btn-catalog-back {
-        display: flex;
-        width: 100%;
-        padding: 15px 24px;
-        border-bottom: 1px solid #EFEFEF;
-    }
 }
+
 .mobile-menu-catalog {
     z-index: 101;
 }

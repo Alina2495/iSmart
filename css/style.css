@@ -437,7 +437,7 @@ header .navbar-toggler-icon {
   top: 50%;
   transform: translateY(-50%);
 }
-.widgets button {
+.widgets a {
   position: relative;
   background-color: transparent;
   display: block;
@@ -447,19 +447,19 @@ header .navbar-toggler-icon {
   border-top: 1px solid #595959;
   background-position: 15px center;
 }
-.widgets button:first-child {
+.widgets a:first-child {
   border-top: none;
 }
-.widgets button.basket {
+.widgets a.basket {
   background-image: url('../images/icons/basket-w.svg');
 }
-.widgets button.fav {
+.widgets a.fav {
   background-image: url('../images/icons/favorite-w.svg');
 }
-.widgets button.compare {
+.widgets a.compare {
   background-image: url('../images/icons/compare-w.svg');
 }
-.widgets button .badge {
+.widgets a .badge {
   position: absolute;
   font-size: 12px;
   background-color: #6839CF;
@@ -1151,17 +1151,17 @@ footer a[href='#top']:hover {
     align-items: center;
     justify-content: center;
   }
-  .widgets button {
+  .widgets a {
     background-position: 10px;
     width: 54px;
     height: 55px;
     border: none;
     border-left: 1px solid #595959;
   }
-  .widgets button:last-child {
+  .widgets a:last-child {
     border-right: 1px solid #595959;
   }
-  .widgets button .badge {
+  .widgets a .badge {
     right: 5px;
   }
   .catalog-cat-list {
@@ -1827,25 +1827,17 @@ svg {
   z-index: 100;
   top: 44px;
 }
-.mobile-menu-common li {
-  border-bottom: 1px solid #EFEFEF;
-}
-.mobile-menu-common li a {
+.mobile-menu-common a,
+.mobile-menu-common button {
   display: block;
   width: 100%;
   padding: 15px 24px;
+  border-bottom: 1px solid #EFEFEF;
 }
-.mobile-menu-common li.c-3 {
+.mobile-menu-common .c-3 {
   display: block;
   width: 100%;
   padding: 15px 24px;
-}
-.mobile-menu-common .catalog-btn,
-.mobile-menu-common .btn-catalog-back {
-  display: flex;
-  width: 100%;
-  padding: 15px 24px;
-  border-bottom: 1px solid #EFEFEF;
 }
 .mobile-menu-catalog {
   z-index: 101;
