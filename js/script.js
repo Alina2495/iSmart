@@ -1,7 +1,7 @@
 // show search on desktop
 $('.show-search').on('click', () => {
     $('.show-search').addClass('hidden');
-    $('.header-menu').addClass('hidden');
+    $('.desktop-menu').addClass('hidden');
     $('.search').removeClass('hidden');
     $('.header-search-input').focus();
 })
@@ -9,7 +9,7 @@ $('.show-search').on('click', () => {
 // hide search on desktop
 $('.hide-search').on('click', () => {
     $('.show-search').removeClass('hidden');
-    $('.header-menu').removeClass('hidden');
+    $('.desktop-menu').removeClass('hidden');
     $('.search').addClass('hidden');
 })
 

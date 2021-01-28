@@ -30,6 +30,15 @@ img, .img {
 .poppins {
     font-family: 'Poppins, sans-serif';
 }
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    button, a {
+        margin: 0 8px;
+    }
+}
 // headings
 h {
     &1, &2, &3, &4, &5, &6 {
@@ -81,6 +90,10 @@ a {
     &.c-5 {
         background-image: url('../images/icons/arrow-r-w.svg');
     }
+}
+header a.c-3 {
+    padding: 0;
+    background-image: none;
 }
 
 p {
@@ -346,7 +359,7 @@ section {
     }
 }
 .container {
-    max-width: 1200px;
+    // max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     .row>* {
@@ -1018,7 +1031,6 @@ footer {
         border-top: 1px solid #493B56;
     }
     .footernav {
-        margin-bottom: 45px;
         &-heading {
             font-weight: bold;
             font-size: 18px;
@@ -1065,7 +1077,7 @@ footer {
         display: block;
         position: absolute;
         right: 1%;
-        top: 50px;
+        top: 0;
         width: 50px;
         height: 50px;
         background-color: #E2E4E8;
@@ -1211,24 +1223,6 @@ footer {
 }
 
 @media screen and (max-width: 568px) {
-    
-    header {
-        .navbar-nav {
-            padding-top: 0;
-            padding-bottom: 20px;
-            flex-direction: row;
-            .nav-item {
-                margin: 5px;
-                .nav-link {
-                    margin: 0;
-                    &.dropdown-toggle {
-                        padding-left: 0;
-                        background-image: none;
-                    }
-                }
-            }
-        }
-    }
     .catalog-menu {
         border-radius: 0 0 6px 6px;
         filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.102));
@@ -1290,22 +1284,6 @@ footer {
     }
 }
 @media screen and (max-width: 767px) {
-    header {
-        min-height: auto;
-        background-color: #F6F6FF;
-        
-        .navbar-toggler {
-            padding: 0;
-            &:focus {
-                text-decoration: none;
-                outline: 0;
-                box-shadow: none;
-                .navbar-toggler-icon {
-                    background-image: url('../images/icons/menu-active.svg');
-                }
-            }
-        }   
-    }
     // about block
     .about {
         text-align: center;
@@ -2095,6 +2073,7 @@ button {
     background-color: transparent;
     border: none;
     padding: 0;
+    align-items: center;
     &:focus svg path {
         fill: #6839CF;
     }

@@ -30,6 +30,16 @@ img,
 .poppins {
   font-family: 'Poppins, sans-serif';
 }
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+.desktop-menu button,
+.desktop-menu a {
+  margin: 0 8px;
+}
 h1,
 h2,
 h3,
@@ -82,6 +92,10 @@ a.see-all {
 }
 a.c-5 {
   background-image: url('../images/icons/arrow-r-w.svg');
+}
+header a.c-3 {
+  padding: 0;
+  background-image: none;
 }
 p {
   font-size: 16px;
@@ -316,7 +330,6 @@ section .section-title .see-all {
   font-weight: 500;
 }
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -941,9 +954,6 @@ footer .footer-bottom {
   padding-top: 10px;
   border-top: 1px solid #493B56;
 }
-footer .footernav {
-  margin-bottom: 45px;
-}
 footer .footernav-heading {
   font-weight: bold;
   font-size: 18px;
@@ -989,7 +999,7 @@ footer a[href='#top'] {
   display: block;
   position: absolute;
   right: 1%;
-  top: 50px;
+  top: 0;
   width: 50px;
   height: 50px;
   background-color: #E2E4E8;
@@ -1120,21 +1130,6 @@ footer a[href='#top']:hover {
   background-color: #6839CF;
 }
 @media screen and (max-width: 568px) {
-  header .navbar-nav {
-    padding-top: 0;
-    padding-bottom: 20px;
-    flex-direction: row;
-  }
-  header .navbar-nav .nav-item {
-    margin: 5px;
-  }
-  header .navbar-nav .nav-item .nav-link {
-    margin: 0;
-  }
-  header .navbar-nav .nav-item .nav-link.dropdown-toggle {
-    padding-left: 0;
-    background-image: none;
-  }
   .catalog-menu {
     border-radius: 0 0 6px 6px;
     filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.102));
@@ -1194,21 +1189,6 @@ footer a[href='#top']:hover {
   }
 }
 @media screen and (max-width: 767px) {
-  header {
-    min-height: auto;
-    background-color: #F6F6FF;
-  }
-  header .navbar-toggler {
-    padding: 0;
-  }
-  header .navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: none;
-  }
-  header .navbar-toggler:focus .navbar-toggler-icon {
-    background-image: url('../images/icons/menu-active.svg');
-  }
   .about {
     text-align: center;
   }
@@ -1925,6 +1905,7 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+  align-items: center;
 }
 .btn-trans:focus svg path {
   fill: #6839CF;
