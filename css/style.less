@@ -2169,7 +2169,7 @@ button.underline {
 
 
 
-// products catalog page 
+// category products page 
 .filters-block {
     fieldset {
         border: 1px solid #EFEFEF;
@@ -2225,6 +2225,71 @@ button.underline {
         height: 1px;
         &:checked + label::before {
             background-image: url('../images/icons/filtr-checked.svg');
+        }
+    }
+}
+
+// product page
+#characteristics {
+    .char-group {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 40px;
+        letter-spacing: 0.01em;
+    }
+    h6 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #303030;
+        margin-bottom: 30px;
+    }
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    dt, dd {
+        font-weight: 400;
+        font-size: 18px;
+        color: #606060;
+        margin-bottom: 0;
+    }
+    dt::after {
+        content: ':';
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #characteristics {
+        .char-group {
+            padding: 20px 0;
+        }
+        dl {
+            flex-direction: column;
+        }
+        dt {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #characteristics {
+        dt {
+            flex-basis: 40%;
+        }
+        dd {
+            flex-basis: 60%;
+        }
+    }
+}
+#description {
+    p {
+        margin-bottom: 22px;
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 }

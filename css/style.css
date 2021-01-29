@@ -2053,3 +2053,57 @@ button.underline {
 .filters-block input:checked + label::before {
   background-image: url('../images/icons/filtr-checked.svg');
 }
+#characteristics .char-group {
+  border-bottom: 1px solid #E6E6E6;
+  padding: 40px;
+  letter-spacing: 0.01em;
+}
+#characteristics h6 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #303030;
+  margin-bottom: 30px;
+}
+#characteristics dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#characteristics dl:last-of-type {
+  margin-bottom: 0;
+}
+#characteristics dt,
+#characteristics dd {
+  font-weight: 400;
+  font-size: 18px;
+  color: #606060;
+  margin-bottom: 0;
+}
+#characteristics dt::after {
+  content: ':';
+}
+@media screen and (max-width: 999px) {
+  #characteristics .char-group {
+    padding: 20px 0;
+  }
+  #characteristics dl {
+    flex-direction: column;
+  }
+  #characteristics dt {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #characteristics dt {
+    flex-basis: 40%;
+  }
+  #characteristics dd {
+    flex-basis: 60%;
+  }
+}
+#description p {
+  margin-bottom: 22px;
+}
+#description p:last-of-type {
+  margin-bottom: 0;
+}
