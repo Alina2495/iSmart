@@ -330,7 +330,6 @@ section .section-title .see-all {
   font-weight: 500;
 }
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -338,8 +337,13 @@ section .section-title .see-all {
   padding-left: 15px;
   padding-right: 15px;
 }
-.container-big {
-  max-width: 1645px;
+@media screen and (min-width: 1250px) {
+  .container {
+    max-width: 1200px;
+  }
+  .container-big {
+    max-width: 1645px;
+  }
 }
 header {
   width: 100%;
@@ -578,21 +582,28 @@ header .navbar-toggler-icon {
 .secondnav-link.a-macbook:hover {
   background-image: url('../images/img/nav-item-h-5.svg');
 }
-.catalog-cat-list {
+.tabs-links {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
   justify-content: flex-start;
   border-bottom: 2px solid #9696A0;
+  margin-right: auto;
 }
-.catalog-cat-list li a {
+.tabs-links li a {
   padding: 25px 40px;
   font-size: 18px;
   margin-bottom: -2px;
   border-radius: 4px 4px 0 0;
 }
-.catalog-cat-list li a:hover {
+.tabs-links li a:hover {
   border-bottom: 4px solid #8772b4;
   background-color: #fbfbff;
 }
-.catalog-cat-list li a.active {
+.tabs-links li a.active {
   border-bottom: 4px solid #6839CF;
   background-color: #fbfbff;
 }
@@ -1160,16 +1171,6 @@ footer a[href='#top']:hover {
   .widgets a .badge {
     right: 5px;
   }
-  .catalog-cat-list {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    margin-bottom: 20px;
-  }
-  .catalog-cat-list li a {
-    font-size: 18px;
-    padding: 20px 10px 20px 10px;
-  }
   .product-group {
     justify-content: start;
     overflow-x: scroll;
@@ -1219,6 +1220,10 @@ footer a[href='#top']:hover {
   }
   .news .news-preview .c-3 {
     align-self: flex-end;
+  }
+  .tabs-links li a {
+    font-size: 18px;
+    padding: 20px 10px 20px 10px;
   }
   .contacts-info {
     text-align: center;
@@ -2078,6 +2083,9 @@ button.underline {
   font-size: 18px;
   color: #606060;
   margin-bottom: 0;
+}
+#characteristics dt {
+  color: #303030;
 }
 #characteristics dt::after {
   content: ':';
