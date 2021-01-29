@@ -359,7 +359,7 @@ section {
     }
 }
 .container {
-    // max-width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     .row>* {
@@ -895,28 +895,7 @@ header {
         font-size: 16px;
         display: block;
     }
-    .rating {
-        display: flex;
-        flex-wrap: nowrap;
-        align-self: flex-start;
-        margin-left: auto;
-
-        .star {
-            margin: 0 2px;
-            width: 18px;
-            height: 18px;
-            background-image: url('../images/icons/star.svg');
-            &-fill {
-                background-image: url('../images/icons/star-fill.svg');
-            }
-            &:first-of-type {
-                margin-left: 0;
-            }
-            &:last-of-type {
-                margin-right: 0;
-            }
-        }
-    }
+    
     .text {
         margin: 0;
         color: #1D293F;
@@ -937,6 +916,28 @@ header {
     }
 }
 
+.rating {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    margin-left: auto;
+
+    .star {
+        margin: 0 2px;
+        width: 18px;
+        height: 18px;
+        background-image: url('../images/icons/star.svg');
+        &-fill {
+            background-image: url('../images/icons/star-fill.svg');
+        }
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
 
 .news-group, .comments-group {
     justify-content: flex-start;
@@ -2164,4 +2165,66 @@ button.underline {
     background-color: transparent;
     border: 1px solid #6839CF;
     color: #6839CF;
+}
+
+
+
+// products catalog page 
+.filters-block {
+    fieldset {
+        border: 1px solid #EFEFEF;
+        padding: 17px 20px 0 17px;
+    }
+    legend {
+        color: #303030;
+        font-size: 18px;
+        letter-spacing: 0.004em;
+        margin: 0;
+        padding-bottom: 17px;
+        line-height: 28px;
+    }
+    .variants {
+        color: #19191D;
+        padding-bottom: 17px;
+        div {
+            display: flex;
+            align-items: center;
+            padding-bottom: 18px;
+            font-size: 16px;
+            font-weight: 400;
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+    }
+    label {
+        padding-left: 30px;
+        position: relative;
+        letter-spacing: 0.0275em;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url('../images/icons/filtr-check.svg');
+            background-color: transparent;
+            background-size: contain;
+            top: 1px;
+            left: 0;
+        }
+        &:hover::before {
+            background-image: url('../images/icons/filtr-check-hover.svg');
+        }
+    }
+
+    input {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+        &:checked + label::before {
+            background-image: url('../images/icons/filtr-checked.svg');
+        }
+    }
 }

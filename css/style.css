@@ -330,6 +330,7 @@ section .section-title .see-all {
   font-weight: 500;
 }
 .container {
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -832,27 +833,6 @@ header .navbar-toggler-icon {
   font-size: 16px;
   display: block;
 }
-.comment .rating {
-  display: flex;
-  flex-wrap: nowrap;
-  align-self: flex-start;
-  margin-left: auto;
-}
-.comment .rating .star {
-  margin: 0 2px;
-  width: 18px;
-  height: 18px;
-  background-image: url('../images/icons/star.svg');
-}
-.comment .rating .star-fill {
-  background-image: url('../images/icons/star-fill.svg');
-}
-.comment .rating .star:first-of-type {
-  margin-left: 0;
-}
-.comment .rating .star:last-of-type {
-  margin-right: 0;
-}
 .comment .text {
   margin: 0;
   color: #1D293F;
@@ -872,6 +852,27 @@ header .navbar-toggler-icon {
     margin-top: 3px;
     margin-left: 0;
   }
+}
+.rating {
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: flex-start;
+  margin-left: auto;
+}
+.rating .star {
+  margin: 0 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/icons/star.svg');
+}
+.rating .star-fill {
+  background-image: url('../images/icons/star-fill.svg');
+}
+.rating .star:first-of-type {
+  margin-left: 0;
+}
+.rating .star:last-of-type {
+  margin-right: 0;
 }
 .news-group,
 .comments-group {
@@ -1996,4 +1997,59 @@ button.underline {
   background-color: transparent;
   border: 1px solid #6839CF;
   color: #6839CF;
+}
+.filters-block fieldset {
+  border: 1px solid #EFEFEF;
+  padding: 17px 20px 0 17px;
+}
+.filters-block legend {
+  color: #303030;
+  font-size: 18px;
+  letter-spacing: 0.004em;
+  margin: 0;
+  padding-bottom: 17px;
+  line-height: 28px;
+}
+.filters-block .variants {
+  color: #19191D;
+  padding-bottom: 17px;
+}
+.filters-block .variants div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 18px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.filters-block .variants div:last-of-type {
+  padding-bottom: 0;
+}
+.filters-block label {
+  padding-left: 30px;
+  position: relative;
+  letter-spacing: 0.0275em;
+  cursor: pointer;
+}
+.filters-block label::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/icons/filtr-check.svg');
+  background-color: transparent;
+  background-size: contain;
+  top: 1px;
+  left: 0;
+}
+.filters-block label:hover::before {
+  background-image: url('../images/icons/filtr-check-hover.svg');
+}
+.filters-block input {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+.filters-block input:checked + label::before {
+  background-image: url('../images/icons/filtr-checked.svg');
 }
