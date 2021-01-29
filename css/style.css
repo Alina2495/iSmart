@@ -1927,25 +1927,23 @@ button {
 }
 .btn {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   align-items: center;
   text-align: center;
   white-space: nowrap;
   border-radius: 4px;
   padding: 15px 43px;
   border: 1px solid #6839CF;
+  background-color: #6839CF;
+  color: white;
+}
+.btn:disabled {
+  background-color: #8374a3;
 }
 .btn:hover,
 .btn:focus {
   background-color: #824df5;
   color: white;
-}
-.btn-purple {
-  background-color: #6839CF;
-  color: white;
-}
-.btn-purple:disabled {
-  background-color: #8374a3;
 }
 .btn-border {
   background-color: white;

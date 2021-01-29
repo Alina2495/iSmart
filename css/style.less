@@ -2102,23 +2102,21 @@ button {
 
 .btn {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     align-items: center;
     text-align: center;
     white-space: nowrap;
     border-radius: 4px;
     padding: 15px 43px;
     border: 1px solid #6839CF;
+    background-color: #6839CF;
+    color: white;
+    &:disabled {
+        background-color: #8374a3;
+    }
     &:hover, &:focus {
         background-color: #824df5;
         color: white;
-    }
-    &-purple {
-        background-color: #6839CF;
-        color: white;
-        &:disabled {
-            background-color: #8374a3;
-        }
     }
     &-border {
         background-color: white;
@@ -2305,4 +2303,22 @@ button.underline {
             margin-bottom: 0;
         }
     }
+}
+
+// media queries
+
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 992px) {
+    
+}
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 1400px) {
+    
 }
