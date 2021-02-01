@@ -58,6 +58,7 @@ $('#newsletter-btn').on('click', () => {
     $("#newsletter-input").attr("disabled", true);
 })
 
+
 // const btnsAll = document.querySelectorAll('.list-block-title')
 
 // btnsAll.forEach(btn => {

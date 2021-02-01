@@ -20,7 +20,7 @@ body {
     line-height: normal;
     color: #303030;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     background-color: #0156FF;
 }
 
@@ -52,7 +52,6 @@ h {
         font-size: 36px;
         line-height: 100%;
         margin-bottom: 40px;
-        
     }
     &3 {
         font-size: 28px;
@@ -2238,6 +2237,208 @@ button.underline {
 }
 
 // product page
+.card-slider {
+    // background-color: lightseagreen;
+    max-height: 520px;
+    justify-content: space-between;
+    .card-thumb-img {
+        // background-color: lightgreen;
+        height: 100%;
+        width: 28%;
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
+         div div {
+            width: 100%;
+            height: 33%;
+            max-height: 140px;
+            margin-bottom: 10px;
+            // background-color: lightcoral;
+            img {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: scale-down;
+            }
+        }
+    }
+    .card-img-big {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: scale-down;
+        }
+    }
+}
+
+.card-info {
+    .char { 
+        .colors {
+            display: flex;
+            margin: 0 -5px;
+        }
+        .color {
+            margin: 5px;
+            width: 38px;
+            height: 38px;
+            position: relative;
+            border-radius: 50%;
+            &:after {
+                content: '';
+                display: block;
+                border-radius: inherit;
+                width: 24px;
+                height: 24px;
+                background-color: currentColor;
+                transform: translateX(-50%) translateY(-50%);
+                top: 50%;
+                left: 50%;
+                position: absolute;
+            }
+            input {
+                cursor: pointer;
+                width: inherit;
+                height: inherit;
+                z-index: 10;
+                position: absolute;
+                opacity: 0;
+                &:checked + div {
+                    border: 2px solid currentColor;
+                }
+            }
+            &-border {
+                z-index: 9;
+                opacity: 0.5;
+                width: inherit;
+                height: inherit;
+                border-radius: inherit;
+            }
+        }
+        
+
+        &-inline {
+            display: inline-flex;
+        }
+        legend {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 158%;
+            letter-spacing: 0.004em;
+            color: #303030;
+            width: max-content;
+            float: none;
+            span {
+                font-weight: 500;
+            }
+        }
+        .card-radio-btns {
+            font-size: 0px;
+            label {
+                border: 1px solid #D6D6D6;
+                border-radius: 2px;
+                font-weight: 500;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 0.004em;
+                padding: 6px 10px;
+                margin: 5px;
+                cursor: pointer;
+                min-width: 80px;
+            }
+            input:checked + label {
+                border: 1px solid #6839CF
+            }
+        }
+    }
+    .char-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    dl {
+        width: 50%;
+    }
+    dt {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #606060;
+    }
+    dd {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 158%;
+        letter-spacing: 0.004em;
+        color: #303030;
+    }
+    .wish, .compare {
+        width: 48px;
+        height: 48px;
+    }
+    .wish {
+        margin-right: 10px;
+    }
+    .price {
+        display: flex;
+        align-items: flex-start;
+        ins {
+            font-size: 32px;
+            line-height: 150%;
+            margin-right: 10px;
+        }
+        del {
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+    .card-btns {
+        button {
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 15px 43px;
+            margin-bottom: 20px;
+        }
+    }
+    .btn-border {
+        color: #6839CF;
+        border: 2px solid #6839CF;
+        margin-right: 10px;
+    }
+    .btn-purple {
+        letter-spacing: 0.018em;
+        color: #FFFFFF;
+        background-color: #6839CF;
+        border: 1px solid #6839CF;
+    }
+}
+
+.credit-info {
+    display: flex;
+    margin-left: auto;
+    cursor: help !important;
+    span {
+        margin-right: 5px;
+        text-decoration: dashed;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        text-decoration-line: underline;
+        text-underline-position: under;
+        -ms-text-underline-position: under;
+        color: #606060;
+    }
+}
+
 #characteristics {
     .char-group {
         border-bottom: 1px solid #E6E6E6;
@@ -2265,7 +2466,7 @@ button.underline {
         margin-bottom: 0;
     }
     dt {
-        color: #303030;
+        color: #1b1b1b;
         &::after {
             content: ':';
         }
@@ -2297,6 +2498,7 @@ button.underline {
     }
 }
 #description {
+    padding-top: 30px;
     p {
         margin-bottom: 22px;
         &:last-of-type {
@@ -2322,3 +2524,53 @@ button.underline {
 @media screen and (max-width: 1400px) {
     
 }
+
+// wish and compare buttons!
+
+.wish, .compare {
+    border: 1px solid #B4B4BB;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.wish {
+    background-image: url('../images/icons/wish.svg');
+    &.active {
+        background-image: url('../images/icons/wish-active.svg');
+        &:hover {
+            background-image: url('../images/icons/wish-hover.svg');
+        }
+    }
+}
+.compare {
+    background-image: url('../images/icons/compare.svg');
+    &.active {
+        background-image: url('../images/icons/compare-active.svg');
+        &:hover {
+            background-image: url('../images/icons/compare-hover.svg');
+        }
+    }
+}
+
+// wish and compare buttons!
+
+.price {
+    white-space: nowrap;
+    ins {
+        font-weight: 700;
+        font-size: 22px;
+        text-decoration: none;
+        color: #212121;
+    }
+    del {
+        font-weight: 400;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.018em;
+        color: #787885;
+    }
+}
+
