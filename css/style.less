@@ -2280,9 +2280,19 @@ button.underline {
 }
 
 .card-info {
+    dl {
+        margin-bottom: 10px;
+        dt {
+            margin-bottom: 5px;
+        }
+        dd {
+            margin-bottom: 0;
+        }
+    }
     .char { 
         .colors {
             display: flex;
+            flex-wrap: wrap;
             margin: 0 -5px;
         }
         .color {
@@ -2291,6 +2301,7 @@ button.underline {
             height: 38px;
             position: relative;
             border-radius: 50%;
+
             &:after {
                 content: '';
                 display: block;
@@ -2364,9 +2375,9 @@ button.underline {
         display: flex;
         flex-wrap: wrap;
     }
-    dl {
-        width: 50%;
-    }
+    // dl {
+    //     width: 50%;
+    // }
     dt {
         font-weight: 400;
         font-size: 18px;

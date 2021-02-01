@@ -2094,8 +2094,18 @@ button.underline {
   object-position: center;
   object-fit: scale-down;
 }
+.card-info dl {
+  margin-bottom: 10px;
+}
+.card-info dl dt {
+  margin-bottom: 5px;
+}
+.card-info dl dd {
+  margin-bottom: 0;
+}
 .card-info .char .colors {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -5px;
 }
 .card-info .char .color {
@@ -2175,9 +2185,6 @@ button.underline {
 .card-info .char-list {
   display: flex;
   flex-wrap: wrap;
-}
-.card-info dl {
-  width: 50%;
 }
 .card-info dt {
   font-weight: 400;
