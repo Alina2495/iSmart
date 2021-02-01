@@ -2322,8 +2322,6 @@ button.underline {
                 border-radius: inherit;
             }
         }
-        
-
         &-inline {
             display: inline-flex;
         }
@@ -2352,9 +2350,13 @@ button.underline {
                 margin: 5px;
                 cursor: pointer;
                 min-width: 80px;
+                &:hover {
+                    border-color: #9e81dd;
+                }
             }
             input:checked + label {
-                border: 1px solid #6839CF
+                border: 1px solid #6839CF;
+                background-color: #f9f6ff;
             }
         }
     }
@@ -2527,6 +2529,7 @@ button.underline {
 
 // wish and compare buttons!
 
+
 .wish, .compare {
     border: 1px solid #B4B4BB;
     border-radius: 4px;
@@ -2534,28 +2537,74 @@ button.underline {
     background-repeat: no-repeat;
     width: 32px;
     height: 32px;
+    position: relative;
+    &::before, &::after {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        display: none;
+    }
+    &::before {
+        content: '';
+        width: 11px;
+        height: 9px;
+        top: -14px;
+        background-image: url('../images/icons/triangle.svg');
+    }
+    &::after {
+        background-color: #F3EDFF;
+        padding: 8px 20px;
+        white-space: nowrap;
+        top: -46px;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.004em;
+        color: #303030;
+        border-radius: 2px;
+    }
+    &:hover::after, &:hover::before {
+        display: block;
+    }
+    &:focus {
+        outline: none;
+    }
 }
+
 .wish {
     background-image: url('../images/icons/wish.svg');
+    &::after {
+        content: 'Добавить в избранное';
+    }
     &.active {
         background-image: url('../images/icons/wish-active.svg');
         &:hover {
             background-image: url('../images/icons/wish-hover.svg');
+            &::after {
+                content: 'Удалить из избранного';
+            }
         }
     }
 }
 .compare {
     background-image: url('../images/icons/compare.svg');
+    &:hover::after {
+        content: 'Добавить в сравнение';
+    }
     &.active {
         background-image: url('../images/icons/compare-active.svg');
         &:hover {
             background-image: url('../images/icons/compare-hover.svg');
+            &::after {
+                content: 'Удалить из сравнения';
+            }
         }
     }
 }
 
 // wish and compare buttons!
 
+
+// product price
 .price {
     white-space: nowrap;
     ins {
@@ -2574,3 +2623,4 @@ button.underline {
     }
 }
 
+// product price

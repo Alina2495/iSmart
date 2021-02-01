@@ -2165,8 +2165,12 @@ button.underline {
   cursor: pointer;
   min-width: 80px;
 }
+.card-info .char .card-radio-btns label:hover {
+  border-color: #9e81dd;
+}
 .card-info .char .card-radio-btns input:checked + label {
   border: 1px solid #6839CF;
+  background-color: #f9f6ff;
 }
 .card-info .char-list {
   display: flex;
@@ -2313,9 +2317,52 @@ button.underline {
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
+  position: relative;
+}
+.wish::before,
+.compare::before,
+.wish::after,
+.compare::after {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  display: none;
+}
+.wish::before,
+.compare::before {
+  content: '';
+  width: 11px;
+  height: 9px;
+  top: -14px;
+  background-image: url('../images/icons/triangle.svg');
+}
+.wish::after,
+.compare::after {
+  background-color: #F3EDFF;
+  padding: 8px 20px;
+  white-space: nowrap;
+  top: -46px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.004em;
+  color: #303030;
+  border-radius: 2px;
+}
+.wish:hover::after,
+.compare:hover::after,
+.wish:hover::before,
+.compare:hover::before {
+  display: block;
+}
+.wish:focus,
+.compare:focus {
+  outline: none;
 }
 .wish {
   background-image: url('../images/icons/wish.svg');
+}
+.wish::after {
+  content: 'Добавить в избранное';
 }
 .wish.active {
   background-image: url('../images/icons/wish-active.svg');
@@ -2323,14 +2370,23 @@ button.underline {
 .wish.active:hover {
   background-image: url('../images/icons/wish-hover.svg');
 }
+.wish.active:hover::after {
+  content: 'Удалить из избранного';
+}
 .compare {
   background-image: url('../images/icons/compare.svg');
+}
+.compare:hover::after {
+  content: 'Добавить в сравнение';
 }
 .compare.active {
   background-image: url('../images/icons/compare-active.svg');
 }
 .compare.active:hover {
   background-image: url('../images/icons/compare-hover.svg');
+}
+.compare.active:hover::after {
+  content: 'Удалить из сравнения';
 }
 .price {
   white-space: nowrap;
