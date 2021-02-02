@@ -1143,7 +1143,8 @@ footer a[href='#top']:hover {
     border-right: 1px solid #595959;
   }
   .widgets a .badge {
-    right: 5px;
+    top: 8px;
+    left: 25px;
   }
   .product-group {
     justify-content: start;
@@ -1191,9 +1192,6 @@ footer a[href='#top']:hover {
   }
   .news .news-preview .text {
     margin: 20px 0;
-  }
-  .news .news-preview .c-3 {
-    align-self: flex-end;
   }
   .tabs-links li a {
     font-size: 18px;
@@ -2491,4 +2489,17 @@ RANGE SLIDER
   background-color: transparent;
   border-radius: unset;
   padding: 0;
+}
+.ex {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  background-color: yellow;
+  width: 500px;
+  margin: 0 -15px 0 -15px;
+}
+.ex div {
+  margin: 15px;
+  width: 30%;
+  background-color: violet;
 }
