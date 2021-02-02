@@ -50,7 +50,29 @@ $('.mobile-search-close').on('click', () => {
     $('.mobile-search-wr').addClass('hidden');
 })
 
+/** show desktop header menu while hover to link **/
+// $(function() {
+//     $(".toggle-menu").mouseenter(function() {
+//         let menu_id = $(this).attr("data-menu-id");
+//         $(menu_id).addClass("visible_menu");
+//     });
+//     $(".toggle-menu").mouseleave(function() {
+//         let menu_id = $(this).attr("data-menu-id");
+//         $(menu_id).removeClass("visible_menu");
+//     });
+// });
 
+/** show desktop header menu while hover to link **/
+// $(function() {
+//     $(".main-cat-menu").mouseenter(function() {
+//         let menu_id = $(this).attr("data-menu-id");
+//         $(menu_id).removeClass("hidden");
+//     });
+//     $(".main-cat-menu").mouseleave(function() {
+//         let menu_id = $(this).attr("data-menu-id");
+//         $(menu_id).addClass("hidden");
+//     });
+// });
 
 // disabled newsletter form on footer
 $('#newsletter-btn').on('click', () => {
@@ -58,6 +80,31 @@ $('#newsletter-btn').on('click', () => {
     $("#newsletter-input").attr("disabled", true);
 })
 
+// change text on buy button
+$('.buy').on('click', () => {
+    $('.buy').html('В корзину');
+})
+
+$('.buy').on('click', () => {
+    $('.buy.active').html('В корзине');
+})
+
+// catalog price filtr
+
+// $(document).ready(function() {
+//     $("#slider-range").slider({
+//         range: true,
+//         min: 0,
+//         max: 79999,
+//         values: [999, 79999],
+//         slide: function(event, ui) {
+//             $('#min-price').val(ui.values[0]);
+//             $('#max-price').val(ui.values[1]);
+//         }
+//     });
+//     $('#min-price').val($("#slider-range").slider("values", 0));
+//     $('#max-price').val($("#slider-range").slider("values", 1));
+// });
 
 // const btnsAll = document.querySelectorAll('.list-block-title')
 
