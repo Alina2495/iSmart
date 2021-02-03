@@ -334,9 +334,58 @@
                             </tr>
                         </tbody>
                     </table> -->
-    .table { border: 1px solid #CCCCCC; } .table .table { border: none; } .caption-top > thead tr th { color: #666666; font-weight: 200; padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #CCCCCC; } .table>:not(:last-child)>:last-child>* {
-    border-bottom-color: #CCCCCC; } .table .table th { color: #212121; font-weight: 600; } .table .table th { padding-top: 20px; padding-bottom: 20px; } .table > td { padding: 0; } .table { tr { display: flex; .df { width: 30%; } } & th, & td { width:
-    50%; flex-grow: 1; } th:last-of-type { width: 25%; } }
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="img_woods_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img_5terre_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+
+        </div>
+    </div>
+
+    // catalog price filtr // $(document).ready(function() { // $("#slider-range").slider({ // range: true, // min: 0, // max: 79999, // values: [999, 79999], // slide: function(event, ui) { // $('#min-price').val(ui.values[0]); // $('#max-price').val(ui.values[1]);
+    // } // }); // $('#min-price').val($("#slider-range").slider("values", 0)); // $('#max-price').val($("#slider-range").slider("values", 1)); // }); // const btnsAll = document.querySelectorAll('.list-block-title') // btnsAll.forEach(btn => { // btn.addEventListener('click',
+    (event) => { // btnsAll.forEach(btn => { // btn.classList.remove('active') // }) // event.currentTarget.classList.add('active') // }) // }) .table { border: 1px solid #CCCCCC; } .table .table { border: none; } .caption-top > thead tr th { color: #666666;
+    font-weight: 200; padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #CCCCCC; } .table>:not(:last-child)>:last-child>* { border-bottom-color: #CCCCCC; } .table .table th { color: #212121; font-weight: 600; } .table .table th { padding-top:
+    20px; padding-bottom: 20px; } .table > td { padding: 0; } .table { tr { display: flex; .df { width: 30%; } } & th, & td { width: 50%; flex-grow: 1; } th:last-of-type { width: 25%; } } /** show desktop header menu while hover to link **/ // $(function()
+    { // $(".toggle-menu").mouseenter(function() { // let menu_id = $(this).attr("data-menu-id"); // $(menu_id).addClass("visible_menu"); // }); // $(".toggle-menu").mouseleave(function() { // let menu_id = $(this).attr("data-menu-id"); // $(menu_id).removeClass("visible_menu");
+    // }); // }); /** show desktop header menu while hover to link **/ // $(function() { // $(".main-cat-menu").mouseenter(function() { // let menu_id = $(this).attr("data-menu-id"); // $(menu_id).removeClass("hidden"); // }); // $(".main-cat-menu").mouseleave(function()
+    { // let menu_id = $(this).attr("data-menu-id"); // $(menu_id).addClass("hidden"); // }); // });
 
     <div class="dropdown-menu col-10 pr catalog-menu hidden" aria-labelledby="navbarDropdownMenuLink">
         <svg class="pa" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -50,30 +50,6 @@ $('.mobile-search-close').on('click', () => {
     $('.mobile-search-wr').addClass('hidden');
 })
 
-/** show desktop header menu while hover to link **/
-// $(function() {
-//     $(".toggle-menu").mouseenter(function() {
-//         let menu_id = $(this).attr("data-menu-id");
-//         $(menu_id).addClass("visible_menu");
-//     });
-//     $(".toggle-menu").mouseleave(function() {
-//         let menu_id = $(this).attr("data-menu-id");
-//         $(menu_id).removeClass("visible_menu");
-//     });
-// });
-
-/** show desktop header menu while hover to link **/
-// $(function() {
-//     $(".main-cat-menu").mouseenter(function() {
-//         let menu_id = $(this).attr("data-menu-id");
-//         $(menu_id).removeClass("hidden");
-//     });
-//     $(".main-cat-menu").mouseleave(function() {
-//         let menu_id = $(this).attr("data-menu-id");
-//         $(menu_id).addClass("hidden");
-//     });
-// });
-
 // disabled newsletter form on footer
 $('#newsletter-btn').on('click', () => {
     $("#newsletter-btn").attr("disabled", true);
@@ -89,31 +65,38 @@ $('.buy').on('click', () => {
     $('.buy.active').html('В корзине');
 })
 
-// catalog price filtr
 
-// $(document).ready(function() {
-//     $("#slider-range").slider({
-//         range: true,
-//         min: 0,
-//         max: 79999,
-//         values: [999, 79999],
-//         slide: function(event, ui) {
-//             $('#min-price').val(ui.values[0]);
-//             $('#max-price').val(ui.values[1]);
-//         }
-//     });
-//     $('#min-price').val($("#slider-range").slider("values", 0));
-//     $('#max-price').val($("#slider-range").slider("values", 1));
-// });
-
-// const btnsAll = document.querySelectorAll('.list-block-title')
-
-// btnsAll.forEach(btn => {
-//     btn.addEventListener('click', (event) => {
-//         btnsAll.forEach(btn => {
-//             btn.classList.remove('active')
-//         })
-
-//         event.currentTarget.classList.add('active')
-//     })
-// })
+// Initialize Swiper
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+    direction: 'vertical',
+    spaceBetween: 10,
+    slidesPerView: 3,
+    loop: true,
+    freeMode: true,
+    loopedSlides: 4, //looped slides should be the same
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 2
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3
+        }
+    }
+});
+var galleryTop = new Swiper('.gallery-top', {
+    direction: 'vertical',
+    spaceBetween: 10,
+    loop: true,
+    loopedSlides: 4, //looped slides should be the same
+    thumbs: {
+        swiper: galleryThumbs,
+    },
+});

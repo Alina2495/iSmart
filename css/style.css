@@ -2058,7 +2058,6 @@ button.underline {
   border: none;
 }
 .card-slider {
-  max-height: 520px;
   justify-content: space-between;
 }
 .card-slider .card-thumb-img {
@@ -2086,6 +2085,7 @@ button.underline {
   justify-content: center;
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 .card-slider .card-img-big img {
   display: block;
@@ -2303,49 +2303,6 @@ button.underline {
 #description p:last-of-type {
   margin-bottom: 0;
 }
-@media screen and (max-width: 576px) {
-  .account-block dl {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 768px) {
-  .orders .order-column {
-    flex-basis: 100%;
-  }
-  #characteristics .char-group {
-    padding: 20px 0;
-  }
-  #characteristics dl {
-    flex-direction: column;
-  }
-  #characteristics dt {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .banner-group .banner {
-    flex-direction: column;
-  }
-  .banner-group .banner-text {
-    align-items: center;
-  }
-  .banner-group .banner img {
-    position: static;
-  }
-  .comment {
-    padding: 15px;
-  }
-  .comment-header {
-    margin-bottom: 15px;
-  }
-  .comment-header .right {
-    flex-direction: column;
-  }
-  .comment-header .right .rating {
-    margin-top: 3px;
-    margin-left: 0;
-  }
-}
 .wish,
 .compare {
   border: 1px solid #B4B4BB;
@@ -2490,16 +2447,186 @@ RANGE SLIDER
   border-radius: unset;
   padding: 0;
 }
-.ex {
-  display: flex;
-  justify-content: space-between;
-  height: 200px;
-  background-color: yellow;
-  width: 500px;
-  margin: 0 -15px 0 -15px;
+.card-slider {
+  min-height: 300px;
+  height: 514px;
 }
-.ex div {
-  margin: 15px;
-  width: 30%;
-  background-color: violet;
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background-size: contain;
+  background-position: center;
+  background-origin: content-box;
+}
+.gallery-thumbs {
+  height: 100%;
+  max-width: 100px;
+  margin: auto;
+}
+.gallery-thumbs .swiper-wrapper {
+  max-height: 440px;
+  height: 95%;
+  margin: auto;
+  margin-top: -15px;
+}
+.gallery-thumbs .swiper-slide {
+  max-height: 140px;
+}
+.gallery-top {
+  height: 100%;
+  max-width: 400px;
+}
+.gallery-top .swiper-slide {
+  padding: 20px;
+  padding-right: 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  left: 0;
+  margin: 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+.swiper-button-prev {
+  top: -1px;
+  bottom: auto;
+}
+.swiper-button-next {
+  bottom: -1px;
+  top: auto;
+}
+.delete {
+  z-index: 10;
+  border-radius: 50%;
+  background-color: #FFF0F2;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-image: url('../images/icons/delete.svg');
+}
+.delete:hover {
+  background-color: #FFE9EA;
+}
+.delete .compare-page .product-preview {
+  padding: 0;
+  width: 100%;
+}
+.delete .compare-page .product-preview:hover {
+  box-shadow: none;
+}
+.delete .compare-page .delete {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.delete .img {
+  height: 200px;
+  width: 140px;
+}
+.delete .bottom {
+  margin-bottom: 20px;
+}
+.delete .bottom-2 {
+  z-index: 2;
+}
+.delete .buy {
+  z-index: 20;
+}
+.delete .wish {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.cart-items {
+  display: flex;
+  align-items: center;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #F6F7F8;
+  border-bottom: 2px solid #F6F7F8;
+  padding: 40px;
+  margin-bottom: -2px;
+}
+.cart-item .img {
+  width: 120px;
+  height: 120px;
+}
+.cart-item .price {
+  position: relative;
+}
+.cart-item .price del {
+  font-size: 10px;
+  position: absolute;
+  top: -10px;
+}
+.cart-item .price ins {
+  font-size: 18px;
+}
+@media screen and (max-width: 1200px) {
+  .banner-group .banner {
+    flex-direction: column;
+  }
+  .banner-group .banner-text {
+    align-items: center;
+  }
+  .banner-group .banner img {
+    position: static;
+  }
+  .comment {
+    padding: 15px;
+  }
+  .comment-header {
+    margin-bottom: 15px;
+  }
+  .comment-header .right {
+    flex-direction: column;
+  }
+  .comment-header .right .rating {
+    margin-top: 3px;
+    margin-left: 0;
+  }
+  .card-slider {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .orders .order-column {
+    flex-basis: 100%;
+  }
+  #characteristics .char-group {
+    padding: 20px 0;
+  }
+  #characteristics dl {
+    flex-direction: column;
+  }
+  #characteristics dt {
+    margin-bottom: 10px;
+  }
+  .card-slider {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .account-block dl {
+    flex-direction: column;
+  }
+  .card-slider {
+    height: 300px;
+  }
+  .gallery-thumbs .swiper-slide {
+    height: 50px;
+  }
 }
