@@ -11,9 +11,9 @@
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина — iSmart</title>
+    <title>Оформление заказа — iSmart</title>
     <meta name="description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж." />
-    <meta name="og:title" content="Корзина — iSmart">
+    <meta name="og:title" content="Оформление заказа — iSmart">
     <meta name="og:description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж.">
     <meta name="og:url" content="iSmart.ru">
     <meta name="og:site_name" content="iSmart – Официальный сайт">
@@ -29,7 +29,7 @@
 </head>
 
 <body class="bg-3 c-1">
-    <h1 class="visuallyhidden">iSmart - Главная страница</h1>
+    <h1 class="visuallyhidden">iSmart - Оформление заказа</h1>
 
 
     <!-- HEADER on MOBILE -->
@@ -403,7 +403,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+                        <li class="breadcrumb-item active" aria-current="page">Оформление заказа</li>
                     </ol>
                 </nav>
             </div>
@@ -411,7 +411,7 @@
 
         <section class="cart-page mb-100">
             <div class="container">
-                <h1 class="fs-28 mb-40">Корзина</h1>
+                <h1 class="fs-28 mb-80">Оформление заказа</h1>
                 <div class="row cart-items mb-40">
                     <div class="cart-item-titles fw-6 c-13">
                         <div class="col-6 df jse aie">
@@ -443,28 +443,126 @@
                             <button class="delete"></button>
                         </div>
                     </div>
-                    <!-- <div class="cart-item row">
-                        <img class="img col-2" src="images/img/product.png" alt="">
-                        <div class="name col-4">Смартфон Apple iPhone 11 Pro 256GB</div>
-                        <div class="price col-2">
+
+                    <div class="cart-item">
+                        <img class="img col-lg-2" src="images/img/product-2.png" alt="">
+                        <div class="name col-11 col-md-4">Смартфон Apple iPhone 11 Pro 256GB</div>
+                        <div class="price col-lg-2">
                             <del>89 990 ₽</del>
                             <ins>88 990 ₽</ins>
                         </div>
-                        <div class="col-2">
+                        <div class="col-lg-2">
                             <div class="number">
                                 <button class="less btn-trans"></button>
-                                <input type="number" min="1" max="10" name="" id="" value="10">
-                                <button class="more btn-trans" disabled></button>
+                                <input type="number" min="1" max="10" name="" id="" value="2">
+                                <button class="more btn-trans"></button>
                             </div>
                         </div>
-
-                        <div class="col-2 df aic jsb">
+                        <div class="col-lg-2 df aic jsb">
                             <div class="total">
                                 88 990 ₽
                             </div>
                             <button class="delete"></button>
                         </div>
-                    </div> -->
+                    </div>
+                </div>
+
+                <div class="order-form">
+                    <div class="df aie mb-10">
+                        <p class="fw-6 fs-18 mr-10">Заполните данные для оформления заказа</p>
+                        <p class="fs-12">(* - поля обязательные для заполнения)</p>
+                    </div>
+                    <hr class="mb-40">
+                    <div class="row row-cols-lg-2">
+                        <div>
+                            <!-- name -->
+                            <fieldset class="mb-20">
+                                <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                                Имя
+                            </label>
+                                <input type="text" id="editUserName" class="form-control fs-14 input" placeholder="Имя" required maxlength="10">
+                                <div class="invalid-feedback">
+                                    Это поле ввода обязательно к заполнению
+                                </div>
+                            </fieldset>
+                            <!-- surname -->
+                            <fieldset class="mb-20">
+                                <label for="editUserSurname" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                                Фамилия
+                            </label>
+                                <input type="text" id="editUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required maxlength="15">
+                                <div class="invalid-feedback">
+                                    Это поле ввода обязательно к заполнению
+                                </div>
+                            </fieldset>
+                            <!-- tel -->
+                            <fieldset class="mb-20">
+                                <label for="editUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                                Номер телефона
+                            </label>
+                                <input type="tel" id="editUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                                <div class="invalid-feedback">
+                                    Это поле ввода обязательно к заполнению
+                                </div>
+                            </fieldset>
+                            <!-- email -->
+                            <fieldset class="mb-20">
+                                <label for="editUserEmail" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                                Электронная почта
+                            </label>
+                                <input type="email" id="editUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
+                                <div class="invalid-feedback">
+                                    Это поле ввода обязательно к заполнению
+                                </div>
+                            </fieldset>
+                            <!-- city -->
+                            <fieldset class="mb-20">
+                                <label for="editUserCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Город
+                        </label>
+                                <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
+                                <div class="invalid-feedback">
+                                    Это поле ввода обязательно к заполнению
+                                </div>
+                            </fieldset>
+                            <!-- address -->
+                            <fieldset class="mb-20">
+                                <label for="editUserCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            Адрес доставки
+                        </label>
+                                <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
+                                <div class="invalid-feedback">
+                                    Это поле ввода обязательно к заполнению
+                                </div>
+                            </fieldset>
+                            <!-- comment -->
+                            <fieldset>
+                                <label for="questionText" class="form-label mb-10 c-13 fs-14 fw-6 label">
+                                    Комментарий
+                                </label>
+                                <textarea required minlength="10" maxlength="300" name="questionText" id="questionText" cols="30" rows="4" placeholder="Начните писать здесь" class="col-12 input"></textarea>
+
+                            </fieldset>
+
+                        </div>
+                        <div>
+
+                            <div>
+                                <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                                    Способ доставки
+                                </label>
+                            </div>
+                            <div>
+                                <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                                    Способ оплаты
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <hr class="col-12">
+                    </div>
+
                 </div>
 
                 <div class="mb-40">
@@ -486,9 +584,9 @@
                         <div class="mr-3">Всего к оплате:</div>
                         <div>356 360 ₽ </div>
                     </div>
-                    <button class="btn-purple btn col-lg-3">Перейти к оформлению</button>
+                    <button class="btn-purple btn col-lg-3">Оформить заказ</button>
                 </div>
-                <a href="" class="btn-trans df c-3 fw-6"><svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="index.html" class="btn-trans df c-3 fw-6"><svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.59L6.83 13H21V11Z" fill="#6839CF"/>
                     </svg>
                     Вернуться назад</a>

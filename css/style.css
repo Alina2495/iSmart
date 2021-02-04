@@ -1651,6 +1651,7 @@ textarea {
 button {
   line-height: 100%;
   white-space: nowrap;
+  padding: 0;
 }
 a,
 button {
@@ -1893,6 +1894,9 @@ svg {
 }
 .jse {
   justify-content: flex-end;
+}
+.jss {
+  justify-content: stretch;
 }
 button {
   line-height: 100%;
