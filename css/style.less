@@ -2510,7 +2510,7 @@ button.underline {
 // wish and compare buttons!
 
 
-.wish, .compare {
+.wish, .compare, .delete {
     border: 1px solid #B4B4BB;
     border-radius: 4px;
     background-position: center;
@@ -2579,6 +2579,15 @@ button.underline {
                 content: 'Удалить из сравнения';
             }
         }
+    }
+}
+.delete {
+    &:focus {
+        outline: none;
+        box-shadow: 0px 0px 2px #FFE9EA;
+    }
+    &:hover::after, &:focus::after {
+        content: 'Удалить товар';
     }
 }
 
@@ -2710,14 +2719,21 @@ RANGE SLIDER
         bottom: -1px;
         top: auto;
     }
+    
 }
-
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+    & svg {
+        opacity: 0.3;
+    }
+}
 .delete {
     z-index: 10;
     border-radius: 50%;
     background-color: #FFF0F2;
     width: 25px;
     height: 25px;
+    border: none;
     background-position: center;
     background-image: url('../images/icons/delete.svg');
     &:hover {
@@ -2764,16 +2780,22 @@ RANGE SLIDER
 }
 
 .cart {
-    &-items {
-        display: flex;
-        align-items: center;
-    }
-    &-item {
+    &-items, &-item-titles {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-top: 2px solid #F6F7F8;
-        border-bottom: 2px solid #F6F7F8;
+        font-size: 18px;
+    }
+    &-item-titles {
+        padding-bottom: 20px;
+    }
+    &-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #0d76df;
+        border-bottom: 2px solid #0d71d4;
         padding: 40px;
         margin-bottom: -2px;
         .img {
@@ -2791,7 +2813,48 @@ RANGE SLIDER
                 font-size: 18px;
             }
         }
+        .number {
+            background-color: #F6F7F8;
+            border-radius: 4px;
+            max-width: 125px;
+            width: 125px;
+            height: 46px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+            .less, .more {
+                max-width: 33%;
+                width: 33%;
+                height: 100%;
+                background-position: center;
+                &:disabled {
+                    opacity: 0.3;
+                }
+            }
+            .less {
+                background-image: url('../images/icons/minus.svg');
+            }
+            .more {
+                background-image: url('../images/icons/plus.svg');
+            }
+            input {
+                text-align: center;
+                color: #262626;
+                max-width: 33%;
+                padding: 12px 3px;
+                border: none;
+                background-color: transparent;
+                &:focus {
+                    border: none;
+                }
+            }
+        }
     }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 // media queries
@@ -2855,6 +2918,33 @@ RANGE SLIDER
     }
     .card-slider {
         height: 400px;
+    }
+    .cart-page {
+        .cart-item {
+            flex-direction: column;
+            font-size: 16px;
+            padding: 20px 10px;
+            
+            &-titles {
+                display: none;
+            }
+            .name {
+                margin: 15px 0;
+                text-align: center;
+                line-height: 140%;
+            }
+            .price {
+                margin-top: 10px;
+            }
+            .number {
+                margin: 15px 0;
+            }
+        }
+        .delete {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+        }
     }
 }
 

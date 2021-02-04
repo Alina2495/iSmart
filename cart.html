@@ -11,9 +11,9 @@
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сравнение — iSmart</title>
+    <title>Корзина — iSmart</title>
     <meta name="description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж." />
-    <meta name="og:title" content="Сравнение — iSmart">
+    <meta name="og:title" content="Корзина — iSmart">
     <meta name="og:description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж.">
     <meta name="og:url" content="iSmart.ru">
     <meta name="og:site_name" content="iSmart – Официальный сайт">
@@ -403,30 +403,68 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Сравнение</li>
+                        <li class="breadcrumb-item active" aria-current="page">Корзина</li>
                     </ol>
                 </nav>
             </div>
         </section>
 
-        <section class="basket-page mb-100">
+        <section class="cart-page mb-100">
             <div class="container">
-                <h1 class="fs-28 mb-40">Сравнение</h1>
+                <h1 class="fs-28 mb-40">Корзина</h1>
                 <div class="row cart-items">
+                    <div class="cart-item-titles fw-6 c-13">
+                        <div class="col-6 df jse aie">
+                            <div class="col-8">
+                                Наименование</div>
+                        </div>
+                        <div class="col-2">Цена</div>
+                        <div class="col-2">Кол-во</div>
+                        <div class="col-2">Сумма</div>
+                    </div>
                     <div class="cart-item">
-                        <img class="img" src="images/img/product-2.png" alt="">
-                        <div class="name">Смартфон Apple iPhone 11 Pro 256GB</div>
-                        <div class="price">
+                        <img class="img col-lg-2" src="images/img/product-2.png" alt="">
+                        <div class="name col-11 col-md-4">Смартфон Apple iPhone 11 Pro 256GB</div>
+                        <div class="price col-lg-2">
                             <del>89 990 ₽</del>
                             <ins>88 990 ₽</ins>
                         </div>
-                        <div class="number"></div>
-                        <div class="total">
-                            88 990 ₽
+                        <div class="col-lg-2">
+                            <div class="number">
+                                <button class="less btn-trans"></button>
+                                <input type="number" min="1" max="10" name="" id="" value="2">
+                                <button class="more btn-trans"></button>
+                            </div>
                         </div>
-                        <button class="delete" title="Удалить товар"></button>
+                        <div class="col-lg-2 df aic jsb">
+                            <div class="total">
+                                88 990 ₽
+                            </div>
+                            <button class="delete"></button>
+                        </div>
                     </div>
+                    <!-- <div class="cart-item row">
+                        <img class="img col-2" src="images/img/product.png" alt="">
+                        <div class="name col-4">Смартфон Apple iPhone 11 Pro 256GB</div>
+                        <div class="price col-2">
+                            <del>89 990 ₽</del>
+                            <ins>88 990 ₽</ins>
+                        </div>
+                        <div class="col-2">
+                            <div class="number">
+                                <button class="less btn-trans"></button>
+                                <input type="number" min="1" max="10" name="" id="" value="10">
+                                <button class="more btn-trans" disabled></button>
+                            </div>
+                        </div>
 
+                        <div class="col-2 df aic jsb">
+                            <div class="total">
+                                88 990 ₽
+                            </div>
+                            <button class="delete"></button>
+                        </div>
+                    </div> -->
                 </div>
             </div>
 

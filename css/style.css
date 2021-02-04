@@ -2304,7 +2304,8 @@ button.underline {
   margin-bottom: 0;
 }
 .wish,
-.compare {
+.compare,
+.delete {
   border: 1px solid #B4B4BB;
   border-radius: 4px;
   background-position: center;
@@ -2316,15 +2317,18 @@ button.underline {
 }
 .wish::before,
 .compare::before,
+.delete::before,
 .wish::after,
-.compare::after {
+.compare::after,
+.delete::after {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
   display: none;
 }
 .wish::before,
-.compare::before {
+.compare::before,
+.delete::before {
   content: '';
   width: 11px;
   height: 9px;
@@ -2332,7 +2336,8 @@ button.underline {
   background-image: url('../images/icons/triangle.svg');
 }
 .wish::after,
-.compare::after {
+.compare::after,
+.delete::after {
   background-color: #F3EDFF;
   padding: 8px 20px;
   white-space: nowrap;
@@ -2345,12 +2350,15 @@ button.underline {
 }
 .wish:hover::after,
 .compare:hover::after,
+.delete:hover::after,
 .wish:hover::before,
-.compare:hover::before {
+.compare:hover::before,
+.delete:hover::before {
   display: block;
 }
 .wish:focus,
-.compare:focus {
+.compare:focus,
+.delete:focus {
   outline: none;
 }
 .wish {
@@ -2382,6 +2390,14 @@ button.underline {
 }
 .compare.active:hover::after {
   content: 'Удалить из сравнения';
+}
+.delete:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px #FFE9EA;
+}
+.delete:hover::after,
+.delete:focus::after {
+  content: 'Удалить товар';
 }
 .price {
   white-space: nowrap;
@@ -2502,12 +2518,21 @@ RANGE SLIDER
   bottom: -1px;
   top: auto;
 }
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+.swiper-button-next.swiper-button-disabled svg,
+.swiper-button-prev.swiper-button-disabled svg {
+  opacity: 0.3;
+}
 .delete {
   z-index: 10;
   border-radius: 50%;
   background-color: #FFF0F2;
   width: 25px;
   height: 25px;
+  border: none;
   background-position: center;
   background-image: url('../images/icons/delete.svg');
 }
@@ -2547,16 +2572,23 @@ RANGE SLIDER
   top: 0;
   right: 0;
 }
-.cart-items {
-  display: flex;
-  align-items: center;
-}
-.cart-item {
+.cart-items,
+.cart-item-titles {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 2px solid #F6F7F8;
-  border-bottom: 2px solid #F6F7F8;
+  font-size: 18px;
+}
+.cart-item-titles {
+  padding-bottom: 20px;
+}
+.cart-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #0d76df;
+  border-bottom: 2px solid #0d71d4;
   padding: 40px;
   margin-bottom: -2px;
 }
@@ -2574,6 +2606,49 @@ RANGE SLIDER
 }
 .cart-item .price ins {
   font-size: 18px;
+}
+.cart-item .number {
+  background-color: #F6F7F8;
+  border-radius: 4px;
+  max-width: 125px;
+  width: 125px;
+  height: 46px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+}
+.cart-item .number .less,
+.cart-item .number .more {
+  max-width: 33%;
+  width: 33%;
+  height: 100%;
+  background-position: center;
+}
+.cart-item .number .less:disabled,
+.cart-item .number .more:disabled {
+  opacity: 0.3;
+}
+.cart-item .number .less {
+  background-image: url('../images/icons/minus.svg');
+}
+.cart-item .number .more {
+  background-image: url('../images/icons/plus.svg');
+}
+.cart-item .number input {
+  text-align: center;
+  color: #262626;
+  max-width: 33%;
+  padding: 12px 3px;
+  border: none;
+  background-color: transparent;
+}
+.cart-item .number input:focus {
+  border: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 @media screen and (max-width: 1200px) {
   .banner-group .banner {
@@ -2617,6 +2692,30 @@ RANGE SLIDER
   }
   .card-slider {
     height: 400px;
+  }
+  .cart-page .cart-item {
+    flex-direction: column;
+    font-size: 16px;
+    padding: 20px 10px;
+  }
+  .cart-page .cart-item-titles {
+    display: none;
+  }
+  .cart-page .cart-item .name {
+    margin: 15px 0;
+    text-align: center;
+    line-height: 140%;
+  }
+  .cart-page .cart-item .price {
+    margin-top: 10px;
+  }
+  .cart-page .cart-item .number {
+    margin: 15px 0;
+  }
+  .cart-page .delete {
+    position: absolute;
+    right: 10px;
+    top: 20px;
   }
 }
 @media screen and (max-width: 576px) {
