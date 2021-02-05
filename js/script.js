@@ -71,7 +71,9 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     direction: 'vertical',
     spaceBetween: 10,
     slidesPerView: 3,
+    loop: true,
     freeMode: true,
+    loopedSlides: 4, //looped slides should be the same
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     breakpoints: {
@@ -88,6 +90,8 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 var galleryTop = new Swiper('.gallery-top', {
     direction: 'vertical',
     spaceBetween: 10,
+    loop: true,
+    loopedSlides: 4, //looped slides should be the same
     thumbs: {
         swiper: galleryThumbs,
     },
