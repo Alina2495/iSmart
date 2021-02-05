@@ -409,7 +409,7 @@
             </div>
         </section>
 
-        <section class="cart-page mb-100">
+        <section class="cart-page order-page mb-100">
             <div class="container">
                 <h1 class="fs-28 mb-80">Оформление заказа</h1>
                 <div class="row cart-items mb-40">
@@ -474,7 +474,7 @@
                     </div>
                     <hr class="mb-40">
                     <div class="row row-cols-lg-2">
-                        <div>
+                        <div class="mb-30">
                             <!-- name -->
                             <fieldset class="mb-20">
                                 <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
@@ -527,10 +527,10 @@
                             </fieldset>
                             <!-- address -->
                             <fieldset class="mb-20">
-                                <label for="editUserCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
-                            Адрес доставки
-                        </label>
-                                <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
+                                <label for="editDeliveryAddress" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                                    Адрес доставки
+                                </label>
+                                <input type="text" id="editDeliveryAddress" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
                                 <div class="invalid-feedback">
                                     Это поле ввода обязательно к заполнению
                                 </div>
@@ -547,15 +547,81 @@
                         </div>
                         <div>
 
-                            <div>
-                                <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            <div class="mb-30 c-13">
+                                <label class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                     Способ доставки
                                 </label>
+                                <div class="type">
+                                    <fieldset>
+                                        <input name="delivery-type" type="radio" id="radio1" checked>
+                                        <div class="radio"></div>
+                                        <label for="radio1">Не выбрано</label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input name="delivery-type" type="radio" id="radio2">
+                                        <div class="radio"></div>
+                                        <label for="radio2">
+                                            <span>Самовывоз</span>
+                                            <p>(адреса магазинова в разделе <a href="contacts.html">Контакты</a>)</p>
+                                        </label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input name="delivery-type" type="radio" id="radio3">
+                                        <div class="radio"></div>
+                                        <label for="radio3">Курьерская доставка</label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input name="delivery-type" type="radio" id="radio4">
+                                        <div class="radio"></div>
+                                        <label for="radio4">
+                                            <span>CDEK (полная предоплата)</span>
+                                            <p>(цена доставки рассчитывается по тарифам CDEK)</p>
+                                        </label>
+                                    </fieldset>
+
+                                </div>
                             </div>
-                            <div>
-                                <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
+                            <div class="mb-30 с-13">
+                                <label class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                     Способ оплаты
                                 </label>
+                                <div class="type">
+                                    <fieldset>
+                                        <input name="payment-type" type="radio" id="radio5" checked>
+                                        <div class="radio"></div>
+                                        <label for="radio5">Не выбрано</label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input name="payment-type" type="radio" id="radio6">
+                                        <div class="radio"></div>
+                                        <label for="radio6">
+                                            <span>Наличный расчёт</span>
+                                            <p>(Действует только на самовывоз)</p>
+                                        </label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input name="payment-type" type="radio" id="radio7">
+                                        <div class="radio"></div>
+                                        <label for="radio7">Оплата картой</label>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input name="payment-type" type="radio" id="radio8">
+                                        <div class="radio"></div>
+                                        <label for="radio8">
+                                            <span class=" df aic jcs">
+                                                <span class="mr-10">Купить в кредит/рассрочку онлайн</span>
+                                                <button class="credit-info" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8.25 17.6925V14.9925C4.4925 14.7975 1.5 11.6775 1.5 7.875C1.5 3.945 4.695 0.75 8.625 0.75C12.555 0.75 15.75 3.945 15.75 7.875C15.75 11.5875 13.17 15.3225 9.3225 17.175L8.25 17.6925ZM8.625 2.25C5.52 2.25 3 4.77 3 7.875C3 10.98 5.52 13.5 8.625 13.5H9.75V15.225C12.48 13.5 14.25 10.665 14.25 7.875C14.25 4.77 11.73 2.25 8.625 2.25ZM7.875 10.875H9.375V12.375H7.875V10.875ZM9.375 9.75H7.875C7.875 7.3125 10.125 7.5 10.125 6C10.125 5.175 9.45 4.5 8.625 4.5C7.8 4.5 7.125 5.175 7.125 6H5.625C5.625 4.3425 6.9675 3 8.625 3C10.2825 3 11.625 4.3425 11.625 6C11.625 7.875 9.375 8.0625 9.375 9.75Z" fill="black"/>
+                                                        </svg>
+                                                    </button>
+                                                
+                                                </span>
+                                            <p>Требуется одобрение от банка</p>
+                                        </label>
+                                    </fieldset>
+
+                                </div>
                             </div>
 
 
@@ -584,9 +650,13 @@
                         <div class="mr-3">Всего к оплате:</div>
                         <div>356 360 ₽ </div>
                     </div>
-                    <button class="btn-purple btn col-lg-3">Оформить заказ</button>
+                    <a href="order-2.html" class="btn-purple btn col-lg-3 mb-20">Оформить заказ</a>
+                    <!-- terms agree check -->
+                    <label for="order-checkbox" class="mb-30 fw-5 c-10 d-block">
+                        <input checked required type="checkbox" name="order-checkbox" id="order-checkbox" class="checkbox mr-10 pr" value=""><span>Я согласен на </span><a href="" class="c-1"><u>обработку персональных данных</u></a>
+                    </label>
                 </div>
-                <a href="index.html" class="btn-trans df c-3 fw-6"><svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="cart.html" class="btn-trans df c-3 fw-6"><svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.59L6.83 13H21V11Z" fill="#6839CF"/>
                     </svg>
                     Вернуться назад</a>
@@ -860,6 +930,29 @@
         </div>
     </div>
 
+
+    <!-- About Credit Modal -->
+    <div class="modal fade" id="infoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-fullscreen-sm-down modal-dialog-centered modal-dialog-scrollable">
+            <form action="#" method="POST" class="modal-content mx-auto">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="infoModalLabel">Купить в кредит/рассрочку онлайн</h3>
+                    <!-- close -->
+                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
+                    </svg>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-16">В нашем магазине вы всегда можете оформить покупку в кредит! Мы сотрудничаем с множеством банков и предлагаем вам широкий выбор кредитных программ. Кредит можно оформить даже не выходя из дома.
+                    </p>
+                    <p class="mb-16">Достаточно, чтобы общая сумма товаров в Корзине превышала 1000 рублей.</p>
+                    <p class="mb-16">Рассрочка даётся сроком от 6 до 24 месяцев: программы «0–0-6», «0–0-10», «0–0-12», «0–0-24».</p>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
 
