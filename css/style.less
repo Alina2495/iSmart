@@ -1920,6 +1920,7 @@ svg {
         display: inline-flex;
         height: 100%;
         width: 95%;
+        flex-grow: 1;
         padding: 0 25px 0 30px;
         justify-content: space-between;
         align-items: center;
@@ -1940,6 +1941,7 @@ svg {
     }
     .hide-search {
         max-width: 20%;
+        margin-left: 20px;
     }
 }
 
@@ -3097,4 +3099,8 @@ input[type="number"]::-webkit-inner-spin-button {
     &-10 {
     background-color: #160823;
     }
+}
+
+a:not([href]) {
+    cursor: auto;
 }
