@@ -80,6 +80,13 @@ a {
 a:hover {
   color: currentColor;
 }
+a.c-3,
+a.c-5 {
+  padding-right: 40px;
+  background-color: transparent;
+  background-position: right center;
+  background-image: url('../images/icons/arrow-r-2.svg');
+}
 a.c-5 {
   background-image: url('../images/icons/arrow-r-w.svg');
 }
