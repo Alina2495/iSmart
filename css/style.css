@@ -2552,6 +2552,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .order-form .type fieldset {
   position: relative;
   display: flex;
+  flex-wrap: nowrap;
   align-items: flex-start;
   padding: 20px 40px 0 15px;
 }
