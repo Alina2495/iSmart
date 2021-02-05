@@ -2434,32 +2434,32 @@ RANGE SLIDER
 .delete:hover {
   background-color: #FFE9EA;
 }
-.delete .compare-page .product-preview {
+.compare-page .product-preview {
   padding: 0;
   width: 100%;
 }
-.delete .compare-page .product-preview:hover {
+.compare-page .product-preview:hover {
   box-shadow: none;
 }
-.delete .compare-page .delete {
-  position: absolute;
+.compare-page .product-preview .delete {
+  position: absolute !important;
   right: 0px;
   top: 0px;
 }
-.delete .img {
+.compare-page .img {
   height: 200px;
   width: 140px;
 }
-.delete .bottom {
+.compare-page .bottom {
   margin-bottom: 20px;
 }
-.delete .bottom-2 {
+.compare-page .bottom-2 {
   z-index: 2;
 }
-.delete .buy {
+.compare-page .buy {
   z-index: 20;
 }
-.delete .wish {
+.compare-page .wish {
   width: 36px;
   height: 36px;
   margin-left: 10px;
