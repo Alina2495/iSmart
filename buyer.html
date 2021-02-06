@@ -934,10 +934,13 @@
                             </label>
                             <textarea required minlength="10" maxlength="300" name="comment-textarea" id="comment-textarea" cols="30" rows="4" placeholder="Начните писать здесь" class="col-12 input"></textarea>
                         </fieldset>
-                        <!-- terms agree check -->
-                        <label for="comment-checkbox" class="fw-5 c-10 d-block">
-                            <input checked required type="checkbox" name="comment-checkbox" id="comment-checkbox" class="mr-10 pr" value=""><span>Я согласен на </span><a href="" class="c-1"><u>обработку персональных данных</u></a>
-                        </label>
+                        <!-- checkbox agree terms -->
+                        <fieldset class="terms-fieldset mb-30">
+                            <label for="terms-check" class="fw-5 c-10">
+                                <input type="checkbox" name="terms-check" id="terms-check" class="mr-10 pr checkbox">
+                                <span>Я согласен на </span><a href="" class="c-1 underline">обработку персональных данных</a>
+                            </label>
+                        </fieldset>
                     </div>
                     <div class="modal-footer row-cols-1 row-cols-sm-auto">
                         <button type="submit" value="Отправить" class="purple bttn">Отправить</button>

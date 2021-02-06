@@ -413,17 +413,21 @@
                 <h1 class="fs-28 mb-80">Оформление заказа</h1>
                 <div class="row cart-items mb-40">
                     <div class="cart-item-titles fw-6 c-13">
-                        <div class="col-6 df jse aie">
-                            <div class="col-8">
-                                Наименование</div>
-                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-4">Наименование</div>
                         <div class="col-2">Цена</div>
                         <div class="col-2">Кол-во</div>
                         <div class="col-2">Сумма</div>
                     </div>
                     <div class="cart-item">
                         <img class="img col-lg-2" src="images/img/product-2.png" alt="">
-                        <div class="name col-11 col-md-4">Смартфон Apple iPhone 11 Pro 256GB</div>
+                        <div class="name-wr col-11 col-md-4">
+                            <div class="name">
+                                <a href="card.html">
+                                iPhone 11 Pro 256GB iPhone 11 Pro 256GB iPhone 11 Pro 256GBiPhone 1 iPhone 11 Pro 256GB iPhone 11 Pro 256GB iPhone 11 Pro 256GB1 iPhone 11 P iPhone 11 Pro 256GBro 256GB Pro 256GB iPhone 11 Pro 256GB Смартфон Apple iPhone 11 Pro 256GB
+                            </a>
+                            </div>
+                        </div>
                         <div class="price col-lg-2">
                             <del>89 990 ₽</del>
                             <ins>88 990 ₽</ins>
@@ -442,12 +446,16 @@
                             <button class="delete"></button>
                         </div>
                     </div>
-
                     <div class="cart-item">
-                        <img class="img col-lg-2" src="images/img/product-2.png" alt="">
-                        <div class="name col-11 col-md-4">Смартфон Apple iPhone 11 Pro 256GB</div>
+                        <img class="img col-lg-2" src="images/img/product.png" alt="">
+                        <div class="name-wr col-11 col-md-4">
+                            <div class="name">
+                                <a href="card.html">
+                                Планшеты
+                            </a>
+                            </div>
+                        </div>
                         <div class="price col-lg-2">
-                            <del>89 990 ₽</del>
                             <ins>88 990 ₽</ins>
                         </div>
                         <div class="col-lg-2">
@@ -467,22 +475,19 @@
                 </div>
 
                 <div class="order-form">
-                    <div class="df aie mb-10">
-                        <p class="fw-6 fs-18 mr-10">Заполните данные для оформления заказа</p>
-                        <p class="fs-12">(* - поля обязательные для заполнения)</p>
+                    <div class="df fw aie">
+                        <p class="fw-6 fs-18 mr-10 mb-10">Заполните данные для оформления заказа</p>
+                        <p class="fs-12 mb-10">(* - поля обязательные для заполнения)</p>
                     </div>
                     <hr class="mb-40">
                     <div class="row row-cols-lg-2">
-                        <div class="mb-30">
+                        <div class="mb-30 order-form-1">
                             <!-- name -->
                             <fieldset class="mb-20">
                                 <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Имя
                             </label>
                                 <input type="text" id="editUserName" class="form-control fs-14 input" placeholder="Имя" required maxlength="10">
-                                <div class="invalid-feedback">
-                                    Это поле ввода обязательно к заполнению
-                                </div>
                             </fieldset>
                             <!-- surname -->
                             <fieldset class="mb-20">
@@ -490,9 +495,6 @@
                                 Фамилия
                             </label>
                                 <input type="text" id="editUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required maxlength="15">
-                                <div class="invalid-feedback">
-                                    Это поле ввода обязательно к заполнению
-                                </div>
                             </fieldset>
                             <!-- tel -->
                             <fieldset class="mb-20">
@@ -500,9 +502,6 @@
                                 Номер телефона
                             </label>
                                 <input type="tel" id="editUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
-                                <div class="invalid-feedback">
-                                    Это поле ввода обязательно к заполнению
-                                </div>
                             </fieldset>
                             <!-- email -->
                             <fieldset class="mb-20">
@@ -510,9 +509,6 @@
                                 Электронная почта
                             </label>
                                 <input type="email" id="editUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
-                                <div class="invalid-feedback">
-                                    Это поле ввода обязательно к заполнению
-                                </div>
                             </fieldset>
                             <!-- city -->
                             <fieldset class="mb-20">
@@ -520,9 +516,6 @@
                             Город
                         </label>
                                 <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
-                                <div class="invalid-feedback">
-                                    Это поле ввода обязательно к заполнению
-                                </div>
                             </fieldset>
                             <!-- address -->
                             <fieldset class="mb-20">
@@ -530,22 +523,14 @@
                                     Адрес доставки
                                 </label>
                                 <input type="text" id="editDeliveryAddress" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
-                                <div class="invalid-feedback">
-                                    Это поле ввода обязательно к заполнению
-                                </div>
                             </fieldset>
                             <!-- comment -->
                             <fieldset>
-                                <label for="questionText" class="form-label mb-10 c-13 fs-14 fw-6 label">
-                                    Комментарий
-                                </label>
+                                <label for="questionText" class="form-label mb-10 c-13 fs-14 fw-6 label">Комментарий</label>
                                 <textarea required minlength="10" maxlength="300" name="questionText" id="questionText" cols="30" rows="4" placeholder="Начните писать здесь" class="col-12 input"></textarea>
-
                             </fieldset>
-
                         </div>
                         <div>
-
                             <div class="mb-30 c-13">
                                 <label class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                     Способ доставки
@@ -580,6 +565,8 @@
 
                                 </div>
                             </div>
+
+                            <!-- PAYMENT  -->
                             <div class="mb-30 с-13">
                                 <label class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                     Способ оплаты
@@ -625,14 +612,14 @@
 
 
                         </div>
-                        <hr class="col-12">
+                        <hr class="col-12 mb-25">
                     </div>
 
                 </div>
 
                 <div class="mb-40">
-                    <div class="df ais jss col-lg-7">
-                        <div class="fs-20 fw-6 mr-3">Итого:</div>
+                    <div class="df fc flex-sm-row ais jss col-lg-7">
+                        <div class="fs-20 fw-6 mb-3 mr-4">Итого:</div>
                         <div class="flex-grow-1">
                             <div class="df aic jsb mb-20">
                                 <div>Стоимость:</div>
@@ -643,17 +630,19 @@
                                 <div class="fw-6">2000 ₽</div>
                             </div>
                         </div>
-
                     </div>
                     <div class="mb-30 df ais jsb col-lg-7 fs-20 fw-6">
                         <div class="mr-3">Всего к оплате:</div>
                         <div>356 360 ₽ </div>
                     </div>
                     <a href="order-2.html" class="btn-purple btn col-lg-3 mb-20">Оформить заказ</a>
-                    <!-- terms agree check -->
-                    <label for="order-checkbox" class="mb-30 fw-5 c-10 d-block">
-                        <input checked required type="checkbox" name="order-checkbox" id="order-checkbox" class="checkbox mr-10 pr" value=""><span>Я согласен на </span><a href="" class="c-1"><u>обработку персональных данных</u></a>
-                    </label>
+                    <!-- checkbox agree terms -->
+                    <fieldset class="terms-fieldset mb-30">
+                        <label for="terms-check" class="fw-5 c-10">
+                            <input type="checkbox" name="terms-check" id="terms-check" class="mr-10 pr checkbox">
+                            <span>Я согласен на </span><a href="" class="c-1 underline">обработку персональных данных</a>
+                        </label>
+                    </fieldset>
                 </div>
                 <a href="cart.html" class="btn-trans df c-3 fw-6"><svg class="mr-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 11H6.83L10.41 7.41L9 6L3 12L9 18L10.41 16.59L6.83 13H21V11Z" fill="#6839CF"/>
