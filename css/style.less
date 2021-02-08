@@ -2325,51 +2325,8 @@ button.underline {
         }
     }
 }
-.colors {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -5px;
-}
-.color {
-    padding: 0 !important;
-    margin: 5px;
-    width: 38px;
-    height: 38px;
-    position: relative;
-    border-radius: 50%;
 
-    &:after {
-        content: '';
-        display: block;
-        border-radius: inherit;
-        width: 24px;
-        height: 24px;
-        background-color: currentColor;
-        transform: translateX(-50%) translateY(-50%);
-        top: 50%;
-        left: 50%;
-        position: absolute;
-    }
-    input {
-        cursor: pointer;
-        width: inherit;
-        height: inherit;
-        z-index: 10;
-        position: absolute;
-        opacity: 0;
-        visibility: visible;
-        &:checked + div {
-            border: 2px solid currentColor;
-        }
-    }
-    &-border {
-        z-index: 9;
-        opacity: 0.5;
-        width: inherit;
-        height: inherit;
-        border-radius: inherit;
-    }
-}
+// COLORS start
 .colors.mini {
     .color {
         width: 24px;
@@ -2380,6 +2337,63 @@ button.underline {
         }
     }
 }
+.colors-wr {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+.color-wr, .color-input, .color, .color::after {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.color {
+    &::before, &::after {
+        content: '';
+        border-radius: 50%;
+        display: block;
+        z-index: 1;
+    }
+}
+.color-wr {
+    position: relative;
+    z-index: 5;
+    margin: 5px;
+    .color-input {
+        z-index: 20;
+        opacity: 0;
+        position: absolute;
+        &:checked + .color {
+            &::before {
+                width: 24px;
+                height: 24px;
+            }
+            &::after {
+                opacity: 0.5;
+            }
+        }
+        + .color {
+            z-index: 5;
+            position: absolute;
+            &::before {
+                width: 30px;
+                height: 30px;
+                background-color: currentColor;
+                position: absolute;
+                transform: translateX(-50%) translateY(-50%);
+                top: 50%;
+                left: 50%;
+            }
+            &::after {
+                opacity: 0;
+                border: 2px solid currentColor;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+// COLORS end
 
 
 // wish and compare buttons!
