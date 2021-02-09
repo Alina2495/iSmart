@@ -79,11 +79,19 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 2
+            slidesPerView: 3
         },
         // when window width is >= 640px
         640: {
             slidesPerView: 3
+        },
+        // when window width is >= 640px
+        992: {
+            spaceBetween: 15
+        },
+        // when window width is >= 1200px
+        1200: {
+            spaceBetween: 10
         }
     }
 });
