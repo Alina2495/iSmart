@@ -79,7 +79,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 2
+            slidesPerView: 3
         },
         // when window width is >= 640px
         640: {

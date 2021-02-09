@@ -2574,7 +2574,7 @@ RANGE SLIDER
 .gallery-thumbs {
     height: 440px;
     max-width: 100px;
-    margin: auto;
+    margin: auto 0;
     position: unset;
     .swiper-slide {
         max-height: 140px;
@@ -2894,6 +2894,24 @@ input[type="number"]::-webkit-inner-spin-button {
     .card-slider {
         height: 450px;
     }
+    .gallery-top {
+        .swiper-slide {
+            padding: 10px;
+        }
+    }
+    .gallery-thumbs {
+        height: 390px;
+        max-width: 80px;
+        .swiper-slide {
+            max-height: 120px;
+        }
+    }
+    .swiper-button {
+        &-prev, &-next {
+            height: 30px;
+            width: 80px;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -2935,6 +2953,19 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .card-slider {
         height: 400px;
+    }
+    .gallery-thumbs {
+        height: 340px;
+        max-width: 75px;
+        .swiper-slide {
+            max-height: 105px;
+        }
+    }
+    .swiper-button {
+        &-prev, &-next {
+            height: 30px;
+            width: 75px;
+        }
     }
     .cart-page {
         .cart-item {
@@ -2981,10 +3012,20 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
     .card-slider {
-        height: 300px;
+        height: 90vw;
     }
-    .gallery-thumbs .swiper-slide {
-        height: 50px;
+    .gallery-thumbs {
+        height: calc(90vw - 50px);
+        max-width: 15%;
+        .swiper-slide {
+            max-height: calc(30vw - 23.3px);
+        }
+    }
+    .swiper-button {
+        &-prev, &-next {
+            height: 25px;
+            width: 15%;
+        }
     }
     .empty-message {
         a.btn {

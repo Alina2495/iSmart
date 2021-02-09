@@ -2356,7 +2356,7 @@ RANGE SLIDER
 .gallery-thumbs {
   height: 440px;
   max-width: 100px;
-  margin: auto;
+  margin: auto 0;
   position: unset;
 }
 .gallery-thumbs .swiper-slide {
@@ -2649,6 +2649,21 @@ input[type="number"]::-webkit-inner-spin-button {
   .card-slider {
     height: 450px;
   }
+  .gallery-top .swiper-slide {
+    padding: 10px;
+  }
+  .gallery-thumbs {
+    height: 390px;
+    max-width: 80px;
+  }
+  .gallery-thumbs .swiper-slide {
+    max-height: 120px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 30px;
+    width: 80px;
+  }
 }
 @media screen and (max-width: 992px) {
   .banner-1 img {
@@ -2677,6 +2692,18 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .card-slider {
     height: 400px;
+  }
+  .gallery-thumbs {
+    height: 340px;
+    max-width: 75px;
+  }
+  .gallery-thumbs .swiper-slide {
+    max-height: 105px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 30px;
+    width: 75px;
   }
   .cart-page .cart-item {
     flex-direction: column;
@@ -2717,10 +2744,19 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-direction: column;
   }
   .card-slider {
-    height: 300px;
+    height: 90vw;
+  }
+  .gallery-thumbs {
+    height: calc(90vw - 50px);
+    max-width: 15%;
   }
   .gallery-thumbs .swiper-slide {
-    height: 50px;
+    max-height: calc(30vw - 23.3px);
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 25px;
+    width: 15%;
   }
   .empty-message a.btn {
     flex-grow: 1;
