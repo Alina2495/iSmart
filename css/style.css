@@ -485,8 +485,10 @@ header .navbar-toggler-icon {
   -webkit-overflow-scrolling: touch;
   margin-bottom: 20px;
   justify-content: flex-start;
-  border-bottom: 2px solid #9696A0;
   margin-right: auto;
+}
+.tabs-links li {
+  border-bottom: 2px solid #9696A0;
 }
 .tabs-links li a {
   padding: 25px 40px;
@@ -2340,6 +2342,7 @@ RANGE SLIDER
 .card-slider {
   min-height: 300px;
   height: 514px;
+  position: relative;
 }
 .swiper-container {
   width: 100%;
@@ -2351,15 +2354,10 @@ RANGE SLIDER
   background-origin: content-box;
 }
 .gallery-thumbs {
-  height: 100%;
+  height: 440px;
   max-width: 100px;
   margin: auto;
-}
-.gallery-thumbs .swiper-wrapper {
-  max-height: 440px;
-  height: 95%;
-  margin: auto;
-  margin-top: -15px;
+  position: unset;
 }
 .gallery-thumbs .swiper-slide {
   max-height: 140px;
@@ -2374,10 +2372,10 @@ RANGE SLIDER
 }
 .swiper-button-prev,
 .swiper-button-next {
-  width: 100%;
+  width: 100px;
   height: 40px;
   background-color: white;
-  left: 0;
+  left: 15px;
   margin: 0;
 }
 .swiper-button-prev::after,
