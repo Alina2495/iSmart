@@ -108,3 +108,26 @@ var galleryTop = new Swiper('.gallery-top', {
         prevEl: '.swiper-button-prev',
     }
 });
+
+// show desktop header menu while hover to link 
+$(function() {
+    $(".toggle-menu").mouseenter(function() {
+        let menu_id = $(this).attr("data-menu-id");
+        $(menu_id).addClass("visible_menu");
+    });
+    $(".toggle-menu").mouseleave(function() {
+        let menu_id = $(this).attr("data-menu-id");
+        $(menu_id).removeClass("visible_menu");
+    });
+});
+//   show desktop header menu while hover to link 
+$(function() {
+    $(".main-cat-menu").mouseenter(function() {
+        let menu_id = $(this).attr("data-menu-id");
+        $(menu_id).removeClass("hidden");
+    });
+    $(".main-cat-menu").mouseleave(function() {
+        let menu_id = $(this).attr("data-menu-id");
+        $(menu_id).addClass("hidden");
+    });
+});
