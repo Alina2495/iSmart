@@ -2341,10 +2341,21 @@ button.underline {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -5px;
+    font-size: 40px;
+}
+.colors-wr.mini {
+    font-size: 24px;
+    color: #19191D;
+    padding-bottom: 17px;
+    input {
+        visibility: visible;
+        width: 1em;
+        height: 1em;
+    } 
 }
 .color-wr, .color-input, .color, .color::after {
-    width: 40px;
-    height: 40px;
+    width: 1em;
+    height: 1em;
     cursor: pointer;
 }
 .color {
@@ -2365,8 +2376,8 @@ button.underline {
         position: absolute;
         &:checked + .color {
             &::before {
-                width: 24px;
-                height: 24px;
+                width: 0.6em;
+                height: 0.6em;
             }
             &::after {
                 opacity: 0.5;
@@ -2376,8 +2387,8 @@ button.underline {
             z-index: 5;
             position: absolute;
             &::before {
-                width: 30px;
-                height: 30px;
+                width: 0.75em;
+                height: 0.75em;
                 background-color: currentColor;
                 position: absolute;
                 transform: translateX(-50%) translateY(-50%);
@@ -3149,7 +3160,9 @@ a {
     -ms-flex-align: center;
     align-items: center;
 }
-
+.aib {
+    align-items: baseline;
+}
 
 .aie {
     align-items: flex-end;

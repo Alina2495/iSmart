@@ -2125,13 +2125,24 @@ button.underline {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -5px;
+  font-size: 40px;
+}
+.colors-wr.mini {
+  font-size: 24px;
+  color: #19191D;
+  padding-bottom: 17px;
+}
+.colors-wr.mini input {
+  visibility: visible;
+  width: 1em;
+  height: 1em;
 }
 .color-wr,
 .color-input,
 .color,
 .color::after {
-  width: 40px;
-  height: 40px;
+  width: 1em;
+  height: 1em;
   cursor: pointer;
 }
 .color::before,
@@ -2152,8 +2163,8 @@ button.underline {
   position: absolute;
 }
 .color-wr .color-input:checked + .color::before {
-  width: 24px;
-  height: 24px;
+  width: 0.6em;
+  height: 0.6em;
 }
 .color-wr .color-input:checked + .color::after {
   opacity: 0.5;
@@ -2163,8 +2174,8 @@ button.underline {
   position: absolute;
 }
 .color-wr .color-input + .color::before {
-  width: 30px;
-  height: 30px;
+  width: 0.75em;
+  height: 0.75em;
   background-color: currentColor;
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
@@ -2852,6 +2863,9 @@ a.c-3:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.aib {
+  align-items: baseline;
 }
 .aie {
   align-items: flex-end;
