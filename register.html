@@ -427,7 +427,7 @@
                 <!-- tel -->
                 <fieldset class="mb-16">
                     <label for="regUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">Номер телефона</label>
-                    <input type="tel" id="regUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                    <input type="tel" pattern="" id="regUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
                 </fieldset>
                 <!-- email -->
                 <fieldset class="mb-16">
@@ -464,7 +464,189 @@
         </section>
 
     </main>
+    <!-- footer -->
+    <footer class="bg-1 c-5">
+        <div class="container container-big pr">
+            <div class="row">
+                <!-- newsletter form -->
+                <form class="footer-form df fw mb-40" action="#" method="POST">
+                    <div class="col-12 col-lg-6 col-xl-5 col-xxl-4 text-center text-md-left">
+                        <h2 class="c-5 mb-14">Подпишитесь на&#160;рассылку</h2>
+                        <p class="mb-16">Узнавайте первыми о&#160;наших новинках и&#160;акциях</p>
+                    </div>
+                    <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
+                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10">
+                        <button class="btn btn-purple col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16" type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal" id="newsletter-btn">Подписаться</button>
+                    </div>
+                </form>
+                <!-- footer nav -->
+                <nav class="footernav df jsb row align-items-start mb-25">
+                    <!-- info list -->
+                    <ul class="footernav-list col-sm-5 col-lg-2 mb-30">
+                        <li class="footernav-heading mb-25">Информация</li>
+                        <li class="footernav-item">
+                            <a href="buyer.html" class="footernav-link">Как заказать</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="buyer.html" class="footernav-link">Условия доставки</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="buyer.html" class="footernav-link">Условия оплаты</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="buyer.html" class="footernav-link">Гарантия на товар</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="buyer.html" class="footernav-link">Отзывы</a>
+                        </li>
+                        <li class="footernav-item">
+                            <a href="news.html" class="footernav-link">Новости</a>
+                        </li>
+                    </ul>
+                    <!-- products links list -->
+                    <ul class="footernav-list col-sm-7 col-lg-4 df aie jsb mb-30">
+                        <li class="col-lg-6">
+                            <ul>
+                                <li class="footernav-heading mb-25"><a href="categories.html">Продукция</a></li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 12 pro</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 12 pro max</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 11 pro</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 11 pro max</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 11</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 10</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-lg-6">
+                            <ul>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 10R</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 10S</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Iphone 8</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Watch</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Air pods</a>
+                                </li>
+                                <li class="footernav-item">
+                                    <a href="catalog.html" class="footernav-link">Macbook</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- contacts list -->
+                    <ul class="footernav-list col-lg-3 mb-30">
+                        <li class="footernav-heading mb-25"><a href="contacts.html">Контакты</a></li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Адрес:</dt>
+                                <dd>Казань, ул. Рихарда Зорге 66, ТЦ Олимп 3&#160;этаж
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Телефон:</dt>
+                                <dd>
+                                    <a href="tel:+7(952)034-36-34" title="Позвонить нам">
+                                    +7&#160;(952)&#160;034-36-34
+                                </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Режим работы:</dt>
+                                <dd>Пн–Вс:&#160;9:00–22:00
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footernav-item">
+                            <dl>
+                                <dt>Email:</dt>
+                                <dd title="Написать нам">
+                                    <a href="mailto:ismart@mail.com">ismart@mail.com
+                                </a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!-- payment types and social links -->
+                    <div class="df fw col-lg-3 col-xxl-2">
+                        <!-- payment types -->
+                        <ul class="col-sm-6 col-md-12 footernav-list mb-30">
+                            <li class="footernav-heading mb-10">Мы принимаем<br> к&#160;оплате</li>
+                            <li>
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="PayPal">
+                                        <img src="images/img/paypal.svg" alt="PayPal">
+                                    </li>
+                                    <li class="payment-icon" title="Visa">
+                                        <img src="images/img/visa.svg" alt="Visa">
+                                    </li>
+                                    <li class="payment-icon" title="Maestro">
+                                        <img src="images/img/maestro.svg" alt="Maestro">
+                                    </li>
+                                    <li class="payment-icon" title="Мир">
+                                        <img src="images/img/mir.svg" alt="Мир">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- social links -->
+                        <ul class="col-sm-6 col-md-12 footernav-list">
+                            <li class="footernav-heading mb-10">Наши социальные<br> сети</li>
+                            <li>
+                                <ul class="payment-icons df">
+                                    <li class="payment-icon" title="iSmart в Facebook">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://ru-ru.facebook.com/">
+                                            <img src="images/icons/facebook.svg" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li class="payment-icon" title="iSmart в Instagram">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ismart116">
+                                            <img src="images/icons/insta.svg" alt="instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- copyright -->
+                <div class="footer-bottom df fw aic jsb">
+                    <p class="copyright mb-16">Все права защищены <time datetime="2020">2020</time>&#160;@ismart</p>
+                    <address class="df aic mb-16">
+                    <span>Создание и&#160;продвижение сайтов</span>
+                    <a target="_blank" rel="noopener noreferrer" href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
+                        <img src="images/img/asm-promo.png" width="69" height="47" alt="Веб-студия AsmPromo">
+                    </a>
+                </address>
+                </div>
+            </div>
+            <!-- anchor to top of page -->
+            <a href="#top" class="" title="В начало страницы"></a>
+        </div>
 
+    </footer>
+    <!-- footer -->
 
 </body>
 
