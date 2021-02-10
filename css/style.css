@@ -850,7 +850,7 @@ header .navbar-toggler-icon {
   margin-bottom: 25px;
 }
 .contacts-map {
-  height: 250px;
+  height: 500px;
 }
 /* contacts block */
 /* footer */
@@ -1235,8 +1235,6 @@ iframe {
   .banner img {
     width: 300px;
     height: 100%;
-    position: absolute;
-    right: 20px;
   }
   .banner-1 img {
     bottom: 0;
@@ -1245,8 +1243,7 @@ iframe {
   }
   .banner-2 img,
   .banner-3 img {
-    top: 50%;
-    transform: translateY(-50%);
+    height: 400px;
   }
   .banner-3 img {
     object-position: center right;
@@ -1295,14 +1292,13 @@ iframe {
   .banner-3 {
     width: 45%;
   }
-  .banner-text {
-    width: 50%;
-  }
 }
 .banner {
   flex-grow: 1;
   position: relative;
   display: flex;
+  align-items: center;
+  padding: 135px 0 135px 100px;
 }
 .banner-text {
   z-index: 2;
@@ -1311,20 +1307,37 @@ iframe {
 }
 .banner-h1 {
   line-height: normal;
+  font-size: 64px;
 }
 .banner-p {
   line-height: normal;
 }
-.banner .purple {
+.banner .btn {
   margin-right: 20px;
   padding: 16px 39px;
 }
+.banner-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.banner-links a {
+  margin-bottom: 10px;
+}
 .banner-links .c-5,
 .banner-links .c-3 {
-  padding-right: 25px;
+  padding-right: 26px;
+  background-position: center right;
 }
 .banner-links .c-3 {
   background-image: url('../images/icons/arrow-r.svg');
+}
+.banner-links .c-5 {
+  background-image: url('../images/icons/arrow-r-w.svg');
+}
+.banner img {
+  position: absolute;
+  right: 20px;
 }
 .banner-1 img {
   object-position: center bottom;
@@ -1458,26 +1471,6 @@ svg {
 textarea {
   white-space: nowrap;
   resize: none;
-}
-.gamburger rect {
-  transition: 0.2s linear;
-  transform: rotate(0deg) translateX(0px) translateY(0px);
-}
-.gamburger:hover rect {
-  width: 20px;
-}
-.gamburger:hover rect:first-child {
-  -webkit-transform: translateY(0px) rotate(40deg);
-  -ms-transform: translateY(0px) rotate(40deg);
-  -o-transform: translateY(0px) rotate(40deg);
-  transform: translateY(0px) rotate(40deg);
-}
-.gamburger:hover rect:nth-child(2) {
-  opacity: 0;
-}
-.gamburger:hover rect:last-child {
-  transform-origin: left;
-  transform: rotate(-45deg);
 }
 .ol-styled {
   list-style: none;
@@ -2029,6 +2022,7 @@ button.underline {
   font-size: 18px;
   line-height: 150%;
 }
+.card-info .card-btns a,
 .card-info .card-btns button {
   border-radius: 4px;
   font-weight: 600;
@@ -2627,11 +2621,26 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 150%;
 }
 @media screen and (max-width: 1400px) {
+  .banner {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .banner .banner-text {
+    align-items: center;
+    text-align: center;
+  }
+  .banner img {
+    position: static;
+    object-position: center;
+  }
   .banner-1 img {
     width: 550px;
   }
 }
 @media screen and (max-width: 1200px) {
+  .banner-1 {
+    flex-direction: column !important;
+  }
   .banner-1 img {
     width: 500px;
   }
@@ -2677,6 +2686,15 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 @media screen and (max-width: 992px) {
+  .banner-1 {
+    padding-bottom: 0 !important;
+  }
+  .banner-1 .banner-text {
+    text-align: center;
+  }
+  .banner-1 .banner-h1 {
+    font-size: 50px;
+  }
   .banner-1 img {
     width: 400px;
   }
@@ -2686,6 +2704,12 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 @media screen and (max-width: 768px) {
+  .banner {
+    padding: 40px 15px 5px 15px;
+  }
+  .banner .banner-h1 {
+    font-size: 42px !important;
+  }
   .banner-1 img {
     width: 300px;
   }

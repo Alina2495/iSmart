@@ -931,7 +931,7 @@ header {
         }
     }
     &-map {
-        height: 250px;
+        height: 500px;
     }
 }
 /* contacts block */
@@ -1358,8 +1358,8 @@ iframe {
         img {
             width: 300px;
             height: 100%;
-            position: absolute;
-            right: 20px;
+            // position: absolute;
+            // left: 90%;
         }
         &-1 {
             img {
@@ -1370,8 +1370,7 @@ iframe {
         }
         &-2, &-3 {
             img {
-            top: 50%;
-            transform: translateY(-50%);
+            height: 400px;
             }
         }
         &-3 {
@@ -1426,9 +1425,9 @@ iframe {
         &-3 {
             width: 45%;
         }
-        &-text {
-            width: 50%;
-        }
+        // &-text {
+        //     width: 50%;
+        // }
     }
 }
 
@@ -1436,6 +1435,8 @@ iframe {
     flex-grow: 1;
     position: relative;
     display: flex;
+    align-items: center;
+    padding: 135px 0 135px 100px;
     &-text {
         z-index: 2;
         display: flex;
@@ -1443,21 +1444,36 @@ iframe {
     }
     &-h1 {
         line-height: normal;
+        font-size: 64px;
     }
     &-p {
         line-height: normal;
     }
-    .purple {
+    .btn {
         margin-right: 20px;
         padding: 16px 39px;
     }
     &-links {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            margin-bottom: 10px;
+        }
         .c-5, .c-3 {
-            padding-right: 25px;
+            padding-right: 10 + 16px;
+            background-position: center right;
         }
         .c-3 {
             background-image: url('../images/icons/arrow-r.svg');
         }
+        .c-5 {
+            background-image: url('../images/icons/arrow-r-w.svg');
+        }
+    }
+    img {
+        position: absolute;
+        right: 20px;
     }
     &-1 {
         img {
@@ -1611,30 +1627,7 @@ textarea {
     resize: none;
 }
 
-.gamburger {
-    rect {
-        transition: 0.2s linear;
-        transform: rotate(0deg) translateX(0px) translateY(0px);
-    }
-    &:hover {
-        rect {
-            width: 20px;
-            &:first-child {
-                -webkit-transform: translateY(0px) rotate(40deg);
-                -ms-transform: translateY(0px) rotate(40deg);
-                -o-transform: translateY(0px) rotate(40deg);
-                transform: translateY(0px) rotate(40deg);
-            }
-            &:nth-child(2) {
-                opacity: 0;
-            }
-            &:last-child {
-                transform-origin: left;
-                transform: rotate(-45deg);
-            }
-        }
-    }
-}
+
 .ol-styled {
     list-style: none;
     padding-left: 0;
@@ -2233,7 +2226,7 @@ button.underline {
         }
     }
     .card-btns {
-        button {
+        a, button {
             border-radius: 4px;
             font-weight: 600;
             font-size: 20px;
@@ -2864,6 +2857,18 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 @media screen and (max-width: 1400px) {
+    .banner {
+        flex-direction: column;
+        padding: 50px;
+        .banner-text {
+            align-items: center;
+            text-align: center;
+        }
+        img{
+            position: static;
+            object-position: center;
+        }
+    }
     .banner-1 {
         img {
             width: 550px;
@@ -2873,6 +2878,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media screen and (max-width: 1200px) {
     .banner-1 {
+        flex-direction: column !important;
         img {
             width: 500px;
         }
@@ -2927,6 +2933,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media screen and (max-width: 992px) {
     .banner-1 {
+        padding-bottom: 0 !important;
+        .banner-text {
+            text-align: center;
+        }
+        .banner-h1 {
+            font-size: 50px;
+        }
         img {
             width: 400px;
         }
@@ -2941,6 +2954,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 768px) {
+    .banner {
+        padding: 40px 15px 5px 15px;
+        .banner-h1 {
+            font-size: 42px !important;
+        }
+    }
     .banner-1 {
         img {
             width: 300px;
