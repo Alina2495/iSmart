@@ -1949,6 +1949,8 @@ svg {
     height: 60px;
     flex-grow: 1;
     display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
     &-bg {
         background-color: #EBEBEB;
         border-radius:  30px;
@@ -2148,26 +2150,27 @@ button.underline {
     }
     .price {
         div {
-            display: auto;
             padding: 0;
         }
         input {
-            width: auto;
+            width: fit-content;
+            display: inline-block;
             height: auto;
             visibility: visible;
-            background-color: #824df5;
+            // background-color: #824df5;
             border: none;
         }
+        span {
+            padding: 0;
+            margin: 0;
+        };
     }
 }
 
 // product page
 .card-slider {
-    // background-color: lightseagreen;
-    // max-height: 520px;
     justify-content: space-between;
     .card-thumb-img {
-        // background-color: lightgreen;
         height: 100%;
         width: 28%;
         max-width: 100px;
@@ -2180,7 +2183,6 @@ button.underline {
             height: 33%;
             max-height: 140px;
             margin-bottom: 10px;
-            // background-color: lightcoral;
             img {
                 width: 100%;
                 height: 100%;
@@ -2613,10 +2615,11 @@ RANGE SLIDER
     background: #A039FF;
 }
 .slider-range-inputs {
-    border: 1px solid #C4C4C4;
+    flex-shrink: 1;
     background-color: #fff;
     border-radius: 5px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     padding: .5em .75em;
 }

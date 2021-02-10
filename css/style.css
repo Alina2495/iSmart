@@ -1778,6 +1778,8 @@ svg {
   height: 60px;
   flex-grow: 1;
   display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .header-search-bg {
   background-color: #EBEBEB;
@@ -1968,15 +1970,18 @@ button.underline {
   background-image: url('../images/icons/filtr-checked.svg');
 }
 .filters-block .price div {
-  display: auto;
   padding: 0;
 }
 .filters-block .price input {
-  width: auto;
+  width: fit-content;
+  display: inline-block;
   height: auto;
   visibility: visible;
-  background-color: #824df5;
   border: none;
+}
+.filters-block .price span {
+  padding: 0;
+  margin: 0;
 }
 .card-slider {
   justify-content: space-between;
@@ -2410,10 +2415,11 @@ RANGE SLIDER
   background: #A039FF;
 }
 .slider-range-inputs {
-  border: 1px solid #C4C4C4;
+  flex-shrink: 1;
   background-color: #fff;
   border-radius: 5px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   padding: 0.5em 0.75em;
 }
