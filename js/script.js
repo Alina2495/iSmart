@@ -66,6 +66,19 @@ $('.buy').on('click', () => {
 })
 
 
+//   show desktop header menu while hover to link 
+$(function() {
+    $(".hover-menu").mouseenter(function() {
+        $('.triangle').removeClass("hidden");
+        $('.hiddennav').removeClass("hidden");
+    });
+    $(".hover-menu").mouseleave(function() {
+        $('.triangle').addClass("hidden");
+        $('.hiddennav').addClass("hidden");
+    });
+});
+
+
 // Initialize Swiper
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     direction: 'vertical',
@@ -107,27 +120,4 @@ var galleryTop = new Swiper('.gallery-top', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     }
-});
-
-// show desktop header menu while hover to link 
-$(function() {
-    $(".toggle-menu").mouseenter(function() {
-        let menu_id = $(this).attr("data-menu-id");
-        $(menu_id).addClass("visible_menu");
-    });
-    $(".toggle-menu").mouseleave(function() {
-        let menu_id = $(this).attr("data-menu-id");
-        $(menu_id).removeClass("visible_menu");
-    });
-});
-//   show desktop header menu while hover to link 
-$(function() {
-    $(".main-cat-menu").mouseenter(function() {
-        let menu_id = $(this).attr("data-menu-id");
-        $(menu_id).removeClass("hidden");
-    });
-    $(".main-cat-menu").mouseleave(function() {
-        let menu_id = $(this).attr("data-menu-id");
-        $(menu_id).addClass("hidden");
-    });
 });

@@ -399,8 +399,73 @@ header .navbar-toggler-icon {
   vertical-align: middle;
 }
 /** hover menu **/
-button.main-cat-menu {
+button.hover-menu {
   height: 100%;
+}
+button.hover-menu .triangle {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #F1F3F4;
+}
+button.hover-menu .triangle.hidden {
+  display: none;
+}
+.hiddennav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 1280px;
+  max-width: 100%;
+  z-index: 100;
+  display: block;
+}
+.hiddennav-menu {
+  background-color: #fff;
+  border: 2px solid #F1F3F4;
+  width: 100%;
+  margin-top: 10px;
+  padding: 2em 3em;
+}
+.hiddennav-menu .title {
+  font-size: 1.35em;
+  color: #C1C8CE;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.hiddennav-menu .title a {
+  margin: 0;
+}
+.hiddennav-menu .title:hover,
+.hiddennav-menu .title:active {
+  color: #A039FF;
+}
+.hiddennav-menu ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.hiddennav-menu ul li {
+  margin-bottom: 1em;
+}
+.hiddennav-menu ul li a {
+  color: #262626;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+}
+.hiddennav-menu ul li a:hover,
+.hiddennav-menu ul li a:active {
+  color: #A039FF;
+}
+.hiddennav-menu ul.wide-ul {
+  column-count: 2;
+}
+.hiddennav.hidden {
+  display: none;
 }
 /** hover menu end **/
 .secondnav-block {

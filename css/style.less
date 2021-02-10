@@ -434,9 +434,62 @@ header {
 }
 
 /** hover menu **/
-button.main-cat-menu {
+button.hover-menu {
     height: 100%;
+    .triangle {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #F1F3F4;
+    }
+    .triangle.hidden {display:none;}
 }
+.hiddennav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 1280px;
+    max-width: 100%;
+    z-index: 100;
+    display: block;
+    &-menu {
+        background-color: #fff;
+        border: 2px solid #F1F3F4;
+        width: 100%;
+        margin-top: 10px;
+        padding: 2em 3em;
+        .title {
+            font-size: 1.35em;
+            color: #C1C8CE;
+            font-weight: 500;
+            margin-bottom: 1em;
+            a {margin: 0;}
+        }
+        .title:hover, .title:active {color:#A039FF;}
+        ul {
+            list-style: none;
+            padding-left: 0px;
+            li {
+                margin-bottom: 1em;
+                a {
+                    color: #262626;
+                    font-weight: 400;
+                    font-size: 1em;
+                    margin: 0;
+                }
+                a:hover, a:active {color:#A039FF;}
+            }
+        }
+        ul.wide-ul {column-count: 2;}
+    }
+}
+.hiddennav.hidden {display:none;}
+
+
 /** hover menu end **/
 
 .secondnav {
