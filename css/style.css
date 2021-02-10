@@ -399,10 +399,10 @@ header .navbar-toggler-icon {
   vertical-align: middle;
 }
 /** hover menu **/
-button.hover-menu {
+a.hover-menu {
   height: 100%;
 }
-button.hover-menu .triangle {
+a.hover-menu .triangle {
   position: absolute;
   top: 100%;
   left: 0;
@@ -412,7 +412,7 @@ button.hover-menu .triangle {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #F1F3F4;
 }
-button.hover-menu .triangle.hidden {
+a.hover-menu .triangle.hidden {
   display: none;
 }
 .hiddennav {
