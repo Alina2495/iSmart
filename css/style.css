@@ -3098,3 +3098,11 @@ a.c-3:hover {
 .c-16 {
   color: #8C8C8C;
 }
+.promotions-page .banner-mini {
+  justify-content: flex-start;
+  background-image: none;
+}
+.promotions-page .banner-mini p {
+  max-height: 50px;
+  overflow: hidden;
+}
