@@ -417,18 +417,15 @@
                 <div class="row">
 
                     <form class="filters-block col-lg-3 fw-5 fs-18 mb-30">
-                        <fieldset class="df jsb mb-25 p-0 border-0">
+                        <fieldset class="df jsb mb-25 p-0 border-0 pt-1">
                             <legend for="" class="p-0">Фильтры:</legend>
                             <button class="btn-trans c-3 fs-14" type="reset">Сбросить</button>
                         </fieldset>
 
                         <!-- model -->
                         <fieldset class="filtr-group">
-                            <legend for="" data-toggle="collapse" href="#filtr-group-1" role="button" aria-expanded="true" aria-controls="filtr-group-1" class="df aic jsb">
+                            <legend for="" data-toggle="collapse" href="#filtr-group-1" role="button" aria-expanded="false" aria-controls="filtr-group-1" class="df aic jsb">
                                 <span>Модель</span>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.9104 6.96742L9.00035 9.87742L6.09035 6.96742C5.79785 6.67492 5.32535 6.67492 5.03285 6.96742C4.74035 7.25992 4.74035 7.73242 5.03285 8.02492L8.47535 11.4674C8.76785 11.7599 9.24035 11.7599 9.53285 11.4674L12.9754 8.02492C13.2679 7.73242 13.2679 7.25992 12.9754 6.96742C12.6829 6.68242 12.2029 6.67492 11.9104 6.96742Z" fill="#323232"/>
-                                </svg>
                             </legend>
                             <div class="variants collapse" id="filtr-group-1">
                                 <div>
@@ -444,27 +441,24 @@
 
                         <!-- price -->
                         <fieldset class="filtr-group price">
-                            <legend for="" data-toggle="collapse" href="#filtr-group-2" role="button" aria-expanded="true" aria-controls="filtr-group-2" class="df aic jsb">
+                            <legend for="" data-toggle="collapse" href="#filtr-group-2" role="button" aria-expanded="false" aria-controls="filtr-group-2" class="df aic jsb">
                                 <span>Цена</span>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.9104 6.96742L9.00035 9.87742L6.09035 6.96742C5.79785 6.67492 5.32535 6.67492 5.03285 6.96742C4.74035 7.25992 4.74035 7.73242 5.03285 8.02492L8.47535 11.4674C8.76785 11.7599 9.24035 11.7599 9.53285 11.4674L12.9754 8.02492C13.2679 7.73242 13.2679 7.25992 12.9754 6.96742C12.6829 6.68242 12.2029 6.67492 11.9104 6.96742Z" fill="#323232"/>
-                                </svg>
                             </legend>
-                            <div class="variants collapse" id="filtr-group-2">
+                            <div class=" collapse" id="filtr-group-2">
 
                                 <div class="params-group mb-4">
                                     <div class="df aic jsb">
                                         <div class="">
                                             <div class="slider-range-inputs">
-                                                <input type="number" id="min-price" oninput="$('#slider-range').slider('values', 0, this.value);">
-                                                <span class="gray mr-2">₽</span>
+                                                <input value="999" type="number" id="min-price" oninput="$('#slider-range').slider('values', 0, this.value);">
+                                                <span class="">₽</span>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="df jsb">
                                             <div class="slider-range-inputs">
 
-                                                <input type="number" id="max-price" oninput="$('#slider-range').slider('values', 1, this.value);">
-                                                <span class="gray mr-2">₽</span>
+                                                <input value="8000" type="number" id="max-price" oninput="$('#slider-range').slider('values', 1, this.value);">
+                                                <span class="">₽</span>
                                             </div>
                                         </div>
                                     </div>
@@ -478,11 +472,8 @@
 
                         <!-- size -->
                         <fieldset class="filtr-group">
-                            <legend for="" data-toggle="collapse" href="#filtr-group-3" role="button" aria-expanded="true" aria-controls="filtr-group-3" class="df aic jsb">
+                            <legend for="" data-toggle="collapse" href="#filtr-group-3" role="button" aria-expanded="false" aria-controls="filtr-group-3" class="df aic jsb">
                                 <span>Размеры</span>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.9104 6.96742L9.00035 9.87742L6.09035 6.96742C5.79785 6.67492 5.32535 6.67492 5.03285 6.96742C4.74035 7.25992 4.74035 7.73242 5.03285 8.02492L8.47535 11.4674C8.76785 11.7599 9.24035 11.7599 9.53285 11.4674L12.9754 8.02492C13.2679 7.73242 13.2679 7.25992 12.9754 6.96742C12.6829 6.68242 12.2029 6.67492 11.9104 6.96742Z" fill="#323232"/>
-                                </svg>
                             </legend>
                             <div class="variants collapse" id="filtr-group-3">
                                 <div>
@@ -498,11 +489,8 @@
 
                         <!-- camera -->
                         <fieldset class="filtr-group">
-                            <legend for="" data-toggle="collapse" href="#filtr-group-4" role="button" aria-expanded="true" aria-controls="filtr-group-4" class="df aic jsb">
+                            <legend for="" data-toggle="collapse" href="#filtr-group-4" role="button" aria-expanded="false" aria-controls="filtr-group-4" class="df aic jsb">
                                 <span>Камера</span>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.9104 6.96742L9.00035 9.87742L6.09035 6.96742C5.79785 6.67492 5.32535 6.67492 5.03285 6.96742C4.74035 7.25992 4.74035 7.73242 5.03285 8.02492L8.47535 11.4674C8.76785 11.7599 9.24035 11.7599 9.53285 11.4674L12.9754 8.02492C13.2679 7.73242 13.2679 7.25992 12.9754 6.96742C12.6829 6.68242 12.2029 6.67492 11.9104 6.96742Z" fill="#323232"/>
-                                </svg>
                             </legend>
                             <div class="variants collapse" id="filtr-group-4">
                                 <div>
@@ -518,13 +506,10 @@
 
                         <!-- colors -->
                         <fieldset class="filtr-group">
-                            <legend for="" data-toggle="collapse" href="#filtr-group-5" role="button" aria-expanded="true" aria-controls="filtr-group-5" class="df aic jsb">
+                            <legend for="" data-toggle="collapse" href="#filtr-group-5" role="button" aria-expanded="false" aria-controls="filtr-group-5" class="df aic jsb">
                                 <span>Цвет</span>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.9104 6.96742L9.00035 9.87742L6.09035 6.96742C5.79785 6.67492 5.32535 6.67492 5.03285 6.96742C4.74035 7.25992 4.74035 7.73242 5.03285 8.02492L8.47535 11.4674C8.76785 11.7599 9.24035 11.7599 9.53285 11.4674L12.9754 8.02492C13.2679 7.73242 13.2679 7.25992 12.9754 6.96742C12.6829 6.68242 12.2029 6.67492 11.9104 6.96742Z" fill="#323232"/>
-                                </svg>
                             </legend>
-                            <div class=" collapse" id="filtr-group-5">
+                            <div class="collapse" id="filtr-group-5">
                                 <!-- COLORS -->
                                 <div class="char">
                                     <div class="colors-wr mini">
@@ -572,13 +557,10 @@
 
                         <!-- memory -->
                         <fieldset class="filtr-group">
-                            <legend for="" data-toggle="collapse" href="#filtr-group-6" role="button" aria-expanded="true" aria-controls="filtr-group-6" class="df aic jsb">
+                            <legend for="" data-toggle="collapse" href="#filtr-group-6" role="button" aria-expanded="false" aria-controls="filtr-group-6" class="df aic jsb">
                                 <span> Объем встроенной памяти, ГБ</span>
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.9104 6.96742L9.00035 9.87742L6.09035 6.96742C5.79785 6.67492 5.32535 6.67492 5.03285 6.96742C4.74035 7.25992 4.74035 7.73242 5.03285 8.02492L8.47535 11.4674C8.76785 11.7599 9.24035 11.7599 9.53285 11.4674L12.9754 8.02492C13.2679 7.73242 13.2679 7.25992 12.9754 6.96742C12.6829 6.68242 12.2029 6.67492 11.9104 6.96742Z" fill="#323232"/>
-                                </svg>
                             </legend>
-                            <div class="variants collapse show" id="filtr-group-6">
+                            <div class="variants collapse" id="filtr-group-6">
                                 <div>
                                     <input type="checkbox" name="" id="516">
                                     <label for="516">516</label>
