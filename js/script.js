@@ -79,6 +79,12 @@ $(function() {
 });
 
 
+$(".params-title").click(function() {
+    $(this).toggleClass('params-hidden');
+    $(this).next('.params-list').toggle();
+});
+
+
 // Initialize Swiper
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     direction: 'vertical',

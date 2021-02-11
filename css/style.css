@@ -2705,6 +2705,96 @@ input[type="number"]::-webkit-inner-spin-button {
 .order-done h1 {
   line-height: 150%;
 }
+#tabs-compare {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  border: none;
+}
+#tabs-compare .nav-item {
+  flex: auto;
+  padding: 0px;
+}
+#tabs-compare .nav-item .nav-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #EFEFEF;
+  border-radius: 0px;
+  padding: 1em;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tabs-compare .nav-item .nav-link.active {
+  border: 1px solid #6839CF;
+}
+#tabs-compare .nav-item .nav-link div {
+  flex: 1;
+  margin-left: 1em;
+}
+.table.table-compare > :not(:last-child) > :last-child > * {
+  border-bottom-color: #f0f1f3;
+}
+.table-compare tr > td,
+.table-compare tr > th {
+  width: 25%;
+  padding: 1.25em;
+}
+.table-compare tbody.params-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #606060;
+  cursor: pointer;
+}
+.table-compare tbody.params-title svg {
+  transition: 0.25s;
+}
+.table-compare tbody.params-title.params-hidden svg {
+  transform: rotate(180deg);
+}
+.table-compare tbody.params-list {
+  font-size: 0.8em;
+  border: 1px solid #fff;
+}
+.table-compare tbody.params-list tr:nth-child(odd) {
+  background-color: #F9F9FA;
+}
+.table-compare tbody.params-list td {
+  border: 1px solid #f0f1f3;
+}
+@media (max-width: 991px) {
+  #tabs-compare .nav-item .nav-link {
+    padding: 1em 0.75em;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  #tabs-compare .nav-item .nav-link div {
+    margin-left: 0.5em;
+  }
+  .table-compare tr > td,
+  .table-compare tr > th {
+    width: 25%;
+    padding: 1em;
+    min-width: 220px;
+  }
+}
+@media (max-width: 767px) {
+  #tabs-compare {
+    flex-wrap: wrap;
+  }
+  #tabs-compare .nav-item {
+    width: calc(100%/3);
+  }
+}
+@media (max-width: 575px) {
+  #tabs-compare .nav-item {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 1400px) {
   .banner {
     flex-direction: column;
