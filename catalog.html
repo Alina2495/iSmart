@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap;" rel="stylesheet">
     <!-- bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!-- price range style sheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -90,7 +91,7 @@
                     <!-- wholesalers page link -->
                     <a href="wholesalers.html">Оптовикам</a>
                     <!-- discounts page link -->
-                    <a href="discounts.html">Скидки</a>
+                    <a href="catalog.html">Скидки</a>
                     <!-- LOGIN LINK -->
                     <a class="d-flex aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
                         <!-- login icon -->
@@ -155,8 +156,6 @@
 
         </div>
     </header>
-
-
     <!-- HEADER on DESKTOP -->
     <header class="d-none d-md-block">
         <!-- header top -->
@@ -177,13 +176,13 @@
                         <!-- social links -->
                         <div class="df aic">
                             <!-- facebook -->
-                            <a href="https://ru-ru.facebook.com/" title="iSmart в Facebook" class="mr-10">
+                            <a target="_blank" rel="noopener noreferrer" href="https://ru-ru.facebook.com/" title="iSmart в Facebook" class="mr-10">
                                 <svg class="vam" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.6366 0.276611H0.916611C0.562611 0.276611 0.276611 0.562611 0.276611 0.916611V15.6366C0.276611 15.9906 0.562611 16.2766 0.916611 16.2766H15.6366C15.9906 16.2766 16.2766 15.9906 16.2766 15.6366V0.916611C16.2766 0.562611 15.9906 0.276611 15.6366 0.276611ZM13.7886 4.94661H12.5106C11.5086 4.94661 11.3146 5.42261 11.3146 6.12261V7.66461H13.7066L13.3946 10.0786H11.3146V16.2766H8.82061V10.0806H6.73461V7.66461H8.82061V5.88461C8.82061 3.81861 10.0826 2.69261 11.9266 2.69261C12.8106 2.69261 13.5686 2.75861 13.7906 2.78861V4.94661H13.7886Z" fill="white"/>
                                 </svg>
                             </a>
                             <!-- insta -->
-                            <a href="https://www.instagram.com/ismart116" title="iSmart в Instagram">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ismart116" title="iSmart в Instagram">
                                 <svg class="vam" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.19255 5.52497C6.72359 5.52497 5.5248 6.72375 5.5248 8.19272C5.5248 9.66168 6.72359 10.8605 8.19255 10.8605C9.66152 10.8605 10.8603 9.66168 10.8603 8.19272C10.8603 6.72375 9.66152 5.52497 8.19255 5.52497ZM16.1938 8.19272C16.1938 7.08799 16.2038 5.99327 16.1418 4.89055C16.0797 3.60971 15.7875 2.47296 14.8509 1.53635C13.9123 0.597732 12.7776 0.307541 11.4967 0.245501C10.392 0.18346 9.29728 0.193466 8.19455 0.193466C7.08983 0.193466 5.99511 0.18346 4.89238 0.245501C3.61154 0.307541 2.4748 0.599733 1.53818 1.53635C0.599563 2.47496 0.309372 3.60971 0.247332 4.89055C0.185291 5.99528 0.195297 7.09 0.195297 8.19272C0.195297 9.29544 0.185291 10.3922 0.247332 11.4949C0.309372 12.7757 0.601564 13.9125 1.53818 14.8491C2.4768 15.7877 3.61154 16.0779 4.89238 16.1399C5.99711 16.202 7.09183 16.192 8.19455 16.192C9.29928 16.192 10.394 16.202 11.4967 16.1399C12.7776 16.0779 13.9143 15.7857 14.8509 14.8491C15.7895 13.9105 16.0797 12.7757 16.1418 11.4949C16.2058 10.3922 16.1938 9.29744 16.1938 8.19272V8.19272ZM8.19255 12.2974C5.92106 12.2974 4.08785 10.4642 4.08785 8.19272C4.08785 5.92123 5.92106 4.08802 8.19255 4.08802C10.464 4.08802 12.2972 5.92123 12.2972 8.19272C12.2972 10.4642 10.464 12.2974 8.19255 12.2974ZM12.4654 4.87854C11.935 4.87854 11.5067 4.45026 11.5067 3.91991C11.5067 3.38957 11.935 2.96128 12.4654 2.96128C12.9957 2.96128 13.424 3.38957 13.424 3.91991C13.4241 4.04585 13.3995 4.17057 13.3513 4.28695C13.3032 4.40333 13.2326 4.50907 13.1436 4.59812C13.0545 4.68717 12.9488 4.75777 12.8324 4.80589C12.716 4.85401 12.5913 4.8787 12.4654 4.87854V4.87854Z" fill="white"/>
                                 </svg>
@@ -196,7 +195,7 @@
 
         <!-- header bottom -->
         <div class="header-bottom c-13 fs-16 pr">
-            <div class="container container-big position-relative align-items-stretch py-0 h-100 fnw df jsb aic">
+            <div class="container position-relative container-big align-items-stretch py-0 h-100 fnw df jsb aic">
                 <!-- logo -->
                 <a href="index.html" class="navbar-brand p-0 mr-10 mr-lg-4 mr-xl-5">
                     <img src="images/img/logo.svg" alt="iSmart" width="88" height="28">
@@ -210,6 +209,7 @@
                         <span>Каталог товаров</span>
                         <div class="triangle hidden"></div>
                     </a>
+
                     <div class="hover-menu hiddennav hidden">
                         <nav class="hiddennav-menu">
                             <div class="row">
@@ -280,17 +280,17 @@
                             </div>
                         </nav>
                     </div>
+
                     <!-- buyers info page -->
                     <a class="mx-xl-3 mx-xxl-4" href="buyer.html">Покупателю</a>
                     <!-- wholesalers page link -->
                     <a class="mx-xl-3 mx-xxl-4" href="wholesalers.html">Оптовикам</a>
                     <!-- discounts page link -->
-                    <a class="mx-xl-3 mx-xxl-4" href="discounts.html">Скидки</a>
+                    <a class="mx-xl-3 mx-xxl-4" href="catalog.html">Скидки</a>
                 </div>
 
-
                 <!-- show search form button -->
-                <button class="jse show-search ml-auto btn-trans mr-xxl-1">
+                <button title="Поиск по сайту" class="jse show-search ml-auto btn-trans mr-xxl-1">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.95084 2.99153C3.79216 4.1485 3.11825 5.70376 3.06643 7.34035C3.01462 8.97695 3.5888 10.5717 4.67198 11.7997C5.75515 13.0276 7.26579 13.7963 8.89606 13.9492C10.4966 14.0992 12.0942 13.6446 13.375 12.6767L16.7062 16.0087L16.7062 16.0087C16.7891 16.0915 16.8874 16.1572 16.9957 16.2021C17.1039 16.2469 17.2199 16.27 17.3371 16.27C17.4542 16.27 17.5702 16.2469 17.6785 16.2021C17.7867 16.1572 17.885 16.0915 17.9679 16.0087C18.0507 15.9258 18.1164 15.8275 18.1613 15.7192C18.2061 15.611 18.2292 15.495 18.2292 15.3779C18.2292 15.2607 18.2061 15.1447 18.1613 15.0365C18.1164 14.9282 18.0507 14.8299 17.9679 14.747L17.9679 14.747L14.6361 11.4161C15.6014 10.1351 16.0541 8.53858 15.9032 6.93955C15.7494 5.31066 14.9809 3.80151 13.754 2.71913C12.5271 1.63674 10.9338 1.06244 9.2985 1.11304C7.66315 1.16365 6.10851 1.83536 4.95084 2.99153ZM4.95084 2.99153L5.0215 3.06229L4.95084 2.99153ZM12.7889 4.25378C13.2264 4.68428 13.5744 5.19715 13.8128 5.76281C14.0512 6.32848 14.1752 6.93574 14.1777 7.54956C14.1802 8.16339 14.0611 8.77164 13.8274 9.33923C13.5936 9.90681 13.2498 10.4225 12.8158 10.8565C12.3817 11.2906 11.866 11.6344 11.2984 11.8682C10.7308 12.1019 10.1226 12.221 9.50877 12.2185C8.89494 12.216 8.28768 12.092 7.72202 11.8536C7.15636 11.6152 6.64349 11.2672 6.21299 10.8297C5.35268 9.95522 4.87275 8.77625 4.87774 7.54956C4.88274 6.32288 5.37225 5.14786 6.23966 4.28045C7.10706 3.41304 8.28208 2.92353 9.50877 2.91854C10.7355 2.91354 11.9144 3.39347 12.7889 4.25378Z" fill="black" stroke="black" stroke-width="0.2"/>
                     </svg>
@@ -317,7 +317,6 @@
                     </button>
                 </form>
 
-
                 <!-- LOGIN LINK -->
                 <a class="ml-3 ml-xxl-4 jse fw-5 df aic login" href="login.html" aria-label="Войти в аккаунт" title="Войти в аккаунт">
                     <!-- login icon -->
@@ -328,7 +327,6 @@
                 </a>
             </div>
         </div>
-
     </header>
 
     <!-- MAIN content -->
@@ -336,15 +334,15 @@
 
         <!-- WIDGET links -->
         <div class="widgets bg-7">
-            <a href="cart.html" class="basket" title="Корзина">
+            <a href="cart.html" class="basket" title="Перейти в корзину">
                 <span class="badge">20</span>
                 <span class="visually-hidden">товаров в корзине</span>
             </a>
-            <a href="wish.html" class="fav" title="Избранное">
+            <a href="wish.html" class="fav" title="Перейти в избранное">
                 <span class="badge">12</span>
                 <span class="visually-hidden">товаров в избранном</span>
             </a>
-            <a href="compare.html" class="compare" title="Сравнение">
+            <a href="compare.html" class="compare-page" title="Перейти в сравнение">
                 <span class="badge">18</span>
                 <span class="visually-hidden">товаров в сравнении</span>
             </a>
@@ -353,43 +351,43 @@
         <!-- menu -->
         <nav class="secondnav-block c-6 mb-30 fs-14">
             <div class="container container-big">
-                <h1 class="visuallyhidden">Популярные товары</h1>
+                <h3 class="visuallyhidden">Популярные товары</h3>
                 <ul class="secondnav-list df">
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-iphone">Iphone 12 pro</a>
+                        <a href="catalog.html" class="secondnav-link a-iphone">Iphone 12 pro</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-iphone">Iphone 12 pro max</a>
+                        <a href="catalog.html" class="secondnav-link a-iphone">Iphone 12 pro max</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 11 pro</a>
+                        <a href="catalog.html" class="secondnav-link">Iphone 11 pro</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 11 pro max</a>
+                        <a href="catalog.html" class="secondnav-link">Iphone 11 pro max</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 11</a>
+                        <a href="catalog.html" class="secondnav-link">Iphone 11</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10</a>
+                        <a href="catalog.html" class="secondnav-link">Iphone 10</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10R</a>
+                        <a href="catalog.html" class="secondnav-link">Iphone 10R</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10S</a>
+                        <a href="catalog.html" class="secondnav-link">Iphone 10S</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link">Iphone 10</a>
+                        <a href="catalog.html" class="secondnav-link">Iphone 10</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-watch">Watch</a>
+                        <a href="catalog.html" class="secondnav-link a-watch">Watch</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-pods">Air pods</a>
+                        <a href="catalog.html" class="secondnav-link a-pods">Air pods</a>
                     </li>
                     <li class="secondnav-item">
-                        <a href="" class="secondnav-link a-macbook">Macbook</a>
+                        <a href="catalog.html" class="secondnav-link a-macbook">Macbook</a>
                     </li>
                 </ul>
             </div>
@@ -600,6 +598,7 @@
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>По умолчанию</option>
                                     <option value="1">По возрастанию цены</option>
+                                    <option value="2">Со скидками</option>
                                 </select>
                             </div>
 
@@ -825,19 +824,19 @@
                     <ul class="footernav-list col-sm-5 col-lg-2 mb-30">
                         <li class="footernav-heading mb-25">Информация</li>
                         <li class="footernav-item">
-                            <a href="info-buyer.html" class="footernav-link">Как заказать</a>
+                            <a href="buyer.html" class="footernav-link">Как заказать</a>
                         </li>
                         <li class="footernav-item">
-                            <a href="info-buyer.html" class="footernav-link">Условия доставки</a>
+                            <a href="buyer.html" class="footernav-link">Условия доставки</a>
                         </li>
                         <li class="footernav-item">
-                            <a href="info-buyer.html" class="footernav-link">Условия оплаты</a>
+                            <a href="buyer.html" class="footernav-link">Условия оплаты</a>
                         </li>
                         <li class="footernav-item">
-                            <a href="info-buyer.html" class="footernav-link">Гарантия на товар</a>
+                            <a href="buyer.html" class="footernav-link">Гарантия на товар</a>
                         </li>
                         <li class="footernav-item">
-                            <a href="info-buyer.html" class="footernav-link">Отзывы</a>
+                            <a href="buyer.html" class="footernav-link">Отзывы</a>
                         </li>
                         <li class="footernav-item">
                             <a href="news.html" class="footernav-link">Новости</a>
@@ -847,7 +846,7 @@
                     <ul class="footernav-list col-sm-7 col-lg-4 df aie jsb mb-30">
                         <li class="col-lg-6">
                             <ul>
-                                <li class="footernav-heading mb-25">Продукция</li>
+                                <li class="footernav-heading mb-25"><a href="categories.html">Продукция</a></li>
                                 <li class="footernav-item">
                                     <a href="catalog.html" class="footernav-link">Iphone 12 pro</a>
                                 </li>
@@ -893,7 +892,7 @@
                     </ul>
                     <!-- contacts list -->
                     <ul class="footernav-list col-lg-3 mb-30">
-                        <li class="footernav-heading mb-25">Контакты</li>
+                        <li class="footernav-heading mb-25"><a href="contacts.html">Контакты</a></li>
                         <li class="footernav-item">
                             <dl>
                                 <dt>Адрес:</dt>
@@ -956,12 +955,12 @@
                             <li>
                                 <ul class="payment-icons df">
                                     <li class="payment-icon" title="iSmart в Facebook">
-                                        <a href="https://www.instagram.com/ismart116">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://ru-ru.facebook.com/">
                                             <img src="images/icons/facebook.svg" alt="facebook">
                                         </a>
                                     </li>
                                     <li class="payment-icon" title="iSmart в Instagram">
-                                        <a href="">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ismart116">
                                             <img src="images/icons/insta.svg" alt="instagram">
                                         </a>
                                     </li>
@@ -975,7 +974,7 @@
                     <p class="copyright mb-16">Все права защищены <time datetime="2020">2020</time>&#160;@ismart</p>
                     <address class="df aic mb-16">
                         <span>Создание и&#160;продвижение сайтов</span>
-                        <a href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
+                        <a target="_blank" rel="noopener noreferrer" href="https://asmpromo.ru/" title="Создание сайтов от AsmPromo">
                             <img src="images/img/asm-promo.png" width="69" height="47" alt="Веб-студия AsmPromo">
                         </a>
                     </address>
@@ -988,7 +987,28 @@
     </footer>
     <!-- footer -->
 
-
+    <!-- DONE -->
+    <!-- Subscription Newsletter Modal -->
+    <div class="modal fade" id="newsletterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content mx-auto text-center">
+                <div class="modal-header">
+                    <h3 class="modal-title mx-auto" id="newsletterModalLabel">Спасибо!</h3>
+                    <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z" fill="#C4C4C4"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Вам отправлено письмо для подтверждения подписки.</p>
+                </div>
+                <div class="modal-footer row-cols-1 row-cols-sm-auto jsc">
+                    <button type="button" class="purple bttn" data-bs-dismiss="modal">Хорошо</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- bootstrap 5 js -->
     <!-- JavaScript Bundle with Popper.js -->
@@ -996,9 +1016,11 @@
     <!-- JavaScript Bundle with Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <!-- bootstrap 5 js -->
+    <!-- JQUERY js -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-
+    <!-- price range js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+    <!-- main js -->
     <script src="js/script.js"></script>
 </body>
 
