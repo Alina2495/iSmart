@@ -2923,8 +2923,106 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-.table-compare {}
-
+#tabs-compare {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    border: none;
+    .nav-item {
+        flex: auto;
+        padding: 0px;
+        .nav-link {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #EFEFEF;
+            border-radius: 0px;
+            padding: 1em;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #303030;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &.active {
+                border: 1px solid #6839CF;
+            }
+            div {
+                flex:1;
+                margin-left: 1em;
+            }
+        }
+    }
+}
+.table.table-compare>:not(:last-child)>:last-child>* {
+    border-bottom-color: #f0f1f3;
+}
+.table-compare {
+    tr>td, tr>th {
+        width: 25%;
+        padding: 1.25em;
+    }
+    tbody.params-title {
+        font-size: 1.3em;
+        font-weight: 600;
+        color: #606060;
+        cursor: pointer;
+        svg {
+            transition: .25s;
+        }
+    }
+    tbody.params-title.params-hidden {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+    tbody.params-list {
+        font-size: 0.8em;
+        border: 1px solid #fff;
+        tr:nth-child(odd){
+            background-color: #F9F9FA;
+        }
+        td {
+            border: 1px solid #f0f1f3;
+        }
+    }
+}
+@media (max-width: 991px) {
+    #tabs-compare {
+        .nav-item {
+            .nav-link {
+                padding: 1em 0.75em;
+                font-size: .9em;
+                font-weight: 500;
+                div {
+                    margin-left: .5em;
+                }
+            }
+        }
+    }
+    .table-compare {
+        tr>td, tr>th {
+            width: 25%;
+            padding: 1em;
+            min-width: 220px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    #tabs-compare {
+        flex-wrap: wrap;
+        .nav-item {
+            width: calc(100%/3);
+        }
+    }
+}
+@media (max-width: 575px) {
+    #tabs-compare {
+        .nav-item {
+            width: 50%;
+        }
+    }
+}
 
 
 // media queries
