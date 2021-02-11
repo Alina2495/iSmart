@@ -2,7 +2,9 @@
   background-repeat: no-repeat;
   object-fit: cover;
 }
-.slow {
+.news-preview img,
+.categ-mini-cards img,
+.modal .btn-close svg {
   transition-duration: 0.2s;
   transition-delay: 0s;
   transition-timing-function: linear;
