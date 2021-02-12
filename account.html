@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru" id="top" class="position-relative">
+<html lang="ru">
 
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/img/favicon/site.webmanifest">
     <link rel="mask-icon" href="images/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileColor" content="#7f5dd6">
     <meta name="theme-color" content="#ffffff">
+    <!-- / favicons -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет — iSmart</title>
+    <title>Личный кабинет – iSmart</title>
     <meta name="description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж." />
-    <meta name="og:title" content="Личный кабинет — iSmart">
+    <meta name="og:title" content="Личный кабинет – iSmart">
+    <meta property="og:image" content="images/img/logo.svg">
     <meta name="og:description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж.">
     <meta name="og:url" content="iSmart.ru">
     <meta name="og:site_name" content="iSmart – Официальный сайт">
@@ -22,9 +25,10 @@
     <!-- fonts Inter -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap;" rel="stylesheet">
-    <!-- bootstrap 5 CSS -->
+    <!-- bootstrap 5 min CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="bg-3">
@@ -152,6 +156,7 @@
 
         </div>
     </header>
+
     <!-- HEADER on DESKTOP -->
     <header class="d-none d-md-block">
         <!-- header top -->
@@ -403,9 +408,10 @@
             </div>
         </section>
 
+        <!-- profile -->
         <section class="mb-100 container account-block">
             <div class="align-items-start row">
-                <h3 class="col-12 mb-40">Личный кабинет</h3>
+                <h1 class="fs-28 col-12 mb-40">Личный кабинет</h1>
                 <div class="col-lg-3">
                     <div class="nav flex-column c-13 fs-18 mb-30" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background-color: #FBFCFF;">
 
@@ -602,9 +608,7 @@
             </div>
         </section>
 
-
     </main>
-
 
     <!-- footer -->
     <footer class="bg-1 c-5">
@@ -783,17 +787,17 @@
                     </address>
                 </div>
             </div>
-            <!-- anchor to top of page -->
-            <a href="#top" class="" title="В начало страницы"></a>
         </div>
 
     </footer>
     <!-- footer -->
 
-    <!-- DONE -->
+    <!-- anchor to top of page -->
+    <a id="to-top" class="hidden" title="В начало страницы"></a>
+
     <!-- Edit Profile Info Modal -->
     <div class="modal fade" id="editProfileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-fullscreen-sm-down modal-dialog-centered modal-dialog-scrollable bg-3">
+        <div class="modal-dialog modal-lg modal-fullscreen-sm-down modal-dialog-centered modal-dialog-scrollable">
             <form action="#" method="POST" class="modal-content mx-auto">
                 <div class="modal-header">
                     <h3 class="modal-title" id="editProfileModalLabel">Редактировать данные</h3>
@@ -811,9 +815,6 @@
                                 Имя
                             </label>
                         <input type="text" id="editUserName" class="form-control fs-14 input" placeholder="Имя" required maxlength="10">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- surname -->
                     <fieldset class="mb-20">
@@ -821,9 +822,6 @@
                                 Фамилия
                             </label>
                         <input type="text" id="editUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required maxlength="15">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- tel -->
                     <fieldset class="mb-20">
@@ -831,9 +829,6 @@
                                 Номер телефона
                             </label>
                         <input type="tel" id="editUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- email -->
                     <fieldset class="mb-20">
@@ -841,9 +836,6 @@
                                 Электронная почта
                             </label>
                         <input type="email" id="editUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- city -->
                     <fieldset>
@@ -851,9 +843,6 @@
                             Город
                         </label>
                         <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
@@ -864,10 +853,9 @@
         </div>
     </div>
 
-    <!-- DONE -->
     <!-- Change Password Modal -->
     <div class="modal fade" id="changePassModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="changePassModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered bg-3">
+        <div class="modal-dialog modal-dialog-centered">
             <form action="#" method="POST" class="modal-content mx-auto">
                 <div class="modal-header">
                     <h3 class="modal-title" id="changePassModalLabel">Изменить пароль</h3>
@@ -884,9 +872,6 @@
                             Текущий пароль
                         </label>
                         <input type="password" id="currentPass" class="form-control fs-14 input" placeholder="Текущий пароль" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- new password -->
                     <fieldset class="mb-20">
@@ -894,9 +879,6 @@
                             Новый пароль
                         </label>
                         <input type="password" id="createNewPass" class="form-control fs-14 input" placeholder="Новый пароль" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- confirm new password -->
                     <fieldset>
@@ -904,9 +886,6 @@
                             Повторите пароль
                         </label>
                         <input type="password" id="confirmNewPass" class="form-control fs-14 input" placeholder="Повторите пароль" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
@@ -917,10 +896,9 @@
         </div>
     </div>
 
-    <!-- DONE -->
     <!-- Add Delivery Address Modal -->
     <div class="modal fade" id="addAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered bg-3">
+        <div class="modal-dialog modal-dialog-centered">
             <form action="#" method="POST" class="modal-content mx-auto">
                 <div class="modal-header">
                     <h3 class="modal-title" id="addAddressModalLabel">Добавить адрес</h3>
@@ -937,9 +915,6 @@
                             Ваш город
                         </label>
                         <input type="text" id="addAddressCity" class="form-control fs-14 input" placeholder="Ваш город" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- add address street -->
                     <fieldset class="mb-20">
@@ -947,9 +922,6 @@
                             Улица
                         </label>
                         <input type="text" id="addAddressStreet" class="form-control fs-14 input" placeholder="Улица" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- add home -->
                     <fieldset class="mb-20">
@@ -957,9 +929,6 @@
                             Дом
                         </label>
                         <input type="text" id="addAddressHome" class="form-control fs-14 input" placeholder="Дом" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- add apartment -->
                     <fieldset class="mb-20">
@@ -967,9 +936,6 @@
                             Квартира
                         </label>
                         <input min="1" type="number" id="addAddressApartment" class="form-control fs-14 input" placeholder="Квартира" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- add front door -->
                     <fieldset class="mb-20">
@@ -977,9 +943,6 @@
                             Подъезд
                         </label>
                         <input min="1" type="number" id="addAddressFrontDoor" class="form-control fs-14 input" placeholder="Подъезд">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- add floor -->
                     <fieldset>
@@ -987,9 +950,6 @@
                             Этаж
                         </label>
                         <input min="1" type="number" id="addAddressFloor" class="form-control fs-14 input" placeholder="Этаж">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
@@ -1000,10 +960,9 @@
         </div>
     </div>
 
-    <!-- DONE -->
     <!-- Edit Delivery Address Modal -->
     <div class="modal fade" id="editAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editAddressModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered bg-3">
+        <div class="modal-dialog modal-dialog-centered">
             <form action="#" method="POST" class="modal-content mx-auto">
                 <div class="modal-header">
                     <h3 class="modal-title" id="editAddressModalLabel">Редактировать адрес</h3>
@@ -1020,9 +979,6 @@
                             Ваш город
                         </label>
                         <input type="text" id="editAddressCity" class="form-control fs-14 input" placeholder="Ваш город" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- edit address Street -->
                     <fieldset class="mb-20">
@@ -1030,9 +986,6 @@
                             Улица
                         </label>
                         <input type="text" id="editAddressStreet" class="form-control fs-14 input" placeholder="Улица" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- edit home -->
                     <fieldset class="mb-20">
@@ -1040,9 +993,6 @@
                             Дом
                         </label>
                         <input type="text" id="editAddressHome" class="form-control fs-14 input" placeholder="Дом" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- edit apartment -->
                     <fieldset class="mb-20">
@@ -1050,9 +1000,6 @@
                             Квартира
                         </label>
                         <input min="1" type="number" id="editAddressApartment" class="form-control fs-14 input" placeholder="Квартира" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- edit front door -->
                     <fieldset class="mb-20">
@@ -1060,9 +1007,6 @@
                             Подъезд
                         </label>
                         <input min="1" type="number" id="editAddressFrontDoor" class="form-control fs-14 input" placeholder="Подъезд">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- edit floor -->
                     <fieldset>
@@ -1070,9 +1014,6 @@
                             Этаж
                         </label>
                         <input min="1" type="number" id="editAddressFloor" class="form-control fs-14 input" placeholder="Этаж">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
@@ -1083,7 +1024,6 @@
         </div>
     </div>
 
-    <!-- DONE -->
     <!-- Subscription Newsletter Modal -->
     <div class="modal fade" id="newsletterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered">
@@ -1107,15 +1047,15 @@
     </div>
 
     <!-- bootstrap 5 js -->
-    <!-- JavaScript Bundle with Popper.js -->
+    <!-- JavaScript min Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle with Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <!-- JavaScript min Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <!-- JQUERY js -->
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <!-- main js -->
-    <script src="js/script.js"></script>
+    <!-- JQUERY min js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- main min js -->
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
