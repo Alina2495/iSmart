@@ -65,7 +65,6 @@ $('.buy').on('click', () => {
     $('.buy.active').html('В корзине');
 })
 
-
 //   show desktop header menu while hover to link 
 $(function() {
     $(".hover-menu").mouseenter(function() {
@@ -78,26 +77,43 @@ $(function() {
     });
 });
 
+// scroll to top of page link
+jQuery(document).ready(function() {
+    var btn = $('#to-top');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+});
 
+// show and hide params list on click to params title (only compare page)
 $(".params-title").click(function() {
     $(this).toggleClass('params-hidden');
     $(this).next('.params-list').toggle();
 });
 
-$(document).ready( function() {
+// price range (catalog page - left filters)
+$(document).ready(function() {
     $("#slider-range").slider({
-      range: true,
-      min: 0,
-      max: 10000,
-      values: [ 2000, 7000 ],
-      slide: function( event, ui ) {
-        $('#min-price').val(ui.values[0]);
-        $('#max-price').val(ui.values[1]);
-      }
+        range: true,
+        min: 0,
+        max: 10000,
+        values: [2000, 7000],
+        slide: function(event, ui) {
+            $('#min-price').val(ui.values[0]);
+            $('#max-price').val(ui.values[1]);
+        }
     });
-    $('#min-price').val($( "#slider-range" ).slider( "values", 0 ));
-    $('#max-price').val($( "#slider-range" ).slider( "values", 1 ));
-  });
+    $('#min-price').val($("#slider-range").slider("values", 0));
+    $('#max-price').val($("#slider-range").slider("values", 1));
+});
 
   // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -120,14 +136,11 @@ $(document).ready( function() {
       })
   })();
 
-// Initialize Swiper
+// swiper slider (only card page)
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     direction: 'vertical',
     spaceBetween: 10,
     slidesPerView: 3,
-    // loop: true,
-    // freeMode: true,
-    // loopedSlides: 4, //looped slides should be the same
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     breakpoints: {
@@ -152,8 +165,6 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 var galleryTop = new Swiper('.gallery-top', {
     direction: 'vertical',
     spaceBetween: 10,
-    // loop: true,
-    // loopedSlides: 4, //looped slides should be the same
     thumbs: {
         swiper: galleryThumbs,
     },

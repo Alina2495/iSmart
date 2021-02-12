@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru" id="top">
+<html lang="ru">
 
 <head>
+    <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/img/favicon/favicon-16x16.png">
@@ -9,11 +10,12 @@
     <link rel="mask-icon" href="images/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#7f5dd6">
     <meta name="theme-color" content="#ffffff">
+    <!-- / favicons -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная — iSmart</title>
+    <title>Главная – iSmart</title>
     <meta name="description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж." />
-    <meta name="og:title" content="iSmart">
+    <meta name="og:title" content="Главная – iSmart">
     <meta property="og:image" content="images/img/logo.svg">
     <meta name="og:description" content="Специализированный магазин «Apple» в Казани. В рассрочку и кредит. Гарантия до 2 лет. ТЦ «Олимп», 3 этаж.">
     <meta name="og:url" content="iSmart.ru">
@@ -23,15 +25,14 @@
     <!-- fonts Inter -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap;" rel="stylesheet">
-    <!-- bootstrap 5 CSS -->
+    <!-- bootstrap 5 min CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <!-- main styles -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-3 c-1">
-    <h1 class="visuallyhidden">iSmart - Главная страница</h1>
-
+    <h1 class="visuallyhidden">iSmart – Главная страница</h1>
 
     <!-- HEADER on MOBILE -->
     <header class="d-block d-md-none pr">
@@ -156,6 +157,7 @@
 
         </div>
     </header>
+
     <!-- HEADER on DESKTOP -->
     <header class="d-none d-md-block">
         <!-- header top -->
@@ -329,7 +331,6 @@
         </div>
     </header>
 
-
     <!-- MAIN content -->
     <main>
 
@@ -357,7 +358,7 @@
                     <h2 class="banner-h1 mb-16 c-5 fw-7">Монитор Pro Display XDR</h2>
                     <p class="banner-p mb-65 fw-3">уже в наличии</p>
                     <div class="banner-links">
-                        <a href="cart.html" class="btn btn fs-18 mr-3">Купить</a>
+                        <a href="cart.html" class="btn fs-18">Купить</a>
                         <a href="card.html" class="c-5 fw-5 fs-16" href="">Подробнее</a>
                     </div>
                 </div>
@@ -615,8 +616,37 @@
 
                     <div class="tab-pane fade" id="tablets" role="tabpanel" aria-labelledby="tablets-tab">
                         <!-- tablets  -->
-                        <div class="product-group tablets row-cols-auto row-cols-lg-4">
-
+                        <div class="product-group row-cols-auto row-cols-lg-4">
+                            <!-- card 1 -->
+                            <div>
+                                <div class="product-preview">
+                                    <!-- image -->
+                                    <img class="img" src="images/img/tablet.jpg" alt="Apple iPhone 11 64GB">
+                                    <!-- badge -->
+                                    <div class="sale">- 100 % </div>
+                                    <!-- add to wish list -->
+                                    <button class="wish" data-bs-toggle="button"></button>
+                                    <!-- add to compare -->
+                                    <button class="compare" data-bs-toggle="button"></button>
+                                    <!-- product name -->
+                                    <div class="name">Apple iPhone 11 64GB</div>
+                                    <!-- product description -->
+                                    <div class="desc">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                    <div class="bottom">
+                                        <!-- product price -->
+                                        <div class="price">
+                                            <!-- old price -->
+                                            <del>100 990 ₽</del>
+                                            <!-- new price -->
+                                            <ins>88 990 ₽</ins>
+                                        </div>
+                                        <!-- add to cart -->
+                                        <button class="buy" data-bs-toggle="button">В корзину</button>
+                                    </div>
+                                    <!-- link on product page -->
+                                    <a href="card.html" class="stretched-link"></a>
+                                </div>
+                            </div>
                         </div>
                         <!-- tablets -->
                     </div>
@@ -624,15 +654,73 @@
                     <div class="tab-pane fade" id="computers" role="tabpanel" aria-labelledby="computers-tab">
                         <!-- computers  -->
                         <div class="product-group computers row-cols-auto row-cols-lg-4">
-
+                            <!-- card 1 -->
+                            <div>
+                                <div class="product-preview">
+                                    <!-- image -->
+                                    <img class="img" src="images/img/computer.jpg" alt="Apple iPhone 11 64GB">
+                                    <!-- badge -->
+                                    <div class="sale">- 100 % </div>
+                                    <!-- add to wish list -->
+                                    <button class="wish" data-bs-toggle="button"></button>
+                                    <!-- add to compare -->
+                                    <button class="compare" data-bs-toggle="button"></button>
+                                    <!-- product name -->
+                                    <div class="name">Apple iPhone 11 64GB</div>
+                                    <!-- product description -->
+                                    <div class="desc">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                    <div class="bottom">
+                                        <!-- product price -->
+                                        <div class="price">
+                                            <!-- old price -->
+                                            <del>100 990 ₽</del>
+                                            <!-- new price -->
+                                            <ins>88 990 ₽</ins>
+                                        </div>
+                                        <!-- add to cart -->
+                                        <button class="buy" data-bs-toggle="button">В корзину</button>
+                                    </div>
+                                    <!-- link on product page -->
+                                    <a href="card.html" class="stretched-link"></a>
+                                </div>
+                            </div>
                         </div>
                         <!-- computers -->
                     </div>
 
                     <div class="tab-pane fade" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
                         <!-- accessories  -->
-                        <div class="product-group accessories row-cols-auto row-cols-lg-4">
-
+                        <div class="product-group row-cols-auto row-cols-lg-4">
+                            <!-- card 1 -->
+                            <div>
+                                <div class="product-preview">
+                                    <!-- image -->
+                                    <img class="img" src="images/img/accs.jpg" alt="Apple iPhone 11 64GB">
+                                    <!-- badge -->
+                                    <div class="sale">- 100 % </div>
+                                    <!-- add to wish list -->
+                                    <button class="wish" data-bs-toggle="button"></button>
+                                    <!-- add to compare -->
+                                    <button class="compare" data-bs-toggle="button"></button>
+                                    <!-- product name -->
+                                    <div class="name">Apple iPhone 11 64GB</div>
+                                    <!-- product description -->
+                                    <div class="desc">iOS 13, поддержка двух SIM-карт (nano SIM+eSIM), двойная камера: 12 МП, 12 МП</div>
+                                    <div class="bottom">
+                                        <!-- product price -->
+                                        <div class="price">
+                                            <!-- old price -->
+                                            <del>100 990 ₽</del>
+                                            <!-- new price -->
+                                            <ins>88 990 ₽</ins>
+                                        </div>
+                                        <!-- add to cart -->
+                                        <button class="buy" data-bs-toggle="button">В корзину</button>
+                                    </div>
+                                    <!-- link on product page -->
+                                    <a href="card.html" class="stretched-link"></a>
+                                </div>
+                            </div>
                         </div>
                         <!-- accessories -->
                     </div>
@@ -644,14 +732,14 @@
         <!-- catalog -->
 
         <!-- two banners -->
-        <section class="banner-group df px-0 fw mb-100 row-cols-lg-2 container-big container">
+        <section class="banner-group df px-0 fw mb-100 row-cols-lg-2">
 
             <div class="banner banner-2 bg-1 c-5 col-xxl-7">
                 <div class="banner-text">
                     <h2 class="banner-h1 fw-7 c-5">MacBook Air</h2>
                     <p class="banner-p mb-40 fw-5">от 84 990 ₽</p>
                     <div class="banner-links">
-                        <a href="cart.html" class="btn btn-purple mr-3">Купить</a>
+                        <a href="cart.html" class="btn">Купить</a>
                         <a href="card.html" class="c-5" href="">Подробнее</a>
                     </div>
                 </div>
@@ -663,7 +751,7 @@
                     <h2 class="banner-h1 fw-7">AirPods Pro</h2>
                     <p class="banner-p mb-40 fw-5">от 18 490 ₽</p>
                     <div class="banner-links">
-                        <a href="cart.html" class="btn btn-purple mr-3">Купить</a>
+                        <a href="cart.html" class="btn">Купить</a>
                         <a href="card.html" class="c-3" href="">Подробнее</a>
                     </div>
                 </div>
@@ -676,7 +764,6 @@
         <!-- about -->
         <section class="about mb-80">
             <div class="container">
-
                 <div class="row">
                     <div class="col-lg-5 mb-20">
                         <h2>О компании</h2>
@@ -684,7 +771,8 @@
                             Фирменный магазин оригинальной техники Apple в Казани. У нас вы можете купить технику Apple по низким ценам и с официальной гарантией. Более 200 товаров представлено на любой вкус и кошелёк! А так же выгодные программы: Trade-IN с выгодой до 50 000 рублей,
                             рассрочка без процентов и переплат, подарки к каждой покупке и многое другое!
                         </p>
-                        <a class="purple" href="about.html">Узнать больше</a>
+                        <!-- нет такой страницы -->
+                        <a class="btn" href="about.html">Узнать больше</a>
                     </div>
                     <div class="col-lg-7">
                         <img class="img" src="images/img/about.jpg" alt="Магазин iSmart снаружи с прозрачными витринами">
@@ -718,7 +806,6 @@
             </div>
         </section>
         <!-- advantages section -->
-
 
         <!-- comments section -->
         <section class="comments mb-100">
@@ -824,7 +911,6 @@
         </section>
         <!-- comments section -->
 
-
         <!-- news section -->
         <section class="news mb-100">
             <!-- container -->
@@ -871,7 +957,6 @@
         </section>
         <!-- news section -->
 
-
         <!-- contacts section -->
         <section class="contacts">
             <!-- contacts text -->
@@ -900,7 +985,7 @@
             </div>
             <!-- contacts map -->
             <div class="contacts-map bg-4">
-                <iframe title="iSmart, Казань" src="https://yandex.ru/map-widget/v1/?um=constructor%3A04b056c176ce5831871967245206d3f4c037722ab7cb63a5e820c3414fa11028&amp;source=constructor"></iframe>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae4ac374754e68dd1e029f03ef1697d84ca98b38fa4cfe5bd1ddce64e759a04e6&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                 <!-- map height 580 -->
             </div>
         </section>
@@ -920,8 +1005,8 @@
                     </div>
                     <div class="col-12 col-lg-6 df fw flex-sm-nowrap">
                         <label for="newsletter-input" class="visually-hidden"></label>
-                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10">
-                        <button class="btn btn-purple col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16" type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal" id="newsletter-btn">Подписаться</button>
+                        <input required type="email" name="newsletter-input" id="newsletter-input" placeholder="Ваш email" class="col-12 col-sm-7 col-xxl-6 br-4 fw-3 mb-16 mr-10 fs-14">
+                        <button class="btn fs-14 col-12 col-sm-5 col-lg-4 col-xxl-3 mb-16" type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal" id="newsletter-btn">Подписаться</button>
                     </div>
                 </form>
                 <!-- footer nav -->
@@ -1086,18 +1171,18 @@
                     </address>
                 </div>
             </div>
-            <!-- anchor to top of page -->
-            <a href="#top" class="" title="В начало страницы"></a>
         </div>
 
     </footer>
     <!-- footer -->
 
-    <!-- DONE -->
-    <!-- As Question Modal -->
+    <!-- anchor to top of page -->
+    <a id="to-top" class="hidden" title="В начало страницы"></a>
+
+    <!-- Ask Question Modal -->
     <div class="modal fade" id="askQuestionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="askQuestionModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered bg-3">
-            <div class="modal-content mx-auto">
+        <div class="modal-dialog modal-dialog-centered">
+            <form class="modal-content mx-auto">
                 <div class="modal-header">
                     <h3 class="modal-title" id="askQuestionModalLabel">Задать вопрос</h3>
                     <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
@@ -1113,9 +1198,6 @@
                             Номер телефона
                         </label>
                         <input type="tel" id="questionUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- user name -->
                     <fieldset class="mb-16">
@@ -1123,30 +1205,23 @@
                             Имя
                         </label>
                         <input type="text" id="questionUserName" class="form-control fs-14 input" placeholder="Имя" required value="Имя">
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
                     </fieldset>
                     <!-- question textarea -->
                     <fieldset>
                         <label for="questionText" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Ваш вопрос
                         </label>
-                        <textarea required minlength="10" maxlength="300" name="questionText" id="questionText" cols="30" rows="4" placeholder="Ваш вопрос" class="col-12 input"></textarea>
-                        <div class="invalid-feedback">
-                            Это поле ввода обязательно к заполнению
-                        </div>
+                        <textarea required minlength="10" maxlength="350" name="questionText" id="questionText" cols="30" rows="4" placeholder="Ваш вопрос" class="col-12 input"></textarea>
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
                     <button type="button" class="btn">Отправить</button>
                     <button type="button" class="bg-9 btn" data-bs-dismiss="modal">Отменить</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
-    <!-- DONE -->
     <!-- Subscription Newsletter Modal -->
     <div class="modal fade" id="newsletterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered">
@@ -1170,15 +1245,15 @@
     </div>
 
     <!-- bootstrap 5 js -->
-    <!-- JavaScript Bundle with Popper.js -->
+    <!-- JavaScript min Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle with Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <!-- JavaScript min Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <!-- JQUERY js -->
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <!-- main js -->
-    <script src="js/script.js"></script>
+    <!-- JQUERY min js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- main min js -->
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
