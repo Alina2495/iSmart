@@ -99,6 +99,27 @@ $(document).ready( function() {
     $('#max-price').val($( "#slider-range" ).slider( "values", 1 ));
   });
 
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })();
+
 // Initialize Swiper
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     direction: 'vertical',
