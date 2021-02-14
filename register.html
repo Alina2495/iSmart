@@ -410,48 +410,69 @@
 
         <!-- registration form -->
         <section class="mb-100 container">
-            <form action="#" method="POST" class="col-lg-6 col-xl-5">
+            <form action="#" method="POST" class="col-lg-6 col-xl-5 needs-validation" novalidate>
                 <h1 class="fs-28 mb-40">Регистрация</h1>
                 <!-- name -->
                 <fieldset class="mb-16">
                     <label for="regUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">Имя</label>
-                    <input type="text" id="regUserName" class="form-control fs-14 input" placeholder="Имя" required>
+                    <input maxlength="12" type="text" id="regUserName" class="form-control fs-14 input" placeholder="Имя" required>
+                    <div class="invalid-feedback">
+                        Имя должно содержать минимум 3 символа
+                    </div>
                 </fieldset>
                 <!-- surname -->
                 <fieldset class="mb-16">
                     <label for="regUserSurname" class="form-label mb-10 c-13 fs-14 fw-6 required label">Фамилия</label>
-                    <input type="text" id="regUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required>
+                    <input maxlength="20" type="text" id="regUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required>
+                    <div class="invalid-feedback">
+                        Фамилия должна содержать минимум 3 символа
+                    </div>
                 </fieldset>
                 <!-- tel -->
                 <fieldset class="mb-16">
                     <label for="regUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">Номер телефона</label>
-                    <input type="tel" pattern="" id="regUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                    <input maxlength="11" type="tel" id="regUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                    <div class="invalid-feedback">
+                        Проверьте правильность введеного номера
+                    </div>
                 </fieldset>
                 <!-- email -->
                 <fieldset class="mb-16">
                     <label for="regUserEmail" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                     Электронная почта</label>
                     <input type="email" id="regUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
+                    <div class="invalid-feedback">
+                        Введите корректный адрес электронной почты
+                    </div>
                 </fieldset>
                 <!-- city -->
                 <fieldset class="mb-16">
                     <label for="regUserCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">Город</label>
                     <input type="text" id="regUserCity" class="form-control fs-14 input" placeholder="Город" required>
+                    <div class="invalid-feedback">
+                        Это поле должно содержать буквы русского алфавита
+                    </div>
                 </fieldset>
                 <!-- password -->
                 <fieldset class="mb-16">
                     <label for="regUserPass" class="form-label mb-10 c-13 fs-14 fw-6 required label">Пароль</label>
                     <input type="password" id="regUserPass" class="form-control fs-14 input" placeholder="Пароль" required>
+                    <div class="invalid-feedback">
+                        Пароль должен содержать не менее 6 символов
+                    </div>
                 </fieldset>
                 <!-- confirm password -->
                 <fieldset class="mb-30">
                     <label for="confirmRegUserPass" class="form-label mb-10 c-13 fs-14 fw-6 required label">Повторите пароль</label>
                     <input type="password" id="confirmRegUserPass" class="form-control fs-14 input" placeholder="Пароль" required>
+                    <div class="invalid-feedback">
+                        Пароль должен содержать не менее 6 символов
+                    </div>
                 </fieldset>
                 <!-- checkbox agree terms -->
                 <fieldset class="terms-fieldset mb-30 ">
                     <label for="terms-check" class="fw-4 c-10">
-                        <input type="checkbox" name="terms-check" id="terms-check" class="mr-10 pr checkbox">
+                        <input required type="checkbox" name="terms-check" id="terms-check" class="mr-10 pr checkbox">
                         <span>Я согласен на </span><a href="" class="c-1 underline">обработку персональных данных</a>
                     </label>
                 </fieldset>

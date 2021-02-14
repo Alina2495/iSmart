@@ -413,7 +413,7 @@
             <div class="align-items-start row">
                 <h1 class="fs-28 col-12 mb-40">Личный кабинет</h1>
                 <div class="col-lg-3">
-                    <div class="nav flex-column c-13 fs-18 mb-30" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background-color: #FBFCFF;">
+                    <div class="nav flex-column c-7 fs-18 mb-30" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background-color: #FBFCFF;">
 
                         <!-- personal info -->
                         <a class="nav-link active" id="personal-info-tab" data-bs-toggle="pill" href="#personal-info" role="tab" aria-controls="personal-info" aria-selected="true">Личная информация</a>
@@ -513,7 +513,7 @@
 
                         <h6 class="fw-7 mb-16">Ваши заказы</h6>
 
-
+                        <!-- если нет заказов -->
                         <!-- <hr>
                         <p class="c-7">Вы пока ничего не заказывали.</p> -->
 
@@ -527,7 +527,7 @@
                                     </div>
                                     <div class="order-info">
                                         <div class="order-info-title">
-                                            № 12345 <time datetime="2020-01-14">( 14.01.2020)</time>
+                                            № 64832 <time datetime="2020-01-14">( 22.02.2021)</time>
                                         </div>
                                         <div class="order-info-text">
                                             <a href="card.html">Смартфон Apple iPhone 11 256GB</a>
@@ -568,7 +568,7 @@
                                     </div>
                                     <div class="order-info">
                                         <div class="order-info-title">
-                                            № 12345 <time datetime="2020-01-14"> ( 14.01.2020)</time>
+                                            № 12345 <time datetime="2020-01-14"> ( 14.01.2021)</time>
                                         </div>
                                         <div class="order-info-text">
                                             <a href="card.html">Смартфон Apple iPhone 11 256GB</a>
@@ -581,7 +581,7 @@
                                     </div>
                                     <div class="order-info df fc">
                                         <div class="order-info-title">
-                                            Самовывоз
+                                            Доставка СДЭК
                                         </div>
                                         <div class="order-info-text">
                                             Казань, ул. Фучика 78, кв. 12, эт. 5, под. 2
@@ -798,7 +798,7 @@
     <!-- Edit Profile Info Modal -->
     <div class="modal fade" id="editProfileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-fullscreen-sm-down modal-dialog-centered modal-dialog-scrollable">
-            <form action="#" method="POST" class="modal-content mx-auto">
+            <form action="#" method="POST" class="modal-content mx-auto needs-validation" novalidate>
                 <div class="modal-header">
                     <h3 class="modal-title" id="editProfileModalLabel">Редактировать данные</h3>
                     <!-- close -->
@@ -814,39 +814,41 @@
                         <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Имя
                             </label>
-                        <input type="text" id="editUserName" class="form-control fs-14 input" placeholder="Имя" required maxlength="10">
+                        <input value="Андрей" type="text" id="editUserName" class="form-control fs-14 input" placeholder="Имя" required maxlength="10">
                     </fieldset>
                     <!-- surname -->
                     <fieldset class="mb-20">
                         <label for="editUserSurname" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Фамилия
                             </label>
-                        <input type="text" id="editUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required maxlength="15">
+                        <input value="Иванов" type="text" id="editUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required maxlength="15">
                     </fieldset>
                     <!-- tel -->
                     <fieldset class="mb-20">
                         <label for="editUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Номер телефона
                             </label>
-                        <input type="tel" id="editUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                        <input value="79384561236" type="tel" id="editUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
                     </fieldset>
                     <!-- email -->
                     <fieldset class="mb-20">
                         <label for="editUserEmail" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                                 Электронная почта
                             </label>
-                        <input type="email" id="editUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
+                        <input value="ivanov@mail.ru" type="email" id="editUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
                     </fieldset>
                     <!-- city -->
                     <fieldset>
                         <label for="editUserCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Город
                         </label>
+                        <div class="invalid-feedback">
+                        </div>
                         <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
-                    <button type="button" class="btn">Сохранить</button>
+                    <button type="submit" class="btn">Сохранить</button>
                     <button type="button" class="btn bg-9 " data-bs-dismiss="modal">Отменить</button>
                 </div>
             </form>
@@ -856,7 +858,7 @@
     <!-- Change Password Modal -->
     <div class="modal fade" id="changePassModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="changePassModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <form action="#" method="POST" class="modal-content mx-auto">
+            <form action="#" method="POST" class="modal-content mx-auto needs-validation" novalidate>
                 <div class="modal-header">
                     <h3 class="modal-title" id="changePassModalLabel">Изменить пароль</h3>
                     <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
@@ -871,7 +873,7 @@
                         <label for="currentPass" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Текущий пароль
                         </label>
-                        <input type="password" id="currentPass" class="form-control fs-14 input" placeholder="Текущий пароль" required>
+                        <input value="12345" type="password" id="currentPass" class="form-control fs-14 input" placeholder="Текущий пароль" required>
                     </fieldset>
                     <!-- new password -->
                     <fieldset class="mb-20">
@@ -889,7 +891,7 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
-                    <button type="button" class="btn">Сохранить</button>
+                    <button type="submit" class="btn">Сохранить</button>
                     <button type="button" class="btn bg-9" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </form>
@@ -962,7 +964,7 @@
 
     <!-- Edit Delivery Address Modal -->
     <div class="modal fade" id="editAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editAddressModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered bg-3">
+        <div class="modal-dialog modal-dialog-centered">
             <form action="" method="POST" class="modal-content mx-auto needs-validation" novalidate>
                 <div class="modal-header">
                     <h3 class="modal-title" id="editAddressModalLabel">Редактировать адрес</h3>

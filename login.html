@@ -410,19 +410,25 @@
 
         <!-- login form -->
         <section class="mb-100 container">
-            <form method="POST" class="col-lg-6 col-xl-5">
+            <form action="#" method="POST" class="col-lg-6 col-xl-5 needs-validation" novalidate>
                 <h1 class="fs-28 mb-40">Вход в личный кабинет</h1>
                 <fieldset class="mb-16">
                     <label for="loginUserEmail" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                         Электронная почта
                     </label>
                     <input type="email" id="loginUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
+                    <div class="invalid-feedback">
+                        Введите корректный адрес электронной почты
+                    </div>
                 </fieldset>
                 <fieldset class="mb-20">
                     <label for="loginUserPassword" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                         Пароль
                     </label>
-                    <input type="email" id="loginUserPassword" class="form-control fs-14 input" placeholder="Пароль" required>
+                    <input type="password" id="loginUserPassword" class="form-control fs-14 input" placeholder="Пароль" required>
+                    <div class="invalid-feedback">
+                        Пароль должен содержать минимум 6 символов
+                    </div>
                 </fieldset>
 
                 <p class="mb-30 c-10">Забыли пароль? <a href="password.html" class="underline"> Получить новый</a></p>

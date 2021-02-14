@@ -2541,6 +2541,7 @@ a.c-3:hover {
   height: 100%;
   background-repeat: no-repeat;
   background-size: 15px 11px;
+  background-position: center;
 }
 .terms-fieldset input[type="checkbox"]:checked::before {
   background-image: url('../images/icons/checked.svg');
@@ -2657,42 +2658,17 @@ a.c-3:hover {
   max-height: 90px;
   overflow: hidden;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1399.98px) {
   .banner {
     flex-direction: column;
     padding: 50px;
   }
-  .banner img {
-    position: static;
-    object-position: center;
-  }
-  .banner-1 {
-    padding-bottom: 0;
-  }
   .banner-1 img {
     width: 550px;
+    object-position: center bottom;
   }
 }
-@media screen and (max-width: 1200px) {
-  .banner .banner-text {
-    width: 100%;
-  }
-  .banner img {
-    width: 100%;
-  }
-  .news .news-preview {
-    padding: 10px;
-  }
-  .news .news-preview .text {
-    margin: 20px 0;
-  }
-  .banner-1 {
-    padding-bottom: 0;
-    flex-direction: column !important;
-  }
-  .banner-1 img {
-    width: 500px;
-  }
+@media screen and (max-width: 1199.98px) {
   .banner-group .banner {
     flex-direction: column;
   }
@@ -2701,6 +2677,55 @@ a.c-3:hover {
   }
   .banner-group .banner img {
     position: static;
+  }
+  .banner {
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 15px 30px 15px;
+    text-align: center;
+    padding: 40px 15px 5px 15px;
+  }
+  .banner-text {
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .banner-h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .banner-p {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .banner .purple {
+    padding: 10px 30px;
+  }
+  .banner img {
+    width: 100%;
+    width: 250px;
+    align-self: center;
+    position: static;
+    object-fit: contain;
+  }
+  .banner-1 {
+    padding-bottom: 0;
+    flex-direction: column !important;
+  }
+  .banner-1 img {
+    width: 300px;
+  }
+  .banner-3 img {
+    width: 200px;
+  }
+  .banner .banner-text {
+    width: 100%;
+  }
+  .news .news-preview {
+    padding: 10px;
+  }
+  .news .news-preview .text {
+    margin: 20px 0;
   }
   .comment {
     padding: 15px;
@@ -2734,7 +2759,20 @@ a.c-3:hover {
     width: 80px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
+  .banner {
+    align-items: center;
+  }
+  .banner .banner-text {
+    text-align: center;
+    align-items: center;
+  }
+  .banner .banner-h1 {
+    font-size: 44px;
+  }
+  .banner-1 {
+    padding-bottom: 0;
+  }
   .secondnav-block {
     padding-top: 30px;
     box-shadow: none;
@@ -2772,24 +2810,6 @@ a.c-3:hover {
     padding: 1em;
     min-width: 220px;
   }
-  .banner {
-    align-items: center;
-  }
-  .banner .banner-text {
-    align-items: center;
-  }
-  .banner-1 {
-    padding-bottom: 0 !important;
-  }
-  .banner-1 .banner-text {
-    text-align: center;
-  }
-  .banner-1 .banner-h1 {
-    font-size: 50px;
-  }
-  .banner-1 img {
-    width: 400px;
-  }
   .order-done h1 {
     line-height: normal;
     font-size: 23px;
@@ -2818,7 +2838,7 @@ a.c-3:hover {
     bottom: 10px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .about {
     text-align: center;
   }
@@ -2841,49 +2861,6 @@ a.c-3:hover {
     bottom: 10px;
     background-size: 15px;
     z-index: 16;
-  }
-  .banner {
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 15px 30px 15px;
-    text-align: center;
-    padding: 40px 15px 5px 15px;
-  }
-  .banner-text {
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  .banner-h1 {
-    font-size: 38px;
-    margin-bottom: 20px;
-  }
-  .banner-p {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-  .banner .purple {
-    padding: 10px 30px;
-  }
-  .banner img {
-    width: 250px;
-    align-self: center;
-    position: static;
-    object-fit: contain;
-  }
-  .banner-1 {
-    padding-bottom: 0;
-  }
-  .banner-3 img {
-    width: 200px;
-  }
-  .banner .banner-text {
-    width: 100%;
-  }
-  .banner .banner-h1 {
-    font-size: 42px !important;
-  }
-  .banner-1 img {
-    width: 300px;
   }
   .orders .order-column {
     flex-basis: 100%;
@@ -3037,14 +3014,6 @@ a.c-3:hover {
   }
   .advantages .row div:last-child {
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .banner-p {
-    font-size: 30px;
-  }
-  .banner .btn {
-    padding: 12px 40px;
   }
 }
 @media (min-width: 900px) {
