@@ -471,10 +471,14 @@
                 </fieldset>
                 <!-- checkbox agree terms -->
                 <fieldset class="terms-fieldset mb-30 ">
+                    <input required type="checkbox" name="terms-check" id="terms-check" class="mr-10 pr checkbox">
                     <label for="terms-check" class="fw-4 c-10">
-                        <input required type="checkbox" name="terms-check" id="terms-check" class="mr-10 pr checkbox">
+                        
                         <span>Я согласен на </span><a href="" class="c-1 underline">обработку персональных данных</a>
                     </label>
+                    <div class="invalid-feedback">
+                        Подтвердите согласие для регистрации
+                    </div>
                 </fieldset>
                 <!-- sumbit -->
                 <button type="submit" value="Зарегистрироваться" class="btn mb-20 fs-16">Зарегистрироваться</button>

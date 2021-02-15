@@ -812,39 +812,52 @@
                     <!-- name -->
                     <fieldset class="mb-20">
                         <label for="editUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
-                                Имя
-                            </label>
+                            Имя
+                        </label>
                         <input value="Андрей" type="text" id="editUserName" class="form-control fs-14 input" placeholder="Имя" required maxlength="10">
+                        <div class="invalid-feedback">
+                            Имя должно содержать минимум 3 символа
+                        </div>
                     </fieldset>
                     <!-- surname -->
                     <fieldset class="mb-20">
                         <label for="editUserSurname" class="form-label mb-10 c-13 fs-14 fw-6 required label">
-                                Фамилия
-                            </label>
+                            Фамилия
+                        </label>
                         <input value="Иванов" type="text" id="editUserSurname" class="form-control fs-14 input" placeholder="Фамилия" required maxlength="15">
+                        <div class="invalid-feedback">
+                            Фамилия должна содержать минимум 3 символа
+                        </div>
                     </fieldset>
                     <!-- tel -->
                     <fieldset class="mb-20">
                         <label for="editUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">
-                                Номер телефона
-                            </label>
+                            Номер телефона
+                        </label>
                         <input value="79384561236" type="tel" id="editUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                        <div class="invalid-feedback">
+                            Проверьте правильность введеного номера
+                        </div>
                     </fieldset>
                     <!-- email -->
                     <fieldset class="mb-20">
                         <label for="editUserEmail" class="form-label mb-10 c-13 fs-14 fw-6 required label">
-                                Электронная почта
-                            </label>
+                             Электронная почта
+                        </label>
                         <input value="ivanov@mail.ru" type="email" id="editUserEmail" class="form-control fs-14 input" placeholder="Электронная почта" required>
+                        <div class="invalid-feedback">
+                            Введите корректный адрес электронной почты
+                        </div>
                     </fieldset>
                     <!-- city -->
                     <fieldset>
                         <label for="editUserCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Город
                         </label>
-                        <div class="invalid-feedback">
-                        </div>
                         <input type="text" id="editUserCity" class="form-control fs-14 input" placeholder="Город" required maxlength="20">
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
@@ -901,7 +914,7 @@
     <!-- Add Delivery Address Modal -->
     <div class="modal fade" id="addAddressModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <form action="#" method="POST" class="modal-content mx-auto">
+            <form action="#" method="POST" class="modal-content mx-auto needs-validation" novalidate>
                 <div class="modal-header">
                     <h3 class="modal-title" id="addAddressModalLabel">Добавить адрес</h3>
                     <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
@@ -917,6 +930,9 @@
                             Ваш город
                         </label>
                         <input type="text" id="addAddressCity" class="form-control fs-14 input" placeholder="Ваш город" required>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                     <!-- add address street -->
                     <fieldset class="mb-20">
@@ -924,6 +940,9 @@
                             Улица
                         </label>
                         <input type="text" id="addAddressStreet" class="form-control fs-14 input" placeholder="Улица" required>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                     <!-- add home -->
                     <fieldset class="mb-20">
@@ -931,6 +950,9 @@
                             Дом
                         </label>
                         <input type="text" id="addAddressHome" class="form-control fs-14 input" placeholder="Дом" required>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                     <!-- add apartment -->
                     <fieldset class="mb-20">
@@ -938,6 +960,9 @@
                             Квартира
                         </label>
                         <input min="1" type="number" id="addAddressApartment" class="form-control fs-14 input" placeholder="Квартира" required>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                     <!-- add front door -->
                     <fieldset class="mb-20">
@@ -955,7 +980,7 @@
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
-                    <button type="button" class="btn">Сохранить</button>
+                    <button type="submit" class="btn">Сохранить</button>
                     <button type="button" class="btn bg-9" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </form>
@@ -980,6 +1005,9 @@
                         <label for="editAddressCity" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Ваш город
                         </label>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                         <input type="text" id="editAddressCity" class="form-control fs-14 input" placeholder="Ваш город" required>
                     </fieldset>
                     <!-- edit address Street -->
@@ -988,6 +1016,9 @@
                             Улица
                         </label>
                         <input type="text" id="editAddressStreet" class="form-control fs-14 input" placeholder="Улица" required>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                     <!-- edit home -->
                     <fieldset class="mb-20">
@@ -995,6 +1026,9 @@
                             Дом
                         </label>
                         <input type="text" id="editAddressHome" class="form-control fs-14 input" placeholder="Дом" required>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                     <!-- edit apartment -->
                     <fieldset class="mb-20">
@@ -1002,6 +1036,9 @@
                             Квартира
                         </label>
                         <input min="1" type="number" id="editAddressApartment" class="form-control fs-14 input" placeholder="Квартира" required>
+                        <div class="invalid-feedback">
+                            Это поле должно содержать буквы русского алфавита
+                        </div>
                     </fieldset>
                     <!-- edit front door -->
                     <fieldset class="mb-20">

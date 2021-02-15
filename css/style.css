@@ -759,6 +759,7 @@ a.hover-menu .triangle.hidden {
   color: #FFCA42;
 }
 .modal-body .rating {
+  margin-left: 0;
   justify-content: flex-end;
   flex-direction: row-reverse;
 }
@@ -1050,6 +1051,7 @@ ul {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  justify-content: center;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -1098,14 +1100,14 @@ ul {
   z-index: 0;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: 2%;
   width: 55%;
   height: 100%;
   object-fit: scale-down;
   object-position: center;
 }
 .banner-1 .banner-text {
-  width: 50%;
+  width: 48%;
 }
 .banner-1 img {
   object-position: center bottom;
@@ -1268,7 +1270,7 @@ button {
   border: 1px solid #C4C4C4;
   font-size: 14px;
   line-height: 20px;
-  color: #303030;
+  color: black;
   padding: 14px 20px;
   user-select: all;
 }
@@ -1277,14 +1279,11 @@ button {
   border-color: #824df5;
   outline: 0;
   box-shadow: none;
+  color: currentColor;
 }
 .input:placeholder-shown {
   color: #8D8D8D;
   font-weight: 300;
-}
-form a.c-3 {
-  background: none;
-  padding: 0;
 }
 .account-block .nav {
   padding: 10px 0;
@@ -2440,6 +2439,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .table-compare tbody.params-list td {
   border: 1px solid #f0f1f3;
 }
+.table-responsive {
+  overflow: visible;
+}
 .fw-3 {
   font-weight: 300;
 }
@@ -2545,6 +2547,13 @@ a.c-3:hover {
 }
 .terms-fieldset input[type="checkbox"]:checked::before {
   background-image: url('../images/icons/checked.svg');
+}
+.terms-fieldset label {
+  display: inline;
+  vertical-align: top;
+}
+.terms-fieldset a {
+  width: auto;
 }
 .df {
   display: -webkit-box;
@@ -2666,6 +2675,9 @@ a.c-3:hover {
   .banner-1 img {
     width: 550px;
     object-position: center bottom;
+  }
+  .banner-group .banner-h1 {
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 1199.98px) {
@@ -2961,7 +2973,7 @@ a.c-3:hover {
     padding: 15px 0px;
   }
   .modal-title {
-    font-size: 30px;
+    font-size: 28px;
   }
   .modal .btn-close {
     top: 15px;

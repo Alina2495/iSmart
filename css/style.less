@@ -786,6 +786,7 @@ a.hover-menu {
     }
 }
 .modal-body .rating {
+    margin-left: 0;
     justify-content: flex-end;
     flex-direction: row-reverse;
 }
@@ -1098,6 +1099,7 @@ ul {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    justify-content: center;
     overflow: hidden;
     position: relative;
     text-align: left;
@@ -1144,7 +1146,7 @@ ul {
         z-index: 0;
         top: 0;
         bottom: 0;
-        right: 0;
+        right: 2%;
         width: 55%;
         height: 100%;
         object-fit: scale-down;
@@ -1152,7 +1154,7 @@ ul {
     }
     &-1 {
         .banner-text {
-            width: 50%;
+            width: 48%;
         }
         img {
             object-position: center bottom;
@@ -1233,7 +1235,6 @@ input {
         }
     }
     input, textarea {
-        // padding-bottom: 20px;
         &::placeholder {
             color: #3A3C3C;
             font-weight: 500;
@@ -1325,25 +1326,22 @@ a, button {
     border: 1px solid #C4C4C4;
     font-size: 14px;
     line-height: 20px;
-    color: #303030;
+    color: black;
     padding: 14px 20px;
     user-select: all;
     &:focus {
         background-color: #fff;
         border-color: #824df5;
         outline: 0;
-        // box-shadow: 0px 0px 5px #824DF5;
         box-shadow: none;
+        color: currentColor;
     }
     &:placeholder-shown {
         color: #8D8D8D;
         font-weight: 300;
     }
 }
-form a.c-3 {
-    background: none;
-    padding: 0;
-}
+
 // account page
 .account-block {
     .nav {
@@ -1721,7 +1719,6 @@ button.underline {
             display: inline-block;
             height: auto;
             visibility: visible;
-            // background-color: #824df5;
             border: none;
         }
         span {
@@ -2530,6 +2527,9 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 }
+.table-responsive {
+    overflow: visible;
+}
 // font weights
 .fw {
     &-3 {
@@ -2652,6 +2652,13 @@ a {
             background-image: url('../images/icons/checked.svg')
         }
     }
+    label {
+        display: inline;
+        vertical-align: top;
+    }
+    a {
+        width: auto;
+    }
 }
 .df {
     display: -webkit-box;
@@ -2769,8 +2776,6 @@ a {
         }
     }
 }
-
-
 @media screen and (max-width: 1399.98px) {
     .banner {
         flex-direction: column;
@@ -2781,6 +2786,9 @@ a {
             width: 550px;
             object-position: center bottom;
         }
+    }
+    .banner-group .banner-h1 {
+        font-size: 50px;
     }
 }
 @media screen and (max-width: 1199.98px) {
@@ -3121,7 +3129,7 @@ a {
             padding: 15px 0px;
         }
         &-title {
-            font-size: 30px;
+            font-size: 28px;
         }
         .btn-close {
             top: 15px;
@@ -3178,9 +3186,6 @@ a {
         }
     }
 }
-
-
-
 @media (min-width: 900px) {
     .modal-dialog {
         max-width: 720px; 

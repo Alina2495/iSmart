@@ -28,7 +28,7 @@
     <!-- bootstrap 5 min CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <!-- main styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="bg-3 c-1">
@@ -356,7 +356,7 @@
                 <!-- banner text -->
                 <div class="banner-text">
                     <h2 class="banner-h1 mb-16 c-5 fw-7">Монитор Pro Display XDR</h2>
-                    <p class="banner-p mb-65 fw-3">уже в наличии</p>
+                    <p class="banner-p mb-65 fw-3 fs-30">уже в наличии</p>
                     <div class="banner-links">
                         <a href="cart.html" class="btn fs-18">Купить</a>
                         <a href="card.html" class="c-5 fw-5 fs-16" href="">Подробнее</a>
@@ -367,35 +367,6 @@
             </div>
         </section>
         <!-- first banner -->
-        <!-- two banners -->
-        <section class="banner-group df px-0 fw mb-100 row-cols-lg-2">
-
-            <div class="banner banner-2 bg-1 c-5 col-xxl-7">
-                <div class="banner-text">
-                    <h2 class="banner-h1 fw-7 c-5">Монитор Pro Display XDR</h2>
-                    <p class="banner-p mb-40 fw-5">от 184 990 ₽</p>
-                    <div class="banner-links">
-                        <a href="cart.html" class="btn">Купить</a>
-                        <a href="card.html" class="c-5" href="">Подробнее</a>
-                    </div>
-                </div>
-                <img class="banner-img" src="images/img/banner-img-2.png" alt="MacBook Air">
-            </div>
-
-            <div class="banner banner-3 bg-2 c-1 col-xxl-5">
-                <div class="banner-text">
-                    <h2 class="banner-h1 fw-7">Монитор Pro Display XDR</h2>
-                    <p class="banner-p mb-40 fw-5">от 18 490 ₽</p>
-                    <div class="banner-links">
-                        <a href="cart.html" class="btn">Купить</a>
-                        <a href="card.html" class="c-3" href="">Подробнее</a>
-                    </div>
-                </div>
-                <img src="images/img/banner-img-3.jpg" alt="AirPods Pro">
-            </div>
-
-        </section>
-        <!-- two banners -->
 
         <!-- menu -->
         <nav class="secondnav-block c-6 mb-60 fs-14">
@@ -760,7 +731,35 @@
         </section>
         <!-- catalog -->
 
+        <!-- two banners -->
+        <section class="banner-group df px-0 fw mb-100 row-cols-lg-2">
 
+            <div class="banner banner-2 bg-1 c-5 col-xxl-7">
+                <div class="banner-text">
+                    <h2 class="banner-h1 fw-7 c-5">Монитор Pro Display XDR</h2>
+                    <p class="banner-p mb-40 fw-5 fs-30">от 184 990 ₽</p>
+                    <div class="banner-links">
+                        <a href="cart.html" class="btn">Купить</a>
+                        <a href="card.html" class="c-5" href="">Подробнее</a>
+                    </div>
+                </div>
+                <img class="banner-img" src="images/img/banner-img-2.png" alt="MacBook Air">
+            </div>
+
+            <div class="banner banner-3 bg-2 c-1 col-xxl-5">
+                <div class="banner-text">
+                    <h2 class="banner-h1 fw-7">Монитор Pro Display XDR</h2>
+                    <p class="banner-p mb-40 fw-5 fs-30">от 18 490 ₽</p>
+                    <div class="banner-links">
+                        <a href="cart.html" class="btn">Купить</a>
+                        <a href="card.html" class="c-3" href="">Подробнее</a>
+                    </div>
+                </div>
+                <img src="images/img/banner-img-3.jpg" alt="AirPods Pro">
+            </div>
+
+        </section>
+        <!-- two banners -->
 
         <!-- about -->
         <section class="about mb-80">
@@ -1183,7 +1182,7 @@
     <!-- Ask Question Modal -->
     <div class="modal fade" id="askQuestionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="askQuestionModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <form class="modal-content mx-auto">
+            <form class="modal-content mx-auto needs-validation" novalidate>
                 <div class="modal-header">
                     <h3 class="modal-title" id="askQuestionModalLabel">Задать вопрос</h3>
                     <button type="button" class="btn-close pa" data-bs-dismiss="modal" aria-label="Close">
@@ -1198,25 +1197,33 @@
                         <label for="questionUserPhone" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Номер телефона
                         </label>
-                        <input type="tel" id="questionUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                        <input type="tel" minlength="10" maxlength="10" id="questionUserPhone" class="form-control fs-14 input" placeholder="Телефон" required>
+                        <div class="invalid-feedback">
+                            Проверьте правильность введеного номера
+                        </div>
                     </fieldset>
                     <!-- user name -->
                     <fieldset class="mb-16">
                         <label for="questionUserName" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Имя
                         </label>
-                        <input type="text" id="questionUserName" class="form-control fs-14 input" placeholder="Имя" required value="Имя">
+                        <input minlength="3" maxlength="15" type="text" id="questionUserName" class="form-control fs-14 input" placeholder="Имя" required>
+                        <div class="invalid-feedback">
+                            Имя должно содержать минимум 3 символа
+                        </div>
                     </fieldset>
                     <!-- question textarea -->
                     <fieldset>
                         <label for="questionText" class="form-label mb-10 c-13 fs-14 fw-6 required label">
                             Ваш вопрос
                         </label>
-                        <textarea required minlength="10" maxlength="350" name="questionText" id="questionText" cols="30" rows="4" placeholder="Ваш вопрос" class="col-12 input"></textarea>
+                        <textarea required minlength="10" maxlength="350" name="questionText" id="questionText" cols="30" rows="4" placeholder="Ваш вопрос" class="col-12 input form-control"></textarea>
+                        <div class="invalid-feedback">
+                            Вопрос должен содержать минимум 10 символов </div>
                     </fieldset>
                 </div>
                 <div class="modal-footer row-cols-1 row-cols-sm-auto">
-                    <button type="button" class="btn">Отправить</button>
+                    <button type="submit" class="btn">Отправить</button>
                     <button type="button" class="bg-9 btn" data-bs-dismiss="modal">Отменить</button>
                 </div>
             </form>
