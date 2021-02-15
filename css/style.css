@@ -1590,7 +1590,8 @@ button.underline {
   border: 1px solid #EFEFEF;
   padding: 17px 10px 0 17px;
 }
-.filters-block legend {
+.filters-block a {
+  display: block;
   color: #303030;
   font-size: 18px;
   letter-spacing: 0.004em;
@@ -2348,7 +2349,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-bottom: 20px;
   border-bottom: 2px solid #F6F7F8;
 }
-.order-form .type fieldset p {
+.order-form .type fieldset small {
   font-size: 12px;
   line-height: 20px;
   color: #606060;
